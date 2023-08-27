@@ -1,0 +1,26 @@
+/** Page **/
+body {
+    background-color: $dark;
+}
+
+.no-scroll {
+    overflow-y: hidden!important;
+}
+
+/** Text Selection **/
+::-moz-selection {
+    color: $dark;
+    background: $primary;
+}
+::selection {
+    color: $dark;
+    background: lighten($primary, 30%);
+}
+
+/** Scrollbar **/
+::-webkit-scrollbar {max-width: 7px; max-height: 4px}
+::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)}
+::-webkit-scrollbar-thumb {background: lighten($dark, 30%);-webkit-box-shadow: rgba(155,155,155)}
+::-webkit-scrollbar-thumb:window-inactive {background: $dark}
+
+

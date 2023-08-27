@@ -1,0 +1,109 @@
+{
+    "locales": {
+        "en": {
+            "title": "<span class='text-primary'>Educational</span> Background",
+            "description": "A glimpse into my academic trajectory and accomplishments."
+        },
+
+        "es": {
+            "title": "Antecedentes <span class='text-primary'>Educativos</span>",
+            "description": "Un vistazo a mi trayectoria académica y logros."
+        },
+
+        "fr": {
+            "title": "Parcours <span class='text-primary'>Éducatif</span>",
+            "description": "Un aperçu de mon parcours académique et de mes réalisations."
+        },
+
+        "zh": {
+            "title": "<span class='text-primary'>教育</span> 背景",
+            "description": "一瞥我的学术轨迹和成就。"
+        }
+    },
+
+    "items": [
+        {
+            "id": "online_course_udacity",
+            "place": "@link{places.udacity}",
+            "period": ["2014/01", "2014/07"],
+
+            "locales": {
+                "en": {
+                    "title": "UX Fundamentals Online Certification",
+                    "description": "Enrolled in an online program covering essential UX concepts, including user research, usability testing, and information architecture. Strengthened skills in creating intuitive and user-friendly digital experiences."
+                },
+
+                "es": {
+                    "title": "Certificación en Fundamentos de UX en Línea",
+                    "description": "Inscrito en un programa en línea que abarca conceptos esenciales de UX, incluida la investigación de usuarios, pruebas de usabilidad y arquitectura de la información. Reforzó habilidades en la creación de experiencias digitales intuitivas y amigables para el usuario."
+                },
+
+                "fr": {
+                    "title": "Certification en Fondamentaux de l'UX en Ligne",
+                    "description": "Inscrit à un programme en ligne couvrant les concepts essentiels de l'UX, y compris la recherche utilisateur, les tests de convivialité et l'architecture de l'information. Renforcé les compétences dans la création d'expériences numériques intuitives et conviviales."
+                },
+
+                "zh": {
+                    "title": "UX 基础在线认证",
+                    "description": "参加了一项涵盖基本 UX 概念的在线课程，包括用户研究、可用性测试和信息架构。加强了在创建直观且用户友好的数字体验方面的技能。"
+                }
+            }
+        },
+
+        {
+            "id": "bachelor_harvard",
+            "place": "@link{places.harvard}",
+            "period": ["2014/08", "2018/05"],
+
+            "locales": {
+                "en": {
+                    "title": "Bachelor's in Graphic Design with UX Emphasis",
+                    "description": "Graduated with a solid foundation in graphic design while specializing in user experience design. Acquired expertise in visual storytelling, UI design, and collaborative design thinking."
+                },
+
+                "es": {
+                    "title": "Licenciatura en Diseño Gráfico con Énfasis en UX",
+                    "description": "Graduado con una sólida formación en diseño gráfico con especialización en diseño de experiencia de usuario. Adquirió experiencia en narración visual, diseño de interfaz de usuario y pensamiento de diseño colaborativo."
+                },
+
+                "fr": {
+                    "title": "Baccalauréat en Design Graphique avec Accent sur l'UX",
+                    "description": "Diplômé avec une base solide en design graphique tout en se spécialisant dans la conception de l'expérience utilisateur. Acquis une expertise en narration visuelle, en design d'interface utilisateur et en réflexion collaborative sur la conception."
+                },
+
+                "zh": {
+                    "title": "平面设计学士学位，强调 UX",
+                    "description": "毕业于平面设计领域，专攻用户体验设计，掌握了视觉叙事、用户界面设计和协作式设计思维方面的专业知识。"
+                }
+            }
+        },
+
+        {
+            "id": "masters_paris",
+            "place": "@link{places.paris}",
+            "period": ["2018/09", "2020/05"],
+
+            "locales": {
+                "en": {
+                    "title": "Master's in Human-Computer Interaction",
+                    "description": "Completed an intensive program focusing on user-centered design principles, usability testing, and interaction design. Developed skills in wireframing, prototyping, and user research methodologies."
+                },
+
+                "es": {
+                    "title": "Maestría en Interacción Humano-Computadora",
+                    "description": "Completó un programa intensivo centrado en los principios de diseño centrado en el usuario, pruebas de usabilidad y diseño de interacción. Desarrolló habilidades en la creación de wireframes, prototipado y metodologías de investigación de usuarios."
+                },
+
+                "fr": {
+                    "title": "Master en Interaction Humain-Ordinateur",
+                    "description": "A achevé un programme intensif axé sur les principes de conception centrés sur l'utilisateur, les tests de convivialité et la conception d'interaction. Développé des compétences en wireframing, en prototypage et en méthodologies de recherche utilisateur."
+                },
+
+                "zh": {
+                    "title": "人机交互硕士学位",
+                    "description": "完成了一项专注于以用户为中心的设计原则、可用性测试和交互设计的密集课程。培养了线框图、原型制作和用户研究方法方面的技能。"
+                }
+            }
+        }
+    ]
+}

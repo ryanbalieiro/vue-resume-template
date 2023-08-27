@@ -1,0 +1,56 @@
+/** Font Awesome webfonts path **/
+$fa-font-path:"@fortawesome/fontawesome-free/webfonts";
+
+/** Overriding Bootstrap's contrast ratio. **/
+$min-contrast-ratio: 2.5 !default;
+
+/** Typography **/
+$font-family-base: 'Lato', sans-serif;
+$headings-font-family: 'Saira', sans-serif;
+$custom-subheadings-font-family: 'Archivo', sans-serif;
+
+/** Layout Options **/
+$max-content-width: 2048px;
+$navigation-sidebar-breakpoint: "lg";
+$nav-sidebar-column-size: 290px;
+$nav-tabs-height: 60px;
+
+/** Main Colors **/
+$primary: #9716f1;
+$dark: #212529;
+$light: #fcfcfc;
+$white: white;
+
+/** Layout Colors **/
+$background-color: #f0f3f6;
+
+/** Navigation Colors **/
+$nav-background-color: $dark;
+$nav-item-lighten-color: lighten($primary, 30%);
+$nav-item-lighten-strong-color: lighten($primary, 40%);
+$nav-item-grayed-out-color: #6C757D;
+
+/** Text Colors **/
+$headings-color: $dark;
+$text-normal: black;
+$text-normal-contrast: white;
+$text-muted: #757575;
+
+/** Light Shades **/
+$light-1: #f8f9fa;
+$light-2: #e9ecef;
+$light-3: #dee2e6;
+$light-4: #ced4da;
+$light-5: #adb5bd;
+$light-6: #6c757d;
+$light-7: #495057;
+
+$light-shades-palette: (
+    $light-1,
+    $light-2,
+    $light-3,
+    $light-4,
+    $light-5,
+    $light-6,
+    $light-7,
+);

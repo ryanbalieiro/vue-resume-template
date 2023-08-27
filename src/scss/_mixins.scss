@@ -1,0 +1,19 @@
+@mixin generate-dynamic-styles-with-hash($stylesHash) {
+    @each $breakpoint, $styles in $stylesHash {
+        @include media-breakpoint-down($breakpoint) {
+            @each $property, $value in $styles {
+                #{$property}: $value;
+            }
+        }
+    }
+}
+
+@mixin generate-dynamic-styles-with-multipliers($baseSizes, $breakpointMultipliers) {
+    @each $breakpoint, $multiplier in $breakpointMultipliers {
+        @include media-breakpoint-down($breakpoint) {
+            @each $property, $value in $baseSizes {
+                #{$property}: $value * $multiplier;
+            }
+        }
+    }
+}

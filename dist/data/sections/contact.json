@@ -1,0 +1,37 @@
+{
+    "locales": {
+        "en": {
+            "title": "<span class='text-primary'>Contact</span> Me",
+            "description": "Please don't hesitate to get in touch with me whenever you feel the need!",
+            "subtitle": "Or...",
+            "subtitleDescription": "If you prefer, you can reach out to me through the following options:"
+        },
+        "es": {
+            "title": "<span class='text-primary'>Contáctame</span>",
+            "description": "¡Por favor, no dudes en ponerte en contacto conmigo siempre que lo necesites!",
+            "subtitle": "O...",
+            "subtitleDescription": "Si prefieres, puedes ponerte en contacto conmigo a través de las siguientes opciones:"
+        },
+        "fr": {
+            "title": "<span class='text-primary'>Contactez</span>-moi",
+            "description": "N'hésitez pas à me contacter chaque fois que vous en avez besoin!",
+            "subtitle": "Ou...",
+            "subtitleDescription": "Si vous préférez, vous pouvez me contacter grâce aux options suivantes:"
+        },
+        "zh": {
+            "title": "<span class='text-primary'>联系</span>我",
+            "description": "如果您有任何需要，请随时与我联系！",
+            "subtitle": "或者...",
+            "subtitleDescription": "如果您愿意，您可以通过以下方式与我取得联系:"
+        }
+    },
+
+    "items": [
+        "@link{profile.contact.address}",
+        "@link{profile.contact.phone}",
+        "@link{profile.contact.email}",
+        "@link{profile.contact.linkedin}",
+        "@link{profile.contact.facebook}",
+        "@link{profile.contact.instagram}"
+    ]
+}

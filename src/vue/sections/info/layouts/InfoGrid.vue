@@ -5,7 +5,7 @@
                       :highlighted-header="true"
                       :small-description="false"
                       :description-with-progress-bar="true"
-                      :icon-color-style="'solid'"
+                      :icon-color-style="item['formattedPercentage'] ? 'transparent' : 'solid'"
                       class="info-item"/>
         </div>
     </div>

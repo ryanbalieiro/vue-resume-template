@@ -1,0 +1,42 @@
+{
+    "locales": {
+        "en": {
+            "welcome": "Welcome to my <span class='text-primary'>Resume!</span>",
+            "welcomeShort": "Welcome!",
+            "bio": "With 8 years as a UX designer, I excel in user-centric interfaces. My passion for empathetic design drives me to create delightful and innovative digital experiences. Let's collaborate and craft something extraordinary together."
+        },
+
+        "es": {
+            "welcome": "¡Bienvenido(a) a mi <span class='text-primary'>CV!</span>",
+            "welcomeShort": "¡Saludos!",
+            "bio": "Con 8 años de experiencia como diseñador de UX, destaco en la creación de interfaces centradas en el usuario. Mi pasión por el diseño empático me impulsa a crear experiencias digitales encantadoras e innovadoras. Colaboremos juntos para crear algo extraordinario."
+        },
+
+        "fr": {
+            "welcome": "Bienvenue sur mon <span class='text-primary'>CV</span>!",
+            "welcomeShort": "Bienvenue!",
+            "bio": "Avec 8 ans en tant que designer UX, j'excele dans les interfaces centrées sur l'utilisateur. Ma passion pour le design empathique me pousse à créer des expériences numériques délicieuses et innovantes. Collaborons ensemble pour créer quelque chose d'extraordinaire."
+        },
+
+        "zh": {
+            "welcome": "欢迎来到我的<span class='text-primary'>简历</span>！",
+            "welcomeShort": "欢迎!",
+            "bio": "作为一名有着8年UX设计经验的设计师，我擅长以用户为中心的界面设计。我对于共情设计的热情驱使着我创造出令人愉悦且创新的数字体验。让我们一起合作，打造出非凡的作品吧。"
+        }
+    },
+
+    "items": {
+        "socialCircles": [
+            "@link{profile.contact.instagram}",
+            "@link{profile.contact.facebook}",
+            "@link{profile.contact.linkedin}",
+            "@link{profile.contact.github}"
+        ],
+
+        "contactListItems": [
+            "@link{profile.contact.address}",
+            "@link{profile.contact.email}",
+            "@link{profile.contact.phone}"
+        ]
+    }
+}

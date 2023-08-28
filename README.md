@@ -217,6 +217,15 @@ npm run build
 
 This command triggers a series of processes that package your code, assets, and other necessary files, ultimately creating a production-ready version of your project. After running the command, you'll find the compiled files within the `dist` folder. This is the folder you should use for deploying your application to a live server or hosting platform.
 
+
+If your deployment is targeted at GitHub Pages, ensure to run the following command post the build process:
+
+```
+npm run deploy
+```
+
+This step serves as a solution to the problem discussed in detail at https://stackoverflow.com/questions/48521177/404-when-reloading-a-vue-website-published-to-github-pages. By following this workaround, we can prevent the application from encountering a 404 error upon reloading specific routes within the app that are not the homepage.
+
 ## About
 
 This template was created by and is maintained by **[Ryan Balieiro](https://ryanbalieiro.com/)**.

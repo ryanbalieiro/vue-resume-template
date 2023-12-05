@@ -91,7 +91,9 @@ const _onError = () => {
  */
 const _setLoadStatus = (status) => {
     loadStatus.value = status
-    img.value.setAttribute('loadStatus', status)
+    if(img.value) {
+        img.value.setAttribute('loadStatus', status)
+    }
     switch(status) {
         case constants.LoadStatus.LOADING:
             emit('loading')

@@ -102,7 +102,7 @@ li {
 
 .dropdown-menu {
     padding: 1px;
-    border: 3px solid $menu-border-color;
+    border: 2px solid $menu-border-color;
     background-color: $menu-background-color;
 }
 

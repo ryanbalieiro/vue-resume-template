@@ -1,12 +1,13 @@
 <template>
     <SectionTemplate :section-data="props.sectionData">
         <!-- Form -->
-        <ContactForm />
+        <ContactForm v-if="props.sectionData['content']['enableContactForm']" />
 
         <!-- SubHeading -->
-        <SubHeading :title="props.sectionData['content']['locales']['subtitle']"
-                    :description="props.sectionData['content']['locales']['subtitleDescription']"
-                    class="mt-4"/>
+        <SubHeading v-if="props.sectionData['content']['enableContactForm']"
+            :title="props.sectionData['content']['locales']['subtitle']"
+            :description="props.sectionData['content']['locales']['subtitleDescription']"
+            class="mt-4" />
 
         <!-- Contact Items -->
         <ContactOptions :items="props.sectionData['content']['items']" />

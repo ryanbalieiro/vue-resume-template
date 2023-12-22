@@ -1,4 +1,6 @@
 {
+    "enableContactForm": true,
+    
     "locales": {
         "en": {
             "title": "<span class='text-primary'>Contact</span> Me",

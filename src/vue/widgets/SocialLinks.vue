@@ -5,6 +5,11 @@
            :href="item['href']"
            :aria-label="item['faIcon']">
 
+            <!-- ToolTip -->
+            <div class="social-link-tooltip text-1">
+                {{item['id']}}
+            </div>
+
             <!-- Social Button Icon -->
             <i :class="item['faIcon']"/>
         </a>
@@ -55,6 +60,37 @@ $sizes: (xxxl: 1.45rem, xl: 1.4rem, lg: 1.25rem, md: 1.1rem);
             width: $dimension;
             height: $dimension;
             font-size: $value;
+        }
+    }
+}
+
+.social-link-tooltip {
+    position: absolute;
+    margin-top: -6rem;
+    text-transform: capitalize;
+    font-family: $custom-subheadings-font-family;
+    background-color: darken($primary, 20%);
+    color:$text-normal-contrast;
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+    display: none;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: darken($primary, 20%) transparent transparent transparent;
+    }
+}
+
+.btn-social:hover {
+    .social-link-tooltip {
+        @include media-breakpoint-up(md) {
+            display: block!important;
         }
     }
 }

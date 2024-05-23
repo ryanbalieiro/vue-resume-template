@@ -132,7 +132,7 @@ const _getStyle = () => {
 }
 
 @include create-size-variant(
-    (xxxl: 1.15rem, xxl: 1.1rem, xl:1.05rem, lg: 1rem, md: 0.95rem, sm: 0.9rem),
+    (xxxl: 1.2rem, xxl: 1.15rem, xl:1.1rem, lg: 1.05rem, md: 0.95rem, sm: 0.9rem),
     standard
 );
 

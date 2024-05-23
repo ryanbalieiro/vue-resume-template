@@ -1,16 +1,18 @@
 <template>
     <SectionTemplate :section-data="props.sectionData">
         <!-- Form -->
-        <ContactForm v-if="props.sectionData['content']['enableContactForm']" />
+        <ContactForm v-if="contactFormEnabled" />
 
         <!-- SubHeading -->
-        <SubHeading v-if="props.sectionData['content']['enableContactForm']"
+        <SubHeading v-if="contactFormEnabled"
             :title="props.sectionData['content']['locales']['subtitle']"
             :description="props.sectionData['content']['locales']['subtitleDescription']"
             class="mt-4" />
 
         <!-- Contact Items -->
-        <ContactOptions :items="props.sectionData['content']['items']" />
+        <ContactOptions
+            :items="props.sectionData['content']['items']"
+            :display-as-list="!contactFormEnabled"/>
     </SectionTemplate>
 </template>
 
@@ -20,6 +22,7 @@ import {useData} from "../../../composables/data.js"
 import SubHeading from "../_templates/SubHeading.vue"
 import ContactForm from "./ContactForm.vue"
 import ContactOptions from "./ContactOptions.vue"
+import {computed} from "vue"
 
 /**
  * @property {Object} sectionData
@@ -29,6 +32,10 @@ const props = defineProps({
 })
 
 const data = useData()
+
+const contactFormEnabled = computed(() => {
+    return data.getSettings()['contactFormEnabled']
+})
 </script>
 
 <style lang="scss" scoped>

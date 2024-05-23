@@ -63,7 +63,7 @@ $spacing-between-items:0.6rem;
     display: inline-block;
     margin-right: $spacing-between-items;
 
-    font-family: $headings-font-family;
+    font-family: $custom-subheadings-font-family;
     color: $text-muted;
 
     &:not(:last-child)::after {

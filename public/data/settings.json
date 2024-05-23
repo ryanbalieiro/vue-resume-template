@@ -26,5 +26,6 @@
         }
     ],
 
-    "preloaderEnabled": true
+    "preloaderEnabled": true,
+    "contactFormEnabled": true
 }

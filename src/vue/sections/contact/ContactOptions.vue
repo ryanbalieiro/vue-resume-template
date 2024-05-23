@@ -1,6 +1,6 @@
 <template>
     <div class="row pt-1 pt-lg-3">
-        <div v-for="item in props.items" class="col-12 col-md-6">
+        <div v-for="item in props.items" class="col-12" :class="!displayAsList ? 'col-md-6' : ''">
             <!-- Item -->
             <div class="contact-item">
                 <!-- Item Logo -->
@@ -32,7 +32,8 @@ import {useData} from "../../../composables/data.js"
  */
 
 const props = defineProps({
-    items: Array
+    items: Array,
+    displayAsList: Boolean
 })
 
 const data = useData()

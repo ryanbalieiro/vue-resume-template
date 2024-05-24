@@ -3,10 +3,9 @@
     <FeedbackView ref="feedbackView"/>
 
     <!-- App Content -->
-    <div v-if="data.getLoadProgress() >= 100"
-         v-show="!utils.isTouchDevice() || appDidLoad">
-        <router-view />
-    </div>
+    <Layout v-if="data.getLoadProgress() >= 100" v-show="!utils.isTouchDevice() || appDidLoad">
+        <router-view/>
+    </Layout>
 </template>
 
 <script setup>
@@ -16,6 +15,7 @@ import {computed, onMounted, ref} from "vue"
 import {useData} from "../../composables/data.js"
 import {useLayout} from "../../composables/layout.js"
 import {useUtils} from "../../composables/utils.js"
+import Layout from "../core/Layout.vue"
 
 const data = useData()
 const layout = useLayout()

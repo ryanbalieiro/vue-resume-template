@@ -16,9 +16,6 @@
 
         <!-- Nav Pills: fixed navigation for sections where the header is scrolled outside of the screen bounds. -->
         <div v-if="categorySections.length >= 2" class="nav-pills-fixed-container nav-pills-fixed-container-shrink" id="nav-pills-fixed-container">
-            <!-- Title -->
-            <h4 v-if="fixedContainerTitle" class="nav-pills-page-title text-white">{{ fixedContainerTitle}}</h4>
-
             <!-- Pills -->
             <NavPills class="nav-pills-fixed" id="nav-pills-fixed" :sections="categorySections" @link-clicked="_onLinkClicked"/>
         </div>
@@ -48,18 +45,6 @@ const emit = defineEmits(['linkClicked'])
 const categorySections = computed(() => {
     const activeCategoryId = navigation.getActiveCategoryId()
     return data.getCategorySections(activeCategoryId)
-})
-
-/**
- * @type {ComputedRef<String|null>}
- */
-const fixedContainerTitle = computed(() => {
-    if(!utils.isIOS() || window.innerHeight < 600) {
-        return null
-    }
-
-    const activeSectionId = navigation.getActiveSectionId()
-    return data.getString(activeSectionId)
 })
 
 /**

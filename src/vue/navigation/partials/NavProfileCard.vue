@@ -1,6 +1,6 @@
 <template>
     <!-- Profile Card -->
-    <div class="nav-profile-card">
+    <div class="nav-profile-card" :class="shrink ? 'nav-profile-card-shrink' : ''">
         <!-- Avatar -->
         <ImageView :src="props.profileData['profilePictureUrl']"
                    :alt="props.profileData['name']"
@@ -23,7 +23,8 @@ import ImageView from "../../widgets/ImageView.vue"
  * @property {String} role
  */
 const props = defineProps({
-    profileData: Object
+    profileData: Object,
+    shrink: Boolean
 })
 
 </script>
@@ -47,7 +48,7 @@ const props = defineProps({
 }
 
 .img-pfp {
-    --max-height:clamp(140px, 21.5vh, 170px);
+    --max-height:clamp(130px, 19vh, 170px);
     --border-width:6px;
 
     @include media-breakpoint-down(lg) {
@@ -78,5 +79,27 @@ const props = defineProps({
 .nav-profile-card-subtitle {
     font-family: $custom-subheadings-font-family;
     color: $light-5;
+}
+
+.nav-profile-card-shrink {
+    padding: 1.5rem 0;
+
+    .img-pfp {
+        --shrink-dimension:80px;
+
+        min-width: var(--shrink-dimension);
+        min-height: var(--shrink-dimension);
+        width: var(--shrink-dimension);
+        height: var(--shrink-dimension);
+        border-width: 3px;
+    }
+
+    .nav-profile-card-title {
+        display: none;
+    }
+
+    .nav-profile-card-subtitle {
+        display: none;
+    }
 }
 </style>

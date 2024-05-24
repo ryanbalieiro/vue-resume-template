@@ -10,7 +10,7 @@
                      class="img-fluid img-selected-language-flag">
 
                 <!-- Selected Language Name -->
-                <span class="dropdown-item-label d-none d-lg-inline">
+                <span class="dropdown-item-label d-none d-lg-inline" v-if="props.displayLanguageLabel">
                     {{selectedLanguage['name']}}
                 </span>
             </button>
@@ -46,6 +46,10 @@ import {useData} from "../../composables/data.js"
 const data = useData()
 const language = useLanguage()
 const layout = useLayout()
+
+const props = defineProps({
+    displayLanguageLabel:Boolean
+})
 
 /**
  * @type {ComputedRef<Object>}

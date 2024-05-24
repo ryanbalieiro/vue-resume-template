@@ -19,13 +19,26 @@ const NavigationModes = {
 }
 
 /**
+ * @constant
+ * @type {string}
+ */
+const LOCAL_STORAGE_KEY = 'navigation.state'
+
+/**
+ * @type {any|{}}
+ * @private
+ */
+const _savedState = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {}
+
+/**
  * @type {Object}
  * @private
  */
 const _navigationOptions = reactive({
     mode: NavigationModes.ALL_AT_ONCE,
     activeSectionId: null,
-    lastVisitedSections: {}
+    lastVisitedSections: {},
+    isSidebarExpanded: _savedState.isSidebarExpanded !== undefined ? _savedState.isSidebarExpanded : true
 })
 
 /**
@@ -84,6 +97,31 @@ export function useNavigation() {
      */
     const isSectionVisible = (sectionId) => {
         return _navigationOptions.activeSectionId === sectionId || _navigationOptions.mode === NavigationModes.ALL_AT_ONCE
+    }
+
+    /**
+     * @public
+     * @return {boolean}
+     */
+    const isSidebarExpanded = () => {
+        return _navigationOptions.isSidebarExpanded
+    }
+
+    /**
+     * @public
+     */
+    const toggleSidebarStatus = () => {
+        _navigationOptions.isSidebarExpanded = !_navigationOptions.isSidebarExpanded
+        _saveState()
+    }
+
+    /**
+     * @public
+     * @param {Boolean} expanded
+     */
+    const setSidebarStatus = (expanded) => {
+        _navigationOptions.isSidebarExpanded = expanded
+        _saveState()
     }
 
     /**
@@ -175,10 +213,17 @@ export function useNavigation() {
         _navigationOptions.lastVisitedSections[targetCategoryId] = sectionId
     }
 
+    const _saveState = () => {
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify({
+            isSidebarExpanded: _navigationOptions.isSidebarExpanded
+        }))
+    }
+
     return {
         init,
         isOneAtOnceMode,
         isAllAtOnceMode,
+        isSidebarExpanded,
         getActiveSectionId,
         isSectionActive,
         isSectionVisible,
@@ -186,6 +231,8 @@ export function useNavigation() {
         isCategoryActive,
         getLastVisitedSectionOn,
         registerSectionVisit,
+        setSidebarStatus,
+        toggleSidebarStatus,
         update
     }
 }

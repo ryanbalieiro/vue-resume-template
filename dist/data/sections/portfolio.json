@@ -55,8 +55,8 @@
                 "title": "BrainPulse",
                 "logoUrl": "images/portfolio/project-logo-3.png",
                 "links": [
-                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com"},
-                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com"}
+                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com", "id": "App Store"},
+                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com", "id": "Google Play"}
                 ],
                 "locales": {
                     "en": {
@@ -83,8 +83,8 @@
                 "title": "Stackers",
                 "logoUrl": "images/portfolio/project-logo-6.png",
                 "links": [
-                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com"},
-                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com"}
+                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com", "id": "App Store"},
+                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com", "id": "Google Play"}
                 ],
                 "locales": {
                     "en": {
@@ -112,8 +112,8 @@
                 "title": "MailM8",
                 "logoUrl": "images/portfolio/project-logo-7.png",
                 "links": [
-                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com"},
-                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com"}
+                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com", "id": "App Store"},
+                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com", "id": "Google Play"}
                 ],
                 "locales": {
                     "en": {
@@ -142,9 +142,9 @@
                 "title": "SmartCash",
                 "logoUrl": "images/portfolio/project-logo-1.png",
                 "links": [
-                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com"},
-                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com"},
-                    {"faIcon": "fa-brands fa-windows", "href": "https://windows.com"}
+                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com", "id": "App Store"},
+                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com", "id": "Google Play"},
+                    {"faIcon": "fa-brands fa-windows", "href": "https://windows.com", "id": "Windows Store"}
                 ],
                 "locales": {
                     "en": {
@@ -171,8 +171,8 @@
                 "title": "Snappy",
                 "logoUrl": "images/portfolio/project-logo-2.png",
                 "links": [
-                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com"},
-                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com"}
+                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com", "id": "App Store"},
+                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com", "id": "Google Play"}
                 ],
                 "locales": {
                     "en": {
@@ -199,8 +199,8 @@
                 "title": "Sweet Scoops",
                 "logoUrl": "images/portfolio/project-logo-5.png",
                 "links": [
-                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com"},
-                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com"}
+                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com", "id": "App Store"},
+                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com", "id": "Google Play"}
                 ],
                 "locales": {
                     "en": {
@@ -229,8 +229,8 @@
                 "title": "Find a Goalie",
                 "logoUrl": "images/portfolio/project-logo-4.png",
                 "links": [
-                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com"},
-                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com"}
+                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com", "id": "App Store"},
+                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com", "id": "Google Play"}
                 ],
                 "locales": {
                     "en": {
@@ -257,8 +257,8 @@
                 "title": "RockVerse",
                 "logoUrl": "images/portfolio/project-logo-9.png",
                 "links": [
-                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com"},
-                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com"}
+                    {"faIcon": "fa-brands fa-apple", "href": "https://apple.com", "id": "App Store"},
+                    {"faIcon": "fa-brands fa-google-play", "href": "https://googleplay.com", "id": "Google Play"}
                 ],
                 "locales": {
                     "en": {

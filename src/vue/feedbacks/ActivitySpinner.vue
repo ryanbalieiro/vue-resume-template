@@ -48,7 +48,7 @@ defineExpose({
     justify-content: center;
     align-items: center;
 
-    z-index: 999;
+    z-index: 9999;
     background-color: rgba(0, 0, 0, 0.90);
     width: 100vw;
     height: 100vh;

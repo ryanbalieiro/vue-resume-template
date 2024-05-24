@@ -1,13 +1,13 @@
 <template>
     <div class="resume">
         <!-- Navigation (Large Screens) -->
-        <div class="sidebar-column">
+        <div class="sidebar-column" :class="navigation.isSidebarExpanded() ? '' : 'sidebar-column-shrink'">
             <!-- Sidebar -->
             <NavSidebar @link-clicked="_navigateToSection"/>
         </div>
 
         <!-- Content -->
-        <div class="content-column">
+        <div class="content-column" :class="navigation.isSidebarExpanded() ? '' : 'content-column-expand'">
             <!-- Navigation Header (Small Screens) -->
             <NavHeader @link-clicked="_navigateToSection"/>
 
@@ -162,14 +162,24 @@ const _navigateToCategory = (categoryId) => {
     }
 }
 
+.sidebar-column-shrink {
+    width: $nav-sidebar-column-size-shrink;
+    transition: $nav-sidebar-transition;
+}
+
 .content-column {
     width: calc(100vw - $nav-sidebar-column-size);
     min-height: 100vh;
 
     background-color: $background-color;
     @include media-breakpoint-down($navigation-sidebar-breakpoint) {
-        width: 100vw;
+        width: 100vw!important;
     }
+}
+
+.content-column-expand {
+    width: calc(100vw - $nav-sidebar-column-size-shrink);
+    transition: $nav-sidebar-transition;
 }
 
 .nav-header, .nav-tabs-column {

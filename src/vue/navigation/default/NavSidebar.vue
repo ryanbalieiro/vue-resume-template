@@ -1,16 +1,17 @@
 <template>
-    <nav class="nav-sidebar">
+    <nav class="nav-sidebar" :class="navigation.isSidebarExpanded() ? '' : 'nav-sidebar-shrink'">
         <!-- Main Content -->
         <div class="nav-sidebar-content" v-if="profileData">
             <!-- Profile Card -->
-            <NavProfileCard :profile-data="profileData"/>
+            <NavProfileCard :profile-data="profileData" :shrink="!navigation.isSidebarExpanded()"/>
 
             <!-- Nav Link List -->
             <ul class="nav-links">
                 <!-- Nav Link -->
                 <li v-for="section in data.getSections()" :class="_getNavItemClassList(section)">
                     <button class="nav-link" @click="_onLinkClicked(section)">
-                        <i :class="section['faIcon']"/> {{ data.getString(section['id']) }}
+                        <i :class="section['faIcon']"/>
+                        <span>{{ data.getString(section['id']) }}</span>
                     </button>
                 </li>
             </ul>
@@ -19,12 +20,17 @@
         <!-- Footer -->
         <div class="nav-sidebar-footer" v-if="profileData">
             <!-- Language Picker -->
-            <LanguagePicker />
+            <LanguagePicker :display-language-label="navigation.isSidebarExpanded()" class="language-picker"/>
 
             <!-- Credits -->
-            <div class="nav-sidebar-footer-credits text-2 mt-3 mb-3">
+            <div class="nav-sidebar-footer-credits text-2 mt-3" :class="!canShrink ? 'mb-3' : 'mb-0'">
                 <span v-html="profileData['locales']['credits']"/>
             </div>
+
+            <!-- Toggle Button -->
+            <button class="nav-toggle-button mt-3" @click="_onToggleButton()" v-if="canShrink">
+                <i class="fa-solid" :class="navigation.isSidebarExpanded() ? 'fa-caret-left' : 'fa-caret-right'"/>
+            </button>
         </div>
     </nav>
 </template>
@@ -32,13 +38,23 @@
 <script setup>
 import LanguagePicker from "../../widgets/LanguagePicker.vue"
 import NavProfileCard from "../partials/NavProfileCard.vue"
-import {computed} from "vue"
+import {computed, onMounted} from "vue"
 import {useData} from "../../../composables/data.js"
 import {useNavigation} from "../../../composables/navigation.js"
 
 const emit = defineEmits(['linkClicked'])
 const data = useData()
 const navigation = useNavigation()
+
+onMounted(() => {
+    if(!canShrink.value) {
+        navigation.setSidebarStatus(true)
+    }
+})
+
+const canShrink = computed(() => {
+    return data.getSettings()['sidebarShrinkingEnabled']
+})
 
 /**
  * @type {ComputedRef<Object>}
@@ -67,6 +83,13 @@ const _getNavItemClassList = (section) => {
 const _onLinkClicked = (section) => {
     emit('linkClicked', section['id'])
 }
+
+/**
+ * @private
+ */
+const _onToggleButton = () => {
+    navigation.toggleSidebarStatus()
+}
 </script>
 
 <style lang="scss" scoped>
@@ -80,6 +103,7 @@ const _onLinkClicked = (section) => {
     height: 100vh;
     width: $nav-sidebar-column-size;
     overflow: auto;
+    z-index: 99;
 
     background-color: $nav-background-color;
 }
@@ -106,7 +130,7 @@ li.nav-item {
 
     padding: 0 2.7rem 0 2.7rem;
     width: 100%;
-    min-height: clamp(2rem, calc(100vh/40)*2, 2.7rem);
+    min-height: clamp(2rem, calc(100vh/41)*2, 2.7rem);
 
     .nav-link {
         cursor: pointer;
@@ -150,6 +174,86 @@ li.nav-item {
     .nav-sidebar-footer-credits {
         font-family: $custom-subheadings-font-family;
         color: $light-4;
+
+        display: block;
+        @media screen and (max-height: 680px) {
+            display: none;
+        }
+    }
+}
+
+.nav-toggle-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border:none;
+    border-radius: 100%;
+
+    width: 32px;
+    height: 32px;
+
+    background-color: rgba(black, 0.2);
+    color: $light-3;
+
+    &:hover {
+        background-color: rgba(black, 0.25);
+        color: $light-1;
+    }
+}
+
+.nav-sidebar-shrink {
+    width: $nav-sidebar-column-size-shrink;
+    overflow: visible;
+    transition: $nav-sidebar-transition;
+
+    li.nav-item {
+        border-radius: 7px;
+        margin-left: 0.5rem;
+        padding: 0;
+        width: calc($nav-sidebar-column-size-shrink - 1rem);
+        min-height: 2.7rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            display: none;
+        }
+
+        &.nav-item-selected {
+            background-color: rgba(black, 0.25);
+        }
+    }
+
+    .nav-sidebar-footer-credits {
+        display: none;
+    }
+
+    .nav-toggle-button {
+        margin: 1.5rem 0 1rem!important;
+    }
+
+    @media screen and (max-height: 620px) {
+        ul.nav-links {
+            margin-bottom: 0.5rem!important;
+        }
+
+        .language-picker {
+            display: none;
+        }
+
+        .nav-sidebar-footer {
+            padding: 0;
+        }
+
+        .nav-toggle-button {
+            margin-top: 0!important;
+        }
+    }
+
+    @media screen and (max-height: 550px) {
+        overflow-y: auto;
     }
 }
 </style>

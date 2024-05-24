@@ -6,7 +6,7 @@
            :aria-label="item['faIcon']">
 
             <!-- ToolTip -->
-            <div class="social-link-tooltip text-1">
+            <div class="social-link-tooltip text-1" v-if="item['id']">
                 {{item['id']}}
             </div>
 

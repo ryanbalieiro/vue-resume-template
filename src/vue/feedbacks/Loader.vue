@@ -196,7 +196,7 @@ defineExpose({
     justify-content: center;
     align-items: center;
 
-    z-index: 999;
+    z-index: 10000;
     background-color: $nav-background-color;
     width: 100vw;
     height: 125vh;

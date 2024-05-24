@@ -50,9 +50,9 @@
                 "faIcon": "fas fa-users",
                 "value": 15,
                 "locales": {
-                    "en": {"title": "Family & Friends", "description": "Time spent with cherished loved ones, creating lifelong memories."},
-                    "es": {"title": "Familia y amigos", "description": "Tiempo con seres queridos apreciados, creando recuerdos inolvidables."},
-                    "fr": {"title": "Famille et amis", "description": "Temps passé avec des proches chéris, créant des souvenirs impérissables."},
+                    "en": {"title": "Family & Friends", "description": "Time spent with cherished loved ones."},
+                    "es": {"title": "Familia y amigos", "description": "Tiempo con seres queridos apreciados."},
+                    "fr": {"title": "Famille et amis", "description": "Temps passé avec des proches chéris."},
                     "zh": {"title": "家人和朋友", "description": "与珍爱的亲人共度时光，创造终身难忘的回忆。"}
                 }
             },
@@ -62,9 +62,9 @@
                 "faIcon": "fas fa-tasks",
                 "value": 26,
                 "locales": {
-                    "en": {"title": "My Projects", "description": "Pursuing my creative endeavors, transforming ideas into reality."},
-                    "es": {"title": "Mis Proyectos", "description": "Persiguiendo mis proyectos creativos, transformando ideas en realidad."},
-                    "fr": {"title": "Mes Projets", "description": "Poursuivre mes projets créatifs, transformer des idées en réalité."},
+                    "en": {"title": "My Projects", "description": "Pursuing my creative endeavors."},
+                    "es": {"title": "Mis Proyectos", "description": "Persiguiendo mis proyectos creativos."},
+                    "fr": {"title": "Mes Projets", "description": "Poursuivre mes projets créatifs."},
                     "zh": {"title": "个人项目", "description": "追求创意事业，将想法变成现实。"}
                 }
             },
@@ -86,9 +86,9 @@
                 "faIcon": "fas fa-book",
                 "value": 9,
                 "locales": {
-                    "en": {"title": "Studying", "description": "Embarking on a continuous journey of learning and self-improvement."},
-                    "es": {"title": "Estudio", "description": "Embarcando en un viaje continuo de aprendizaje y superación personal."},
-                    "fr": {"title": "Études", "description": "Entamer un voyage continu d'apprentissage et d'amélioration de soi."},
+                    "en": {"title": "Studying", "description": "Embarking on a continuous journey of learning."},
+                    "es": {"title": "Estudio", "description": "Embarcando en un viaje continuo de aprendizaje."},
+                    "fr": {"title": "Études", "description": "Entamer un voyage continu d'apprentissage."},
                     "zh": {"title": "学习", "description": "踏上持续的学习和自我提升之旅。"}
                 }
             },
@@ -98,9 +98,9 @@
                 "faIcon": "fas fa-dumbbell",
                 "value": 17,
                 "locales": {
-                    "en": {"title": "Exercise", "description": "Dedicating time to physical well-being, nurturing a healthy lifestyle."},
-                    "es": {"title": "Ejercicio", "description": "Dedicando tiempo al bienestar físico, fomentando un estilo de vida saludable."},
-                    "fr": {"title": "Exercice", "description": "Consacrer du temps au bien-être physique, nourrir un mode de vie sain."},
+                    "en": {"title": "Exercise", "description": "Dedicating time to physical well-being."},
+                    "es": {"title": "Ejercicio", "description": "Dedicando tiempo al bienestar físico."},
+                    "fr": {"title": "Exercice", "description": "Consacrer du temps au bien-être physique."},
                     "zh": {"title": "锻炼", "description": "致力于身体健康，培养健康的生活方式。"}
                 }
             },
@@ -110,9 +110,9 @@
                 "faIcon": "fas fa-utensils",
                 "value": 19,
                 "locales": {
-                    "en": {"title": "Cooking", "description": "Creating culinary masterpieces, infusing flavors into every dish."},
-                    "es": {"title": "Cocina", "description": "Creando obras maestras culinarias, infundiendo sabores en cada plato."},
-                    "fr": {"title": "Cuisine", "description": "Créer des chefs-d'œuvre culinaires, infuser des saveurs dans chaque plat."},
+                    "en": {"title": "Cooking", "description": "Creating culinary masterpieces."},
+                    "es": {"title": "Cocina", "description": "Creando obras maestras culinarias."},
+                    "fr": {"title": "Cuisine", "description": "Créer des chefs-d'œuvre culinaires."},
                     "zh": {"title": "烹饪", "description": "创造烹饪杰作，在每道菜肴中注入风味。"}
                 }
             },

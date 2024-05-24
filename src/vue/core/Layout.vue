@@ -29,18 +29,11 @@ import {useNavigation} from "../../composables/navigation.js"
 import {useRoute, useRouter} from "vue-router"
 import {onMounted, onUnmounted, watch} from "vue"
 import {useLayout} from "../../composables/layout.js"
+import {useUtils} from "../../composables/utils.js"
 
 import NavSidebar from "../navigation/default/NavSidebar.vue"
 import NavHeader from "../navigation/mobile/NavHeader.vue"
 import NavTabs from "../navigation/mobile/NavTabs.vue"
-
-import DefaultSection from "../sections/_templates/SectionTemplate.vue"
-import ContactSection from "../sections/contact/ContactSection.vue"
-import CoverSection from "../sections/cover/CoverSection.vue"
-import GallerySection from "../sections/gallery/GallerySection.vue"
-import InfoSection from "../sections/info/InfoSection.vue"
-import ThreadsSection from "../sections/threads/ThreadsSection.vue"
-import TimelineSection from "../sections/timeline/TimelineSection.vue"
 
 const data = useData()
 const navigation = useNavigation()
@@ -48,8 +41,9 @@ const layout = useLayout()
 const language = useLanguage()
 const route = useRoute()
 const router = useRouter()
+const utils = useUtils()
 
-const scrollPositions = {}
+const _lastScrollY = {target: null, position: null}
 
 /**
  * @private
@@ -75,24 +69,42 @@ onUnmounted(() => {
 })
 
 /**
+ * Triggered whenever there's a change on the scroll status / windows size.
  * @private
  */
 const _onWindowChangeEvent = () => {
+    // current navigation status...
+    const isNavigationModeAllAtOnce = navigation.isAllAtOnceMode()
+    const activeSectionId = navigation.getActiveSectionId()
+
     navigation.update(route.name)
+
+    // checks if there was a change on the navigation mode...
+    if(isNavigationModeAllAtOnce !== navigation.isAllAtOnceMode()) {
+        _onNavigationModeChanged(activeSectionId)
+    }
 }
 
+/**
+ * Triggered whenever there's a change on the current route.
+ * This triggers only on small screens when the navigation mode is "ONE_AT_ONCE".
+ * @private
+ */
 const _onRouteChanged = () => {
-    const feedbackView = layout.getFeedbackView()
-    feedbackView.showActivitySpinner(data.getString('loading') + "...")
+    if(Math.abs(window.scrollY) > 0) {
+        const feedbackView = layout.getFeedbackView()
+        feedbackView.showActivitySpinner(data.getString('loading') + "...")
 
-    setTimeout(() => {
-        feedbackView.hideActivitySpinner()
-    }, 150)
+        setTimeout(() => {
+            feedbackView.hideActivitySpinner()
+        }, 150)
+    }
 
     _onWindowChangeEvent()
 }
 
 /**
+ * Triggered whenever the user selects a new language.
  * @private
  */
 const _onLanguageChanged = () => {
@@ -100,6 +112,30 @@ const _onLanguageChanged = () => {
     if(navigation.isAllAtOnceMode()) {
         layout.instantScrollTo(window.scrollY - 100, true)
         layout.smoothScrollToElement(activeSectionId, true)
+    }
+}
+
+/**
+ * Triggered whenever there's a navigation mode change after a window resize.
+ * @private
+ * @param {string} previousActiveSectionId
+ */
+const _onNavigationModeChanged = (previousActiveSectionId) => {
+    const feedbackView = layout.getFeedbackView()
+
+    if(!utils.isTouchDevice()) {
+        feedbackView.showActivitySpinner(data.getString('loading') + "...")
+        setTimeout(() => {
+            feedbackView.hideActivitySpinner()
+        }, 300)
+    }
+
+    if(navigation.isOneAtOnceMode()) {
+        router.push({name: previousActiveSectionId})
+        layout.instantScrollTo(0, true)
+    }
+    else {
+        layout.instantScrollToElement(previousActiveSectionId, true)
     }
 }
 
@@ -115,10 +151,16 @@ const _navigateToSection = (sectionId) => {
     }
 
     const routeName = route.name
-    scrollPositions[routeName] = window.scrollY
     router.push({name: sectionId})
     navigation.update(routeName)
-    layout.instantScrollTo(scrollPositions[sectionId] ?? 0, true)
+
+    layout.instantScrollTo(0, true)
+    if(_lastScrollY.target === sectionId) {
+        layout.smoothScrollTo(_lastScrollY.position, true)
+    }
+
+    _lastScrollY.target = routeName
+    _lastScrollY.position = window.scrollY
 }
 
 /**

@@ -21,7 +21,7 @@
     "subcategories": [
         {
             "id": "abilities",
-            "type": "list",
+            "type": "grid",
             "progress": null,
             "faIcon": "fa-solid fa-square",
             "locales": {
@@ -73,44 +73,20 @@
         "abilities": [
             {
                 "imageIconUrl": null,
-                "faIcon": "fas fa-paint-roller",
-                "value": null,
-                "locales": {
-                    "en": {
-                        "title": "Design Principles",
-                        "description": "Highly skilled at crafting visually appealing designs using fundamental principles of color theory, typography, layout composition, and balance to captivate viewers and convey messages effectively."
-                    },
-                    "es": {
-                        "title": "Principios de Diseño",
-                        "description": "Destacada habilidad en crear diseños atractivos usando principios fundamentales de teoría del color, tipografía, composición de layout y equilibrio para cautivar a los espectadores y transmitir mensajes con eficacia."
-                    },
-                    "fr": {
-                        "title": "Principes de Conception",
-                        "description": "Compétent pour créer des designs séduisants en utilisant des principes fondamentaux de théorie des couleurs, typographie, composition de la mise en page et équilibre pour captiver les spectateurs et transmettre efficacement les messages."
-                    },
-                    "zh": {
-                        "title": "设计原则",
-                        "description": "运用色彩理论、排版、版面构图和平衡等基本原则，巧妙打造视觉吸引的设计，以吸引观众并有效传达信息。"
-                    }
-                }
-            },
-
-            {
-                "imageIconUrl": null,
                 "faIcon": "fas fa-mobile-alt",
                 "value": null,
                 "locales": {
                     "en": {
                         "title": "Responsive Layouts",
-                        "description": "Proficient in crafting adaptable layouts for diverse devices, ensuring optimal user experience by seamlessly adjusting design elements and content to different screen sizes."
+                        "description": "Proficient in crafting adaptable layouts for diverse devices, ensuring optimal user experience."
                     },
                     "es": {
                         "title": "Diseños Responsivos",
-                        "description": "Destacada habilidad en crear diseños adaptables para diversos dispositivos, garantizando una experiencia de usuario óptima mediante el ajuste fluido de elementos y contenido a diferentes tamaños de pantalla."
+                        "description": "Destacada habilidad en crear diseños adaptables para diversos dispositivos, garantizando una experiencia de usuario óptima ."
                     },
                     "fr": {
                         "title": "Mises en Page Réactives",
-                        "description": "Compétent pour créer des mises en page adaptables pour divers appareils, assurant une expérience utilisateur optimale en ajustant harmonieusement les éléments de conception et le contenu à différentes tailles d'écran."
+                        "description": "Compétent pour créer des mises en page adaptables pour divers appareils, assurant une expérience utilisateur optimale."
                     },
                     "zh": {
                         "title": "响应式布局",
@@ -118,26 +94,27 @@
                     }
                 }
             },
+
             {
                 "imageIconUrl": null,
-                "faIcon": "fas fa-check-double",
+                "faIcon": "fas fa-paint-roller",
                 "value": null,
                 "locales": {
                     "en": {
-                        "title": "Usability Testing",
-                        "description": "Enhancing user experiences through comprehensive usability testing, ensuring optimal functionality and user satisfaction."
+                        "title": "Design Principles",
+                        "description": "Masterful at creating captivating designs, blending color theory, typography, layout, and balance for effective messaging."
                     },
                     "es": {
-                        "title": "Pruebas de Usabilidad",
-                        "description": "Experiencia en mejorar experiencias de usuario mediante pruebas exhaustivas de usabilidad."
+                        "title": "Principios de Diseño",
+                        "description": "Experto en diseño: fusiono teoría del color, tipografía, layout y equilibrio para cautivar y transmitir mensajes."
                     },
                     "fr": {
-                        "title": "Tests d'Utilisabilité",
-                        "description": "Expérimenté dans l'amélioration des expériences utilisateur grâce à des tests d'utilisabilité approfondis."
+                        "title": "Principes de Conception",
+                        "description": "Habile en design: utilise principes couleur, typo, composition et équilibre pour captiver et transmettre efficacement."
                     },
                     "zh": {
-                        "title": "可用性测试",
-                        "description": "通过全面的可用性测试提升用户体验。"
+                        "title": "设计原则",
+                        "description": "运用色彩理论、排版、版面构图和平衡等基本原则，巧妙打造视觉吸引的设计，以吸引观众并有效传达信息。"
                     }
                 }
             },
@@ -162,6 +139,30 @@
                     "zh": {
                         "title": "线框图设计",
                         "description": "熟练制作详细的线框图，以便可视化和规划用户界面。"
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-check-double",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Usability Testing",
+                        "description": "Enhancing user experiences through comprehensive usability testing."
+                    },
+                    "es": {
+                        "title": "Pruebas de Usabilidad",
+                        "description": "Experiencia en mejorar experiencias de usuario mediante pruebas exhaustivas de usabilidad."
+                    },
+                    "fr": {
+                        "title": "Tests d'Utilisabilité",
+                        "description": "Expérimenté dans l'amélioration des expériences utilisateur grâce à des tests d'utilisabilité."
+                    },
+                    "zh": {
+                        "title": "可用性测试",
+                        "description": "通过全面的可用性测试提升用户体验。"
                     }
                 }
             },
@@ -197,7 +198,7 @@
                 "locales": {
                     "en": {
                         "title": "Prototyping",
-                        "description": "Skilled in translating concepts into interactive prototypes for testing and refinement, ensuring functional and engaging end products."
+                        "description": "Skilled in translating concepts into interactive prototypes for testing and refinement."
                     },
                     "es": {
                         "title": "Prototipado",

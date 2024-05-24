@@ -119,6 +119,52 @@ export function useLayout() {
     }
 
     /**
+     * @param {Number} scrollY
+     * @param {Boolean} withTimeout
+     */
+    const instantScrollTo = (scrollY, withTimeout) => {
+        _applyAfterTimeout(() => {
+            window.scrollTo({
+                top: scrollY ?? 0,
+                left: 0,
+                behavior: 'instant'
+            })
+        }, 10)
+    }
+
+    /**
+     * @param {Number} scrollY
+     * @param {Boolean} withTimeout
+     */
+    const smoothScrollTo = (scrollY, withTimeout) => {
+        _applyAfterTimeout(() => {
+            window.scrollTo({
+                top: scrollY ?? 0,
+                left: 0,
+                behavior: 'smooth'
+            })
+        }, 100)
+    }
+
+    /**
+     * @param {String} elementId
+     * @param {Boolean} withTimeout
+     */
+    const instantScrollToElement = (elementId, withTimeout) => {
+        const target = document.getElementById(elementId)
+        if(!target) {
+            return
+        }
+
+        _applyAfterTimeout(() => {
+            target.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+            })
+        }, 10)
+    }
+
+    /**
      * @param {String} elementId
      * @param {Boolean} withTimeout
      */
@@ -128,36 +174,22 @@ export function useLayout() {
             return
         }
 
-        const closure = () => {
+        _applyAfterTimeout(() => {
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             })
-        }
-
-        if(withTimeout) {
-            setTimeout(closure, 100)
-        }
-        else {
-            closure()
-        }
+        }, 100)
     }
 
     /**
-     * @param {Number} scrollY
-     * @param {Boolean} withTimeout
+     * @param {Function} closure
+     * @param {Number} timeout
+     * @private
      */
-    const instantScrollTo = (scrollY, withTimeout) => {
-        const closure = () => {
-            window.scrollTo({
-                top: scrollY ?? 0,
-                left: 0,
-                behavior: 'instant'
-            })
-        }
-
-        if(withTimeout) {
-            setTimeout(closure, 10)
+    const _applyAfterTimeout = (closure, timeout) => {
+        if(timeout) {
+            setTimeout(closure, timeout)
         }
         else {
             closure()
@@ -173,7 +205,9 @@ export function useLayout() {
         getStylePreferencesForPlugins,
         isElementOutsideBounds,
         setPageScrollingEnabled,
-        smoothScrollToElement,
-        instantScrollTo
+        instantScrollTo,
+        smoothScrollTo,
+        instantScrollToElement,
+        smoothScrollToElement
     }
 }

@@ -4,7 +4,7 @@
  */
 export function useConstants() {
     /** @const **/
-    const BASE_PATH = import.meta.env.BASE_URL
+    const BASE_PATH = import.meta.env.BASE_URL.replace(/\/$/, '')
 
     /** @const **/
     const BOOTSTRAP_BREAKPOINTS = {

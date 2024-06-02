@@ -196,18 +196,27 @@ const _sendMessage = (values) => {
 }
 ```
 
+
+To disable the contact form, open `public/data/settings.json` and set the `contactFormEnabled` flag to false:
+
+```
+ "contactFormEnabled": false
+```
+
 ## Building for production
 
 Open the `vite.config.js` file and set the base directory for your application. This setting defines the main path that your website will be hosted under.
 
 ```js
 export default defineConfig({
-  base: '/vue-resume-template',
+  base: '/vue-resume-template/',
   plugins: [vue()],
 })
 ```
 
-In simple terms, if you consider GitHub hosting the GitHub Pages site for this repo at the URL `https://ryanbalieiro.github.io/vue-resume-template/`, the correct base directory to set is `/vue-resume-template`. This ensures that the application's resources are correctly loaded and linked when accessed from this URL.
+In simple terms, if you consider GitHub hosting the GitHub Pages site for this repo at the URL `https://ryanbalieiro.github.io/vue-resume-template/`, the correct base directory to set is `/vue-resume-template/`. This ensures that the application's resources are correctly loaded and linked when accessed from this URL.
+
+If you're deploying to Netlify or your own custom domain where your website is located at the root, you can leave the `base` setting as `'/'`.
 
 To compile your project for production, execute:
 

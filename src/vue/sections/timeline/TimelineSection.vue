@@ -37,7 +37,8 @@
 
                     <!-- Item Body -->
                     <div class="timeline-item-content-body mt-3">
-                        <p class="text-3 text-normal" v-html="item['locales']['description']"/>
+                        <p class="text-3 text-normal mb-2 mb-md-3 mb-lg-4" v-html="item['locales']['description']"/>
+                        <Tags :item-class="'bg-primary'" :items="item['locales']['tags']"/>
                     </div>
                 </div>
             </li>

@@ -1,13 +1,13 @@
 # [Vue Resume Template](https://ryanbalieiro.github.io/vue-resume-template/) by Ryan Balieiro
 
-This theme offers a simple and clean design tailored for creating user-friendly website resumes or CV landing pages. It's built using Vue 3.0 (Composition API) and Bootstrap 5, presenting a cohesive one-page layout that blends functionality and aesthetics.
+This theme has a simple and clean layout designed for creating user-friendly resumes or CV landing pages. It's built using Vue 3.0 (Composition API) and Bootstrap 5, presenting a cohesive one-page layout that blends functionality and aesthetics.
 
 Key features:
-- An anchored fixed side navigation bar for smooth scrolling through the page.
-- Six custom section layouts showcasing work experience, educational background, professional skills, portfolio, and more.
-- A tailored navigation mode specifically for mobile screens.
+- A handy fixed side navigation bar that lets you easily scroll through the different sections of your resume.
+- Six unique section layouts to showcase your work experience, education, skills, portfolio, and more.
+- An alternative navigation mode designed just for mobile screens.
 - Multi-language translation support included.
-- Using Vite for faster build times and seamless integration.
+- Using Vite for faster build times and better integration.
 
 ## Status
 
@@ -33,7 +33,7 @@ Check out a live version of the template **[here](https://ryanbalieiro.github.io
 git clone https://github.com/ryanbalieiro/vue-resume-template
 ```
 
-2. Navigate to the root directory of the project and install all dependencies with npm:
+2. Go to the root directory of the project and install all dependencies with npm:
 ```
 npm install
 ```
@@ -43,7 +43,7 @@ npm install
 npm run dev
 ```
 
-4. To temporarily deactivate the preload animation during theme adjustments, navigate to `public/data/settings.json` and modify the following field:
+4. To temporarily deactivate the preload animation during theme adjustments, go to `public/data/settings.json` and modify the following field:
 
 ```
  "preloaderEnabled": false
@@ -53,12 +53,12 @@ npm run dev
 
 ### 1. Changing the content
 
-The application content, including texts and images, is conveniently stored within the `public/` folder. Inside this directory, you'll come across two folders:
+All the app's content, like texts and images, is stored in the `public/` folder. Inside, you’ll find two key directories:
 
-- `public/data` ➔ This directory hosts a collection of JSON files that house the entirety of the application's content.
-- `public/images`➔ Here, you'll find a collection of icons and photos that the application utilizes.
+- `public/data` ➔ This is where all the data JSON files are stored, containing the full content of the app.
+- `public/images`➔ Here, you’ll find the icons and photos that the app uses.
 
-You can personalize the app's content by modifying the data within these two folders according to your preferences. 
+You can easily customize the app’s content by updating the data in these two folders to match your preferences.
 
 ### 2. Quickly customizing the colors
 
@@ -103,7 +103,7 @@ To deactivate support for multiple languages, keep only a single language within
 
 ### 4. Adding, removing and reordering sections
 
-Inside the `public/data/sections.json` file, you will come across two arrays: one for sections and the other for categories. Every section in the application should be linked to a corresponding category. These categories are used in grouping sections within the mobile navigation.
+Inside the `public/data/sections.json` file, you will find two arrays: one for sections and the other for categories. Every section should be linked to a corresponding category. These categories are used in grouping sections within the mobile navigation.
 
 Adding, removing or reordering the portfolio sections and categories can be achieved by making modifications to these arrays as needed.
 
@@ -141,7 +141,7 @@ Each section entry in `public/data/sections.json` comprises the following fields
 ```
 
 - ***id*** ➔ A unique identifier for the section, also used as a key to fetch the section's name within `strings.json`
-- ***categoryId*** ➔ Specifies the category to which the section belongs.
+- ***categoryId*** ➔ Specifies the category to which the section belongs (used for grouping sections in the mobile navigation).
 - ***component*** ➔ Indicates the Vue component responsible for rendering the section.
 - ***jsonPath*** ➔ A reference pointing to the JSON file containing the section's content.
 - ***faIcon*** ➔ The FontAwesome icon associated with the section.
@@ -214,7 +214,7 @@ export default defineConfig({
 })
 ```
 
-In simple terms, if you consider GitHub hosting the GitHub Pages site for this repo at the URL `https://ryanbalieiro.github.io/vue-resume-template/`, the correct base directory to set is `/vue-resume-template/`. This ensures that the application's resources are correctly loaded and linked when accessed from this URL.
+In simple terms, if you consider GitHub hosting the GitHub Pages site for this repo at the URL `https://ryanbalieiro.github.io/vue-resume-template/`, the correct base directory to set is `/vue-resume-template/`.
 
 If you're deploying to Netlify or your own custom domain where your website is located at the root, you can leave the `base` setting as `'/'`.
 
@@ -226,14 +226,13 @@ npm run build
 
 This command triggers a series of processes that package your code, assets, and other necessary files, ultimately creating a production-ready version of your project. After running the command, you'll find the compiled files within the `dist` folder. This is the folder you should use for deploying your application to a live server or hosting platform.
 
-
-If your deployment is targeted at GitHub Pages, ensure to run the following command post the build process:
+If you’re deploying to GitHub Pages, make sure to run this custom command after the build process:
 
 ```
 npm run deploy
 ```
 
-This step serves as a solution to the problem discussed in detail at https://stackoverflow.com/questions/48521177/404-when-reloading-a-vue-website-published-to-github-pages. By following this workaround, we can prevent the application from encountering a 404 error upon reloading specific routes within the app that are not the homepage.
+This step serves as a solution to the problem discussed in detail at https://stackoverflow.com/questions/48521177/404-when-reloading-a-vue-website-published-to-github-pages. This command will create a `404.html` file as a copy of `index.html`, so when users access a secondary route (like `/education` or `/skills`), it will redirect them to the Vue App instead of GitHub's default 404 page.
 
 ## About
 

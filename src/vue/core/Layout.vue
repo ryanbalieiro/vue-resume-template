@@ -43,8 +43,6 @@ const route = useRoute()
 const router = useRouter()
 const utils = useUtils()
 
-const _lastScrollY = {target: null, position: null}
-
 /**
  * @private
  */
@@ -155,12 +153,6 @@ const _navigateToSection = (sectionId) => {
     navigation.update(routeName)
 
     layout.instantScrollTo(0, true)
-    if(_lastScrollY.target === sectionId) {
-        layout.smoothScrollTo(_lastScrollY.position, true)
-    }
-
-    _lastScrollY.target = routeName
-    _lastScrollY.position = window.scrollY
 }
 
 /**

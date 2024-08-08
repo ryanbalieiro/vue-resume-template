@@ -11,7 +11,7 @@
             <!-- Content -->
             <div class="thread-item-content">
                 <!-- Title -->
-                <h6 class="thread-item-title fw-bold pt-1 mb-1"> {{ item['locales']['title'] }}</h6>
+                <h6 class="thread-item-title text-5 fw-bold pt-1 mb-1"> {{ item['locales']['title'] }}</h6>
 
                 <!-- Tags -->
                 <Tags :items="_getTagsForItem(item)" class="mt-1 mb-2 mt-lg-2"/>

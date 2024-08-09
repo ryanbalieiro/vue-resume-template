@@ -54,7 +54,7 @@ const Steps = {
 }
 
 const STEPS_ORDER = Object.values(Steps)
-const INTERVAL_TIMEOUT = 1/60
+const INTERVAL_TIMEOUT = 1/30
 
 /** Controls **/
 const currentStep = ref(Steps.HIDDEN)
@@ -151,7 +151,12 @@ const _updateProgressStatus = () => {
 
     const durationPercentage = 100 * currentStepElapsedTime.value/0.6
     const loadingPercentage = imageLoadProgress
-    percentage.value = Math.round(Math.min(durationPercentage, loadingPercentage))
+    const average = (durationPercentage + loadingPercentage)/2
+
+    const diff = Math.min(6, average - percentage.value)
+    percentage.value += Math.round(diff)
+    if(percentage.value > 100)
+        percentage.value = 100
 }
 
 const _notify = async () => {

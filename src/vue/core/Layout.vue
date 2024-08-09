@@ -53,7 +53,7 @@ const utils = useUtils()
 onMounted(() => {
     window.addEventListener('resize', _onWindowChangeEvent)
     window.addEventListener('scroll', _onWindowChangeEvent)
-    watch(() => route.name, () => { _onRouteChanged() })
+    watch(() => route.name, () => { _onWindowChangeEvent() })
     watch( () => language.getSelectedLanguage(), () => { _onLanguageChanged() })
     _onWindowChangeEvent()
 
@@ -88,24 +88,6 @@ const _onWindowChangeEvent = () => {
 }
 
 /**
- * Triggered whenever there's a change on the current route.
- * This triggers only on small screens when the navigation mode is "ONE_AT_ONCE".
- * @private
- */
-const _onRouteChanged = () => {
-    if(Math.abs(window.scrollY) > 0) {
-        const feedbackView = layout.getFeedbackView()
-        feedbackView.showActivitySpinner(data.getString('loading') + "...")
-
-        setTimeout(() => {
-            feedbackView.hideActivitySpinner()
-        }, 150)
-    }
-
-    _onWindowChangeEvent()
-}
-
-/**
  * Triggered whenever the user selects a new language.
  * @private
  */
@@ -125,7 +107,7 @@ const _onLanguageChanged = () => {
 const _onNavigationModeChanged = (previousActiveSectionId) => {
     const feedbackView = layout.getFeedbackView()
 
-    if(!utils.isTouchDevice()) {
+    if(!utils.isTouchDevice() && feedbackView) {
         feedbackView.showActivitySpinner(data.getString('loading') + "...")
         setTimeout(() => {
             feedbackView.hideActivitySpinner()
@@ -155,8 +137,6 @@ const _navigateToSection = (sectionId) => {
     const routeName = route.name
     router.push({name: sectionId})
     navigation.update(routeName)
-
-    layout.instantScrollTo(0, true)
 }
 
 /**

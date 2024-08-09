@@ -124,6 +124,16 @@ export function useNavigation() {
         _saveState()
     }
 
+    const getSectionCategory = (sectionId) => {
+        for(let categoryId in _categorySectionMapping) {
+            let categorySectionIds = _categorySectionMapping[categoryId]
+            if(categorySectionIds.includes(sectionId))
+                return categoryId
+        }
+
+        return null
+    }
+
     /**
      * @return {String|null}
      */
@@ -224,6 +234,7 @@ export function useNavigation() {
         isOneAtOnceMode,
         isAllAtOnceMode,
         isSidebarExpanded,
+        getSectionCategory,
         getActiveSectionId,
         isSectionActive,
         isSectionVisible,

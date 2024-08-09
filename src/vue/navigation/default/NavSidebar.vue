@@ -89,6 +89,7 @@ const _onLinkClicked = (section) => {
     flex-direction: column;
 
     height: 100vh;
+    height: 100svh;
     width: $nav-sidebar-column-size;
     overflow: auto;
     z-index: 99;

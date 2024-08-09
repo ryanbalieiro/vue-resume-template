@@ -28,5 +28,5 @@
 
     "preloaderEnabled": true,
     "contactFormEnabled": true,
-    "sidebarShrinkingEnabled": true
+    "sidebarShrinkingEnabled": false
 }

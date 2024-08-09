@@ -1,188 +1,189 @@
 <template>
-    <!-- Preloader -->
-    <div class="loader-full-screen" v-if="_isRunning()" :class="_getClassList()">
-        <div v-show="_didReachStep('logoTweenIn')" class="loader-full-screen-content">
+    <!-- Loader Wrapper -->
+    <div class="loader-full-screen"
+         :class="{
+            'loader-full-screen-faded': !didReachStep(Steps.FADING_IN),
+            'loader-full-screen-tween-out': didReachStep(Steps.LEAVING)
+         }">
+
+        <!-- Loader Content -->
+        <div class="loader-full-screen-content" v-show="didReachStep(Steps.SHOWING_LOGO)">
             <!-- Logo -->
-            <ImageView  :src="imageUrl"
-                        :alt="'Preloader Logo'"
+            <ImageView  :src="'images/icons/resume.ico'"
+                        :alt="'Logo'"
                         :ignore-on-image-count="true"
-                        ref="logo"
+                        ref="uiLogo"
                         class="img-fluid img-logo"/>
 
             <!-- Progress Display -->
-            <div class="progress-display" :class="{'progress-display-expanded': _didReachStep('progressTweenIn')}">
+            <div class="progress-display" :class="{
+                'progress-display-expanded': didReachStep(Steps.SHOWING_PROGRESS_BAR)
+            }">
                 <!-- Percentage -->
-                <p class="mt-2 mb-2 text-2">{{ message }}...</p>
+                <p class="mt-1 mb-2 text-2 text-white">{{ percentage }}%</p>
 
                 <!-- Progress Bar -->
                 <ProgressBar ref="progressBar"
-                             :percentage="totalPercentage"/>
+                             class="progress-bar-wrapper"
+                             :percentage="percentage"/>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-import {onMounted, ref} from "vue"
+import {computed, onMounted, ref} from "vue"
 import ProgressBar from "../widgets/ProgressBar.vue"
 import ImageView from "../widgets/ImageView.vue"
+import {useData} from "/src/composables/data.js"
+import {useLayout} from "/src/composables/layout.js"
 
-const emit = defineEmits(['willShow', 'shown', 'completed', 'willHide', 'hidden'])
+const data = useData()
+const layout = useLayout()
 
-/**
- * @const
- * @type {number}
- */
-const TIMEOUT_INTERVAL = 1/60
+const emit = defineEmits(['showing', 'shown', 'animated', 'hiding', 'hidden'])
 
-/**
- * @const {Array}
- */
-const ANIMATION_STEPS = [
-    {id: 0, label: "startingUp", duration: null},
-    {id: 1, label: "logoTweenIn", duration:0.5},
-    {id: 2, label: "progressTweenIn", duration:0.3},
-    {id: 3, label: "loading", minDuration:0.4},
-    {id: 4, label: "waiting", duration:0.3},
-    {id: 5, label: "disappearing", duration:1.2},
-]
-
-/** Parameters **/
-const message = ref('')
-const imageUrl = ref('')
-const taskProgressPercentage = ref(0)
-
-/** Control Variables **/
-const logo = ref(null)
-const totalPercentage = ref(0)
-const currentStepId = ref(-1)
-
-let elapsedTime = 0
-let intervalId = null
-
-/**
- * @private
- */
-onMounted(() => {
-    _stop()
-})
-
-/**
- * @private
- */
-const _stop = () => {
-    clearInterval(intervalId)
-    intervalId = null
-    currentStepId.value = -1
-    elapsedTime = 0
-    totalPercentage.value = 0
+const Steps = {
+    HIDDEN: 'steps.hidden',
+    FADING_IN: 'steps.fading_in',
+    SHOWING_LOGO: 'steps.showing_logo',
+    SHOWING_PROGRESS_BAR: 'steps.showing_progress_bar',
+    RENDERING: 'steps.rendering',
+    PRELOADING: 'steps.preloading',
+    LEAVING: 'steps.leaving',
 }
 
-/**
- * @param {String} _message
- * @param {String} _imageUrl
- */
-const run = (_message, _imageUrl) => {
-    message.value = _message
-    imageUrl.value = _imageUrl
+const STEPS_ORDER = Object.values(Steps)
+const INTERVAL_TIMEOUT = 1/60
 
-    currentStepId.value = 0
-    intervalId = setInterval(_update, TIMEOUT_INTERVAL * 1000)
+/** Controls **/
+const currentStep = ref(Steps.HIDDEN)
+const currentStepElapsedTime = ref(0)
+const intervalId = ref(-1)
+const percentage = ref(0)
+
+/** UI Refs **/
+const uiLogo = ref(null)
+
+const run = () => {
+    stop()
+    intervalId.value = setInterval(() => { _onIntervalTick() }, INTERVAL_TIMEOUT * 1000)
 }
 
-/**
- * @param {Number} progressPercentage
- */
-const setTaskProgress = (progressPercentage) => {
-    taskProgressPercentage.value = progressPercentage
+const stop = () => {
+    clearInterval(intervalId.value)
+    percentage.value = 0
+    currentStep.value = Steps.HIDDEN
 }
 
-/**
- * @private
- */
-const _update = () => {
-    const currentStep = ANIMATION_STEPS[currentStepId.value]
-    elapsedTime += TIMEOUT_INTERVAL
+const didReachStep = (step) => {
+    const targetStepId = STEPS_ORDER.indexOf(step)
+    const currentStepId = STEPS_ORDER.indexOf(currentStep.value)
+    return currentStepId >= targetStepId
+}
 
-    let didFinishStep = false
-    switch (currentStep.label) {
-        case 'startingUp':
-            didFinishStep = logo.value.isLoaded();
+const _onIntervalTick = () => {
+    currentStepElapsedTime.value += INTERVAL_TIMEOUT
+
+    let stepFinished = false
+    switch (currentStep.value) {
+        case Steps.HIDDEN:
+            stepFinished = uiLogo.value && uiLogo.value.isLoaded()
             break
 
-        case 'loading':
-            const durationPercentage = Math.min(Math.max(100*elapsedTime/currentStep.minDuration, 0), 100)
-            totalPercentage.value = Math.round(Math.min(durationPercentage, taskProgressPercentage.value))
-            didFinishStep = totalPercentage.value >= 100
+        case Steps.FADING_IN:
+            stepFinished = currentStepElapsedTime.value > 0.2
             break
 
-        default:
-            didFinishStep = elapsedTime >= currentStep.duration
+        case Steps.SHOWING_LOGO:
+            stepFinished = currentStepElapsedTime.value > 0.3
+            break
+
+        case Steps.SHOWING_PROGRESS_BAR:
+            stepFinished = currentStepElapsedTime.value > 0.3
+            break
+
+        case Steps.RENDERING:
+            stepFinished = currentStepElapsedTime.value > 0.1
+            break
+
+        case Steps.PRELOADING:
+            _updateProgressStatus()
+            stepFinished = percentage.value >= 100
+            break
+
+        case Steps.LEAVING:
+            stepFinished = currentStepElapsedTime.value >= 0.8
+            break
     }
 
-    if(didFinishStep) {
+    if(stepFinished) {
         _nextStep()
     }
 }
 
-/**
- * @private
- */
 const _nextStep = () => {
-    currentStepId.value++
-    elapsedTime = 0
+    currentStepElapsedTime.value = 0
 
-    if(currentStepId.value >= ANIMATION_STEPS.length) {
-        emit('hidden')
-        _stop()
-        return
-    }
+    let currentStepId = STEPS_ORDER.indexOf(currentStep.value)
+    currentStepId++
 
-    switch (ANIMATION_STEPS[currentStepId.value].label) {
-        case 'logoTweenIn':     emit('willShow'); break
-        case 'loading':         emit('shown'); break
-        case 'waiting':         emit('completed'); break
-        case 'disappearing':    emit('willHide'); break
-    }
-}
-
-/**
- * @param {String} animationStepLabel
- * @return {boolean}
- * @private
- */
-const _didReachStep = (animationStepLabel) => {
-    const step = ANIMATION_STEPS.find(step => step.label === animationStepLabel)
-    return step && currentStepId.value >= step.id
-}
-
-/**
- * @return {boolean}
- * @private
- */
-const _isRunning = () => {
-    return currentStepId.value >= 0 && currentStepId.value < ANIMATION_STEPS.length
-}
-
-/**
- * @return {string}
- * @private
- */
-const _getClassList = () => {
-    if(!_isRunning()) {
-        return 'd-none'
-    }
-    else if(!_didReachStep('disappearing')) {
-        return 'loader-full-screen-show'
+    if(currentStepId < STEPS_ORDER.length) {
+        currentStep.value = STEPS_ORDER[currentStepId]
+        _notify()
     }
     else {
-        return 'loader-full-screen-transition'
+        _finish()
     }
+}
+
+const _updateProgressStatus = () => {
+    const jsonLoadProgress = data.getLoadProgress()
+    const imageCount = layout.getImageCount()
+
+    let imageLoadProgress = 0
+    if(imageCount.total > 0) {
+        imageLoadProgress = Math.round(100 * imageCount.loaded / imageCount.total)
+    }
+    else if(jsonLoadProgress === 100) {
+        imageLoadProgress = 100
+    }
+
+    const durationPercentage = 100 * currentStepElapsedTime.value/0.6
+    const loadingPercentage = imageLoadProgress
+    percentage.value = Math.round(Math.min(durationPercentage, loadingPercentage))
+}
+
+const _notify = async () => {
+    switch (currentStep.value) {
+        case Steps.FADING_IN:
+            emit('showing')
+            break
+
+        case Steps.SHOWING_LOGO:
+            emit('shown')
+            break
+
+        case Steps.RENDERING:
+            emit('animated')
+            break
+
+        case Steps.LEAVING:
+            emit('hiding')
+            break
+    }
+}
+
+const _finish = () => {
+    emit('hidden')
+    stop()
 }
 
 defineExpose({
+    Steps,
     run,
-    setTaskProgress
+    didReachStep,
+    stop
 })
 </script>
 
@@ -196,48 +197,56 @@ defineExpose({
     justify-content: center;
     align-items: center;
 
-    z-index: 10000;
-    background-color: $nav-background-color;
+    z-index: 9999;
+    background-color: $dark;
+
     width: 100vw;
     height: 125vh;
-    top: -125vh;
-
-    &-show {
-        top: -12.5vh;
-        left: 0;
-    }
+    top: -12.5vh;
+    transition: opacity 0.3s ease-out;
 }
 
-.loader-full-screen-transition {
-    transition: 1.2s top cubic-bezier(0.68, -0.35, 0.365, 1.85);
+.loader-full-screen-faded {
+    opacity: 0;
+    transition: none!important;
+    user-select: none;
+    pointer-events: none;
+}
+
+.loader-full-screen-tween-out {
+    top: -125vh;
+    transition: 1.2s top cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .loader-full-screen-content {
     color: $text-normal-contrast;
     text-align: center;
-    animation: appear 0.2s ease-out forwards;
+    padding-bottom: 5rem;
+}
 
-    .img-logo {
-        max-height: min(65px, 20vh);
-        aspect-ratio: 1/1;
-        animation: popIn 0.3s ease-out forwards;
+.img-logo {
+    max-height: 60px;
+    aspect-ratio: 1/1;
+    z-index: 99;
+    animation: popIn 0.3s ease-out forwards;
+}
+
+.progress-display {
+    opacity: 0;
+    margin-top: -30px;
+    overflow: hidden;
+    z-index: 50;
+    transition: 0.3s all ease-out;
+
+    &-expanded {
+        opacity: 1;
+        margin-top: 0;
     }
+}
 
-    .progress-display {
-        opacity: 0;
-        margin-top: -30px;
-        overflow: hidden;
-        transition: 0.3s all ease-out;
-
-        &-expanded {
-            opacity: 1;
-            margin-top: 0;
-        }
-
-        p {
-            font-family: 'Arial', serif;
-        }
-    }
+.progress-bar-wrapper {
+    max-width: 55px;
+    margin: 0 auto;
 }
 
 @keyframes popIn {

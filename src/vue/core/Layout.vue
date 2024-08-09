@@ -4,6 +4,9 @@
         <div class="sidebar-column" :class="navigation.isSidebarExpanded() ? '' : 'sidebar-column-shrink'">
             <!-- Sidebar -->
             <NavSidebar @link-clicked="_navigateToSection"/>
+
+            <!-- Toggle Button -->
+            <NavToggleButton/>
         </div>
 
         <!-- Content -->
@@ -34,6 +37,7 @@ import {useUtils} from "../../composables/utils.js"
 import NavSidebar from "../navigation/default/NavSidebar.vue"
 import NavHeader from "../navigation/mobile/NavHeader.vue"
 import NavTabs from "../navigation/mobile/NavTabs.vue"
+import NavToggleButton from "/src/vue/navigation/partials/NavToggleButton.vue"
 
 const data = useData()
 const navigation = useNavigation()

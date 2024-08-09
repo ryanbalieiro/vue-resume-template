@@ -63,7 +63,6 @@ const style = computed(() => {
         md:       (height: 4px)
     ));
 
-
     background-color: lighten($light-3, 2%);
 }
 

@@ -12,7 +12,7 @@
         <!-- Contact Items -->
         <ContactOptions
             :items="props.sectionData['content']['items']"
-            :display-as-list="!contactFormEnabled"/>
+            :display-as-list="false"/>
     </SectionTemplate>
 </template>
 

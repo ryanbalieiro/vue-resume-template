@@ -203,6 +203,16 @@ To disable the contact form, open `public/data/settings.json` and set the `conta
  "contactFormEnabled": false
 ```
 
+### 8. Making the sidebar shrinkable
+
+If you want to give users the option to shrink or expand the sidebar on larger screens, just head over to `public/data/settings.json` and set the `sidebarShrinkingEnabled` flag to true.
+
+```
+ "sidebarShrinkingEnabled": true
+```
+
+Now, a handy toggle button will appear in the top left corner of the sidebar, letting the user switch between an expanded and compressed view.
+
 ## Building for production
 
 Open the `vite.config.js` file and set the base directory for your application. This setting defines the main path that your website will be hosted under.

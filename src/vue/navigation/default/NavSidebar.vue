@@ -3,7 +3,8 @@
         <!-- Main Content -->
         <div class="nav-sidebar-content" v-if="profileData">
             <!-- Profile Card -->
-            <NavProfileCard :profile-data="profileData" :shrink="!navigation.isSidebarExpanded()"/>
+            <NavProfileCard :profile-data="profileData"
+                            :shrink="!navigation.isSidebarExpanded()"/>
 
             <!-- Nav Link List -->
             <ul class="nav-links">
@@ -20,17 +21,14 @@
         <!-- Footer -->
         <div class="nav-sidebar-footer" v-if="profileData">
             <!-- Language Picker -->
-            <LanguagePicker :display-language-label="navigation.isSidebarExpanded()" class="language-picker"/>
+            <LanguagePicker :display-language-label="navigation.isSidebarExpanded()"
+                            class="language-picker"
+                            :class="navigation.isSidebarExpanded() ? '' : 'mb-3'"/>
 
             <!-- Credits -->
-            <div class="nav-sidebar-footer-credits text-2 mt-3" :class="!canShrink ? 'mb-3' : 'mb-0'">
+            <div class="nav-sidebar-footer-credits text-2 mt-2 pt-1 mb-2 mb-xxl-3">
                 <span v-html="profileData['locales']['credits']"/>
             </div>
-
-            <!-- Toggle Button -->
-            <button class="nav-toggle-button mt-3" @click="_onToggleButton()" v-if="canShrink">
-                <i class="fa-solid" :class="navigation.isSidebarExpanded() ? 'fa-caret-left' : 'fa-caret-right'"/>
-            </button>
         </div>
     </nav>
 </template>
@@ -39,21 +37,18 @@
 import LanguagePicker from "../../widgets/LanguagePicker.vue"
 import NavProfileCard from "../partials/NavProfileCard.vue"
 import {computed, onMounted} from "vue"
-import {useData} from "../../../composables/data.js"
-import {useNavigation} from "../../../composables/navigation.js"
+import {useData} from "/src/composables/data.js"
+import {useNavigation} from "/src/composables/navigation.js"
 
 const emit = defineEmits(['linkClicked'])
 const data = useData()
 const navigation = useNavigation()
 
 onMounted(() => {
-    if(!canShrink.value) {
+    const canShrink = data.getSettings()['sidebarShrinkingEnabled']
+    if(!canShrink) {
         navigation.setSidebarStatus(true)
     }
-})
-
-const canShrink = computed(() => {
-    return data.getSettings()['sidebarShrinkingEnabled']
 })
 
 /**
@@ -82,13 +77,6 @@ const _getNavItemClassList = (section) => {
  */
 const _onLinkClicked = (section) => {
     emit('linkClicked', section['id'])
-}
-
-/**
- * @private
- */
-const _onToggleButton = () => {
-    navigation.toggleSidebarStatus()
 }
 </script>
 
@@ -168,7 +156,7 @@ li.nav-item {
 
 .nav-sidebar-footer {
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
     color:$white;
 
     .nav-sidebar-footer-credits {
@@ -176,29 +164,9 @@ li.nav-item {
         color: $light-4;
 
         display: block;
-        @media screen and (max-height: 680px) {
+        @media screen and (max-height: 100px) {
             display: none;
         }
-    }
-}
-
-.nav-toggle-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    border:none;
-    border-radius: 100%;
-
-    width: 32px;
-    height: 32px;
-
-    background-color: rgba(black, 0.2);
-    color: $light-3;
-
-    &:hover {
-        background-color: rgba(black, 0.25);
-        color: $light-1;
     }
 }
 
@@ -230,10 +198,6 @@ li.nav-item {
         display: none;
     }
 
-    .nav-toggle-button {
-        margin: 1.5rem 0 1rem!important;
-    }
-
     @media screen and (max-height: 620px) {
         ul.nav-links {
             margin-bottom: 0.5rem!important;
@@ -245,10 +209,6 @@ li.nav-item {
 
         .nav-sidebar-footer {
             padding: 0;
-        }
-
-        .nav-toggle-button {
-            margin-top: 0!important;
         }
     }
 

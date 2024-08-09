@@ -16,6 +16,9 @@
 
 <script setup>
 import ImageView from "../../widgets/ImageView.vue"
+import {useNavigation} from "/src/composables/navigation.js"
+
+const navigation = useNavigation()
 
 /**
  * @property {Object} profileData
@@ -24,9 +27,8 @@ import ImageView from "../../widgets/ImageView.vue"
  */
 const props = defineProps({
     profileData: Object,
-    shrink: Boolean
+    shrink: Boolean,
 })
-
 </script>
 
 <style lang="scss" scoped>
@@ -45,10 +47,11 @@ const props = defineProps({
 
     text-align: center;
     background-color: $nav-background-color;
+    position: relative;
 }
 
 .img-pfp {
-    --max-height:clamp(130px, 19vh, 170px);
+    --max-height:clamp(130px, 22.5vh, 170px);
     --border-width:6px;
 
     @include media-breakpoint-down(lg) {

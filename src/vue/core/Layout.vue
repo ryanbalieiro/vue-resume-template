@@ -70,8 +70,9 @@ onUnmounted(() => {
  * @public
  */
 const init = () => {
-    _onWindowChangeEvent()
-    if(navigation.isAllAtOnceMode() && !utils.isTouchDevice()) {
+    const isTouchDevice = utils.isTouchDevice()
+    if(navigation.isAllAtOnceMode() && !isTouchDevice) {
+        _onWindowChangeEvent()
         layout.instantScrollToElement(route.name, true)
     }
 }
@@ -81,6 +82,9 @@ const init = () => {
  * @private
  */
 const _onWindowChangeEvent = () => {
+    if(!route.name)
+        return
+
     // current navigation status...
     const isNavigationModeAllAtOnce = navigation.isAllAtOnceMode()
     const activeSectionId = navigation.getActiveSectionId()

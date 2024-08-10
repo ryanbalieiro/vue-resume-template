@@ -67,6 +67,16 @@ onUnmounted(() => {
 })
 
 /**
+ * @public
+ */
+const init = () => {
+    _onWindowChangeEvent()
+    if(navigation.isAllAtOnceMode() && !utils.isTouchDevice()) {
+        layout.instantScrollToElement(route.name, true)
+    }
+}
+
+/**
  * Triggered whenever there's a change on the scroll status / windows size.
  * @private
  */
@@ -80,16 +90,6 @@ const _onWindowChangeEvent = () => {
     // checks if there was a change on the navigation mode...
     if(isNavigationModeAllAtOnce !== navigation.isAllAtOnceMode()) {
         _onNavigationModeChanged(activeSectionId)
-    }
-}
-
-/**
- * @public
- */
-const init = () => {
-    _onWindowChangeEvent()
-    if(navigation.isAllAtOnceMode()) {
-        layout.instantScrollToElement(route.name, true)
     }
 }
 

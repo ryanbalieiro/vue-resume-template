@@ -5,12 +5,10 @@
     <!-- Preloader -->
     <Loader ref="loader"
             @shown="_onPreloaderShown"
-            @animated="_onPreloaderAnimated"
             @hiding="_onPreloaderHiding"/>
 
-
     <!-- App Content -->
-    <Layout :class="!didShowPreloader ? 'opacity-0' : 'opacity-100'">
+    <Layout>
         <router-view/>
     </Layout>
 </template>
@@ -32,7 +30,6 @@ const router = useRouter()
 
 const feedbackView = ref(null)
 const loader = ref(null)
-const didShowPreloader = ref(false)
 
 const preloaderEnabled = computed(() => {
     return data.getSettings()['preloaderEnabled']
@@ -53,16 +50,8 @@ onMounted(() => {
  * @private
  */
 const _onPreloaderShown = async () => {
-    await data.fetchAll()
     layout.setPageScrollingEnabled(false)
-}
-
-/**
- * @return {Promise<void>}
- * @private
- */
-const _onPreloaderAnimated = async () => {
-    didShowPreloader.value = true
+    await data.fetchAll()
 }
 
 /**
@@ -79,7 +68,6 @@ const _onPreloaderHiding = () => {
  */
 const _skipPreloader = async () => {
     await data.fetchAll()
-    didShowPreloader.value = true
     layout.setPageScrollingEnabled(true)
 }
 
@@ -89,7 +77,7 @@ const _skipPreloader = async () => {
  * @private
  */
 router.beforeEach((to, from, next) => {
-    if(navigation.isAllAtOnceMode() || !didShowPreloader.value || window.scrollY <= 0) {
+    if(navigation.isAllAtOnceMode() || window.scrollY <= 0) {
         next()
         return
     }

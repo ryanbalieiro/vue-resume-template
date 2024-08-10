@@ -5,6 +5,8 @@ body {
 
 .no-scroll {
     overflow-y: hidden!important;
+    position: fixed;
+    width: 100%;
 }
 
 /** Text Selection **/

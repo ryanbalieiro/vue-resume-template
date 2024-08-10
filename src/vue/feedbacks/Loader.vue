@@ -2,7 +2,7 @@
     <!-- Loader Wrapper -->
     <div class="loader-full-screen"
          :class="{
-            'loader-full-screen-faded': !didReachStep(Steps.FADING_IN),
+            'loader-full-screen-faded': !didReachStep(Steps.LOADING_LOGO),
             'loader-full-screen-tween-out': didReachStep(Steps.LEAVING)
          }">
 
@@ -41,20 +41,19 @@ import {useLayout} from "/src/composables/layout.js"
 const data = useData()
 const layout = useLayout()
 
-const emit = defineEmits(['showing', 'shown', 'animated', 'hiding', 'hidden'])
+const emit = defineEmits(['shown', 'hiding', 'hidden'])
 
 const Steps = {
     HIDDEN: 'steps.hidden',
-    FADING_IN: 'steps.fading_in',
+    LOADING_LOGO: 'steps.loading_logo',
     SHOWING_LOGO: 'steps.showing_logo',
     SHOWING_PROGRESS_BAR: 'steps.showing_progress_bar',
-    RENDERING: 'steps.rendering',
     PRELOADING: 'steps.preloading',
     LEAVING: 'steps.leaving',
 }
 
 const STEPS_ORDER = Object.values(Steps)
-const INTERVAL_TIMEOUT = 1/30
+const INTERVAL_TIMEOUT = 1/60
 
 /** Controls **/
 const currentStep = ref(Steps.HIDDEN)
@@ -67,6 +66,7 @@ const uiLogo = ref(null)
 
 const run = () => {
     stop()
+    currentStep.value = Steps.LOADING_LOGO
     intervalId.value = setInterval(() => { _onIntervalTick() }, INTERVAL_TIMEOUT * 1000)
 }
 
@@ -87,24 +87,16 @@ const _onIntervalTick = () => {
 
     let stepFinished = false
     switch (currentStep.value) {
-        case Steps.HIDDEN:
-            stepFinished = uiLogo.value && uiLogo.value.isLoaded()
-            break
-
-        case Steps.FADING_IN:
-            stepFinished = currentStepElapsedTime.value > 0.2
+        case Steps.LOADING_LOGO:
+            stepFinished = uiLogo.value && uiLogo.value.isLoaded() && currentStepElapsedTime.value > 0.4
             break
 
         case Steps.SHOWING_LOGO:
-            stepFinished = currentStepElapsedTime.value > 0.3
+            stepFinished = currentStepElapsedTime.value > 0.2
             break
 
         case Steps.SHOWING_PROGRESS_BAR:
             stepFinished = currentStepElapsedTime.value > 0.3
-            break
-
-        case Steps.RENDERING:
-            stepFinished = currentStepElapsedTime.value > 0.1
             break
 
         case Steps.PRELOADING:
@@ -149,11 +141,11 @@ const _updateProgressStatus = () => {
         imageLoadProgress = 100
     }
 
-    const durationPercentage = 100 * currentStepElapsedTime.value/0.6
+    const durationPercentage = 100 * currentStepElapsedTime.value/1.2
     const loadingPercentage = imageLoadProgress
     const average = (durationPercentage + loadingPercentage)/2
 
-    const diff = Math.min(6, average - percentage.value)
+    const diff = Math.min(2, average - percentage.value)
     percentage.value += Math.round(diff)
     if(percentage.value > 100)
         percentage.value = 100
@@ -161,16 +153,8 @@ const _updateProgressStatus = () => {
 
 const _notify = async () => {
     switch (currentStep.value) {
-        case Steps.FADING_IN:
-            emit('showing')
-            break
-
         case Steps.SHOWING_LOGO:
             emit('shown')
-            break
-
-        case Steps.RENDERING:
-            emit('animated')
             break
 
         case Steps.LEAVING:
@@ -208,7 +192,6 @@ defineExpose({
     width: 100vw;
     height: 125vh;
     top: -12.5vh;
-    transition: opacity 0.3s ease-out;
 }
 
 .loader-full-screen-faded {
@@ -238,14 +221,14 @@ defineExpose({
 
 .progress-display {
     opacity: 0;
-    margin-top: -30px;
+    transform: translateY(-30px);
     overflow: hidden;
     z-index: 50;
     transition: 0.3s all ease-out;
 
     &-expanded {
         opacity: 1;
-        margin-top: 0;
+        transform: none;
     }
 }
 

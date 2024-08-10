@@ -8,7 +8,7 @@
             @hiding="_onPreloaderHiding"/>
 
     <!-- App Content -->
-    <Layout>
+    <Layout ref="pageWrapper">
         <router-view/>
     </Layout>
 </template>
@@ -30,6 +30,7 @@ const router = useRouter()
 
 const feedbackView = ref(null)
 const loader = ref(null)
+const pageWrapper = ref(null)
 
 const preloaderEnabled = computed(() => {
     return data.getSettings()['preloaderEnabled']
@@ -60,6 +61,7 @@ const _onPreloaderShown = async () => {
  */
 const _onPreloaderHiding = () => {
     layout.setPageScrollingEnabled(true)
+    pageWrapper.value.init()
 }
 
 /**
@@ -69,6 +71,7 @@ const _onPreloaderHiding = () => {
 const _skipPreloader = async () => {
     await data.fetchAll()
     layout.setPageScrollingEnabled(true)
+    pageWrapper.value.init()
 }
 
 /**

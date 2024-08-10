@@ -54,12 +54,8 @@ onMounted(() => {
     window.addEventListener('resize', _onWindowChangeEvent)
     window.addEventListener('scroll', _onWindowChangeEvent)
     watch(() => route.name, () => { _onWindowChangeEvent() })
-    watch( () => language.getSelectedLanguage(), () => { _onLanguageChanged() })
+    watch(() => language.getSelectedLanguage(), () => { _onLanguageChanged() })
     _onWindowChangeEvent()
-
-    if(navigation.isAllAtOnceMode()) {
-        layout.smoothScrollToElement(route.name, true)
-    }
 })
 
 /**
@@ -84,6 +80,16 @@ const _onWindowChangeEvent = () => {
     // checks if there was a change on the navigation mode...
     if(isNavigationModeAllAtOnce !== navigation.isAllAtOnceMode()) {
         _onNavigationModeChanged(activeSectionId)
+    }
+}
+
+/**
+ * @public
+ */
+const init = () => {
+    _onWindowChangeEvent()
+    if(navigation.isAllAtOnceMode()) {
+        layout.instantScrollToElement(route.name, true)
     }
 }
 
@@ -147,6 +153,10 @@ const _navigateToCategory = (categoryId) => {
     const targetSectionId = navigation.getLastVisitedSectionOn(categoryId)
     _navigateToSection(targetSectionId)
 }
+
+defineExpose({
+    init
+})
 </script>
 
 <style lang="scss" scoped>

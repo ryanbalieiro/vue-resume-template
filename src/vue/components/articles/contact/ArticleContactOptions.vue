@@ -1,0 +1,44 @@
+<template>
+    <Article class="article-contact"
+             :model="model">
+        <OptionsList :items="contactLinks"/>
+    </Article>
+</template>
+
+<script setup>
+import Article from "/src/vue/components/articles/base/Article.vue"
+import {computed, inject} from "vue"
+import OptionsList from "/src/vue/components/widgets/OptionsList.vue"
+
+const props = defineProps({
+    /** @type {Article} **/
+    model: {
+        type: Object,
+        required: true
+    }
+})
+
+/** @type {{value:Profile}} */
+const profile = inject("profile")
+
+/** @type {Function} */
+const localizeFromStrings = inject("localizeFromStrings")
+
+const contactLinks = computed(() => {
+    const contactIds = props.model.getSetting("contact_ids", [])
+    return contactIds.map(contactId => {
+        return profile.value.getContactOptionWithId(contactId)
+    }).filter(contact => Boolean(contact)).map(item => {
+        return {
+            faIcon: item.faIcon,
+            label: localizeFromStrings(item.id).replace("locales.", ""),
+            href: item.href,
+            value: item.getValue(false)
+        }
+    })
+})
+</script>
+
+<style lang="scss" scoped>
+@import "/src/scss/_theming.scss";
+</style>

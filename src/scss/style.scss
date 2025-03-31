@@ -1,8 +1,8 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 // importing bootstrap
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import "node_modules/bootstrap/scss/bootstrap";
 
 // importing core styling file
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
@@ -12,5 +12,4 @@
 @import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 
 @import "layout";
-@import "texts";
-@import "widgets";
+@import "typography";

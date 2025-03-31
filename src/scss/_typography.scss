@@ -1,0 +1,91 @@
+/** Headings **/
+$headings-base-sizes: (
+    h1: (font-size: 2.75rem),
+    h2: (font-size: 2.5rem),
+    h3: (font-size: 2rem),
+    h4: (font-size: 1.5rem),
+    h5: (font-size: 1.3rem),
+    h6: (font-size: 1.1rem)
+);
+
+@each $heading, $size in $headings-base-sizes {
+    #{$heading}, .eq-#{$heading} {
+        @include generate-dynamic-styles-with-multipliers($size, $headings-breakpoint-multipliers);
+    }
+}
+
+/** Custom Headings **/
+$custom-headings-base-sizes: (
+    lead-2: (font-size: 1.4rem),
+    lead: (font-size: 1.2rem),
+    display-1: (font-size: 3rem),
+);
+
+@each $heading, $size in $custom-headings-base-sizes {
+    .#{$heading} {
+        @include generate-dynamic-styles-with-multipliers($size, $headings-breakpoint-multipliers);
+    }
+}
+
+/** Texts **/
+$texts-base-sizes: (
+    text-1: (font-size: 0.85rem),
+    text-2: (font-size: 0.9rem),
+    text-3: (font-size: 0.95rem),
+    text-4: (font-size: 1.0rem),
+    text-5: (font-size: 1.05rem),
+);
+
+@each $text, $size in $texts-base-sizes {
+    .#{$text} {
+        @include generate-dynamic-styles-with-multipliers($size, $texts-breakpoint-multipliers);
+    }
+}
+
+.text {
+    &-muted {
+        color: $text-muted!important;
+    }
+
+    &-default {
+        color: $text-default-color!important;
+    }
+
+    @for $i from 1 through length($light-shades-palette) {
+        &-light-#{$i} {
+            color: nth($light-shades-palette, $i)!important;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: lighten($primary, 20%);
+    &:hover {
+        color: lighten($primary, 15%);
+    }
+
+    &.link-darkened {
+        color: $primary;
+        &:hover {
+            color: lighten($primary, 5%);
+        }
+    }
+
+    &.link-masked {
+        color: $light-7;
+        &:hover {
+            color: lighten($primary, 5%);
+        }
+    }
+
+    &.link-disabled {
+        color: $text-default-color;
+        opacity: 0.9;
+        pointer-events: none;
+    }
+}
+
+p {
+    font-family: $font-family-base;
+}

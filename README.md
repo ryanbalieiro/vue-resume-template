@@ -1,30 +1,35 @@
-# [Vue Resume Template](https://ryanbalieiro.github.io/vue-resume-template/) by Ryan Balieiro
+# <img src="readme-assets/logo.png"><img src="readme-assets/spacer.png"> [Vue Resume Template](https://ryanbalieiro.github.io/vue-resume-template/) by Ryan Balieiro
 
-This theme has a simple and clean layout designed for creating user-friendly resumes or CV landing pages. It's built using Vue 3.0 (Composition API) and Bootstrap 5, presenting a cohesive one-page layout that blends functionality and aesthetics.
+A clean and minimal template for building a resume landing page, powered by **Vue 3** (Composition API) and **Bootstrap 5**.
+
+![alt tag1](readme-assets/promo-1.png)
 
 Key features:
-- A handy fixed side navigation bar that lets you easily scroll through the different sections of your resume.
-- Six unique section layouts to showcase your work experience, education, skills, portfolio, and more.
-- An alternative navigation mode designed just for mobile screens.
-- Multi-language translation support included.
-- Using Vite for faster build times and better integration.
+- Uses Vue3 **Composition API**.
+- **Six unique section layouts** to showcase your work experience, education, skills, projects, and more.
+- Adaptive navigation: **a fixed sidebar** for desktops and **a tabbed layout** for mobile.
+- Built-in **multi-language** support.
+- Emails with **EmailJS** – no backend needed!
+- **Super easy** to customize!
 
-## Status
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-agency/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-agency.svg)](https://www.npmjs.com/package/startbootstrap-agency)
-
-## Preview
+## Live Preview
 
 Check out a live version of the template **[here](https://ryanbalieiro.github.io/vue-resume-template/).**
 
-### 1. Desktop Screenshots
+### 1. Base layout
+The theme has a clean, minimalist design with a nice mix of purple shades that gives it a fresh, stylish vibe.
 
-![alt desktop](screenshots/desktop-previews.png)
+![alt tag1](readme-assets/promo-4.png)
 
-### 2. Mobile Screenshots
+### 2. Desktop Screenshots
+On desktop, it has a simple one-page layout with a fixed sidebar, so users can easily scroll through the sections.
 
-![alt mobile](screenshots/mobile-previews.png)
+![alt tag1](readme-assets/promo-2.png)
+
+### 3. Mobile Screenshots
+On mobile, the layout groups the sections into categories and transforms into a tabbed interface with a bottom navigation.
+
+![alt tag1](readme-assets/promo-3.png)
 
 ## Getting Started
 
@@ -33,46 +38,38 @@ Check out a live version of the template **[here](https://ryanbalieiro.github.io
 git clone https://github.com/ryanbalieiro/vue-resume-template
 ```
 
-2. Go to the root directory of the project and install all dependencies with npm:
+2. Go to the project's root folder and use npm to install all required components:
 ```
 npm install
 ```
 
-3. Run the project in developer mode:
+3. Launch the project in developer mode:
 ```
 npm run dev
 ```
 
-4. To temporarily deactivate the preload animation during theme adjustments, go to `public/data/settings.json` and modify the following field:
-
-```
- "preloaderEnabled": false
-```
+4. If you want to temporarily deactivate the preload animation during theme adjustments, go to `public/data/settings.json` and set the `preloaderEnabled` flag to false.
 
 ## Template Customization
 
-### 1. Changing the content
+### 1. Quickly customizing the colors
 
-All the app's content, like texts and images, is stored in the `public/` folder. Inside, you’ll find two key directories:
-
-- `public/data` ➔ This is where all the data JSON files are stored, containing the full content of the app.
-- `public/images`➔ Here, you’ll find the icons and photos that the app uses.
-
-You can easily customize the app’s content by updating the data in these two folders to match your preferences.
-
-### 2. Quickly customizing the colors
-
-Adjusting the theme colors can be done quickly by editing the variables found in `src/scss/_variables.scss`. To illustrate, a variation of the theme featuring shades of green can be created by modifying the following variables:
+You can easily customize the theme colors to match your style. Just head to `src/scss/_variables.scss` and tweak the color variables. For example, if you want your resume to have a blue theme instead of purple:
 
 ```scss
-$primary: #13a452; /** changing the 'primary' color to green **/
-$dark: #021307; /** changing the 'dark' color to a dark shade of green **/
-$background-color: #f8fff8; 
+$primary: #0988a2; /** making the primary color blue **/
+$loader-background: #0b4e5d; /** making the loading screen background blue **/
+$nav-background: #032f38; /** changing the nav items to dark blue **/
 ```
 
-Resulting in:
+### 2. Changing the content
 
-![alt green](screenshots/color-changing-preview.png)
+All portfolio content, including texts and images, is located in the public folder at the root level. Within this folder, you'll find two key directories:
+
+- `public/data` ➔ Contains JSON files with the portfolio's texts and general configurations.
+- `public/images` ➔ Contains all the images used in the portfolio.
+
+To customize the content of the portfolio, simply edit the JSON files and swap out the images as needed. It's that easy!
 
 ### 3. Adding and removing languages
 
@@ -97,125 +94,176 @@ To add or remove languages, open `public/data/settings.json` and modify the `sup
 }
 ```
 
-The `public/images/flags/` folder already contains a collection of flags for commonly used languages. If you require a specific flag icon that isn't there, you can download it at no cost from this [source](https://www.flaticon.com/packs/countrys-flags).
+The `public/images/flags/` folder already contains a collection of flags for commonly used languages. If you require a specific flag icon that isn't there, you can download it [here](https://www.flaticon.com/packs/countrys-flags) for free.
 
-To deactivate support for multiple languages, keep only a single language within the array. This will automatically hide the language picker menu.
+To **deactivate support** for multiple languages, keep only a single language within the array. This will automatically hide the language picker menu.
 
-### 4. Adding, removing and reordering sections
+### 4. Adding, removing, and reordering sections
 
-Inside the `public/data/sections.json` file, you will find two arrays: one for sections and the other for categories. Every section should be linked to a corresponding category. These categories are used in grouping sections within the mobile navigation.
+Adding, removing or reordering the sections can be achieved by making modifications to the `sections` array inside `public/data/sections.json`:
 
-Adding, removing or reordering the portfolio sections and categories can be achieved by making modifications to these arrays as needed.
-
-For localizing the section and category titles, ensure that the `id` of each section and category has a corresponding translation in `public/data/strings.json`.
-
-*public/data/strings.json*
-```json 
+```json
 {
-    "en": {
-        "section1_id": "Section 1 ID",
-        "section2_id": "Section 2 ID",
-        "section3_id": "Section 3 ID"
-    },
-    
-    "ja": {
-        "section1_id": "セクション1 ID",
-        "section2_id": "セクション2 ID",
-        "section3_id": "セクション3 ID"
-    }
+    "sections": [
+        {
+            "id": "about",
+            "categoryId": "home",
+            "jsonPath": "/sections/cover.json",
+            "faIcon": "fa-solid fa-address-card",
+            "type": "centered",
+            "locales": {
+                "en": {
+                    "title": "Welcome to my *resume!*",
+                    "title_short": "Welcome!",
+                    "description": null,
+                    "nav_label": "About"
+                }
+            }
+        }
+    ]
 }
 ```
+Each section entry comprises the following fields:
 
-### 5. Customizing a section
+| Field      | Description                                                                                                 |  
+|------------|-------------------------------------------------------------------------------------------------------------|
+| id         | A unique identifier for the section.                                                                        |
+| categoryId | Specifies the category to which the section belongs (used for grouping sections in the mobile navigation).  |
+| jsonPath   | Path to the file containing the section's content.                                                          | 
+| faIcon     | The FontAwesome icon for this section, used to customize its link in the navigation components.             |
+| type       | Specifies the section's layout style, which can be `centered`, `row`, or `column`.                          |                                                                   
 
-Each section entry in `public/data/sections.json` comprises the following fields:
+The `locales` field can include the following entries:
 
-```json 
+| Field          | Required? | Description                                                      |
+|----------------|-----------|------------------------------------------------------------------|
+| title          | YES       | The main title of the section.                                   |
+| title_short    | NO        | A condensed version of the main title, used for smaller screens. |
+| description    | NO        | A text that will be displayed below the section title.           |
+| nav_label      | YES       | The label for the section link in the navigation menu.           |
+
+### 5. Categories
+
+The resume sections are organized into categories, which are used to generate the grouped tab navigation for mobile screens. To add, edit, or remove categories, open `data/sections/categories.json` and make the desired changes.
+
+### 6. Editing the section content
+
+You can customize a section's content by editing its corresponding JSON file. Each section in the app is made up of a set of articles, which are generic components used to display blocks of information. These components render the section along with its respective content.
+
+```json
 {
-    "id": "experience",
-    "categoryId": "background",
-    "component": "TimelineSection",
-    "jsonPath": "data/sections/experience.json",
-    "faIcon": "fa-solid fa-briefcase"
-}
-```
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+            },
 
-- ***id*** ➔ A unique identifier for the section, also used as a key to fetch the section's name within `strings.json`
-- ***categoryId*** ➔ Specifies the category to which the section belongs (used for grouping sections in the mobile navigation).
-- ***component*** ➔ Indicates the Vue component responsible for rendering the section.
-- ***jsonPath*** ➔ A reference pointing to the JSON file containing the section's content.
-- ***faIcon*** ➔ The FontAwesome icon associated with the section.
-
-To modify the content of a section, open and edit its respective JSON file. Keep in mind that each Vue component may require a specific JSON structure. For proper structuring of section JSON files, refer to the existing ones as a guide.
-
-### 6. Localizing fields
-
-To stay in line with the project's guidelines, put the translations for your static texts into the `public/data/strings.json` file. This file acts as a hub for all your global localization needs. For section and component-specific content, create a `locales` field to encapsulate the corresponding translations.
-
-Each localizable object adheres to the following structure:
-
-```
-{
-    "locales": {
-        "en": {
-            "hello": "Hello!",
-            "age: "Age"
+            "items": []
         },
-        
-        "es": {
-            "hello": "Hola!",
-            "age": "Edad"
-        },
-        
-        (...)
-    }
+
+        {
+            "id": 2,
+            "component": "ArticleSkills",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+            },
+
+            "items": []
+        }
+    ]
 }
 ```
 
-### 7. Adding functionality to the contact form
+Each article should have a unique ID, a component name, a settings object, and an array of items. Since each article requires different settings and item structures, refer to the existing examples to understand how to properly build each section.
 
-Making the contact form functional requires the creation of your own server-side implementation within the `ContactForm.vue` file. Please note that the current template only includes the client-side implementation, accompanied by a simulated delay using a placeholder timeout to mimic the waiting period for requests:
+List of available article types:
 
+| Component             | Description                                                       |
+|-----------------------|-------------------------------------------------------------------|
+| ArticleContactForm    | Displays a contact form that allows users to send a message.      |
+| ArticleContactOptions | Shows a list of available contact options.                        |
+| ArticlePortfolio      | Renders a clickable gallery of projects.                          |
+| ArticleProfile        | Displays a profile card with a bio and social links.              |
+| ArticleSkills         | Presents a dynamic list of skills or strengths in short snippets. |
+| ArticleThread         | Displays a thread of events or posts.                             |
+| ArticleTimeline       | Shows a timeline with images, descriptions, and dates.            |
+
+### 7. Localizing texts
+
+Place your translations for **static texts** in `public/data/strings.json`. This file serves as a central hub for all your global localization needs, making your translations accessible via the injectable method `localizeFromStrings`:
 
 ```js
-const _sendMessage = (values) => {
-    const feedbackView = layout.getFeedbackView()
-    feedbackView.showActivitySpinner(data.getString("sendingMessage") + "...")
-    submitAttempts++
+const localizeFromStrings = inject("localizeFromStrings")
+const translation = localizeFromStrings("name")
+console.log(translation) // Will print "Nome" (en) or "Nombre" (es)
+```
 
-    /** The message sending logic goes here... **/
-    //setTimeout(() => {
-    //    if(submitAttempts % 2 !== 0) {
-    //        _onMessageSent()
-    //    }
-    //    else {
-    //        _onMessageError()
-    //    }
-    //}, 1000)
-    /** ************************************** **/
+For translations specific to sections, you can create a custom `locales` field inside each article or article item:
+```json
+{
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": { "hello": "Hello!" },
+                "es": { "hello": "Hola!" }
+            }
+        }
+    ]
 }
 ```
 
+And then, use the following injectable function to fetch the translation:
 
-To disable the contact form, open `public/data/settings.json` and set the `contactFormEnabled` flag to false:
-
-```
- "contactFormEnabled": false
-```
-
-### 8. Making the sidebar shrinkable
-
-If you want to give users the option to shrink or expand the sidebar on larger screens, just head over to `public/data/settings.json` and set the `sidebarShrinkingEnabled` flag to true.
-
-```
- "sidebarShrinkingEnabled": true
+```js
+const localize = inject("localize")
+const translation = localize(section.articles[0].locales, "hello")
+console.log(translation) // Will print "Hello!" (en) or "Hola!" (es)
 ```
 
-Now, a handy toggle button will appear in the top left corner of the sidebar, letting the user switch between an expanded and compressed view.
+### 8. Contact form configuration
 
-## Building for production
+The contact form component integrates `EmailJS`. EmailJS is a free service that allows you to send emails using JavaScript - without the need for a backend.
 
-Open the `vite.config.js` file and set the base directory for your application. This setting defines the main path that your website will be hosted under.
+To configure your contact form, follow these steps:
+
+- Create an EmailJS account (https://www.emailjs.com/)
+- In your EmailJS account panel, create an email service, which configures the provider that will send the emails (e.g., your Gmail or iCloud account).
+- Next, on your dashboard, create a new email template like this one:
+
+```
+You got a new message from {{from_name}} ({{from_email}}):
+
+Subject: {{custom_subject}}
+
+{{message}}
+```
+
+- Now, open `public/data/sections/contact.json` in your project and fill in the `settings` dictionary with your account info:
+
+```json
+{
+    "settings": {
+        "contact_js_public_key": "YOUR_EMAIL_JS_PUBLIC_KEY",
+        "contact_js_service_id": "YOUR_EMAIL_JS_SERVICE_ID",
+        "contact_js_template_id": "YOUR_EMAIL_JS_TEMPLATE_ID"
+    }
+}
+```
+
+- And voilà! Now you can submit your first email!
+
+## Deployment
+
+### 1. Vite configuration
+Open `vite.config.js` and set the base directory for your application. This setting defines the main path that your website will be hosted under.
 
 ```js
 export default defineConfig({
@@ -228,28 +276,26 @@ In simple terms, if you consider GitHub hosting the GitHub Pages site for this r
 
 If you're deploying to Netlify or your own custom domain where your website is located at the root, you can leave the `base` setting as `'/'`.
 
+### 2. Building for production
 To compile your project for production, execute:
 
 ```
 npm run build
 ``` 
 
-This command triggers a series of processes that package your code, assets, and other necessary files, ultimately creating a production-ready version of your project. After running the command, you'll find the compiled files within the `dist` folder. This is the folder you should use for deploying your application to a live server or hosting platform.
-
-If you’re deploying to GitHub Pages, make sure to run this custom command after the build process:
-
-```
-npm run deploy
-```
-
-This step serves as a solution to the problem discussed in detail at https://stackoverflow.com/questions/48521177/404-when-reloading-a-vue-website-published-to-github-pages. This command will create a `404.html` file as a copy of `index.html`, so when users access a secondary route (like `/education` or `/skills`), it will redirect them to the Vue App instead of GitHub's default 404 page.
+This command triggers a series of processes that package your code, assets, and other necessary files, ultimately creating a production-ready version of your project. After running the command, you'll find the compiled files within the `dist` folder.
 
 ## About
 
 This template was created by and is maintained by **[Ryan Balieiro](https://ryanbalieiro.com/)**.
 
-It's based on the [Bootstrap](https://getbootstrap.com/) framework created by Mark Otto and Jacob Thorton; and the [Vue](https://vuejs.org/) framework created by Evan You.
+It is based on the [Bootstrap](https://getbootstrap.com/) framework created by Mark Otto and Jacob Thorton; and the [Vue](https://vuejs.org/) framework created by Evan You.
 
+Additional frameworks and plugins used include:
+- **Font Awesome**: A library of free vector icons.
+- **EmailJS**: A free service that allows you to send emails using JavaScript.
 ## Copyright and License
 
-Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE) license, providing complete freedom for utilization. Feel free to enhance and adapt it to suit your needs.
+Code released under the [MIT](https://opensource.org/license/mit) license, providing complete freedom for utilization. Feel free to enhance and adapt it to suit your needs.
+
+Oh... and if you like this template, don't forget to **give it a ⭐** :)

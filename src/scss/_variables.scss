@@ -2,41 +2,22 @@
 $fa-font-path:"@fortawesome/fontawesome-free/webfonts";
 
 /** Overriding Bootstrap's contrast ratio. **/
-$min-contrast-ratio: 2.5 !default;
+$min-contrast-ratio: 1.5 !default;
 
 /** Typography **/
-$font-family-base: 'Lato', sans-serif;
-$headings-font-family: 'Saira', sans-serif;
-$custom-subheadings-font-family: 'Archivo', sans-serif;
+$font-family-base: 'Saira', sans-serif;
 
-/** Layout Options **/
-$max-content-width: 2048px;
-$navigation-sidebar-breakpoint: "lg";
-$nav-sidebar-column-size: 290px;
-$nav-sidebar-column-size-shrink: 120px;
-$nav-sidebar-transition: none;
-$nav-tabs-height: 60px;
+/** Z-Indexes **/
+$z-index-sidebar: 90;
+$z-index-tab-controller: 95;
+$z-index-loader: 99999;
 
-/** Main Colors **/
-$primary: #9716f1;
+/** Bootstrap Colors **/
+$primary: #7e45dc;
 $dark: #212529;
+$success: #06c203;
+$danger: #d91c1c;
 $light: #fcfcfc;
-$white: white;
-
-/** Layout Colors **/
-$background-color: #f0f3f6;
-
-/** Navigation Colors **/
-$nav-background-color: $dark;
-$nav-item-lighten-color: lighten($primary, 30%);
-$nav-item-lighten-strong-color: lighten($primary, 40%);
-$nav-item-grayed-out-color: #6C757D;
-
-/** Text Colors **/
-$headings-color: $dark;
-$text-normal: black;
-$text-normal-contrast: white;
-$text-muted: #757575;
 
 /** Light Shades **/
 $light-1: #f8f9fa;
@@ -55,4 +36,97 @@ $light-shades-palette: (
     $light-5,
     $light-6,
     $light-7,
+);
+
+/** Layout Colors **/
+$default-section-background: #efebf5;
+$loader-background: #261841;
+$text-default-color: #140f29;
+
+/** Nav Colors **/
+$nav-background: #140f29;
+$nav-background-selected: lighten($nav-background, 5%);
+$nav-highlight: lighten($primary, 30%);
+$nav-hover: lighten($primary, 30%);
+$nav-selected: lighten($primary, 20%);
+$nav-contrast: #fcfcfc;
+$nav-contrast-90: rgba($nav-contrast, 0.9);
+$nav-contrast-80: rgba($nav-contrast, 0.8);
+$nav-contrast-70: rgba($nav-contrast, 0.7);
+$nav-contrast-60: rgba($nav-contrast, 0.6);
+$nav-contrast-50: rgba($nav-contrast, 0.5);
+$nav-contrast-40: rgba($nav-contrast, 0.4);
+$nav-contrast-30: rgba($nav-contrast, 0.3);
+$nav-contrast-20: rgba($nav-contrast, 0.2);
+$nav-contrast-10: rgba($nav-contrast, 0.1);
+
+/** Layout Constraints **/
+$navigation-sidebar-breakpoint: "lg";
+$max-content-width: 2500px;
+$default-border-radius: 10px;
+
+/** Layout Constraints - Sidebar **/
+$nav-sidebar-width: 320px;
+$nav-sidebar-width-lg: 290px;
+$nav-sidebar-width-shrink: 120px;
+
+/** Layout Constraints - Sidebar Footer **/
+$nav-sidebar-footer-height: 100px;
+$nav-sidebar-footer-height-compressed: 60px;
+$nav-sidebar-footer-compress-screen-height: 560px;
+
+/** Layout Constraints - Mobile Navigation **/
+$nav-tab-controller-height: 60px;
+$nav-tab-controller-with-bottom-offset-height: 65px;
+$nav-section-picker-height: 50px;
+$nav-section-picker-height-compressed: 45px;
+
+/** ArticleTimeline Parameters **/
+$article-timeline-image-size: 100px;
+$article-timeline-image-size-md: 75px;
+$article-timeline-image-size-sm: 50px;
+
+$article-timeline-border-width: 7px;
+$article-timeline-border-width-md: 6px;
+$article-timeline-border-width-sm: 5px;
+
+$article-timeline-border-color: $light-3;
+$article-timeline-line-color: $light-4;
+$article-timeline-line-width: 3px;
+
+/** ArticleThread Parameters **/
+$article-thread-scale-multipliers: (
+    xxxl: 1,
+    xxl: 0.975,
+    xl: 0.95,
+    md: 0.9,
+    sm: 0.8
+);
+$article-thread-line-color: $article-timeline-line-color;
+$article-thread-circle-base-size: 32px;
+
+/** Chart JS Customization **/
+:root {
+    --chart-js-border-color: #{$default-section-background};
+    --chart-js-hover-border-color: #{$light};
+    --nav-background-color: #{$nav-background};
+}
+
+/** Typography - Multipliers **/
+$headings-breakpoint-multipliers: (
+    xxxl: 1,
+    xxl: 0.95,
+    xl: 0.925,
+    lg: 0.875,
+    md: 0.825,
+    sm: 0.75
+);
+
+$texts-breakpoint-multipliers: (
+    xxxl: 1,
+    xxl: 0.95,
+    xl: 0.925,
+    lg: 0.9,
+    md: 0.875,
+    sm: 0.85
 );

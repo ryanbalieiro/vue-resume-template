@@ -1,0 +1,84 @@
+{
+    "name": "Roy Sheppard",
+    "profilePictureUrl": "images/pictures/avatar.png",
+
+    "locales": {
+        "en": {
+            "credits": "Designed by <strong><a href='https://github.com/ryanbalieiro'>Ryan Balieiro</a></strong>",
+            "role": "UX Designer"
+        },
+
+        "es": {
+            "credits": "Hecho por <strong><a href='https://github.com/ryanbalieiro'>Ryan Balieiro</a></strong>",
+            "role": "Designer de UX"
+        },
+
+        "fr": {
+            "credits": "Conçu par <strong><a href='https://github.com/ryanbalieiro'>Ryan Balieiro</a></strong>",
+            "role": "Designer UX"
+        },
+
+        "zh": {
+            "credits": "设计：<strong><a href='https://github.com/ryanbalieiro'>Ryan Balieiro</a></strong>",
+            "role": "用户体验设计师"
+        }
+    },
+
+    "contactOptions": [
+        {
+            "id": "address",
+            "value": "123 Main Street, Cupertino, CA 01234",
+            "valueShort": "Cupertino – CA 01234",
+            "faIcon": "fa-regular fa-map",
+            "href": null
+        },
+
+        {
+            "id": "email",
+            "value": "roy.sheppard@genius.com",
+            "valueShort": "roy.sheppard@genius.com",
+            "faIcon": "fa-regular fa-envelope",
+            "href": "mailto:roy.sheppard@genius.com"
+        },
+
+        {
+            "id": "facebook",
+            "value": "Roy Sheppard",
+            "valueShort": "Roy S.",
+            "faIcon": "fa-brands fa-facebook",
+            "href": "https://facebook.com"
+        },
+
+        {
+            "id": "github",
+            "value": "@roy.sheppard.official",
+            "valueShort": "@roy.sheppard.official",
+            "faIcon": "fa-brands fa-github",
+            "href": "https://github.com"
+        },
+
+        {
+            "id": "instagram",
+            "value": "@roy.sheppard.official",
+            "valueShort": "@roy.sheppard.official",
+            "faIcon": "fa-brands fa-instagram",
+            "href": "https://instagram.com"
+        },
+
+        {
+            "id": "linkedin",
+            "value": "@roy.sheppard.official",
+            "valueShort": "@roy.sheppard.official",
+            "faIcon": "fa-brands fa-linkedin",
+            "href": "https://linkedin.com"
+        },
+
+        {
+            "id": "phone",
+            "value": "+1 (123) 456-7890",
+            "valueShort": "(123) 456-7890",
+            "faIcon": "fa-brands fa-whatsapp",
+            "href": "tel:1234567890"
+        }
+    ]
+}

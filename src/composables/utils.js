@@ -1,5 +1,5 @@
 /**
- * Created by Ryan Balieiro on 08.23.2023
+ * Created by Ryan Balieiro on 08.26.2023
  * This composable will implement helper functions that can be used by multiple components within the architecture.
  */
 export function useUtils() {
@@ -25,11 +25,20 @@ export function useUtils() {
     }
 
     /**
-     * @Boolean
+     * @return {boolean}
      */
     const isIOS = () => {
         const userAgent = window.navigator.userAgent.toLowerCase()
         return /iphone|ipad|ipod/.test(userAgent)
+            || /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+    }
+
+    /**
+     * @return {boolean}
+     */
+    const isChromeOS = () => {
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        return /cros/.test(userAgent);
     }
 
     /**
@@ -38,14 +47,6 @@ export function useUtils() {
      */
     const isStringAnImageUrl = (string) => {
         return /\.(jpg|jpeg|png|gif|bmp|svg)$/i.test(string)
-    }
-
-    /**
-     * @param {String} string
-     * @return {boolean}
-     */
-    const isStringAJSONUrl = (string) => {
-        return /\.(json)$/i.test(string);
     }
 
     /**
@@ -58,78 +59,83 @@ export function useUtils() {
     }
 
     /**
-     * @param {String} stringDate
-     * @param {String} languageId
-     * @return {String}
+     * @param {String} string
+     * @return {boolean}
      */
-    const localizeDate = (stringDate, languageId) => {
-        const date = stringDate === 'now' ? new Date() : parseDate(stringDate)
-        const options = { year: 'numeric', month: 'short'}
+    const isValidEmail = (string) => {
+        return Boolean(String(string)
+            .toLowerCase()
+            .match(
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            ))
+    }
 
-        const localizedDate =  date.toLocaleString(
-            languageId || 'en',
-            options
+    /**
+     * @param {HTMLElement} element
+     * @return {boolean}
+     */
+    const isElementOutsideBounds = (element) => {
+        const rect = element.getBoundingClientRect()
+
+        return (
+            rect.bottom < 0 ||
+            rect.right < 0 ||
+            rect.left > window.innerWidth ||
+            rect.top > window.innerHeight
         )
-
-        return localizedDate.charAt(0).toUpperCase() + localizedDate.slice(1)
-    }
-
-    /**
-     * @param {String} stringDate
-     */
-    const parseDate = (stringDate) => {
-        const parts = stringDate.split('/')
-        if (parts.length === 2) {
-            const year = parseInt(parts[0], 10)
-            const month = parseInt(parts[1], 10) - 1
-            if (!isNaN(year) && !isNaN(month)) {
-                return new Date(year, month)
-            }
-        }
-
-        return null
-    }
-
-    /**
-     * @param {Number} numericValue
-     * @param {Object} breakpoints
-     * @returns {String|Number}
-     */
-    const parsePercentage = (numericValue, breakpoints) => {
-        let percentage = clamp(numericValue, 0, 100)
-        if(!breakpoints || typeof breakpoints !== 'object') {
-            return percentage + "%"
-        }
-
-        const breakpointsKeys = Object.keys(breakpoints)
-        const breakpoint = breakpointsKeys.reduce((prev, curr) => {
-            return Number(curr) <= percentage ? curr : prev
-        }, "0")
-        return breakpoints[breakpoint]
     }
 
     /**
      * @param {Array} array
-     * @return {Array}
+     * @param {string} key
+     * @return {boolean}
      */
-    const reverseArray = (array) => {
-        let reversed = []
-        for(let i in array) {
-            reversed.unshift(array[i])
+    const hasDuplications = (array, key) => {
+        const seen = new Set()
+        for (const item of array) {
+            if (seen.has(item[key])) return true
+            seen.add(item[key])
         }
-        return reversed
+        return false
+    }
+
+    /** @return {string} */
+    const getRootSCSSVariable = (colorName) => {
+        const root = document.documentElement
+        return getComputedStyle(root).getPropertyValue('--' + colorName).trim()
+    }
+
+    /** @return {Number} **/
+    const getYearsPassedSince = (date) => {
+        const currentDate = new Date()
+        const differenceInMilliseconds = currentDate - date
+        const millisecondsPerYear = 365.25 * 24 * 60 * 60 * 1000
+        return differenceInMilliseconds / millisecondsPerYear
+    }
+
+    /**
+     * @param {String} [prefix]
+     * @return {string}
+     */
+    const generateUniqueRandomString = (prefix) => {
+        prefix = prefix || 'key'
+        window.randStrGenCount = window.randStrGenCount || 0
+        window.randStrGenCount++
+        return prefix + "-rand-" + window.randStrGenCount
     }
 
     return {
         clamp,
-        isStringAnImageUrl,
-        isStringAJSONUrl,
         isAndroid,
         isIOS,
+        isChromeOS,
+        isStringAnImageUrl,
         isTouchDevice,
-        localizeDate,
-        parseDate,
-        parsePercentage,
-        reverseArray
+        isValidEmail,
+        isElementOutsideBounds,
+        hasDuplications,
+        getRootSCSSVariable,
+        getYearsPassedSince,
+        generateUniqueRandomString
     }
 }

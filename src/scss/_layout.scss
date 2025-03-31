@@ -1,28 +1,39 @@
-/** Page **/
+/** ------------ BODY ----------------- **/
+html {
+    scroll-padding-top: 0;
+}
+
 body {
-    background-color: $dark;
+    background-color: $loader-background;
 }
 
-.no-scroll {
+body.body-default {
+    background-color: $default-section-background;
+}
+
+body.body-nav-contrast {
+    background-color: darken($nav-background, 3%)!important;
+}
+
+body.body-no-scroll {
     overflow-y: hidden!important;
-    position: fixed;
-    width: 100%;
+    @include media-breakpoint-down(lg) {
+        position: fixed!important;
+    }
 }
 
-/** Text Selection **/
+/** ----------- SELECTION ------------- **/
 ::-moz-selection {
     color: $dark;
-    background: $primary;
+    background: lighten($primary, 15%);
 }
+
 ::selection {
     color: $dark;
-    background: lighten($primary, 30%);
+    background: lighten($primary, 15%);
 }
 
-/** Scrollbar **/
-::-webkit-scrollbar {max-width: 9px; max-height: 4px}
-::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)}
-::-webkit-scrollbar-thumb {background: lighten($dark, 30%);-webkit-box-shadow: rgba(155,155,155)}
-::-webkit-scrollbar-thumb:window-inactive {background: $dark}
-
-
+/** ----------- SHADOWS ---------------- **/
+.trace-shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 5px 5px, rgba(10, 10, 10, 0.15) 10px 10px;
+}

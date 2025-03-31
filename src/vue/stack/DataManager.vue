@@ -39,6 +39,7 @@ const _load = async () => {
 
     const jSections = await _loadJson("/sections.json")
     const jCategories = await _loadJson("/categories.json")
+
     _parseSectionsAndCategories(jSections['sections'], jCategories['categories'])
     _validateSectionsAndCategories()
     await _loadSectionJsonFiles()

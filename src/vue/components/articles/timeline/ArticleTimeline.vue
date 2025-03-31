@@ -14,7 +14,7 @@
 
 <script setup>
 import Article from "/src/vue/components/articles/base/Article.vue"
-import {computed, inject} from "vue"
+import {inject} from "vue"
 import ArticleTimelineItem from "/src/vue/components/articles/timeline/ArticleTimelineItem.vue"
 
 const props = defineProps({

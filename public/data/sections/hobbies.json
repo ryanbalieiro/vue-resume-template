@@ -17,7 +17,6 @@
                 "small_icons": true,
                 "chart": "pie"
             },
-
             "items": [
                 {
                     "id": 1,
@@ -236,7 +235,6 @@
                 "small_icons": true,
                 "chart": null
             },
-
             "items": [
                 {
                     "id": 1,

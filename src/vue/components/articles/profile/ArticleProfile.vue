@@ -19,9 +19,9 @@
 </template>
 
 <script setup>
+import {computed, inject} from "vue"
 import Article from "/src/vue/components/articles/base/Article.vue"
 import ArticleProfileItem from "/src/vue/components/articles/profile/ArticleProfileItem.vue"
-import {computed, inject} from "vue"
 import SocialLinks from "/src/vue/components/widgets/SocialLinks.vue"
 import InlineLinkList from "/src/vue/components/widgets/InlineLinkList.vue"
 import {useUtils} from "/src/composables/utils.js"

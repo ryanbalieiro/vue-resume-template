@@ -12,7 +12,6 @@
                 "small_icons": false,
                 "chart": null
             },
-
             "items": [
                 {
                     "id": 1,
@@ -219,7 +218,6 @@
                 "small_icons": false,
                 "chart": null
             },
-
             "items": [
                 {
                     "id": 1,
@@ -394,7 +392,6 @@
                 "fr": {"title": "Stack Backend"},
                 "zh": {"title": "后端技术栈"}
             },
-
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "asc",
@@ -403,7 +400,6 @@
                 "small_icons": false,
                 "chart": null
             },
-
             "items": [
                 {
                     "id": 1,
@@ -524,7 +520,6 @@
                 "fr": {"title": "Langues"},
                 "zh": {"title": "语言"}
             },
-
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "asc",
@@ -533,7 +528,6 @@
                 "transparent_item_icon_background": true,
                 "chart": null
             },
-
             "items": [
                 {
                     "id": 1,

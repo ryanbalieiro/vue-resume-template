@@ -10,7 +10,6 @@
                 "contact_list_ids": ["address", "email", "phone"],
                 "contact_circles_ids": ["instagram", "facebook", "linkedin", "github"]
             },
-
             "items": [
                 {
                     "id": 1,

@@ -30,9 +30,9 @@
 
 <script setup>
 import {inject, onMounted, onUnmounted, ref, watch} from "vue"
-import IconView from "/src/vue/components/widgets/IconView.vue"
 import {useScheduler} from "/src/composables/scheduler.js"
 import {useUtils} from "/src/composables/utils.js"
+import IconView from "/src/vue/components/widgets/IconView.vue"
 
 const scheduler = useScheduler()
 const utils = useUtils()

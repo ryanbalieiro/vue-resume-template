@@ -21,7 +21,6 @@
 </template>
 
 <script setup>
-import Section from "/src/models/Section.js"
 import {inject, ref, watch} from "vue"
 import {useScheduler} from "/src/composables/scheduler.js"
 import {useUtils} from "/src/composables/utils.js"

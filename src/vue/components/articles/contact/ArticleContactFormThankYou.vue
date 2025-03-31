@@ -25,7 +25,6 @@
 <script setup>
 import IconView from "/src/vue/components/widgets/IconView.vue"
 import SolidDivider from "/src/vue/components/widgets/SolidDivider.vue"
-import XLButton from "/src/vue/components/widgets/XLButton.vue"
 import {inject} from "vue"
 
 const props = defineProps({

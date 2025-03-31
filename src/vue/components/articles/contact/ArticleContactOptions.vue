@@ -6,8 +6,8 @@
 </template>
 
 <script setup>
-import Article from "/src/vue/components/articles/base/Article.vue"
 import {computed, inject} from "vue"
+import Article from "/src/vue/components/articles/base/Article.vue"
 import OptionsList from "/src/vue/components/widgets/OptionsList.vue"
 
 const props = defineProps({

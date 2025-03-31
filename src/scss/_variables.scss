@@ -112,7 +112,7 @@ $article-thread-circle-base-size: 32px;
     --nav-background-color: #{$nav-background};
 }
 
-/** Typography - Multipliers **/
+/** Typography - Multipliers (Headers) **/
 $headings-breakpoint-multipliers: (
     xxxl: 1,
     xxl: 0.95,
@@ -122,6 +122,7 @@ $headings-breakpoint-multipliers: (
     sm: 0.75
 );
 
+/** Typography - Multipliers (Texts) **/
 $texts-breakpoint-multipliers: (
     xxxl: 1,
     xxl: 0.95,

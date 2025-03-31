@@ -29,11 +29,6 @@ export default class Category {
         return this._locales
     }
 
-    /** @return {String} */
-    get localizednav_label() {
-        return this.locales.getTranslation("nav_label")
-    }
-
     /** @return {Section} */
     get lastVisitedSection() {
         return this._lastVisitedSection

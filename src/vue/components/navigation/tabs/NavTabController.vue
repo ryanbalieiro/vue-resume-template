@@ -27,7 +27,6 @@
 
 <script setup>
 import {computed, inject} from "vue"
-import {useUtils} from "/src/composables/utils.js"
 
 const props = defineProps({
     options: Object

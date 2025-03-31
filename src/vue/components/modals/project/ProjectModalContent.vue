@@ -1,5 +1,5 @@
 <template>
-    <div class="project-modal-info">
+    <div class="project-modal-content">
         <!-- Title -->
         <h1 class="mb-2 fw-bold"
             v-html="localize(item.locales, 'title')"/>
@@ -17,7 +17,7 @@
 
         <!-- Blocks -->
         <template v-for="block in blocks">
-            <div v-if="block.visibility" class="project-modal-info-block">
+            <div v-if="block.visibility" class="project-modal-content-block">
                 <h5 :class="block.titleClass">
                     <i :class="`${block.titleFaIcon}`"/>
                     <span v-html="block.title"/>
@@ -95,7 +95,7 @@ const blocks = computed(() => {
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-div.project-modal-info {
+div.project-modal-content {
     width: 100%;
     @include media-breakpoint-down($navigation-sidebar-breakpoint) {
         text-align: center;
@@ -127,7 +127,7 @@ div.tags-wrapper {
     }
 }
 
-div.project-modal-info-block {
+div.project-modal-content-block {
     margin-top: 30px;
 
     h5 {

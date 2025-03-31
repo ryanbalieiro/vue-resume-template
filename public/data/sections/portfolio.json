@@ -40,7 +40,6 @@
                 "order_items_by": "id",
                 "order_items_sort": "asc"
             },
-
             "items": [
                 {
                     "id": 1,
@@ -383,8 +382,7 @@
                     },
                     "links": [
                         {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
-                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"},
-                        {"faIcon": "fa-brands fa-windows", "href": "https://apps.microsoft.com/home", "stringKey": "view_on_windows_store"}
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"}
                     ]
                 },
 

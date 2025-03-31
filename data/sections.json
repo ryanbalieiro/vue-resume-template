@@ -1,90 +1,275 @@
 {
-    "categories": [
-        {
-            "id": "home",
-            "faIcon": "fa-solid fa-home"
-        },
-
-        {
-            "id": "background",
-            "faIcon": "fa-solid fa-clock"
-        },
-
-        {
-            "id": "showcase",
-            "faIcon": "fa-solid fa-images"
-        },
-
-        {
-            "id": "more",
-            "faIcon": "fa-solid fa-plus"
-        }
-    ],
-
     "sections": [
         {
             "id": "about",
             "categoryId": "home",
-            "component": "CoverSection",
-            "jsonPath": "data/sections/cover.json",
+            "jsonPath": "/sections/cover.json",
             "faIcon": "fa-solid fa-address-card",
-            "cover": true
+            "type": "centered",
+            "locales": {
+                "en": {
+                    "title": "Welcome to my *resume!*",
+                    "title_short": "Welcome!",
+                    "description": null,
+                    "nav_label": "About"
+                },
+                "es": {
+                    "title": "¡Bienvenido a mi *CV!*",
+                    "title_short": "Bienvenido!",
+                    "description": null,
+                    "nav_label": "Acerca de"
+                },
+                "fr": {
+                    "title": "Bienvenue sur mon *CV!*",
+                    "title_short": "Bienvenue !",
+                    "description": null,
+                    "nav_label": "À propos"
+                },
+                "zh": {
+                    "title": "欢迎来到我的*简历！*",
+                    "title_short": "欢迎！",
+                    "description": null,
+                    "nav_label": "关于"
+                }
+            }
         },
 
         {
             "id": "education",
             "categoryId": "background",
-            "component": "TimelineSection",
-            "jsonPath": "data/sections/education.json",
-            "faIcon": "fa-solid fa-graduation-cap"
+            "jsonPath": "/sections/education.json",
+            "faIcon": "fa-solid fa-graduation-cap",
+            "type": "column",
+            "locales": {
+                "en": {
+                    "title": "*Educational* Background",
+                    "title_short": null,
+                    "description": "A glimpse into my academic trajectory and accomplishments.",
+                    "nav_label": "Education"
+                },
+                "es": {
+                    "title": "Antecedentes *Educativos*",
+                    "title_short": null,
+                    "description": "Un vistazo a mi trayectoria académica y logros.",
+                    "nav_label": "Educación"
+                },
+                "fr": {
+                    "title": "Parcours *Éducatif*",
+                    "title_short": null,
+                    "description": "Un aperçu de mon parcours académique et de mes réalisations.",
+                    "nav_label": "Éducation"
+                },
+                "zh": {
+                    "title": "*教育* 背景",
+                    "title_short": null,
+                    "description": "一瞥我的学术轨迹和成就。",
+                    "nav_label": "教育背景"
+                }
+            }
         },
 
         {
             "id": "skills",
             "categoryId": "showcase",
-            "component": "InfoSection",
-            "jsonPath": "data/sections/skills.json",
-            "faIcon": "fa-solid fa-tools"
+            "jsonPath": "/sections/skills.json",
+            "faIcon": "fa-solid fa-tools",
+            "type": "column",
+            "locales": {
+                "en": {
+                    "title": "*Skill* Set",
+                    "title_short": null,
+                    "description": "Exploring the diverse range of skills I've acquired and developed:",
+                    "nav_label": "Skills"
+                },
+                "es": {
+                    "title": "Conjunto de *Habilidades*",
+                    "title_short": null,
+                    "description": "Explorando la diversidad de habilidades que he adquirido y desarrollado:",
+                    "nav_label": "Habilidades"
+                },
+                "fr": {
+                    "title": "Ensemble de *Compétences*",
+                    "title_short": null,
+                    "description": "Exploration de la gamme variée de compétences que j'ai acquises et développées:",
+                    "nav_label": "Compétences"
+                },
+                "zh": {
+                    "title": "*技能* 集",
+                    "title_short": null,
+                    "description": "探索我所掌握和发展的多样技能:",
+                    "nav_label": "技能"
+                }
+            }
         },
 
         {
             "id": "experience",
             "categoryId": "background",
-            "component": "TimelineSection",
-            "jsonPath": "data/sections/experience.json",
-            "faIcon": "fa-solid fa-briefcase"
+            "jsonPath": "/sections/experience.json",
+            "faIcon": "fa-solid fa-briefcase",
+            "type": "column",
+            "locales": {
+                "en": {
+                    "title": "*Professional* Experience",
+                    "title_short": null,
+                    "description": "A look into my work experience and career journey.",
+                    "nav_label": "Experience"
+                },
+                "es": {
+                    "title": "Experiencia *Profesional*",
+                    "title_short": null,
+                    "description": "Un vistazo a mi experiencia laboral y trayectoria profesional.",
+                    "nav_label": "Experiencia"
+                },
+                "fr": {
+                    "title": "Expérience *Professionnelle*",
+                    "title_short": null,
+                    "description": "Un aperçu de mon expérience professionnelle et de mon parcours de carrière.",
+                    "nav_label": "Expérience"
+                },
+                "zh": {
+                    "title": "*专业* 经验",
+                    "title_short": null,
+                    "description": "了解我的工作经验和职业之旅。",
+                    "nav_label": "工作经历"
+                }
+            }
         },
 
         {
             "id": "portfolio",
             "categoryId": "showcase",
-            "component": "GallerySection",
-            "jsonPath": "data/sections/portfolio.json",
-            "faIcon": "fa-solid fa-folder-open"
+            "jsonPath": "/sections/portfolio.json",
+            "faIcon": "fa-solid fa-folder-open",
+            "type": "column",
+            "locales": {
+                "en": {
+                    "title": "My *Portfolio*",
+                    "title_short": null,
+                    "description": "Explore a selection of my recent projects and creative works.",
+                    "nav_label": "Portfolio"
+                },
+                "es": {
+                    "title": "Mi *Portafolio*",
+                    "title_short": null,
+                    "description": "Explora una selección de mis proyectos recientes y trabajos creativos.",
+                    "nav_label": "Portafolio"
+                },
+                "fr": {
+                    "title": "Mon *Portfolio*",
+                    "title_short": null,
+                    "description": "Découvrez une sélection de mes projets récents et œuvres créatives.",
+                    "nav_label": "Portfolio"
+                },
+                "zh": {
+                    "title": "我的*作品集*",
+                    "title_short": null,
+                    "description": "浏览我最近的一些项目和创意作品。",
+                    "nav_label": "作品集"
+                }
+            }
         },
 
         {
             "id": "achievements",
             "categoryId": "showcase",
-            "component": "ThreadsSection",
-            "jsonPath": "data/sections/achievements.json",
-            "faIcon": "fa-solid fa-award"
+            "jsonPath": "/sections/achievements.json",
+            "faIcon": "fa-solid fa-award",
+            "type": "row",
+            "locales": {
+                "en": {
+                    "title": "Career *Achievements*",
+                    "title_short": null,
+                    "description": "My journey as a UX designer has been marked by unwavering dedication to learning and skill enhancement, along with enthusiastic participation in design events. As a result, I have collected a list of notable awards and certifications:",
+                    "nav_label": "Achievements"
+                },
+                "es": {
+                    "title": "Logros *Profesionales*",
+                    "title_short": null,
+                    "description": "Mi trayectoria como diseñador de UX ha estado marcada por una dedicación inquebrantable al aprendizaje y mejora de habilidades, junto con una participación entusiasta en eventos de diseño. Como resultado, he recopilado una lista de premios y certificaciones notables:",
+                    "nav_label": "Logros"
+                },
+                "fr": {
+                    "title": "Réalisations *Professionnelles*",
+                    "title_short": null,
+                    "description": "Mon parcours en tant que concepteur UX a été marqué par une dédication inébranlable à l'apprentissage et à l'amélioration des compétences, ainsi que par une participation enthousiaste à des événements de conception. En conséquence, j'ai dressé une liste de récompenses et de certifications remarquables:",
+                    "nav_label": "Réalisations"
+                },
+                "zh": {
+                    "title": "职业*成就*",
+                    "title_short": null,
+                    "description": "作为一名UX设计师，我的旅程充满了对学习和技能提升的坚定执着，以及对设计活动的热情参与。因此，我汇总了一份显著奖项和认证的列表：",
+                    "nav_label": "成就"
+                }
+            }
         },
 
         {
             "id": "hobbies",
             "categoryId": "more",
-            "component": "InfoSection",
-            "jsonPath": "data/sections/hobbies.json",
-            "faIcon": "fa-solid fa-heart"
+            "jsonPath": "/sections/hobbies.json",
+            "faIcon": "fa-solid fa-heart",
+            "type": "column",
+            "locales": {
+                "en": {
+                    "title": "*Hobbies* & Interests",
+                    "title_short": null,
+                    "description": "This is pretty much how I spend my free time:",
+                    "nav_label": "Hobbies"
+                },
+                "es": {
+                    "title": "*Pasatiempos* e Intereses",
+                    "title_short": null,
+                    "description": "Así es más o menos cómo paso mi tiempo libre:",
+                    "nav_label": "Aficiones"
+                },
+                "fr": {
+                    "title": "*Loisirs* et Intérêts",
+                    "title_short": null,
+                    "description": "C'est à peu près ainsi que je passe mon temps libre:",
+                    "nav_label": "Loisirs"
+                },
+                "zh": {
+                    "title": "*爱好*与兴趣",
+                    "title_short": null,
+                    "description": "这基本上是我空闲时间的安排：",
+                    "nav_label": "兴趣爱好"
+                }
+            }
         },
 
         {
             "id": "contact",
             "categoryId": "more",
-            "component": "ContactSection",
-            "jsonPath": "data/sections/contact.json",
-            "faIcon": "fa-solid fa-pen-to-square"
+            "jsonPath": "/sections/contact.json",
+            "faIcon": "fa-solid fa-pen-to-square",
+            "type": "column",
+            "locales": {
+                "en": {
+                    "title": "*Contact* Me",
+                    "title_short": null,
+                    "description": "Please don't hesitate to get in touch with me whenever you feel the need!\"",
+                    "nav_label": "Contact"
+                },
+                "es": {
+                    "title": "Ponte en *Contacto*",
+                    "title_short": null,
+                    "description": "¡Por favor, no dudes en ponerte en contacto conmigo siempre que lo necesites!",
+                    "nav_label": "Contacto"
+                },
+                "fr": {
+                    "title": "*Contactez*-moi",
+                    "title_short": null,
+                    "description": "N'hésitez pas à me contacter chaque fois que vous en avez besoin!",
+                    "nav_label": "Contact"
+                },
+                "zh": {
+                    "title": "*联系*我",
+                    "title_short": null,
+                    "description": "如果您有任何需要，请随时与我联系！",
+                    "nav_label": "联系方式"
+                }
+            }
         }
     ]
 }

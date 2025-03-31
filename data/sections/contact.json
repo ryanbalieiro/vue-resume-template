@@ -1,37 +1,67 @@
 {
-    "locales": {
-        "en": {
-            "title": "<span class='text-primary'>Contact</span> Me",
-            "description": "Please don't hesitate to get in touch with me whenever you feel the need!",
-            "subtitle": "Or...",
-            "subtitleDescription": "If you prefer, you can reach out to me through the following options:"
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleContactForm",
+            "locales": {
+                "en": {
+                    "contact_thank_you": "*Thanks* for the contact!",
+                    "contact_thank_you_description": "Your message has been received, and I'll be reaching out to you soon. I appreciate your time and look forward to connecting with you!",
+                    "contact_thank_you_reply": "The reply will be sent to your email address *{email}*."
+                },
+                "es": {
+                    "contact_thank_you": "*¡Gracias* por contactar!",
+                    "contact_thank_you_description": "Tu mensaje ha sido recibido y me pondré en contacto contigo pronto. Aprecio tu tiempo y espero poder conectar contigo.",
+                    "contact_thank_you_reply": "Mi respuesta será enviada a tu correo electrónico *{email}*."
+                },
+                "fr": {
+                    "contact_thank_you": "*Merci* pour le contact !",
+                    "contact_thank_you_description": "Votre message a été reçu, et je vous contacterai bientôt. J'apprécie votre temps et j’ai hâte d’échanger avec vous !",
+                    "contact_thank_you_reply": "Notre réponse sera envoyée à votre adresse e-mail *{email}*."
+                },
+                "zh": {
+                    "contact_thank_you": "*感谢*您的联系！",
+                    "contact_thank_you_description": "您的消息已收到，我会尽快与您联系。感谢您的时间，期待与您交流！",
+                    "contact_thank_you_reply": "我们的回复将发送至您的电子邮件地址 *{email}*。"
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "contact_js_public_key": "tzObcsmOwHvPy6Rhp",
+                "contact_js_service_id": "service_4h8g7vb",
+                "contact_js_template_id": "template_kplo17d"
+            },
+            "items": null
         },
-        "es": {
-            "title": "<span class='text-primary'>Contáctame</span>",
-            "description": "¡Por favor, no dudes en ponerte en contacto conmigo siempre que lo necesites!",
-            "subtitle": "O...",
-            "subtitleDescription": "Si prefieres, puedes ponerte en contacto conmigo a través de las siguientes opciones:"
-        },
-        "fr": {
-            "title": "<span class='text-primary'>Contactez</span>-moi",
-            "description": "N'hésitez pas à me contacter chaque fois que vous en avez besoin!",
-            "subtitle": "Ou...",
-            "subtitleDescription": "Si vous préférez, vous pouvez me contacter grâce aux options suivantes:"
-        },
-        "zh": {
-            "title": "<span class='text-primary'>联系</span>我",
-            "description": "如果您有任何需要，请随时与我联系！",
-            "subtitle": "或者...",
-            "subtitleDescription": "如果您愿意，您可以通过以下方式与我取得联系:"
-        }
-    },
 
-    "items": [
-        "@link{profile.contact.address}",
-        "@link{profile.contact.phone}",
-        "@link{profile.contact.email}",
-        "@link{profile.contact.linkedin}",
-        "@link{profile.contact.facebook}",
-        "@link{profile.contact.instagram}"
+        {
+            "id": 2,
+            "component": "ArticleContactOptions",
+            "locales": {
+                "en": {
+                    "title": "Or...",
+                    "description": "If you prefer, you can reach out to me through the following options:"
+                },
+                "es": {
+                    "title": "O...",
+                    "description": "Si prefieres, puedes ponerte en contacto conmigo a través de las siguientes opciones:"
+                },
+                "fr": {
+                    "title": "Ou...",
+                    "description": "Si vous préférez, vous pouvez me contacter grâce aux options suivantes:"
+                },
+                "zh": {
+                    "title": "或者...",
+                    "description": "如果您愿意，您可以通过以下方式与我取得联系:"
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "contact_ids": ["address", "phone", "email", "linkedin", "facebook", "github"]
+            },
+            "items": null
+        }
     ]
 }

@@ -1,4 +1,7 @@
 {
+    "preloaderEnabled": true,
+    "navToggleEnabled": true,
+
     "supportedLanguages": [
         {
             "name": "English",
@@ -24,9 +27,5 @@
             "id": "zh",
             "flagUrl": "images/flags/zh.png"
         }
-    ],
-
-    "preloaderEnabled": true,
-    "contactFormEnabled": true,
-    "sidebarShrinkingEnabled": false
+    ]
 }

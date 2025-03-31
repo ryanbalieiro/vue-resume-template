@@ -140,7 +140,7 @@ const _executeAnimatingProgressStep = () => {
     currentStep.value = Steps.ANIMATING_PROGRESS
     scheduler.schedule(() => {
         _executeWaitingForCompletionStep()
-    }, 300, schedulerTag)
+    }, 400, schedulerTag)
 }
 
 const _executeWaitingForCompletionStep = () => {

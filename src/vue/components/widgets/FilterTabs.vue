@@ -50,22 +50,27 @@ button.btn {
     ));
 
     border-radius: 30px;
-    border-width: 3px;
+    border-width: 2px;
     min-width: 22.5%;
     outline: none !important;
     box-shadow: none !important;
-    border-color: lighten($default-section-background, 2%);
-    background-color: lighten($default-section-background, 2%);
+    border-color: $default-section-background;
+    background-color: darken($default-section-background, 2%);
     color: $light-7;
     transition: none;
 
+    @include media-breakpoint-down(md) {
+        border-width: 1px;
+    }
+
     &:hover {
         color: $primary;
+        background-color: darken($default-section-background, 4%);
     }
 
     &:focus, &:active {
-        background-color: lighten($default-section-background, 1%);
-        border-color: lighten($default-section-background, 2%);
+        border-color: $default-section-background;
+        background-color: darken($default-section-background, 3%);
     }
 
     &.active {

@@ -30,7 +30,7 @@ const contactLinks = computed(() => {
         return profile.value.getContactOptionWithId(contactId)
     }).filter(contact => Boolean(contact)).map(item => {
         return {
-            faIcon: item.faIcon,
+            faIcon: item.faIcon.replace('regular', 'solid'),
             label: localizeFromStrings(item.id).replace("locales.", ""),
             href: item.href,
             value: item.getValue(false)

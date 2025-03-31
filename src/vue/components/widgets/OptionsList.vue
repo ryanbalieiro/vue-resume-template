@@ -4,7 +4,7 @@
              class="col-12 col-md-6 col-lg-12 col-xl-6">
             <div class="options-list-item">
                 <IconView class="options-list-icon-view"
-                          :fa-icon="item.faIcon + ' fw-bold'"
+                          :fa-icon="item.faIcon"
                           :background-color="utils.getRootSCSSVariable('primary')"/>
 
                 <div class="option-list-info">

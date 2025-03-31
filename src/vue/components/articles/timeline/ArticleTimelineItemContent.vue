@@ -54,7 +54,9 @@ const parsedTags = computed(() => {
 })
 
 const dateString = computed(() => {
-    return props.formattedDateStart + '<span class="mx-2 mx-xl-1">→</span>' + props.formattedDateEnd
+    return props.formattedDateStart +
+        '<i class="mx-2 fa-solid fa-arrow-right-long" style="font-size: 10px; opacity: 0.85"></i>' +
+        props.formattedDateEnd
 })
 
 const locationString = computed(() => {

@@ -85,8 +85,12 @@ const _show = () => {
     const timeout = 30 + (props.index || 0) * 60
     scheduler.schedule(() => {
         transitionStatus.value = "showing"
-        scheduler.clearAllWithTag(tag)
     }, timeout, tag)
+
+    scheduler.schedule(() => {
+        transitionStatus.value = "shown"
+        scheduler.clearAllWithTag(tag)
+    }, timeout + 350, tag)
 }
 
 const _onClick = () => {

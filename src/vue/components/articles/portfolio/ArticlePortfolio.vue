@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-import {computed, inject, ref} from "vue"
+import {computed, inject, onMounted, ref} from "vue"
 import Article from "/src/vue/components/articles/base/Article.vue"
 import FilterTabs from "/src/vue/components/widgets/FilterTabs.vue"
 import ArticlePortfolioItem from "/src/vue/components/articles/portfolio/ArticlePortfolioItem.vue"
@@ -128,9 +128,9 @@ div.items-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    row-gap: calc(35px + 2vh);
     column-gap: 35px;
-    margin-top: clamp(45px, calc(45px + 3vh), 70px);
+    row-gap: 50px;
+    margin-top: 55px;
 
     @media (min-width: 1750px) {
         grid-template-columns: repeat(5, 1fr);
@@ -139,31 +139,31 @@ div.items-grid {
     @media (min-width: 2000px) {
         grid-template-columns: repeat(6, 1fr);
         row-gap: calc(65px + 2vh);
+        margin-top: calc(65px + 2vh);
     }
 
     @include media-breakpoint-down(xxl) {
         grid-template-columns: repeat(4, 1fr);
         column-gap: 35px;
-        row-gap: 35px;
-        margin-top: 40px;
+        row-gap: 45px;
+        margin-top: 50px;
     }
 
     @include media-breakpoint-down(xl) {
         grid-template-columns: repeat(3, 1fr);
-        margin-top: 45px;
     }
 
     @include media-breakpoint-down(lg) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 60px;
-        row-gap: 30px;
-        margin-top: 35px;
+        row-gap: 40px;
+        margin-top: 40px;
     }
 
     @include media-breakpoint-down(md) {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 25px;
-        row-gap: 25px;
+        row-gap: 30px;
         margin-top: 30px;
     }
 

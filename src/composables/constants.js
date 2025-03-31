@@ -3,6 +3,9 @@
  * Hub for defining app constants.
  */
 export function useConstants() {
+    /** @type {string}*/
+    const BASE_URL = import.meta.env.BASE_URL
+
     /** @const **/
     const BOOTSTRAP_BREAKPOINTS = {
         xs: 0,
@@ -28,6 +31,7 @@ export function useConstants() {
 
     return {
         // Global Constants...
+        BASE_URL,
         BOOTSTRAP_BREAKPOINTS,
         NAV_SECTION_PICKER_HEIGHT,
         NAV_SECTION_PICKER_COMPRESSED_HEIGHT,

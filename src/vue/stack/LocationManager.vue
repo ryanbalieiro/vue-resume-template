@@ -94,7 +94,7 @@ const _onViewportChanged = (showSpinner) => {
         ? constants.PresentationModes.ALL_AT_ONCE
         : constants.PresentationModes.ONE_AT_ONCE
 
-    if(!showSpinner)
+    if(!showSpinner || presentationMode.value === constants.PresentationModes.ONE_AT_ONCE)
         return
 
     setSpinnerEnabled(true, localizeFromStrings("adjusting_viewport"))

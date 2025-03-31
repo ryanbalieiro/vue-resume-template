@@ -137,6 +137,227 @@
 
                 {
                     "id": 4,
+                    "img": "images/portfolio/project-logo-2.png",
+                    "fallbackFaIcon": "",
+                    "fallbackFaIconColor": null,
+                    "category": "utilities",
+                    "locales": {
+                        "en": {
+                            "title": "Snappy",
+                            "description": "<b>Snappy</b> is your ultimate photography app, empowering you to capture and edit stunning images effortlessly. With its intuitive interface, Snappy provides a wide range of powerful tools and filters to enhance your photos and bring out your creativity. Whether you're a professional photographer or just a hobbyist, Snappy offers features like manual controls, advanced editing options, and AI-powered enhancements to take your photography to the next level.",
+                            "tags": ["app", "photography", "camera"]
+                        },
+                        "es": {
+                            "description": "<b>Snappy</b> es tu aplicación definitiva de fotografía, que te permite capturar y editar imágenes impresionantes sin esfuerzo. Con su interfaz intuitiva, Snappy ofrece una amplia gama de herramientas y filtros poderosos para mejorar tus fotos y potenciar tu creatividad. Ya seas un fotógrafo profesional o simplemente un aficionado, Snappy ofrece funciones como controles manuales, opciones de edición avanzadas y mejoras impulsadas por inteligencia artificial para llevar tu fotografía al siguiente nivel.",
+                            "tags": ["aplicación", "fotografía", "cámara"]
+                        },
+                        "fr": {
+                            "description": "<b>Snappy</b> est votre application ultime de photographie, vous permettant de capturer et d'éditer des images époustouflantes sans effort. Avec son interface intuitive, Snappy propose une large gamme d'outils puissants et de filtres pour améliorer vos photos et stimuler votre créativité. Que vous soyez un photographe professionnel ou simplement un amateur, Snappy offre des fonctionnalités telles que les commandes manuelles, les options d'édition avancées et les améliorations alimentées par l'IA pour pousser votre photographie à un niveau supérieur.",
+                            "tags": ["application", "photographie"]
+                        },
+                        "zh": {
+                            "description": "<b>Snappy</b> 是您的终极摄影应用，可轻松捕捉和编辑令人惊叹的图像。借助其直观的界面，Snappy 提供了各种强大的工具和滤镜，可增强您的照片并释放您的创造力。无论您是专业摄影师还是业余爱好者，Snappy 都提供诸如手动控制、高级编辑选项和基于人工智能的增强功能，将您的摄影推向新的高度。",
+                            "tags": ["应用", "摄影", "相机"]
+                        }
+                    },
+                    "links": [
+                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"}
+                    ]
+                },
+
+                {
+                    "id": 5,
+                    "img": "images/portfolio/project-logo-5.png",
+                    "fallbackFaIcon": "",
+                    "fallbackFaIconColor": null,
+                    "category": "utilities",
+                    "locales": {
+                        "en": {
+                            "title": "Sweet Scoops",
+                            "description": "Indulge in the world of delectable desserts with <b>Sweet Scoops</b>! This app is a dessert lover's paradise, offering a wide range of mouthwatering recipes, step-by-step instructions, and videos for creating your favorite sweets. From creamy ice creams to irresistible pastries, <b>Sweet Scoops</b> has you covered for all your dessert cravings. Unleash your inner pastry chef and treat yourself to a delightful dessert experience.",
+                            "tags": ["app", "food", "desserts", "recipes"]
+                        },
+                        "es": {
+                            "description": "¡Déjate llevar al mundo de los postres deliciosos con <b>Sweet Scoops</b>! Esta aplicación es el paraíso de los amantes de los postres, ofreciendo una amplia gama de recetas deliciosas, instrucciones paso a paso y videos para crear tus dulces favoritos. Desde cremosos helados hasta irresistibles pasteles, <b>Sweet Scoops</b> tiene todo lo que necesitas para satisfacer tus antojos de postres. Libera al chef de repostería que llevas dentro y date un caprichoso y delicioso experiencia de postre.",
+                            "tags": ["aplicación", "comida", "postres", "recetas"]
+                        },
+                        "fr": {
+                            "description": "Indulgez-vous dans le monde des desserts délectables avec <b>Sweet Scoops</b> ! Cette application est le paradis des amateurs de desserts, offrant une large gamme de recettes alléchantes, d'instructions étape par étape et de vidéos pour créer vos douceurs préférées. Des glaces crémeuses aux pâtisseries irrésistibles, <b>Sweet Scoops</b> vous couvre pour toutes vos envies de dessert. Libérez le chef pâtissier qui sommeille en vous et offrez-vous une délicieuse expérience de dessert.",
+                            "tags": ["application", "nourriture", "desserts", "recettes"]
+                        },
+                        "zh": {
+                            "description": "在<b>Sweet Scoops</b> 的美味甜品世界中尽情享受吧！这款应用是甜品爱好者的天堂，提供各种美味食谱、逐步说明和视频，帮助您制作您最喜爱的甜点。从奶油冰淇淋到诱人的糕点，<b>Sweet Scoops</b> 应有尽有，满足您对甜点的所有渴望。释放您内心的糕点大厨，让自己享受美味的甜点体验。",
+                            "tags": ["应用", "食物", "甜点", "食谱"]
+                        }
+                    },
+                    "links": [
+                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"}
+                    ]
+                },
+
+                {
+                    "id": 6,
+                    "img": "images/portfolio/project-logo-9.png",
+                    "fallbackFaIcon": "",
+                    "fallbackFaIconColor": null,
+                    "category": "social",
+                    "locales": {
+                        "en": {
+                            "title": "RockVerse",
+                            "description": "Step into the electrifying world of rock music with <b>RockVerse</b>! This app is a haven for rock enthusiasts, offering a vast collection of classic and modern rock tracks, curated playlists, and behind-the-scenes content. Whether you're a die-hard fan or just discovering the genre, <b>RockVerse</b> brings you closer to the heart and soul of rock and roll. Crank up the volume and let the rock 'n' roll spirit run wild!",
+                            "tags": ["app", "music", "rock", "entertainment"]
+                        },
+                        "es": {
+                            "description": "¡Adéntrate en el electrizante mundo de la música rock con <b>RockVerse</b>! Esta aplicación es un refugio para los entusiastas del rock, ofreciendo una amplia colección de canciones de rock clásicas y modernas, listas de reproducción seleccionadas y contenido detrás de escena. Ya seas un fanático acérrimo o estés descubriendo el género, <b>RockVerse</b> te acerca al corazón y alma del rock and roll. ¡Sube el volumen y deja que el espíritu del rock 'n' roll se desate!",
+                            "tags": ["aplicación", "música", "rock", "entretenimiento."]
+                        },
+                        "fr": {
+                            "description": "Plongez dans le monde électrisant de la musique rock avec <b>RockVerse</b> ! Cette application est un paradis pour les amateurs de rock, offrant une vaste collection de pistes rock classiques et modernes, des listes de lecture sélectionnées et du contenu en coulisses. Que vous soyez un fan inconditionnel ou que vous découvriez simplement le genre, <b>RockVerse</b> vous rapproche du cœur et de l'âme du rock 'n' roll. Montez le volume et laissez l'esprit du rock 'n' roll s'exprimer !",
+                            "tags": ["application", "musique", "rock", "divertissement"]
+                        },
+                        "zh": {
+                            "description": "踏入摇滚音乐的电动世界，感受 <b>RockVerse</b>！这款应用是摇滚音乐爱好者的天堂，提供大量经典和现代摇滚音轨，策划的播放列表以及幕后内容。无论您是铁杆粉丝还是刚刚发现这个音乐流派，<b>RockVerse</b> 都会让您更贴近摇滚乐的核心与灵魂。放大音量，释放摇滚精神！",
+                            "tags": ["应用", "音乐", "摇滚", "娱乐"]
+                        }
+                    },
+                    "links": [
+                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"},
+                        {"faIcon": "fa-brands fa-windows", "href": "https://apps.microsoft.com/home", "stringKey": "view_on_windows_store"}
+                    ]
+                },
+
+                {
+                    "id": 7,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-hippo",
+                    "fallbackFaIconColor": "#1c875b",
+                    "category": "productivity",
+                    "locales": {
+                        "en": {
+                            "title": "Hippo",
+                            "description": "Meet <b>Hippo</b>, the playful learning companion for kids! Designed to make education fun and interactive, <b>Hippo</b> offers engaging activities, colorful games, and brain-boosting challenges to help children develop essential skills. Whether it’s math, reading, or problem-solving, this app keeps young minds curious and excited to learn. Join the adventure and watch your little one grow with <b>Hippo</b>!",
+                            "tags": ["kids", "learning", "education", "fun", "interactive"]
+                        },
+                        "es": {
+                            "description": "¡Conoce a <b>Hippo</b>, el compañero de aprendizaje perfecto para los niños! Diseñado para hacer que la educación sea divertida e interactiva, <b>Hippo</b> ofrece actividades emocionantes, juegos coloridos y desafíos que estimulan la mente. Desde matemáticas hasta lectura y resolución de problemas, esta app mantiene a los niños curiosos y motivados para aprender. ¡Únete a la aventura y ve cómo tu pequeño crece con <b>Hippo</b>!",
+                            "tags": ["niños", "aprendizaje", "educación", "diversión", "interactivo"]
+                        },
+                        "fr": {
+                            "description": "Découvrez <b>Hippo</b>, le compagnon d’apprentissage idéal pour les enfants ! Pensé pour rendre l’éducation amusante et interactive, <b>Hippo</b> propose des activités engageantes, des jeux colorés et des défis stimulants pour aider les enfants à développer des compétences essentielles. Qu’il s’agisse de mathématiques, de lecture ou de logique, cette application garde les jeunes esprits curieux et motivés. Rejoignez l’aventure et regardez votre enfant grandir avec <b>Hippo</b> !",
+                            "tags": ["enfants", "apprentissage", "éducation", "amusement", "interactif"]
+                        },
+                        "zh": {
+                            "description": "认识 <b>Hippo</b>，孩子们的快乐学习伙伴！<b>Hippo</b> 旨在让学习变得有趣又互动，提供丰富多彩的游戏、趣味挑战和益智活动，帮助孩子们培养数学、阅读和逻辑思维等核心技能。这款应用让孩子们在快乐中学习，保持对知识的好奇心。加入 <b>Hippo</b> 的世界，见证孩子的成长！",
+                            "tags": ["儿童", "学习", "教育", "趣味", "互动"]
+                        }
+                    },
+                    "links": [
+                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"},
+                        {"faIcon": "fa-brands fa-windows", "href": "https://apps.microsoft.com/home", "stringKey": "view_on_windows_store"}
+                    ]
+                },
+
+                {
+                    "id": 8,
+                    "img": "images/portfolio/project-logo-4.png",
+                    "fallbackFaIcon": "",
+                    "fallbackFaIconColor": null,
+                    "category": "social",
+                    "locales": {
+                        "en": {
+                            "title": "LiveScore Pro",
+                            "description": "Stay ahead of the game with <b>LiveScore Pro</b>! Get real-time football scores, goal updates, and match results from leagues worldwide. Never miss a moment of the action!",
+                            "tags": ["football", "scores", "sports", "results", "updates"]
+                        },
+                        "es": {
+                            "description": "¡Sigue el fútbol en vivo con <b>LiveScore Pro</b>! Recibe actualizaciones de goles, resultados y marcadores en tiempo real de las mejores ligas del mundo. ¡No te pierdas ni un solo gol!",
+                            "tags": ["fútbol", "marcadores", "deportes", "resultados", "goles"]
+                        },
+                        "fr": {
+                            "description": "Suivez le football en direct avec <b>LiveScore Pro</b> ! Recevez les scores en temps réel, les mises à jour des buts et les résultats des plus grandes compétitions. Ne manquez aucun moment fort !",
+                            "tags": ["football", "scores", "sport", "résultats", "buts"]
+                        },
+                        "zh": {
+                            "description": "使用 <b>LiveScore Pro</b> 即时获取足球比赛比分！实时更新进球信息、比赛结果，覆盖全球各大联赛。不错过任何精彩瞬间！",
+                            "tags": ["足球", "实时比分", "体育", "比赛结果", "进球"]
+                        }
+                    },
+                    "links": [
+                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"}
+                    ]
+                },
+
+                {
+                    "id": 9,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-paper-plane",
+                    "fallbackFaIconColor": "#4a7ba1",
+                    "category": "social",
+                    "locales": {
+                        "en": {
+                            "title": "Paper Plane",
+                            "description": "Stay connected effortlessly with <b>Paper Plane</b>, the fast and secure messaging app designed for seamless communication. Send messages, share photos, and make voice or video calls with ease. With end-to-end encryption and a sleek, user-friendly interface, <b>Paper Plane</b> ensures your conversations are private and instant. Whether you're chatting with friends, family, or colleagues, experience messaging like never before!",
+                            "tags": ["messaging", "chat", "communication", "secure", "social"]
+                        },
+                        "es": {
+                            "description": "Mantente conectado fácilmente con <b>Paper Plane</b>, la aplicación de mensajería rápida y segura diseñada para una comunicación sin interrupciones. Envía mensajes, comparte fotos y realiza llamadas de voz o video con total facilidad. Con cifrado de extremo a extremo y una interfaz moderna e intuitiva, <b>Paper Plane</b> garantiza que tus conversaciones sean privadas e instantáneas. ¡Descubre una nueva forma de comunicarte con amigos, familia y colegas!",
+                            "tags": ["mensajería", "chat", "comunicación", "seguridad", "social"]
+                        },
+                        "fr": {
+                            "description": "Restez connecté en toute simplicité avec <b>Paper Plane</b>, l'application de messagerie rapide et sécurisée conçue pour une communication fluide. Envoyez des messages, partagez des photos et passez des appels vocaux ou vidéo en toute simplicité. Grâce au chiffrement de bout en bout et à une interface élégante et intuitive, <b>Paper Plane</b> assure la confidentialité et l’instantanéité de vos conversations. Que ce soit avec vos amis, votre famille ou vos collègues, découvrez une nouvelle façon de communiquer !",
+                            "tags": ["messagerie", "chat", "communication", "sécurisé", "social"]
+                        },
+                        "zh": {
+                            "description": "使用 <b>Paper Plane</b>，让沟通变得轻松快捷！这款安全可靠的即时通讯应用，让您可以随时发送消息、分享照片，并轻松进行语音或视频通话。<b>Paper Plane</b> 采用端到端加密，配备简洁直观的界面，确保您的对话私密且即时。不论是与朋友、家人还是同事交流，<b>Paper Plane</b> 都能带来全新的聊天体验！",
+                            "tags": ["消息", "聊天", "通讯", "安全", "社交"]
+                        }
+                    },
+                    "links": [
+                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"},
+                        {"faIcon": "fa-brands fa-windows", "href": "https://apps.microsoft.com/home", "stringKey": "view_on_windows_store"}
+                    ]
+                },
+
+                {
+                    "id": 10,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-crown",
+                    "fallbackFaIconColor": "#c5cc8f",
+                    "category": "productivity",
+                    "locales": {
+                        "en": {
+                            "title": "Chess Academy",
+                            "description": "Master the game of kings with <b>Chess Academy</b>! Whether you're a beginner or a seasoned player, this app offers interactive lessons, AI-powered puzzles, and strategic challenges to sharpen your skills. Learn from grandmasters, practice tactics, and improve your gameplay with personalized feedback. Checkmate your way to the top with <b>Chess Academy</b>!",
+                            "tags": ["chess", "strategy", "learning", "training", "education"]
+                        },
+                        "es": {
+                            "description": "¡Domina el juego de reyes con <b>Chess Academy</b>! Ya seas principiante o jugador experimentado, esta aplicación ofrece lecciones interactivas, acertijos con inteligencia artificial y desafíos estratégicos para mejorar tus habilidades. Aprende de grandes maestros, practica tácticas y perfecciona tu juego con retroalimentación personalizada. ¡Haz jaque mate al éxito con <b>Chess Academy</b>!",
+                            "tags": ["ajedrez", "estrategia", "aprendizaje", "entrenamiento", "educación"]
+                        },
+                        "fr": {
+                            "description": "Maîtrisez le jeu des rois avec <b>Chess Academy</b> ! Que vous soyez débutant ou joueur confirmé, cette application propose des leçons interactives, des énigmes assistées par IA et des défis stratégiques pour affiner vos compétences. Apprenez auprès de grands maîtres, pratiquez des tactiques et améliorez votre jeu grâce à des retours personnalisés. Devenez un maître des échecs avec <b>Chess Academy</b> !",
+                            "tags": ["échecs", "stratégie", "apprentissage", "entraînement", "éducation"]
+                        },
+                        "zh": {
+                            "description": "通过 <b>Chess Academy</b> 掌握王者游戏！无论您是初学者还是经验丰富的棋手，这款应用都提供互动课程、AI 智能棋题和战略挑战，帮助您提升棋艺。从国际大师那里学习，练习战术，并通过个性化反馈优化您的对局表现。用 <b>Chess Academy</b> 迈向国际象棋巅峰！",
+                            "tags": ["国际象棋", "策略", "学习", "训练", "教育"]
+                        }
+                    },
+                    "links": [
+                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"},
+                        {"faIcon": "fa-brands fa-windows", "href": "https://apps.microsoft.com/home", "stringKey": "view_on_windows_store"}
+                    ]
+                },
+
+                {
+                    "id": 11,
                     "img": "images/portfolio/project-logo-1.png",
                     "fallbackFaIcon": "",
                     "fallbackFaIconColor": null,
@@ -168,121 +389,28 @@
                 },
 
                 {
-                    "id": 5,
-                    "img": "images/portfolio/project-logo-2.png",
-                    "fallbackFaIcon": "",
-                    "fallbackFaIconColor": null,
-                    "category": "utilities",
+                    "id": 12,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-crow",
+                    "fallbackFaIconColor": "#7c4d91",
+                    "category": "productivity",
                     "locales": {
                         "en": {
-                            "title": "Snappy",
-                            "description": "<b>Snappy</b> is your ultimate photography app, empowering you to capture and edit stunning images effortlessly. With its intuitive interface, Snappy provides a wide range of powerful tools and filters to enhance your photos and bring out your creativity. Whether you're a professional photographer or just a hobbyist, Snappy offers features like manual controls, advanced editing options, and AI-powered enhancements to take your photography to the next level.",
-                            "tags": ["app", "photography", "camera"]
+                            "title": "Bird Tracker",
+                            "description": "Discover and document the world of birds with <b>Bird Tracker</b>! Whether you're a seasoned birdwatcher or just starting out, this app helps you identify species, log sightings, and track migration patterns. Use AI-powered recognition, interactive maps, and detailed bird profiles to enhance your birdwatching experience. Get closer to nature with <b>Bird Tracker</b>!",
+                            "tags": ["birdwatching", "nature", "wildlife", "tracking", "outdoors"]
                         },
                         "es": {
-                            "description": "<b>Snappy</b> es tu aplicación definitiva de fotografía, que te permite capturar y editar imágenes impresionantes sin esfuerzo. Con su interfaz intuitiva, Snappy ofrece una amplia gama de herramientas y filtros poderosos para mejorar tus fotos y potenciar tu creatividad. Ya seas un fotógrafo profesional o simplemente un aficionado, Snappy ofrece funciones como controles manuales, opciones de edición avanzadas y mejoras impulsadas por inteligencia artificial para llevar tu fotografía al siguiente nivel.",
-                            "tags": ["aplicación", "fotografía", "cámara"]
+                            "description": "¡Descubre y documenta el mundo de las aves con <b>Bird Tracker</b>! Ya seas un observador experimentado o un principiante, esta aplicación te ayuda a identificar especies, registrar avistamientos y seguir patrones de migración. Utiliza el reconocimiento por IA, mapas interactivos y perfiles detallados para mejorar tu experiencia en la observación de aves. ¡Acércate a la naturaleza con <b>Bird Tracker</b>!",
+                            "tags": ["observación de aves", "naturaleza", "vida silvestre", "seguimiento", "aire libre"]
                         },
                         "fr": {
-                            "description": "<b>Snappy</b> est votre application ultime de photographie, vous permettant de capturer et d'éditer des images époustouflantes sans effort. Avec son interface intuitive, Snappy propose une large gamme d'outils puissants et de filtres pour améliorer vos photos et stimuler votre créativité. Que vous soyez un photographe professionnel ou simplement un amateur, Snappy offre des fonctionnalités telles que les commandes manuelles, les options d'édition avancées et les améliorations alimentées par l'IA pour pousser votre photographie à un niveau supérieur.",
-                            "tags": ["application", "photographie"]
+                            "description": "Découvrez et documentez le monde des oiseaux avec <b>Bird Tracker</b> ! Que vous soyez un ornithologue chevronné ou un débutant, cette application vous aide à identifier les espèces, enregistrer vos observations et suivre les migrations. Profitez de la reconnaissance IA, des cartes interactives et des fiches détaillées pour enrichir votre expérience. Rapprochez-vous de la nature avec <b>Bird Tracker</b> !",
+                            "tags": ["ornithologie", "nature", "faune", "suivi", "plein air"]
                         },
                         "zh": {
-                            "description": "<b>Snappy</b> 是您的终极摄影应用，可轻松捕捉和编辑令人惊叹的图像。借助其直观的界面，Snappy 提供了各种强大的工具和滤镜，可增强您的照片并释放您的创造力。无论您是专业摄影师还是业余爱好者，Snappy 都提供诸如手动控制、高级编辑选项和基于人工智能的增强功能，将您的摄影推向新的高度。",
-                            "tags": ["应用", "摄影", "相机"]
-                        }
-                    },
-                    "links": [
-                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
-                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"}
-                    ]
-                },
-
-                {
-                    "id": 6,
-                    "img": "images/portfolio/project-logo-5.png",
-                    "fallbackFaIcon": "",
-                    "fallbackFaIconColor": null,
-                    "category": "utilities",
-                    "locales": {
-                        "en": {
-                            "title": "Sweet Scoops",
-                            "description": "Indulge in the world of delectable desserts with <b>Sweet Scoops</b>! This app is a dessert lover's paradise, offering a wide range of mouthwatering recipes, step-by-step instructions, and videos for creating your favorite sweets. From creamy ice creams to irresistible pastries, <b>Sweet Scoops</b> has you covered for all your dessert cravings. Unleash your inner pastry chef and treat yourself to a delightful dessert experience.",
-                            "tags": ["app", "food", "desserts", "recipes"]
-                        },
-                        "es": {
-                            "description": "¡Déjate llevar al mundo de los postres deliciosos con <b>Sweet Scoops</b>! Esta aplicación es el paraíso de los amantes de los postres, ofreciendo una amplia gama de recetas deliciosas, instrucciones paso a paso y videos para crear tus dulces favoritos. Desde cremosos helados hasta irresistibles pasteles, <b>Sweet Scoops</b> tiene todo lo que necesitas para satisfacer tus antojos de postres. Libera al chef de repostería que llevas dentro y date un caprichoso y delicioso experiencia de postre.",
-                            "tags": ["aplicación", "comida", "postres", "recetas"]
-                        },
-                        "fr": {
-                            "description": "Indulgez-vous dans le monde des desserts délectables avec <b>Sweet Scoops</b> ! Cette application est le paradis des amateurs de desserts, offrant une large gamme de recettes alléchantes, d'instructions étape par étape et de vidéos pour créer vos douceurs préférées. Des glaces crémeuses aux pâtisseries irrésistibles, <b>Sweet Scoops</b> vous couvre pour toutes vos envies de dessert. Libérez le chef pâtissier qui sommeille en vous et offrez-vous une délicieuse expérience de dessert.",
-                            "tags": ["application", "nourriture", "desserts", "recettes"]
-                        },
-                        "zh": {
-                            "description": "在<b>Sweet Scoops</b> 的美味甜品世界中尽情享受吧！这款应用是甜品爱好者的天堂，提供各种美味食谱、逐步说明和视频，帮助您制作您最喜爱的甜点。从奶油冰淇淋到诱人的糕点，<b>Sweet Scoops</b> 应有尽有，满足您对甜点的所有渴望。释放您内心的糕点大厨，让自己享受美味的甜点体验。",
-                            "tags": ["应用", "食物", "甜点", "食谱"]
-                        }
-                    },
-                    "links": [
-                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
-                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"}
-                    ]
-                },
-
-                {
-                    "id": 7,
-                    "img": "images/portfolio/project-logo-4.png",
-                    "fallbackFaIcon": "",
-                    "fallbackFaIconColor": null,
-                    "category": "social",
-                    "locales": {
-                        "en": {
-                            "title": "LiveScore Pro",
-                            "description": "Stay ahead of the game with <b>LiveScore Pro</b>! Get real-time football scores, goal updates, and match results from leagues worldwide. Never miss a moment of the action!",
-                            "tags": ["football", "scores", "sports", "results", "updates"]
-                        },
-                        "es": {
-                            "description": "¡Sigue el fútbol en vivo con <b>LiveScore Pro</b>! Recibe actualizaciones de goles, resultados y marcadores en tiempo real de las mejores ligas del mundo. ¡No te pierdas ni un solo gol!",
-                            "tags": ["fútbol", "marcadores", "deportes", "resultados", "goles"]
-                        },
-                        "fr": {
-                            "description": "Suivez le football en direct avec <b>LiveScore Pro</b> ! Recevez les scores en temps réel, les mises à jour des buts et les résultats des plus grandes compétitions. Ne manquez aucun moment fort !",
-                            "tags": ["football", "scores", "sport", "résultats", "buts"]
-                        },
-                        "zh": {
-                            "description": "使用 <b>LiveScore Pro</b> 即时获取足球比赛比分！实时更新进球信息、比赛结果，覆盖全球各大联赛。不错过任何精彩瞬间！",
-                            "tags": ["足球", "实时比分", "体育", "比赛结果", "进球"]
-                        }
-                    },
-                    "links": [
-                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
-                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"}
-                    ]
-                },
-
-                {
-                    "id": 8,
-                    "img": "images/portfolio/project-logo-9.png",
-                    "fallbackFaIcon": "",
-                    "fallbackFaIconColor": null,
-                    "category": "social",
-                    "locales": {
-                        "en": {
-                            "title": "RockVerse",
-                            "description": "Step into the electrifying world of rock music with <b>RockVerse</b>! This app is a haven for rock enthusiasts, offering a vast collection of classic and modern rock tracks, curated playlists, and behind-the-scenes content. Whether you're a die-hard fan or just discovering the genre, <b>RockVerse</b> brings you closer to the heart and soul of rock and roll. Crank up the volume and let the rock 'n' roll spirit run wild!",
-                            "tags": ["app", "music", "rock", "entertainment"]
-                        },
-                        "es": {
-                            "description": "¡Adéntrate en el electrizante mundo de la música rock con <b>RockVerse</b>! Esta aplicación es un refugio para los entusiastas del rock, ofreciendo una amplia colección de canciones de rock clásicas y modernas, listas de reproducción seleccionadas y contenido detrás de escena. Ya seas un fanático acérrimo o estés descubriendo el género, <b>RockVerse</b> te acerca al corazón y alma del rock and roll. ¡Sube el volumen y deja que el espíritu del rock 'n' roll se desate!",
-                            "tags": ["aplicación", "música", "rock", "entretenimiento."]
-                        },
-                        "fr": {
-                            "description": "Plongez dans le monde électrisant de la musique rock avec <b>RockVerse</b> ! Cette application est un paradis pour les amateurs de rock, offrant une vaste collection de pistes rock classiques et modernes, des listes de lecture sélectionnées et du contenu en coulisses. Que vous soyez un fan inconditionnel ou que vous découvriez simplement le genre, <b>RockVerse</b> vous rapproche du cœur et de l'âme du rock 'n' roll. Montez le volume et laissez l'esprit du rock 'n' roll s'exprimer !",
-                            "tags": ["application", "musique", "rock", "divertissement"]
-                        },
-                        "zh": {
-                            "description": "踏入摇滚音乐的电动世界，感受 <b>RockVerse</b>！这款应用是摇滚音乐爱好者的天堂，提供大量经典和现代摇滚音轨，策划的播放列表以及幕后内容。无论您是铁杆粉丝还是刚刚发现这个音乐流派，<b>RockVerse</b> 都会让您更贴近摇滚乐的核心与灵魂。放大音量，释放摇滚精神！",
-                            "tags": ["应用", "音乐", "摇滚", "娱乐"]
+                            "description": "使用 <b>Bird Tracker</b> 探索和记录鸟类世界！无论您是经验丰富的观鸟者还是初学者，这款应用都能帮助您识别物种、记录观测，并追踪迁徙模式。借助 AI 识别、互动地图和详细的鸟类档案，提升您的观鸟体验。与 <b>Bird Tracker</b> 一起亲近大自然！",
+                            "tags": ["观鸟", "自然", "野生动物", "追踪", "户外"]
                         }
                     },
                     "links": [

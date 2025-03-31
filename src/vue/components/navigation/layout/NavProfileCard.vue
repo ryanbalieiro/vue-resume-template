@@ -2,6 +2,7 @@
     <div class="nav-profile-card" :class="{'nav-profile-card-shrink': shrink}">
         <ImageView :src="avatar"
                    :alt="name"
+                   :resolve-path="true"
                    class="nav-profile-card-image-view"
                    image-class="rounded-circle"/>
 

@@ -71,7 +71,7 @@ const _showAfterLoading = () => {
     _hide()
 
     scheduler.interval(() => {
-        const isLoading = iconView.value.imageView.isLoading()
+        const isLoading = iconView.value.imageView && iconView.value.imageView.isLoading()
         const hasImage = props.item.img
         if(!hasImage || !isLoading) {
             _show()
@@ -151,6 +151,17 @@ div.portfolio-item-icon-wrapper {
     @each $breakpoint, $multiplier in $multipliers {
         @include media-breakpoint-down($breakpoint) {
             width: clamp(calc(160px * $multiplier), 9vw, calc(180px * $multiplier));
+            height: clamp(calc(160px * $multiplier), 9vw, calc(180px * $multiplier));
+        }
+    }
+}
+
+div.portfolio-icon-view {
+    font-size: 90px;
+
+    @each $breakpoint, $multiplier in $multipliers {
+        @include media-breakpoint-down($breakpoint) {
+            font-size: calc(90px * $multiplier);
         }
     }
 }

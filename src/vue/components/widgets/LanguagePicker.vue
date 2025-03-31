@@ -13,7 +13,7 @@
 
                 <!-- Selected Flag Icon -->
                 <img :alt="selectedLanguage.name"
-                     :src="selectedLanguage.flagUrl"
+                     :src="utils.resolvePath(selectedLanguage.flagUrl)"
                      class="language-flag language-flag-selected">
 
                 <span class="language-name language-name-selected"
@@ -31,7 +31,7 @@
 
                         <!-- Language Flag Icon -->
                         <img :alt="language.name"
-                             :src="language.flagUrl"
+                             :src="utils.resolvePath(language.flagUrl)"
                              class="language-flag">
 
                         <!-- Language Name -->
@@ -48,6 +48,9 @@
 <script setup>
 import {computed, inject} from "vue"
 import Dropdown from '/node_modules/bootstrap/js/src/dropdown'
+import {useUtils} from "/src/composables/utils.js"
+
+const utils = useUtils()
 
 const props = defineProps({
     shrink: Boolean

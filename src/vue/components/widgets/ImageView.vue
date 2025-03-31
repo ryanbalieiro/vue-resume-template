@@ -4,7 +4,7 @@
              :class="imageClass"
              v-show="shouldShowImage"
              ref="img"
-             :src="src"
+             :src="path"
              :alt="alt"
              @load="_onImageLoadSuccess"
              @error="_onImageLoadError"/>
@@ -24,6 +24,9 @@
 <script setup>
 import {computed, ref, watch} from "vue"
 import Spinner from "/src/vue/components/widgets/Spinner.vue"
+import {useUtils} from "/src/composables/utils.js"
+
+const utils = useUtils()
 
 const props = defineProps({
     src: String,
@@ -31,6 +34,7 @@ const props = defineProps({
     class: String,
     spinnerEnabled: Boolean,
     imageClass: String,
+    resolvePath: Boolean
 })
 
 const LoadStatus = {
@@ -46,6 +50,12 @@ const loadStatus = ref(LoadStatus.LOADING)
 const shouldShowImage = computed(() => { return loadStatus.value === LoadStatus.LOADED })
 const shouldShowSpinner = computed(() => { return loadStatus.value === LoadStatus.LOADING })
 const shouldShowFallback = computed(() => { return loadStatus.value === LoadStatus.ERROR })
+
+const path = computed(() => {
+    if(!props.resolvePath)
+        return props.src
+    return utils.resolvePath(props.src)
+})
 
 watch(() => props.src, () => {
     loadStatus.value = LoadStatus.LOADING

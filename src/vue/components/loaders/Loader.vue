@@ -16,7 +16,8 @@
                           'image-view-logo-animated': currentStep >= Steps.ANIMATING_LOGO
                        }"
                        @completed="_onLogoLoaded"
-                       :spinner-enabled="false"/>
+                       :spinner-enabled="false"
+                       :resolve-path="true"/>
 
             <div class="resume-loader-progress-display"
                  :class="{

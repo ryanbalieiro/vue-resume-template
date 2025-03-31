@@ -63,12 +63,27 @@ div.project-modal-icon-view {
     border-radius: 25%;
     overflow: hidden;
 
-    @include generate-dynamic-styles-with-hash((
-        xxxl: (height: 330px, width:330px, min-width: 330px, margin-right: 3rem),
-        xxl:   (height: 300px, width:300px, min-width: 300px, margin-right: 3rem),
-        xl:   (height: 220px, width:220px, min-width: 220px, margin-right: 2.5rem),
-        lg:   (height: auto, min-width: 0, width: min(200px, 35vw), margin-right:0, margin-bottom: 1rem),
-        sm:   (width: clamp(130px, 37vw, 170px), margin-bottom: 1rem),
-    ));
+    --dimension: 330px;
+    --margin: 0 3rem 0 0;
+    @include media-breakpoint-down(xxl) {
+        --dimension: 300px;
+    }
+    @include media-breakpoint-down(xl) {
+        --dimension: 220px;
+        --margin: 0 2.5rem 0 0;
+    }
+    @include media-breakpoint-down(lg) {
+        --dimension: min(200px, 35vw);
+        --margin: 0 0 1rem 0;
+    }
+    @include media-breakpoint-down(sm) {
+        --dimension: clamp(130px, 37vw, 170px);
+    }
+
+    height: var(--dimension);
+    width: var(--dimension);
+    min-width: var(--dimension);
+    font-size: calc(var(--dimension)/2);
+    margin: var(--margin);
 }
 </style>

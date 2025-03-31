@@ -2,6 +2,10 @@
  * Created by Ryan Balieiro on 08.26.2023
  * This composable will implement helper functions that can be used by multiple components within the architecture.
  */
+import {useConstants} from "/src/composables/constants.js"
+
+const constants = useConstants()
+
 export function useUtils() {
     /**
      * @param {Number} value
@@ -124,6 +128,15 @@ export function useUtils() {
         return prefix + "-rand-" + window.randStrGenCount
     }
 
+    /**
+     * @param {String} path
+     * @return {String}
+     */
+    const resolvePath = (path) => {
+        const baseUrl = constants.BASE_URL || ''
+        return baseUrl + path
+    }
+
     return {
         clamp,
         isAndroid,
@@ -136,6 +149,7 @@ export function useUtils() {
         hasDuplications,
         getRootSCSSVariable,
         getYearsPassedSince,
-        generateUniqueRandomString
+        generateUniqueRandomString,
+        resolvePath
     }
 }

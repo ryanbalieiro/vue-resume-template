@@ -123,6 +123,7 @@ button.nav-mobile-tab-button {
     border: 0;
     outline: none;
     border-top: 2px solid lighten($nav-background, 20%);
+    transition: 0.1s padding-bottom ease-out;
 
     i {
         color: $nav-contrast-20;

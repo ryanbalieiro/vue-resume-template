@@ -195,6 +195,7 @@ input, textarea {
         background-color: lighten($default-section-background, 4%);
         border-color: $primary;
         color: $dark;
+        box-shadow: none;
     }
 }
 
@@ -218,10 +219,6 @@ input {
 
     &:-webkit-autofill:focus {
         border-color: $primary;
-    }
-
-    &:focus {
-        box-shadow: none;
     }
 }
 

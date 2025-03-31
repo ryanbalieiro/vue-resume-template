@@ -3,6 +3,7 @@
         <ImageView v-if="showImageView"
                    :src="img"
                    :spinner-enabled="true"
+                   :resolve-path="true"
                    ref="imageView"
                    alt="ico"/>
 

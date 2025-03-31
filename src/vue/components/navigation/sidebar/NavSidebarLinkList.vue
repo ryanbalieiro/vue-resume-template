@@ -230,7 +230,7 @@ div.nav-sidebar-links-wrapper-shrink {
                 position: absolute;
                 top: 9px;
                 left: -5px;
-                margin-left: -7px;
+                margin-left: -6px;
                 border-width: 5px;
                 border-style: solid;
                 border-color: transparent darken($nav-highlight, 2%) transparent transparent;

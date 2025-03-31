@@ -93,7 +93,7 @@ section.resume-section-with-divider {
 div.resume-section-content {
     @include generate-dynamic-styles-with-hash((
         xxxl:   (padding: 4.5rem 4.5rem 4.5rem),
-        xxl:    (padding: 4rem 4rem 4rem),
+        xxl:    (padding: 4rem 4rem 4.25rem),
         lg:     (padding: 2rem 2rem 3rem),
         md:     (padding: 1.5rem 1.5rem 2rem),
         sm:     (padding: 1.5rem 1.2rem 2rem)

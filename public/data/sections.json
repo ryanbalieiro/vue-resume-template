@@ -8,19 +8,19 @@
             "type": "centered",
             "locales": {
                 "en": {
-                    "title": "Welcome to my *resume!*",
+                    "title": "Welcome to *my resume!*",
                     "title_short": "Welcome!",
                     "description": null,
                     "nav_label": "About"
                 },
                 "es": {
-                    "title": "¡Bienvenido a mi *CV!*",
+                    "title": "¡Bienvenido a *mi CV!*",
                     "title_short": "Bienvenido!",
                     "description": null,
                     "nav_label": "Acerca de"
                 },
                 "fr": {
-                    "title": "Bienvenue sur mon *CV!*",
+                    "title": "Bienvenue sur *mon CV!*",
                     "title_short": "Bienvenue !",
                     "description": null,
                     "nav_label": "À propos"

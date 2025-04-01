@@ -164,7 +164,12 @@ div.items-grid {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 25px;
         row-gap: 30px;
+        margin-top: 35px;
+    }
+
+    @include media-breakpoint-down(sm) {
         margin-top: 30px;
+        row-gap: 25px;
     }
 
     @media (max-width: 370px) {

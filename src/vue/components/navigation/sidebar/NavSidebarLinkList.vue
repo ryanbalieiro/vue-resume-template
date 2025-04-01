@@ -151,7 +151,7 @@ button.nav-sidebar-link-no-hover:hover {
 
 /** Selected Status **/
 li.nav-sidebar-link-li-container-selected {
-    pointer-events: none;
+    //pointer-events: none;
     button.nav-sidebar-link {
         i {
             color: $nav-highlight!important;

@@ -58,23 +58,23 @@ button.btn {
     min-width: 22.5%;
     outline: none !important;
     box-shadow: none !important;
-    border-color: $default-section-background;
+    border-color: $default-section-background!important;
     background-color: darken($default-section-background, 2%);
     color: $light-7;
-    transition: none;
+    transition: 0.1s background-color ease-out;
 
     @include media-breakpoint-down(md) {
         border-width: 1px;
     }
 
     &:hover {
-        color: $primary;
-        background-color: darken($default-section-background, 4%);
+        background-color: darken($default-section-background, 5%);
+        color: black;
     }
 
     &:focus, &:active {
-        border-color: $default-section-background;
-        background-color: darken($default-section-background, 3%);
+        background-color: lighten($primary, 10%);
+        color: $light;
     }
 
     &.active {

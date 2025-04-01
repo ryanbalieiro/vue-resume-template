@@ -19,25 +19,6 @@ $success: #06c203;
 $danger: #d91c1c;
 $light: #fcfcfc;
 
-/** Light Shades **/
-$light-1: #f8f9fa;
-$light-2: #e9ecef;
-$light-3: #dee2e6;
-$light-4: #ced4da;
-$light-5: #adb5bd;
-$light-6: #6c757d;
-$light-7: #495057;
-
-$light-shades-palette: (
-    $light-1,
-    $light-2,
-    $light-3,
-    $light-4,
-    $light-5,
-    $light-6,
-    $light-7,
-);
-
 /** Layout Colors **/
 $default-section-background: #f1eff3;
 $loader-background: #261841;
@@ -59,6 +40,25 @@ $nav-contrast-40: rgba($nav-contrast, 0.4);
 $nav-contrast-30: rgba($nav-contrast, 0.3);
 $nav-contrast-20: rgba($nav-contrast, 0.2);
 $nav-contrast-10: rgba($nav-contrast, 0.1);
+
+/** Light Shades **/
+$light-1: #f8f9fa;
+$light-2: #e9ecef;
+$light-3: #dee2e6;
+$light-4: #ced4da;
+$light-5: #adb5bd;
+$light-6: #6c757d;
+$light-7: #495057;
+
+$light-shades-palette: (
+    $light-1,
+    $light-2,
+    $light-3,
+    $light-4,
+    $light-5,
+    $light-6,
+    $light-7,
+);
 
 /** Layout Constraints **/
 $navigation-sidebar-breakpoint: "lg";

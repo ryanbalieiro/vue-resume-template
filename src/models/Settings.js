@@ -6,7 +6,7 @@ export default class Settings {
         this._preloaderEnabled = jsonData['preloaderEnabled']
         this._navToggleEnabled = jsonData['navToggleEnabled']
         this._supportedLanguages = jsonData['supportedLanguages'].map(
-            ({ id, name, default: isDefault }) => new Language(id, name, isDefault)
+            ({ id, name, default: isDefault, flagUrl: flagUrl }) => new Language(id, name, isDefault, flagUrl)
         )
     }
 

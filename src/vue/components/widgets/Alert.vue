@@ -8,18 +8,11 @@
 <script setup>
 import {computed} from "vue"
 
-/**
- * @property {String} type
- *
- */
 const props = defineProps({
     type: String,
     message: String
 })
 
-/**
- * @type {ComputedRef<String>}
- */
 const faIcon = computed(() => {
     switch(props.type) {
         case 'success': return 'fa-solid fa-check-circle'

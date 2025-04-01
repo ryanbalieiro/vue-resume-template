@@ -41,7 +41,7 @@ export function useUtils() {
      * @return {boolean}
      */
     const isChromeOS = () => {
-        const userAgent = window.navigator.userAgent.toLowerCase();
+        const userAgent = window.navigator.userAgent.toLowerCase()
         return /cros/.test(userAgent);
     }
 

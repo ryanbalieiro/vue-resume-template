@@ -1,9 +1,10 @@
 export default class Language {
     /** @constructs */
-    constructor(id, name, isDefault) {
+    constructor(id, name, isDefault, flagUrl) {
         this._id = id
         this._name = name
         this._isDefault = isDefault
+        this._flagUrl = flagUrl
     }
 
     /** @return {String} */
@@ -18,7 +19,7 @@ export default class Language {
 
     /** @return {String} */
     get flagUrl() {
-        return `images/flags/${this.id}.png`
+        return this._flagUrl
     }
 
     /** @return {Boolean} */

@@ -49,9 +49,7 @@ const sections = inject("sections")
 /** @type {Function} */
 const localize = inject("localize")
 
-/**
- * @type {{value: Object}}
- */
+/** @type {{value: Object}} */
 const lastKeyPressed = inject("lastKeyPressed")
 
 watch(() => lastKeyPressed.value, () => {

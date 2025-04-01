@@ -12,13 +12,11 @@
                     <h5 class="fw-bold lead mb-1 mb-lg-2"
                         v-html="localize(item.locales, 'title')"/>
 
-                    <InlineInfoList :items="[
-                        {
-                            faIcon: item.fallbackFaIcon || 'fa-regular fa-building',
-                            visibility: location,
-                            value: location
-                        }
-                    ]"/>
+                    <InlineInfoList :items="[{
+                        faIcon: item.fallbackFaIcon || 'fa-regular fa-building',
+                        visibility: location,
+                        value: location
+                    }]"/>
                 </div>
 
                 <div class="thread-item-content-header-date-badge-wrapper">

@@ -3,7 +3,7 @@
  * Hub for defining app constants.
  */
 export function useConstants() {
-    /** @type {string}*/
+    /** @type {string} */
     const BASE_URL = import.meta.env.BASE_URL
 
     /** @const **/

@@ -19,37 +19,37 @@
 
                     "locales": {
                         "en": {
-                            "title": "Master's in Human-Computer Interaction",
-                            "description": "Completed an intensive program focusing on user-centered design principles, usability testing, and interaction design. Developed skills in wireframing, prototyping, and user research methodologies.",
-                            "province": "Hannover",
-                            "country": "Germany",
+                            "title": "Pre-University Program in Computer Science",
+                            "description": "Completed a preparatory program covering foundational computer science topics such as programming, algorithms, and data structures. Gained hands-on experience with problem-solving and logical thinking.",
+                            "province": "Toronto",
+                            "country": "Canada",
                             "institution": "Udacity",
                             "tags": []
                         },
 
                         "es": {
-                            "title": "Maestría en Interacción Humano-Computadora",
-                            "description": "Completó un programa intensivo centrado en los principios de diseño centrado en el usuario, pruebas de usabilidad y diseño de interacción. Desarrolló habilidades en la creación de wireframes, prototipado y metodologías de investigación de usuarios.",
-                            "province": "Hannover",
-                            "country": "Alemania",
+                            "title": "Programa Preuniversitario en Informática",
+                            "description": "Completó un programa preparatorio que cubría temas fundamentales de informática como programación, algoritmos y estructuras de datos. Adquirió experiencia práctica en resolución de problemas y pensamiento lógico.",
+                            "province": "Toronto",
+                            "country": "Canadá",
                             "institution": "Udacity",
                             "tags": []
                         },
 
                         "fr": {
-                            "title": "Master en Interaction Humain-Ordinateur",
-                            "description": "A achevé un programme intensif axé sur les principes de conception centrés sur l'utilisateur, les tests de convivialité et la conception d'interaction. Développé des compétences en wireframing, en prototypage et en méthodologies de recherche utilisateur.",
-                            "province": "Hanovre",
-                            "country": "Allemagne",
+                            "title": "Programme Pré-Universitaire en Informatique",
+                            "description": "A achevé un programme préparatoire couvrant les bases de l'informatique, notamment la programmation, les algorithmes et les structures de données. Acquis une expérience pratique en résolution de problèmes et en pensée logique.",
+                            "province": "Toronto",
+                            "country": "Canada",
                             "institution": "Udacity",
                             "tags": []
                         },
 
                         "zh": {
-                            "title": "人机交互硕士学位",
-                            "description": "完成了一项专注于以用户为中心的设计原则、可用性测试和交互设计的密集课程。培养了线框图、原型制作和用户研究方法方面的技能。",
-                            "province": "汉诺威",
-                            "country": "德国",
+                            "title": "大学预科计算机科学课程",
+                            "description": "完成了一项涵盖计算机科学基础知识的预科课程，如编程、算法和数据结构。获得了解决问题和逻辑思维的实践经验。",
+                            "province": "多伦多",
+                            "country": "加拿大",
                             "institution": "Udacity",
                             "tags": []
                         }

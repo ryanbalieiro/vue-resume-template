@@ -200,7 +200,7 @@
                 {
                     "id": 5,
                     "dateStart": {"year": 2024, "month": 10},
-                    "dateEnd": {"year": 2026, "month": 9},
+                    "dateEnd": {"string": "now"},
                     "img": null,
                     "fallbackFaIcon": "fa-brands fa-steam",
                     "fallbackFaIconColor": "#222222",

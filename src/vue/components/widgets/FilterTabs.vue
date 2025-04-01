@@ -73,8 +73,8 @@ button.btn {
     }
 
     &:focus, &:active {
-        background-color: lighten($primary, 10%);
-        color: $light;
+        background-color: darken($default-section-background, 7%);
+        color: black;
     }
 
     &.active {

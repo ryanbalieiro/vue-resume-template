@@ -62,7 +62,7 @@ div.timeline-item-icon {
     width: $article-timeline-image-size;
     min-width: $article-timeline-image-size;
     height: $article-timeline-image-size;
-    font-size: calc($article-timeline-image-size/3);
+    font-size: calc($article-timeline-image-size/2.5);
     border: $article-timeline-border-width solid $article-timeline-border-color;
 
     z-index: 1;
@@ -74,14 +74,14 @@ div.timeline-item-icon {
         width: $article-timeline-image-size-md;
         min-width: $article-timeline-image-size-md;
         height: $article-timeline-image-size-md;
-        font-size: calc($article-timeline-image-size-md/3);
+        font-size: calc($article-timeline-image-size-md/2.5);
         border-width: $article-timeline-border-width-md;
     }
     @include media-breakpoint-down(sm) {
         width: $article-timeline-image-size-sm;
         min-width: $article-timeline-image-size-sm;
         height: $article-timeline-image-size-sm;
-        font-size: calc($article-timeline-image-size-sm/3);
+        font-size: calc($article-timeline-image-size-sm/2.5);
         border-width: $article-timeline-border-width-sm;
     }
 }

@@ -153,7 +153,7 @@
                 {
                     "id": 4,
                     "dateStart": {"year": 2022, "month": 10},
-                    "dateEnd": {"string": "now"},
+                    "dateEnd": {"year": 2024, "month": 9},
                     "img": "images/places/logo-coursera.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
@@ -193,6 +193,53 @@
                             "country": "美国",
                             "institution": "Coursera",
                             "tags": ["Adobe XD", "Sketch", "Axure", "教育指导"]
+                        }
+                    }
+                },
+
+                {
+                    "id": 5,
+                    "dateStart": {"year": 2024, "month": 10},
+                    "dateEnd": {"year": 2026, "month": 9},
+                    "img": null,
+                    "fallbackFaIcon": "fa-brands fa-steam",
+                    "fallbackFaIconColor": "#222222",
+
+                    "locales": {
+                        "en": {
+                            "title": "Project Manager",
+                            "description": "Led cross-functional teams to successfully execute and deliver high-impact projects within scope, time, and budget constraints. Developed and implemented agile methodologies to enhance team productivity, streamline workflows, and ensure continuous improvement. Facilitated collaboration between stakeholders, engineers, and designers to align project goals with business objectives.",
+                            "province": "San Francisco",
+                            "country": "US",
+                            "institution": "Steam Valve",
+                            "tags": ["Agile", "Scrum", "Leadership", "Risk Management"]
+                        },
+
+                        "es": {
+                            "title": "Gerente de Proyectos",
+                            "description": "Lideré equipos multifuncionales para ejecutar y entregar con éxito proyectos de alto impacto dentro de los límites de alcance, tiempo y presupuesto. Desarrollé e implementé metodologías ágiles para mejorar la productividad del equipo, optimizar los flujos de trabajo y garantizar una mejora continua. Facilité la colaboración entre las partes interesadas, ingenieros y diseñadores para alinear los objetivos del proyecto con los objetivos comerciales.",
+                            "province": "San Francisco",
+                            "country": "EE. UU.",
+                            "institution": "Steam Valve",
+                            "tags": ["Agile", "Scrum", "Liderazgo", "Gestión de Riesgos"]
+                        },
+
+                        "fr": {
+                            "title": "Chef de Projet",
+                            "description": "J'ai dirigé des équipes pluridisciplinaires pour exécuter et livrer avec succès des projets à fort impact dans les limites de portée, de temps et de budget. J'ai développé et mis en œuvre des méthodologies agiles afin d'améliorer la productivité de l'équipe, d'optimiser les flux de travail et d'assurer une amélioration continue. J'ai facilité la collaboration entre les parties prenantes, les ingénieurs et les designers pour aligner les objectifs du projet avec les objectifs commerciaux.",
+                            "province": "San Francisco",
+                            "country": "États-Unis",
+                            "institution": "Steam Valve",
+                            "tags": ["Agile", "Scrum", "Leadership", "Gestion des Risques"]
+                        },
+
+                        "zh": {
+                            "title": "项目经理",
+                            "description": "领导跨职能团队，在范围、时间和预算限制内成功执行并交付高影响力项目。制定并实施敏捷方法，以提高团队生产力，优化工作流程，并确保持续改进。促进利益相关者、工程师和设计师之间的协作，使项目目标与业务目标保持一致。管理风险评估，优化资源分配，并确保及时决策，以减少潜在瓶颈。",
+                            "province": "旧金山",
+                            "country": "美国",
+                            "institution": "Steam Valve",
+                            "tags": ["敏捷", "Scrum", "领导力", "风险管理"]
                         }
                     }
                 }

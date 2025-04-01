@@ -265,7 +265,7 @@
                     "img": "images/portfolio/project-logo-4.png",
                     "fallbackFaIcon": "",
                     "fallbackFaIconColor": null,
-                    "category": "social",
+                    "category": "utilities",
                     "locales": {
                         "en": {
                             "title": "LiveScore Pro",

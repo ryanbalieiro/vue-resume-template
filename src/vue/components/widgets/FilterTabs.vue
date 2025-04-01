@@ -40,7 +40,11 @@ const _selectItem = (category) => {
 
 div.btn-group {
     display: inline-flex;
-    min-width: 100%;
+    width: 100%;
+    max-width: 1000px;
+    @include media-breakpoint-down(xxl) {
+        max-width: 800px;
+    }
 }
 
 button.btn {

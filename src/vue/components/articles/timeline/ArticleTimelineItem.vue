@@ -46,15 +46,17 @@ const localizeDate = inject("localizeDate")
 li.timeline-item {
     display: flex;
     min-height: calc($article-timeline-image-size);
-    &:not(:last-child) { margin-bottom: 70px; }
+    &:not(:last-child) { margin-bottom: 40px; }
 
+    @include media-breakpoint-down(lg) {
+        &:not(:last-child) { margin-bottom: 30px; }
+    }
     @include media-breakpoint-down(md) {
         min-height: $article-timeline-image-size-md;
-        &:not(:last-child) { margin-bottom: 60px; }
+        &:not(:last-child) { margin-bottom: 40px; }
     }
     @include media-breakpoint-down(sm) {
         min-height: $article-timeline-image-size-sm;
-        &:not(:last-child) { margin-bottom: 40px; }
     }
 }
 

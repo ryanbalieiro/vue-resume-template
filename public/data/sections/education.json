@@ -58,7 +58,54 @@
 
                 {
                     "id": 2,
-                    "dateStart": {"year": 2014, "month": 8},
+                    "dateStart": {"year": 2014, "month": 10},
+                    "dateEnd": {"year": 2015, "month": 6},
+                    "img": "",
+                    "fallbackFaIcon": "fa-solid fa-laptop-code",
+                    "fallbackFaIconColor": "#140f29",
+
+                    "locales": {
+                        "en": {
+                            "title": "Technical Course in Programming",
+                            "description": "Completed a technical course focusing on software development fundamentals, including object-oriented programming, web development, and database management. Developed several projects applying real-world coding skills.",
+                            "province": "San Francisco",
+                            "country": "US",
+                            "institution": "Codecademy",
+                            "tags": []
+                        },
+
+                        "es": {
+                            "title": "Curso Técnico en Programación",
+                            "description": "Completó un curso técnico centrado en los fundamentos del desarrollo de software, incluyendo programación orientada a objetos, desarrollo web y gestión de bases de datos. Desarrolló varios proyectos aplicando habilidades de codificación en el mundo real.",
+                            "province": "San Francisco",
+                            "country": "EE.UU.",
+                            "institution": "Codecademy",
+                            "tags": []
+                        },
+
+                        "fr": {
+                            "title": "Cours Technique en Programmation",
+                            "description": "A suivi un cours technique axé sur les fondamentaux du développement logiciel, y compris la programmation orientée objet, le développement web et la gestion de bases de données. A développé plusieurs projets appliquant des compétences de codage en situation réelle.",
+                            "province": "San Francisco",
+                            "country": "États-Unis",
+                            "institution": "Codecademy",
+                            "tags": []
+                        },
+
+                        "zh": {
+                            "title": "编程技术课程",
+                            "description": "完成了一门技术课程，重点讲解软件开发基础，包括面向对象编程、网页开发和数据库管理。开发了多个项目，应用了实际的编码技能。",
+                            "province": "旧金山",
+                            "country": "美国",
+                            "institution": "Codecademy",
+                            "tags": []
+                        }
+                    }
+                },
+
+                {
+                    "id": 3,
+                    "dateStart": {"year": 2015, "month": 8},
                     "dateEnd": {"year": 2018, "month": 5},
                     "img": "images/places/logo-harvard.png",
                     "fallbackFaIcon": null,
@@ -104,7 +151,7 @@
                 },
 
                 {
-                    "id": 3,
+                    "id": 4,
                     "dateStart": {"year": 2018, "month": 9},
                     "dateEnd": {"year": 2020, "month": 5},
                     "img": "images/places/logo-paris-university.png",

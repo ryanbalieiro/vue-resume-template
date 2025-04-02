@@ -102,9 +102,9 @@ const _onClick = () => {
 @import "/src/scss/_theming.scss";
 
 $multipliers: (
-    xxxl: 0.9,
-    xxl: 0.81,
-    xl: 0.81,
+    xxxl: 0.85,
+    xxl: 0.80,
+    xl: 0.75,
     lg: 0.72,
     md: 0.6875,
     sm: 0.5

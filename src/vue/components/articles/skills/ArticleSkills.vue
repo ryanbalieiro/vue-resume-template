@@ -67,7 +67,7 @@ const colClass = computed(() => {
 const colClassWithChart = computed(() => {
     switch (maxItemsPerLine.value) {
         default: return 'col-12'
-        case 2: return 'col-12 col-sm-6 col-xl-6 col-xxl-6'
+        case 2: return 'col-12 col-sm-6 col-xl-12 col-xxl-12'
         case 3: return 'col-12 col-sm-6 col-xxl-4'
     }
 })
@@ -84,21 +84,42 @@ div.article-content-wrapper {
 }
 
 div.chart-wrapper {
-    min-width: auto;
-    margin-right: 30px;
-
-    @include generate-dynamic-styles-with-hash((
-        xxxl:   (min-width: max(350px, 16vw), width: max(600px, 16vw), min-height: 320px, height: 100%, margin-right:40px, margin-top: 10px, margin-bottom: 10px),
-        xxl:   (min-width: max(280px, 18.5vw), width: max(280px, 18.5vw), min-height: 220px, margin-right:30px),
-        xl:   (min-width: 200px, min-height: 250px, height: 250px, margin-right:auto, margin-left: auto, margin-top: 5px, margin-bottom:30px),
-        lg:   (min-height: 250px, height: 250px, margin-top:5px),
-        md:   (min-height: 225px, height: 225px, margin-bottom:35px),
-        sm:   (min-height: 200px, height: 200px, margin-bottom:30px),
-    ));
-
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: darken($default-section-background, 2%);
+
+    --proportion: 0.9;
+    @media (min-width: 1500px) {--proportion: 0.95;}
+    @include media-breakpoint-down(xxl) {--proportion: 0.75;}
+    @include media-breakpoint-down(xl) {--proportion: 0.7;}
+    @include media-breakpoint-down(lg) {--proportion: 0.65;}
+    @include media-breakpoint-down(md) {--proportion: 0.5;}
+    @include media-breakpoint-down(sm) {--proportion: 0.45;}
+
+    width: calc(500px * var(--proportion));
+    height: calc(500px * var(--proportion));
+    min-width: calc(500px * var(--proportion));
+    border-radius: calc(70px * var(--proportion));
+    padding: calc(50px * var(--proportion));
+    margin-right: calc(40px * var(--proportion));
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @include media-breakpoint-down(xl) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: calc(40px * var(--proportion));
+        min-width: 100%;
+        border-radius: calc(50px * var(--proportion));
+    }
+
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+        min-width: 100%;
+    }
 }
 
 div.items-row-wrapper {

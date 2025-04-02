@@ -31,7 +31,7 @@
                v-html="localize(item.locales, 'description')"/>
 
             <div v-if="links.length"
-                 class="links text-2 mt-2">
+                 class="links text-3 mt-2">
                 <a v-for="link in links"
                    :href="link.href"
                    target="_blank"

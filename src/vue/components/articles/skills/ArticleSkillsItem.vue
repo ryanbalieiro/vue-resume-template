@@ -12,14 +12,14 @@
 
         <div class="skills-item-content">
             <!-- Header -->
-            <div class="skills-item-header text-5">
+            <div class="skills-item-header eq-h6">
                 <!-- Title -->
                 <span class="skills-item-header-title">
                     <span class="fw-bold"
                           v-html="localize(item.locales, 'title')"/>
 
                     <span v-if="levelDisplay"
-                          class="ms-1 text-2 text-light-7"
+                          class="ms-1 text-3 text-light-7"
                           v-html="levelDisplay"/>
                 </span>
 
@@ -39,14 +39,14 @@
             <!-- Experience Time -->
             <div v-if="experienceTimeDisplay && progressBarAllowed"
                  class="skills-item-description">
-                <p class="text-2 m-0">
+                <p class="text-3 m-0">
                     <span v-html="experienceTimeDisplay"/>
                 </p>
             </div>
 
             <!-- Description -->
             <div class="skills-item-description">
-                <p class="text-2 m-0"
+                <p class="text-3 m-0"
                    :class="experienceTimeDisplay || !progressBarAllowed ? `text-light-7` : ``"
                    v-html="localize(item.locales, 'description', true)"/>
             </div>

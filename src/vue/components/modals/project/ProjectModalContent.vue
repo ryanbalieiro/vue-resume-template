@@ -23,7 +23,7 @@
                     <span v-html="block.title"/>
                 </h5>
 
-                <p class="text-2 mb-0" v-html="block.description"/>
+                <p class="text-3 mb-0" v-html="block.description"/>
 
                 <SocialLinks v-if="block.links"
                              :items="block.links"

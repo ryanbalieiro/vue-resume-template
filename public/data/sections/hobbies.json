@@ -211,20 +211,16 @@
             "component": "ArticleSkills",
             "locales": {
                 "en": {
-                    "title": "Side pursuits",
-                    "description": "I have a pretty broad range of interests, and I’m always open to new things. Here’s what I’m currently into:"
+                    "title": "Side pursuits"
                 },
                 "es": {
-                    "title": "Exploraciones",
-                    "description": "Tengo una gama bastante amplia de intereses y siempre estoy abierto a cosas nuevas. Aquí está lo que me interesa actualmente:"
+                    "title": "Exploraciones"
                 },
                 "fr": {
-                    "title": "Intérêts annexes",
-                    "description": "J’ai un large éventail d’intérêts et je suis toujours ouvert à de nouvelles choses. Voici ce qui m’intéresse en ce moment :"
+                    "title": "Intérêts annexes"
                 },
                 "zh": {
-                    "title": "额外兴趣",
-                    "description": "我的兴趣非常广泛，我也总是乐于尝试新事物。以下是我目前感兴趣的内容："
+                    "title": "额外兴趣"
                 }
             },
             "settings": {

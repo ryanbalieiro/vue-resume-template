@@ -98,12 +98,13 @@ div.chart-wrapper {
     @include media-breakpoint-down(md) {--proportion: 0.5;}
     @include media-breakpoint-down(sm) {--proportion: 0.45;}
 
-    width: calc(500px * var(--proportion));
+    --margin: calc(45px * var(--proportion));
+    width: calc(50% - var(--margin)/2);
     height: calc(500px * var(--proportion));
-    min-width: calc(500px * var(--proportion));
+    min-width: calc(50% - var(--margin)/2);
     border-radius: calc(70px * var(--proportion));
     padding: calc(50px * var(--proportion));
-    margin-right: calc(45px * var(--proportion));
+    margin-right: calc(var(--margin));
 
     margin-top: auto;
     margin-bottom: auto;
@@ -113,6 +114,7 @@ div.chart-wrapper {
         margin-right: auto;
         margin-bottom: 30px;
         min-width: 100%;
+        width: calc(500px * var(--proportion));
         border-radius: calc(50px * var(--proportion));
     }
 

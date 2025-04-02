@@ -103,7 +103,7 @@ div.chart-wrapper {
     min-width: calc(500px * var(--proportion));
     border-radius: calc(70px * var(--proportion));
     padding: calc(50px * var(--proportion));
-    margin-right: calc(40px * var(--proportion));
+    margin-right: calc(45px * var(--proportion));
 
     margin-top: auto;
     margin-bottom: auto;
@@ -111,7 +111,7 @@ div.chart-wrapper {
     @include media-breakpoint-down(xl) {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: calc(40px * var(--proportion));
+        margin-bottom: 30px;
         min-width: 100%;
         border-radius: calc(50px * var(--proportion));
     }

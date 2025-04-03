@@ -28,7 +28,7 @@
         {
             "id": "address",
             "value": "123 Main Street, Cupertino, CA 01234",
-            "valueShort": "Cupertino – CA 01234",
+            "valueShort": "Cupertino – CA",
             "faIcon": "fa-regular fa-map",
             "href": null
         },

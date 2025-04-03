@@ -55,7 +55,7 @@ button.btn {
 
     border-radius: 30px;
     border-width: 2px;
-    min-width: 22.5%;
+    min-width: 25%;
     outline: none !important;
     box-shadow: none !important;
     border-color: $default-section-background!important;
@@ -65,6 +65,7 @@ button.btn {
 
     @include media-breakpoint-down(md) {
         border-width: 1px;
+        min-width: 15%;
     }
 
     &:hover {

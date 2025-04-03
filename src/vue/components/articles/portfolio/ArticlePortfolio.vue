@@ -8,7 +8,8 @@
                         @select="_onCategorySelected"/>
 
             <div class="items-grid">
-                <div v-for="(item, index) in filteredItems">
+                <div v-for="(item, index) in filteredItems"
+                     class="items-grid-item-wrapper">
                     <ArticlePortfolioItem  :item="item"
                                            :category-name="_getCategoryName(item.categoryId)"
                                            :index="index"
@@ -126,54 +127,32 @@ div.article-portfolio-content-wrapper {
 
 div.items-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-between;
-    column-gap: 35px;
-    row-gap: 50px;
-    margin-top: 55px;
 
-    @media (min-width: 1750px) {
-        grid-template-columns: repeat(5, 1fr);
+    --gap: 10px;
+    --margin-top: 30px;
+    --grid-template: repeat(4, 1fr);
+
+    @media (min-width: 2200px) {
+        --grid-template: repeat(5, 1fr);
     }
 
-    @media (min-width: 2000px) {
-        grid-template-columns: repeat(6, 1fr);
-        row-gap: calc(65px + 2vh);
-        margin-top: calc(65px + 2vh);
-    }
-
-    @include media-breakpoint-down(xxl) {
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 35px;
-        row-gap: 45px;
-        margin-top: 50px;
-    }
-
-    @include media-breakpoint-down(xl) {
-        grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 1470px) {
+        --grid-template: repeat(3, 1fr);
     }
 
     @include media-breakpoint-down(lg) {
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 60px;
-        row-gap: 40px;
-        margin-top: 40px;
+        --margin-top: 25px;
+    }
+    @media (max-width: 500px) {
+        --gap: 5px;
+        --margin-top: 20px;
+    }
+    @media (max-width: 380px) {
+        --grid-template: repeat(2, 1fr);
     }
 
-    @include media-breakpoint-down(md) {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 25px;
-        row-gap: 30px;
-        margin-top: 35px;
-    }
-
-    @include media-breakpoint-down(sm) {
-        margin-top: 30px;
-        row-gap: 25px;
-    }
-
-    @media (max-width: 370px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    gap: var(--gap);
+    margin-top: var(--margin-top);
+    grid-template-columns: var(--grid-template);
 }
 </style>

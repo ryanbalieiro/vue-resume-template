@@ -105,32 +105,33 @@
 
                 {
                     "id": 3,
-                    "img": "images/portfolio/project-logo-7.png",
-                    "fallbackFaIcon": "",
-                    "fallbackFaIconColor": null,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-crow",
+                    "fallbackFaIconColor": "#7c4d91",
                     "category": "productivity",
                     "locales": {
                         "en": {
-                            "title": "MailM8",
-                            "description": "<b>MailM8</b> is your intelligent email companion, revolutionizing the way you manage and interact with your inbox. With advanced AI-powered features, <b>MailM8</b> helps you declutter your email, prioritize important messages, and compose smart replies in a breeze. Say goodbye to email overwhelm and hello to a more efficient and organized communication experience with <b>MailM8</b>.",
-                            "tags": ["app", "email", "communication", "productivity"]
+                            "title": "Bird Tracker",
+                            "description": "Discover and document the world of birds with <b>Bird Tracker</b>! Whether you're a seasoned birdwatcher or just starting out, this app helps you identify species, log sightings, and track migration patterns. Use AI-powered recognition, interactive maps, and detailed bird profiles to enhance your birdwatching experience. Get closer to nature with <b>Bird Tracker</b>!",
+                            "tags": ["birdwatching", "nature", "wildlife", "tracking", "outdoors"]
                         },
                         "es": {
-                            "description": "<b>MailM8</b> es tu compañero de correo electrónico inteligente, revolucionando la forma en que gestionas e interactúas con tu bandeja de entrada. Con funciones avanzadas impulsadas por inteligencia artificial, <b>MailM8</b> te ayuda a organizar tu correo electrónico, priorizar mensajes importantes y componer respuestas inteligentes con facilidad. Di adiós a la abrumadora bandeja de entrada y dale la bienvenida a una experiencia de comunicación más eficiente y organizada con <b>MailM8</b>.",
-                            "tags": ["aplicación", "correo electrónico", "comunicación", "productividad"]
+                            "description": "¡Descubre y documenta el mundo de las aves con <b>Bird Tracker</b>! Ya seas un observador experimentado o un principiante, esta aplicación te ayuda a identificar especies, registrar avistamientos y seguir patrones de migración. Utiliza el reconocimiento por IA, mapas interactivos y perfiles detallados para mejorar tu experiencia en la observación de aves. ¡Acércate a la naturaleza con <b>Bird Tracker</b>!",
+                            "tags": ["observación de aves", "naturaleza", "vida silvestre", "seguimiento", "aire libre"]
                         },
                         "fr": {
-                            "description": "<b>MailM8</b> est votre compagnon de messagerie intelligent, révolutionnant la manière dont vous gérez et interagissez avec votre boîte de réception. Avec des fonctionnalités avancées alimentées par l'IA, <b>MailM8</b> vous aide à désencombrer votre boîte de réception, à prioriser les messages importants et à composer des réponses intelligentes en un clin d'œil. Dites adieu à la surcharge de courrier électronique et bonjour à une expérience de communication plus efficace et organisée avec <b>MailM8</b>.",
-                            "tags": ["application", "courrier électronique", "communication", "productivité"]
+                            "description": "Découvrez et documentez le monde des oiseaux avec <b>Bird Tracker</b> ! Que vous soyez un ornithologue chevronné ou un débutant, cette application vous aide à identifier les espèces, enregistrer vos observations et suivre les migrations. Profitez de la reconnaissance IA, des cartes interactives et des fiches détaillées pour enrichir votre expérience. Rapprochez-vous de la nature avec <b>Bird Tracker</b> !",
+                            "tags": ["ornithologie", "nature", "faune", "suivi", "plein air"]
                         },
                         "zh": {
-                            "description": "<b>MailM8</b> 是您的智能电子邮件伙伴，彻底改变了您管理和与收件箱互动的方式。通过先进的人工智能功能，<b>MailM8</b> 帮助您整理电子邮件，优先处理重要消息，并轻松撰写智能回复。告别电子邮件的压倒性情况，拥抱更高效和有组织的沟通体验，与 <b>MailM8</b> 一同打个招呼。",
-                            "tags": ["应用", "电子邮件", "通讯", "生产力"]
+                            "description": "使用 <b>Bird Tracker</b> 探索和记录鸟类世界！无论您是经验丰富的观鸟者还是初学者，这款应用都能帮助您识别物种、记录观测，并追踪迁徙模式。借助 AI 识别、互动地图和详细的鸟类档案，提升您的观鸟体验。与 <b>Bird Tracker</b> 一起亲近大自然！",
+                            "tags": ["观鸟", "自然", "野生动物", "追踪", "户外"]
                         }
                     },
                     "links": [
                         {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
-                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"}
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"},
+                        {"faIcon": "fa-brands fa-windows", "href": "https://apps.microsoft.com/home", "stringKey": "view_on_windows_store"}
                     ]
                 },
 
@@ -167,6 +168,38 @@
 
                 {
                     "id": 5,
+                    "img": null,
+                    "fallbackFaIcon": "fa-solid fa-hippo",
+                    "fallbackFaIconColor": "#1c875b",
+                    "category": "productivity",
+                    "locales": {
+                        "en": {
+                            "title": "Hippo",
+                            "description": "Meet <b>Hippo</b>, the playful learning companion for kids! Designed to make education fun and interactive, <b>Hippo</b> offers engaging activities, colorful games, and brain-boosting challenges to help children develop essential skills. Whether it’s math, reading, or problem-solving, this app keeps young minds curious and excited to learn. Join the adventure and watch your little one grow with <b>Hippo</b>!",
+                            "tags": ["kids", "learning", "education", "fun", "interactive"]
+                        },
+                        "es": {
+                            "description": "¡Conoce a <b>Hippo</b>, el compañero de aprendizaje perfecto para los niños! Diseñado para hacer que la educación sea divertida e interactiva, <b>Hippo</b> ofrece actividades emocionantes, juegos coloridos y desafíos que estimulan la mente. Desde matemáticas hasta lectura y resolución de problemas, esta app mantiene a los niños curiosos y motivados para aprender. ¡Únete a la aventura y ve cómo tu pequeño crece con <b>Hippo</b>!",
+                            "tags": ["niños", "aprendizaje", "educación", "diversión", "interactivo"]
+                        },
+                        "fr": {
+                            "description": "Découvrez <b>Hippo</b>, le compagnon d’apprentissage idéal pour les enfants ! Pensé pour rendre l’éducation amusante et interactive, <b>Hippo</b> propose des activités engageantes, des jeux colorés et des défis stimulants pour aider les enfants à développer des compétences essentielles. Qu’il s’agisse de mathématiques, de lecture ou de logique, cette application garde les jeunes esprits curieux et motivés. Rejoignez l’aventure et regardez votre enfant grandir avec <b>Hippo</b> !",
+                            "tags": ["enfants", "apprentissage", "éducation", "amusement", "interactif"]
+                        },
+                        "zh": {
+                            "description": "认识 <b>Hippo</b>，孩子们的快乐学习伙伴！<b>Hippo</b> 旨在让学习变得有趣又互动，提供丰富多彩的游戏、趣味挑战和益智活动，帮助孩子们培养数学、阅读和逻辑思维等核心技能。这款应用让孩子们在快乐中学习，保持对知识的好奇心。加入 <b>Hippo</b> 的世界，见证孩子的成长！",
+                            "tags": ["儿童", "学习", "教育", "趣味", "互动"]
+                        }
+                    },
+                    "links": [
+                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"},
+                        {"faIcon": "fa-brands fa-windows", "href": "https://apps.microsoft.com/home", "stringKey": "view_on_windows_store"}
+                    ]
+                },
+
+                {
+                    "id": 6,
                     "img": "images/portfolio/project-logo-5.png",
                     "fallbackFaIcon": "",
                     "fallbackFaIconColor": null,
@@ -197,7 +230,7 @@
                 },
 
                 {
-                    "id": 6,
+                    "id": 7,
                     "img": "images/portfolio/project-logo-9.png",
                     "fallbackFaIcon": "",
                     "fallbackFaIconColor": null,
@@ -219,38 +252,6 @@
                         "zh": {
                             "description": "踏入摇滚音乐的电动世界，感受 <b>RockVerse</b>！这款应用是摇滚音乐爱好者的天堂，提供大量经典和现代摇滚音轨，策划的播放列表以及幕后内容。无论您是铁杆粉丝还是刚刚发现这个音乐流派，<b>RockVerse</b> 都会让您更贴近摇滚乐的核心与灵魂。放大音量，释放摇滚精神！",
                             "tags": ["应用", "音乐", "摇滚", "娱乐"]
-                        }
-                    },
-                    "links": [
-                        {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
-                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"},
-                        {"faIcon": "fa-brands fa-windows", "href": "https://apps.microsoft.com/home", "stringKey": "view_on_windows_store"}
-                    ]
-                },
-
-                {
-                    "id": 7,
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-hippo",
-                    "fallbackFaIconColor": "#1c875b",
-                    "category": "productivity",
-                    "locales": {
-                        "en": {
-                            "title": "Hippo",
-                            "description": "Meet <b>Hippo</b>, the playful learning companion for kids! Designed to make education fun and interactive, <b>Hippo</b> offers engaging activities, colorful games, and brain-boosting challenges to help children develop essential skills. Whether it’s math, reading, or problem-solving, this app keeps young minds curious and excited to learn. Join the adventure and watch your little one grow with <b>Hippo</b>!",
-                            "tags": ["kids", "learning", "education", "fun", "interactive"]
-                        },
-                        "es": {
-                            "description": "¡Conoce a <b>Hippo</b>, el compañero de aprendizaje perfecto para los niños! Diseñado para hacer que la educación sea divertida e interactiva, <b>Hippo</b> ofrece actividades emocionantes, juegos coloridos y desafíos que estimulan la mente. Desde matemáticas hasta lectura y resolución de problemas, esta app mantiene a los niños curiosos y motivados para aprender. ¡Únete a la aventura y ve cómo tu pequeño crece con <b>Hippo</b>!",
-                            "tags": ["niños", "aprendizaje", "educación", "diversión", "interactivo"]
-                        },
-                        "fr": {
-                            "description": "Découvrez <b>Hippo</b>, le compagnon d’apprentissage idéal pour les enfants ! Pensé pour rendre l’éducation amusante et interactive, <b>Hippo</b> propose des activités engageantes, des jeux colorés et des défis stimulants pour aider les enfants à développer des compétences essentielles. Qu’il s’agisse de mathématiques, de lecture ou de logique, cette application garde les jeunes esprits curieux et motivés. Rejoignez l’aventure et regardez votre enfant grandir avec <b>Hippo</b> !",
-                            "tags": ["enfants", "apprentissage", "éducation", "amusement", "interactif"]
-                        },
-                        "zh": {
-                            "description": "认识 <b>Hippo</b>，孩子们的快乐学习伙伴！<b>Hippo</b> 旨在让学习变得有趣又互动，提供丰富多彩的游戏、趣味挑战和益智活动，帮助孩子们培养数学、阅读和逻辑思维等核心技能。这款应用让孩子们在快乐中学习，保持对知识的好奇心。加入 <b>Hippo</b> 的世界，见证孩子的成长！",
-                            "tags": ["儿童", "学习", "教育", "趣味", "互动"]
                         }
                     },
                     "links": [
@@ -388,33 +389,32 @@
 
                 {
                     "id": 12,
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-crow",
-                    "fallbackFaIconColor": "#7c4d91",
+                    "img": "images/portfolio/project-logo-7.png",
+                    "fallbackFaIcon": "",
+                    "fallbackFaIconColor": null,
                     "category": "productivity",
                     "locales": {
                         "en": {
-                            "title": "Bird Tracker",
-                            "description": "Discover and document the world of birds with <b>Bird Tracker</b>! Whether you're a seasoned birdwatcher or just starting out, this app helps you identify species, log sightings, and track migration patterns. Use AI-powered recognition, interactive maps, and detailed bird profiles to enhance your birdwatching experience. Get closer to nature with <b>Bird Tracker</b>!",
-                            "tags": ["birdwatching", "nature", "wildlife", "tracking", "outdoors"]
+                            "title": "MailM8",
+                            "description": "<b>MailM8</b> is your intelligent email companion, revolutionizing the way you manage and interact with your inbox. With advanced AI-powered features, <b>MailM8</b> helps you declutter your email, prioritize important messages, and compose smart replies in a breeze. Say goodbye to email overwhelm and hello to a more efficient and organized communication experience with <b>MailM8</b>.",
+                            "tags": ["app", "email", "communication", "productivity"]
                         },
                         "es": {
-                            "description": "¡Descubre y documenta el mundo de las aves con <b>Bird Tracker</b>! Ya seas un observador experimentado o un principiante, esta aplicación te ayuda a identificar especies, registrar avistamientos y seguir patrones de migración. Utiliza el reconocimiento por IA, mapas interactivos y perfiles detallados para mejorar tu experiencia en la observación de aves. ¡Acércate a la naturaleza con <b>Bird Tracker</b>!",
-                            "tags": ["observación de aves", "naturaleza", "vida silvestre", "seguimiento", "aire libre"]
+                            "description": "<b>MailM8</b> es tu compañero de correo electrónico inteligente, revolucionando la forma en que gestionas e interactúas con tu bandeja de entrada. Con funciones avanzadas impulsadas por inteligencia artificial, <b>MailM8</b> te ayuda a organizar tu correo electrónico, priorizar mensajes importantes y componer respuestas inteligentes con facilidad. Di adiós a la abrumadora bandeja de entrada y dale la bienvenida a una experiencia de comunicación más eficiente y organizada con <b>MailM8</b>.",
+                            "tags": ["aplicación", "correo electrónico", "comunicación", "productividad"]
                         },
                         "fr": {
-                            "description": "Découvrez et documentez le monde des oiseaux avec <b>Bird Tracker</b> ! Que vous soyez un ornithologue chevronné ou un débutant, cette application vous aide à identifier les espèces, enregistrer vos observations et suivre les migrations. Profitez de la reconnaissance IA, des cartes interactives et des fiches détaillées pour enrichir votre expérience. Rapprochez-vous de la nature avec <b>Bird Tracker</b> !",
-                            "tags": ["ornithologie", "nature", "faune", "suivi", "plein air"]
+                            "description": "<b>MailM8</b> est votre compagnon de messagerie intelligent, révolutionnant la manière dont vous gérez et interagissez avec votre boîte de réception. Avec des fonctionnalités avancées alimentées par l'IA, <b>MailM8</b> vous aide à désencombrer votre boîte de réception, à prioriser les messages importants et à composer des réponses intelligentes en un clin d'œil. Dites adieu à la surcharge de courrier électronique et bonjour à une expérience de communication plus efficace et organisée avec <b>MailM8</b>.",
+                            "tags": ["application", "courrier électronique", "communication", "productivité"]
                         },
                         "zh": {
-                            "description": "使用 <b>Bird Tracker</b> 探索和记录鸟类世界！无论您是经验丰富的观鸟者还是初学者，这款应用都能帮助您识别物种、记录观测，并追踪迁徙模式。借助 AI 识别、互动地图和详细的鸟类档案，提升您的观鸟体验。与 <b>Bird Tracker</b> 一起亲近大自然！",
-                            "tags": ["观鸟", "自然", "野生动物", "追踪", "户外"]
+                            "description": "<b>MailM8</b> 是您的智能电子邮件伙伴，彻底改变了您管理和与收件箱互动的方式。通过先进的人工智能功能，<b>MailM8</b> 帮助您整理电子邮件，优先处理重要消息，并轻松撰写智能回复。告别电子邮件的压倒性情况，拥抱更高效和有组织的沟通体验，与 <b>MailM8</b> 一同打个招呼。",
+                            "tags": ["应用", "电子邮件", "通讯", "生产力"]
                         }
                     },
                     "links": [
                         {"faIcon": "fa-brands fa-apple", "href": "https://www.apple.com/br/app-store/", "stringKey": "view_on_app_store"},
-                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"},
-                        {"faIcon": "fa-brands fa-windows", "href": "https://apps.microsoft.com/home", "stringKey": "view_on_windows_store"}
+                        {"faIcon": "fa-brands fa-google-play", "href": "https://play.google.com/store", "stringKey": "view_on_google_play"}
                     ]
                 }
             ]

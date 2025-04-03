@@ -40,7 +40,7 @@ li.inline-list-item {
 
     i {
         margin-right: 10px;
-        opacity: 0.7;
+        opacity: 1;
     }
 }
 

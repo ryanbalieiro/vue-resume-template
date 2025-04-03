@@ -138,23 +138,27 @@ div.portfolio-item-showing {
 
 /** ------------------- CONTENT ---------------------- **/
 div.portfolio-item-content-wrapper {
-    --proportion: 1;
+    --proportion: 0.9;
     --base-icon-size: 180px;
-    --base-title-size: 21px;
+    --base-title-size: 22px;
 
-    @include media-breakpoint-down(xxl) {
-        --proportion: 0.8;
+    @media (max-width: 2000px) {
+        --proportion: 0.85;
+        --base-title-size: 23px;
+    }
+    @media (max-width: 1560px) {
+        --proportion: 0.775;
         --base-title-size: 24px;
     }
-    @include media-breakpoint-down(xl) {
-        --proportion: 0.72;
+    @include media-breakpoint-down(xxl) {
+        --proportion: 0.675;
+        --base-title-size: 25px;
     }
     @include media-breakpoint-down(lg) {
         --proportion: 0.7;
     }
     @include media-breakpoint-down(md) {
         --proportion: 0.65;
-        --base-title-size: 25px;
     }
     @include media-breakpoint-down(sm) {
         --proportion: 0.6;

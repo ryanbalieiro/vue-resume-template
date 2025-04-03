@@ -132,14 +132,15 @@ div.items-grid {
     --margin-top: 30px;
     --grid-template: repeat(4, 1fr);
 
-    @media (min-width: 2200px) {
+    @media (min-width: 1800px) {
         --grid-template: repeat(5, 1fr);
     }
-
     @media (max-width: 1470px) {
+        --grid-template: repeat(4, 1fr);
+    }
+    @media (max-width: 1150px) {
         --grid-template: repeat(3, 1fr);
     }
-
     @include media-breakpoint-down(lg) {
         --margin-top: 25px;
     }

@@ -98,7 +98,7 @@ const infoListItems = computed(() => {
         },
 
         {
-            faIcon: `fa-regular fa-building`,
+            faIcon: `fa-regular fa-building me-lg-2`,
             value: institutionString.value,
             visibility: ['desktop', 'mobile']
         },

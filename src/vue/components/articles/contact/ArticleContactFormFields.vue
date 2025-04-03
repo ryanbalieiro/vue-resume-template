@@ -2,10 +2,10 @@
     <div class="contact-form-fields">
         <Alert type="danger"
                v-if="errorMessage"
-               class="mb-0"
+               class="mb-3"
                :message="errorMessage"/>
 
-        <div class="contact-form-row">
+        <div class="contact-form-row mt-0 mt-xl-1">
             <!-- Left Column -->
             <div class="contact-form-column contact-form-column-left">
                 <!-- Input Groups -->

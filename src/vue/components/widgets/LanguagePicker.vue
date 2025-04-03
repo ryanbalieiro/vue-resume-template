@@ -49,7 +49,9 @@
 import {computed, inject} from "vue"
 import Dropdown from '/node_modules/bootstrap/js/src/dropdown'
 import {useUtils} from "/src/composables/utils.js"
+import {useConstants} from "/src/composables/constants.js"
 
+const constants = useConstants()
 const utils = useUtils()
 
 const props = defineProps({
@@ -64,6 +66,9 @@ const strings = inject("strings")
 
 /** @type {{value:Language}} */
 const selectedLanguage = inject("selectedLanguage")
+
+/** @type {{value:String}} */
+const presentationMode = inject("presentationMode")
 
 /** @type {Function} */
 const setSelectedLanguageWithId = inject("setSelectedLanguageWithId")
@@ -89,6 +94,11 @@ const shouldCompress = computed(() => {
 })
 
 const _onLanguageSelected = (language) => {
+    if(presentationMode.value === constants.PresentationModes.ONE_AT_ONCE) {
+        setSelectedLanguageWithId(language.id)
+        return
+    }
+    
     setSpinnerEnabled(true, strings.value.getTranslation("changing_language", language, language))
     setTimeout(() => {
         setSelectedLanguageWithId(language.id)

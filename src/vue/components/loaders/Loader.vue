@@ -68,6 +68,7 @@ const canScroll = inject("canScroll")
 
 const schedulerTag = "loader"
 const didLoadLogo = ref(false)
+const didEmitReady = ref(false)
 const currentStep = ref(Steps.NONE)
 const percentage = ref(0)
 const loadingTime = ref(0)
@@ -140,7 +141,7 @@ const _executeAnimatingProgressStep = () => {
     currentStep.value = Steps.ANIMATING_PROGRESS
     scheduler.schedule(() => {
         _executeWaitingForCompletionStep()
-    }, 400, schedulerTag)
+    }, 200, schedulerTag)
 }
 
 const _executeWaitingForCompletionStep = () => {
@@ -149,7 +150,7 @@ const _executeWaitingForCompletionStep = () => {
     const dt = 1000 / 30
     loadingTime.value = 0
     loadingTimeAfterRendering.value = 0
-    emit('ready')
+    didEmitReady.value = false
 
     scheduler.interval(() => {
         _updateProgress(dt)
@@ -161,7 +162,7 @@ const _updateProgress = (dt) => {
 
     loadingTime.value += isPageLoaded ?
         dt :
-        dt / 16
+        dt / Math.max(4, percentage.value)
 
     loadingTimeAfterRendering.value += isPageLoaded ?
         dt :
@@ -194,6 +195,11 @@ const _incrementDisplayPercentage = (currentPercentage) => {
     const smootheningPercentageIncrement = diff > 8 ? 8 : Math.round(diff)
     percentage.value += smootheningPercentageIncrement
     percentage.value = utils.clamp(percentage.value, 0, 100)
+
+    if(percentage.value > 5 && !didEmitReady.value) {
+        emit('ready')
+    }
+
     if(percentage.value === 100 || loadingTimeAfterRendering.value >= 5000) {
         _onLoadingComplete()
     }

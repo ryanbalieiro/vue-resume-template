@@ -532,7 +532,7 @@
                 {
                     "id": 1,
                     "dateStart": null,
-                    "img": "images/flags/en.png",
+                    "img": "images/flags/en-us.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
                     "percentage": null,
@@ -594,7 +594,7 @@
                 {
                     "id": 3,
                     "dateStart": null,
-                    "img": "images/flags/vn.png",
+                    "img": "images/flags/vi.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
                     "percentage": null,
@@ -625,7 +625,7 @@
                 {
                     "id": 4,
                     "dateStart": null,
-                    "img": "images/flags/pt.png",
+                    "img": "images/flags/pt-br.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
                     "percentage": null,

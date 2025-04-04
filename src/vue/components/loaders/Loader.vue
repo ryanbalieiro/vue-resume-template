@@ -181,7 +181,7 @@ const _getImageLoadPercentage = () => {
     const imageLoadProgress = {loaded: 0, total: 0}
     Array.from(imageElements).map(item => {
         imageLoadProgress.total++
-        if(item.getAttribute('load-status') === "loaded")
+        if(item.getAttribute('load-status') === "loaded" || item.getAttribute('load-status') === "error")
             imageLoadProgress.loaded++
     })
 

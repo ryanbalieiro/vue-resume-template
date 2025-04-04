@@ -80,6 +80,9 @@ const _init = () => {
 }
 
 const _forceScrollToSection = (section, animated) => {
+    if(!section)
+        return
+
     const sectionEl = document.getElementById(section.htmlId)
     if(!sectionEl)
         return

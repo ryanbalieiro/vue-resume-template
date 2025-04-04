@@ -72,7 +72,7 @@ div.nav-profile-card-image-view {
     min-height: calc(var(--max-height)/2);
     width: var(--max-height);
     height: var(--max-height);
-    border: var(--border-width) solid lighten($nav-background, 10%);
+    border: var(--border-width) solid $nav-avatar-border-color;
     padding: 4px;
     border-radius: 50%;
 

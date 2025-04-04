@@ -27,6 +27,7 @@ $text-default-color: #140f29;
 /** Nav Colors **/
 $nav-background: #140f29;
 $nav-background-selected: lighten($nav-background, 5%);
+$nav-avatar-border-color: lighten($nav-background, 10%);
 $nav-highlight: lighten($primary, 30%);
 $nav-hover: lighten($primary, 30%);
 $nav-selected: lighten($primary, 20%);

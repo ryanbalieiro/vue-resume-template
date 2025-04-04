@@ -51,6 +51,9 @@ const _init = () => {
  * @param {Section} section
  */
 const navigateToSection = (section) => {
+    if(!section)
+        return
+
     if(window.location.hash === '#' + section.urlHashId)
         return
 

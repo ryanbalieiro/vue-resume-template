@@ -59,13 +59,23 @@ npm run resume:clear
 
 ### 1. Quickly customizing the colors
 
-You can easily customize the theme colors to match your style. Just head to `src/scss/_variables.scss` and tweak the color variables. For example, if you want your resume to have a blue theme instead of purple:
+You can easily customize the theme colors to match your style. Just head to `src/scss/_variables.scss` and tweak the color variables. For example, if you want your resume to have a green theme instead of purple:
 
 ```scss
-$primary: #0988a2; /** making the primary color blue **/
-$loader-background: #0b4e5d; /** making the loading screen background blue **/
-$nav-background: #032f38; /** changing the nav items to dark blue **/
+$primary: #439631; /** making the primary color green **/
+$default-section-background: #f0f3ef; /** changing the background color **/
+$text-default-color: #12290f; /** changing the color of the texts **/
+$loader-background: #224118; /** making the loading screen background green **/
+$nav-background: #16290f; /** changing the nav items to dark green **/
 ```
+
+You can also change the splash screen color on `index.html`:
+```html
+<body style="background-color:#224118">
+</body>
+```
+
+Here's a [live example](https://rbtutorials.github.io/alana-richard-vue-resume/) illustrating the color scheme after the changes shown above.
 
 ### 2. Changing the content
 

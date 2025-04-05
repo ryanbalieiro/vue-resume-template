@@ -50,14 +50,20 @@
                    :class="experienceTimeDisplay || !progressBarAllowed ? `text-light-7` : ``"
                    v-html="localize(item.locales, 'description', true)"/>
             </div>
+
+            <!-- Links -->
+            <ArticleWidgetLinkList  v-if="links && links.length"
+                                    class="mt-1 text-3"
+                                    :links="links"/>
         </div>
     </div>
 </template>
 
 <script setup>
 import {computed, inject} from "vue"
-import IconView from "/src/vue/components/widgets/IconView.vue"
 import {useUtils} from "/src/composables/utils.js"
+import IconView from "/src/vue/components/widgets/IconView.vue"
+import ArticleWidgetLinkList from "/src/vue/components/articles/base/ArticleWidgetLinkList.vue"
 
 const utils = useUtils()
 
@@ -112,6 +118,10 @@ const levelDisplay = computed(() => {
     }
 
     return `- ${percentage} ${level ? '(' + level + ')' : ''}`
+})
+
+const links = computed(() => {
+    return props.item.links
 })
 </script>
 

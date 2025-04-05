@@ -30,17 +30,9 @@
             <p class="text-3 text-light-7 p-0 m-0"
                v-html="localize(item.locales, 'description')"/>
 
-            <div v-if="links.length"
-                 class="links text-3 mt-2">
-                <a v-for="link in links"
-                   :href="link.href"
-                   target="_blank"
-                   class="link-darkened d-block">
-                    <i v-if="link.faIcon" :class="link.faIcon" class="me-1"/>
-                    <span v-html="localizeFromStrings(link['stringKey'])"/>
-                    <i class="fa-solid fa-arrow-up-right-dots ms-1"/>
-                </a>
-            </div>
+            <ArticleWidgetLinkList  v-if="links && links.length"
+                                    class="mt-2 text-3"
+                                    :links="links"/>
         </div>
     </li>
 </template>
@@ -49,6 +41,7 @@
 import {computed, inject} from "vue"
 import InfoBadge from "/src/vue/components/widgets/InfoBadge.vue"
 import InlineInfoList from "/src/vue/components/widgets/InlineInfoList.vue"
+import ArticleWidgetLinkList from "/src/vue/components/articles/base/ArticleWidgetLinkList.vue"
 
 const props = defineProps({
     item: {

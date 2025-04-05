@@ -21,15 +21,13 @@
                     "fallbackFaIcon": "fa-brands fa-vuejs",
                     "locales": {
                         "en": {
-                            "title": "Certified Vue Responsive Developer",
-                            "description": "Issued by VueMastery, <a class='link-darkened' href='https://google.com'>this certification</a> validates skills in building mobile-friendly and responsive Vue applications."
+                            "title": "Vue Mastery – <a class='link-darkened' href='https://google.com'>Certified Vue Responsive Developer</a>",
+                            "description": "Issued by VueMastery, this certification validates skills in building mobile-friendly and responsive Vue applications."
                         },
                         "de": {
-                            "title": "Zertifizierter Vue Responsive Entwickler",
                             "description": "Ausgestellt von VueMastery: <a class='link-darkened' href='https://google.com'>Diese Zertifizierung</a> bestätigt Fähigkeiten im Erstellen mobilfreundlicher und responsiver Vue-Anwendungen."
                         },
                         "it": {
-                            "title": "Sviluppatore Vue Responsive Certificato",
                             "description": "Rilasciato da VueMastery, <a class='link-darkened' href='https://google.com'>certifica</a> competenze nello sviluppo di applicazioni Vue responsive e ottimizzate per dispositivi mobili."
                         }
                     }
@@ -39,15 +37,13 @@
                     "fallbackFaIcon": "fa-solid fa-cubes",
                     "locales": {
                         "en": {
-                            "title": "Vue Component Architecture Certification",
+                            "title": "Frontend Academy – <a class='link-darkened' href='https://google.com'>Vue Component Architecture Certification</a>",
                             "description": "Granted by Frontend Academy, this cert confirms expertise in designing reusable and scalable Vue 3 component systems."
                         },
                         "de": {
-                            "title": "Zertifikat für Vue-Komponentenarchitektur",
                             "description": "Ausgestellt von der Frontend Academy: Bestätigt Fachwissen im Entwurf wiederverwendbarer und skalierbarer Vue 3-Komponenten."
                         },
                         "it": {
-                            "title": "Certificazione in Architettura dei Componenti Vue",
                             "description": "Rilasciata da Frontend Academy, conferma la competenza nella progettazione di componenti Vue 3 scalabili e riutilizzabili."
                         }
                     }
@@ -57,15 +53,13 @@
                     "fallbackFaIcon": "fa-solid fa-gauge-high",
                     "locales": {
                         "en": {
-                            "title": "Advanced Vue Performance Certification",
+                            "title": "CodeCrafters – <a class='link-darkened' href='https://google.com'>Advanced Vue Performance Certification</a>",
                             "description": "Awarded by CodeCrafters, this certification recognizes advanced optimization techniques and performance tuning in Vue apps."
                         },
                         "de": {
-                            "title": "Fortgeschrittenes Vue Performance Zertifikat",
                             "description": "Verliehen von CodeCrafters: Anerkennung für fortgeschrittene Optimierungstechniken und Performance-Tuning in Vue-Anwendungen."
                         },
                         "it": {
-                            "title": "Certificazione Avanzata in Performance Vue",
                             "description": "Rilasciata da CodeCrafters, attesta la padronanza delle tecniche avanzate di ottimizzazione delle performance nelle app Vue."
                         }
                     }
@@ -75,15 +69,13 @@
                     "fallbackFaIcon": "fa-solid fa-plug",
                     "locales": {
                         "en": {
-                            "title": "Vue API Integration Certificate",
+                            "title": "WebDev Institute – <a class='link-darkened' href='https://google.com'>Vue API Integration Certificate</a>",
                             "description": "Certified by WebDev Institute, this course covers integrating RESTful and GraphQL APIs into Vue applications."
                         },
                         "de": {
-                            "title": "Zertifikat für Vue API-Integration",
                             "description": "Zertifiziert vom WebDev Institute: Behandelt die Integration von RESTful- und GraphQL-APIs in Vue-Anwendungen."
                         },
                         "it": {
-                            "title": "Certificato di Integrazione API con Vue",
                             "description": "Rilasciato dal WebDev Institute, questo corso tratta l'integrazione di API RESTful e GraphQL nelle app Vue."
                         }
                     }

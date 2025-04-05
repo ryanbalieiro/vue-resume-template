@@ -8,13 +8,6 @@ It showcases the fictional resume of a Vue Developer named **Alana Richard**, fe
 
 [Click here](https://rbtutorials.github.io/alana-richard-vue-resume/#about) to view the live preview.
 
-## Features
-
-- Clean and minimalist layout
-- Custom green theme styling
-- Fully responsive design
-- Built with Vue 3
-
 ## Getting Started
 
 To run this project locally:

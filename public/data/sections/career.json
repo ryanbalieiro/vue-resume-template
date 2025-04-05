@@ -1,0 +1,224 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {
+                    "title": ""
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "max_items_per_line": 1,
+                "transparent_item_icon_background": true,
+                "small_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "fallbackFaIcon": "fa-brands fa-vuejs",
+                    "locales": {
+                        "en": {
+                            "title": "Certified Vue Responsive Developer",
+                            "description": "Issued by VueMastery, <a class='link-darkened' href='https://google.com'>this certification</a> validates skills in building mobile-friendly and responsive Vue applications."
+                        },
+                        "de": {
+                            "title": "Zertifizierter Vue Responsive Entwickler",
+                            "description": "Ausgestellt von VueMastery: <a class='link-darkened' href='https://google.com'>Diese Zertifizierung</a> bestätigt Fähigkeiten im Erstellen mobilfreundlicher und responsiver Vue-Anwendungen."
+                        },
+                        "it": {
+                            "title": "Sviluppatore Vue Responsive Certificato",
+                            "description": "Rilasciato da VueMastery, <a class='link-darkened' href='https://google.com'>certifica</a> competenze nello sviluppo di applicazioni Vue responsive e ottimizzate per dispositivi mobili."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "fallbackFaIcon": "fa-solid fa-cubes",
+                    "locales": {
+                        "en": {
+                            "title": "Vue Component Architecture Certification",
+                            "description": "Granted by Frontend Academy, this cert confirms expertise in designing reusable and scalable Vue 3 component systems."
+                        },
+                        "de": {
+                            "title": "Zertifikat für Vue-Komponentenarchitektur",
+                            "description": "Ausgestellt von der Frontend Academy: Bestätigt Fachwissen im Entwurf wiederverwendbarer und skalierbarer Vue 3-Komponenten."
+                        },
+                        "it": {
+                            "title": "Certificazione in Architettura dei Componenti Vue",
+                            "description": "Rilasciata da Frontend Academy, conferma la competenza nella progettazione di componenti Vue 3 scalabili e riutilizzabili."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "fallbackFaIcon": "fa-solid fa-gauge-high",
+                    "locales": {
+                        "en": {
+                            "title": "Advanced Vue Performance Certification",
+                            "description": "Awarded by CodeCrafters, this certification recognizes advanced optimization techniques and performance tuning in Vue apps."
+                        },
+                        "de": {
+                            "title": "Fortgeschrittenes Vue Performance Zertifikat",
+                            "description": "Verliehen von CodeCrafters: Anerkennung für fortgeschrittene Optimierungstechniken und Performance-Tuning in Vue-Anwendungen."
+                        },
+                        "it": {
+                            "title": "Certificazione Avanzata in Performance Vue",
+                            "description": "Rilasciata da CodeCrafters, attesta la padronanza delle tecniche avanzate di ottimizzazione delle performance nelle app Vue."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "fallbackFaIcon": "fa-solid fa-plug",
+                    "locales": {
+                        "en": {
+                            "title": "Vue API Integration Certificate",
+                            "description": "Certified by WebDev Institute, this course covers integrating RESTful and GraphQL APIs into Vue applications."
+                        },
+                        "de": {
+                            "title": "Zertifikat für Vue API-Integration",
+                            "description": "Zertifiziert vom WebDev Institute: Behandelt die Integration von RESTful- und GraphQL-APIs in Vue-Anwendungen."
+                        },
+                        "it": {
+                            "title": "Certificato di Integrazione API con Vue",
+                            "description": "Rilasciato dal WebDev Institute, questo corso tratta l'integrazione di API RESTful e GraphQL nelle app Vue."
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {
+                    "title": "Studying...",
+                    "description": "Here's what I'm currently diving into and sharpening my skills in:"
+                },
+                "de": {
+                    "title": "Ich lerne gerade...",
+                    "description": "Hier siehst du, worin ich gerade eintauche und meine Skills vertiefe:"
+                },
+                "it": {
+                    "title": "Sto studiando...",
+                    "description": "Ecco su cosa mi sto concentrando per migliorare le mie competenze:"
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "max_items_per_line": 2,
+                "transparent_item_icon_background": false,
+                "small_icons": false,
+                "chart": "pie"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "fallbackFaIcon": "fa-brands fa-react",
+                    "fallbackFaIconColor": "#61DBFB",
+                    "percentage": 35,
+                    "locales": {
+                        "en": {
+                            "title": "React JS",
+                            "description": "Modern UI with React"
+                        },
+                        "de": {
+                            "title": "React JS",
+                            "description": "Moderne UI mit React"
+                        },
+                        "it": {
+                            "title": "React JS",
+                            "description": "UI moderna con React"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "fallbackFaIcon": "fa-solid fa-pencil-ruler",
+                    "fallbackFaIconColor": "#f5a623",
+                    "percentage": 15,
+                    "locales": {
+                        "en": {
+                            "title": "UI/UX Design",
+                            "description": "Better design skills"
+                        },
+                        "de": {
+                            "title": "UI/UX Design",
+                            "description": "Bessere Design-Skills"
+                        },
+                        "it": {
+                            "title": "Design UI/UX",
+                            "description": "Competenze di design"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "fallbackFaIcon": "fa-brands fa-react",
+                    "fallbackFaIconColor": "#616efb",
+                    "percentage": 25,
+                    "locales": {
+                        "en": {
+                            "title": "React Native",
+                            "description": "Mobile apps with React"
+                        },
+                        "de": {
+                            "title": "React Native",
+                            "description": "Mobile Apps mit React"
+                        },
+                        "it": {
+                            "title": "React Native",
+                            "description": "App mobili con React"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "fallbackFaIcon": "fa-solid fa-seedling",
+                    "fallbackFaIconColor": "#903dc4",
+                    "percentage": 15,
+                    "locales": {
+                        "en": {
+                            "title": "Plinia",
+                            "description": "Fullstack with Vite"
+                        },
+                        "de": {
+                            "title": "Plinia",
+                            "description": "Fullstack mit Vite"
+                        },
+                        "it": {
+                            "title": "Plinia",
+                            "description": "Fullstack con Vite"
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "fallbackFaIcon": "fa-brands fa-vuejs",
+                    "fallbackFaIconColor": "#42b883",
+                    "percentage": 10,
+                    "locales": {
+                        "en": {
+                            "title": "Vuetify",
+                            "description": "Vue + Material Design"
+                        },
+                        "de": {
+                            "title": "Vuetify",
+                            "description": "Vue + Material Design"
+                        },
+                        "it": {
+                            "title": "Vuetify",
+                            "description": "Vue + Material Design"
+                        }
+                    }
+                }
+            ]
+
+        }
+    ]
+}

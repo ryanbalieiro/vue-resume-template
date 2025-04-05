@@ -13,24 +13,24 @@ $z-index-tab-controller: 95;
 $z-index-loader: 99999;
 
 /** Bootstrap Colors **/
-$primary: #7e45dc;
+$primary: #439631;
 $dark: #212529;
 $success: #06c203;
 $danger: #d91c1c;
 $light: #fcfcfc;
 
 /** Layout Colors **/
-$default-section-background: #f1eff3;
-$loader-background: #261841;
-$text-default-color: #140f29;
+$default-section-background: #f0f3ef;
+$loader-background: #224118;
+$text-default-color: #12290f;
 
 /** Nav Colors **/
-$nav-background: #140f29;
+$nav-background: #16290f;
 $nav-background-selected: lighten($nav-background, 5%);
-$nav-avatar-border-color: lighten($nav-background, 10%);
-$nav-highlight: lighten($primary, 30%);
+$nav-avatar-border-color: lighten($nav-background, 5%);
+$nav-highlight: lighten($primary, 40%);
 $nav-hover: lighten($primary, 30%);
-$nav-selected: lighten($primary, 20%);
+$nav-selected: lighten($primary, 30%);
 $nav-contrast: #fcfcfc;
 $nav-contrast-90: rgba($nav-contrast, 0.9);
 $nav-contrast-80: rgba($nav-contrast, 0.8);

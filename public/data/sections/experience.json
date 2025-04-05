@@ -3,7 +3,6 @@
         {
             "id": 1,
             "component": "ArticleTimeline",
-            "locales": {},
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "desc"
@@ -11,235 +10,149 @@
             "items": [
                 {
                     "id": 1,
-                    "dateStart": {"year": 2015, "month": 1},
-                    "dateEnd": {"year": 2017, "month": 12},
-                    "img": "images/places/logo-ux-studio.png",
-                    "fallbackFaIcon": null,
-                    "fallbackFaIconColor": null,
-
+                    "dateStart": { "year": 2020, "month": 6 },
+                    "dateEnd": { "year": 2020, "month": 12 },
+                    "img": "",
+                    "fallbackFaIcon": "fa-brands fa-facebook",
+                    "fallbackFaIconColor": "#1877F2",
                     "locales": {
                         "en": {
-                            "title": "UX Designer",
-                            "description": "Contributed to designing intuitive and user-friendly web application interfaces, creating engaging and seamless user experiences. Collaborated closely with cross-functional teams and stakeholders to ensure designs aligned with business goals and user needs.",
-                            "province": "Hannover",
-                            "country": "Germany",
-                            "institution": "UX Masters Studio",
-                            "tags": ["Figma", "Wireframing", "Prototyping", "Responsive Design", "User Research"]
+                            "title": "Intern",
+                            "description": "Joined the frontend team as an intern working on internal Vue components and documentation improvements. Contributed to streamlining the dev workflow and refactoring legacy components to align with newer Vue standards.",
+                            "list": null,
+                            "province": "California",
+                            "country": "US",
+                            "institution": "Facebook",
+                            "tags": ["vue2", "frontend", "internship", "documentation"]
                         },
-
-                        "es": {
-                            "title": "Diseñador de UX",
-                            "description": "Contribuí al diseño de interfaces de aplicaciones web intuitivas y amigables para el usuario, creando experiencias de usuario atractivas y fluidas. Colaboré estrechamente con equipos multifuncionales e interesados para asegurarme de que los diseños se alinearan con los objetivos comerciales y las necesidades de los usuarios.",
-                            "province": "Hannover",
-                            "country": "Alemania",
-                            "institution": "UX Masters Studio",
-                            "tags": ["Figma", "Prototipado", "Diseño Responsivo", "Investigación de Usuarios", "Wireframing"]
+                        "it": {
+                            "title": "Tirocinante",
+                            "description": "Mi sono unita al team frontend come tirocinante, lavorando su componenti Vue interni e miglioramenti alla documentazione. Ho anche contribuito all'ottimizzazione del flusso di lavoro degli sviluppatori e al refactoring di componenti legacy.",
+                            "list": null,
+                            "province": "California",
+                            "country": "Stati Uniti",
+                            "institution": "Facebook",
+                            "tags": ["vue2", "frontend", "tirocinio", "documentazione"]
                         },
-
-                        "fr": {
-                            "title": "Designer UX",
-                            "description": "Contribué à la conception d'interfaces d'applications web intuitives et conviviales, créant ainsi des expériences utilisateur engageantes et fluides. Collaboré étroitement avec des équipes pluridisciplinaires et des parties prenantes pour garantir que les designs soient alignés sur les objectifs commerciaux et les besoins des utilisateurs.",
-                            "province": "Hanovre",
-                            "country": "Allemagne",
-                            "institution": "UX Masters Studio",
-                            "tags": ["Figma", "Maquettes", "Prototypage", "Design Responsive", "Recherche Utilisateur"]
-                        },
-
-                        "zh": {
-                            "title": "用户体验设计师",
-                            "description": "为设计直观、用户友好的网络应用界面作出了贡献，创建了引人入胜且无缝的用户体验。与跨职能团队和利益相关者密切合作，确保设计与业务目标和用户需求相一致。",
-                            "province": "汉诺威",
-                            "country": "德国",
-                            "institution": "UX Masters Studio",
-                            "tags": ["Figma", "线框图", "原型设计", "响应式设计", "用户研究"]
+                        "de": {
+                            "title": "Praktikant",
+                            "description": "Ich habe als Praktikantin im Frontend-Team gearbeitet und interne Vue-Komponenten sowie Dokumentationen verbessert. Zusätzlich habe ich an der Verbesserung des Entwickler-Workflows und der Modernisierung älterer Komponenten mitgewirkt.",
+                            "list": null,
+                            "province": "California",
+                            "country": "USA",
+                            "institution": "Facebook",
+                            "tags": ["vue2", "frontend", "praktikum", "dokumentation"]
                         }
                     }
                 },
-
                 {
                     "id": 2,
-                    "dateStart": {"year": 2018, "month": 1},
-                    "dateEnd": {"year": 2020, "month": 8},
-                    "img": "images/places/logo-adobe.png",
-                    "fallbackFaIcon": null,
-                    "fallbackFaIconColor": null,
-
+                    "dateStart": { "year": 2021, "month": 1 },
+                    "dateEnd": { "year": 2022, "month": 8 },
+                    "img": "",
+                    "fallbackFaIcon": "fa-brands fa-google",
+                    "fallbackFaIconColor": "#DB4437",
                     "locales": {
                         "en": {
-                            "title": "Senior UI/UX Designer",
-                            "description": "Led design projects, conducted comprehensive user research, and utilized data-driven insights to enhance user experiences. Managed design teams, fostering creativity and innovation while implementing design best practices to deliver successful outcomes for various digital products.",
+                            "title": "Junior Vue Developer",
+                            "description": "Assisted in maintaining internal tools and enhancing UI components in a Vue.js ecosystem. Collaborated with product designers and helped transition several legacy components to Composition API.",
+                            "list": null,
                             "province": "California",
                             "country": "US",
-                            "institution": "Adobe",
-                            "tags": ["Figma", "Adobe XD", "Sketch", "Data-Driven Design"]
+                            "institution": "Google",
+                            "tags": ["vue2", "vue3", "composition-api", "ui"]
                         },
-
-                        "es": {
-                            "title": "Designer Senior UI/UX",
-                            "description": "Lideré proyectos de diseño, realicé investigaciones exhaustivas sobre usuarios y utilicé información basada en datos para mejorar las experiencias de usuario. Gestioné equipos de diseño, fomentando la creatividad y la innovación al tiempo que implementaba las mejores prácticas de diseño para obtener resultados exitosos en diversos productos digitales.",
+                        "it": {
+                            "title": "Sviluppatore Vue Junior",
+                            "description": "Ho collaborato alla manutenzione di strumenti interni e al miglioramento dei componenti UI in un ecosistema Vue.js. Ho lavorato a stretto contatto con i designer e aiutato nella migrazione verso Composition API.",
+                            "list": null,
                             "province": "California",
-                            "country": "EE. UU.",
-                            "institution": "Adobe",
-                            "tags": ["Figma", "Adobe XD", "Sketch", "Diseño Basado en Datos"]
+                            "country": "Stati Uniti",
+                            "institution": "Google",
+                            "tags": ["vue2", "vue3", "composition-api", "ui"]
                         },
-
-                        "fr": {
-                            "title": "Designer UI/UX Senior",
-                            "description": "A piloté les initiatives UX en supervisant une équipe de concepteurs, en élaborant des stratégies de conception et en dirigeant des collaborations interfonctionnelles avec les responsables de produits, les ingénieurs et les cadres. Axé sur la création de designs centrés sur l'utilisateur alignés sur les objectifs commerciaux et aboutissant à une satisfaction accrue des utilisateurs.",
-                            "province": "Californie",
-                            "country": "États-Unis",
-                            "institution": "Adobe",
-                            "tags": ["Figma", "Adobe XD", "Sketch", "Conception Basée sur les Données"]
-                        },
-
-                        "zh": {
-                            "title": "高级UI/UX设计师",
-                            "description": "领导设计项目，进行全面的用户研究，利用数据驱动的见解提升用户体验。管理设计团队，培养创意和创新，同时实施设计最佳实践，为各种数字产品交付成功的结果。",
-                            "province": "加利福尼亚州",
-                            "country": "美国",
-                            "institution": "Adobe",
-                            "tags": ["Figma", "Adobe XD", "Sketch", "数据驱动设计"]
+                        "de": {
+                            "title": "Junior Vue-Entwickler",
+                            "description": "Unterstützung bei der Wartung interner Tools und Verbesserung von UI-Komponenten in einem Vue.js-Ökosystem. Zusammenarbeit mit Designern und Migration von Komponenten zur Composition API.",
+                            "list": null,
+                            "province": "California",
+                            "country": "USA",
+                            "institution": "Google",
+                            "tags": ["vue2", "vue3", "composition-api", "ui"]
                         }
                     }
                 },
-
                 {
                     "id": 3,
-                    "dateStart": {"year": 2020, "month": 9},
-                    "dateEnd": {"year": 2022, "month": 9},
-                    "img": "images/places/logo-apple.png",
-                    "fallbackFaIcon": null,
-                    "fallbackFaIconColor": null,
-
+                    "dateStart": { "year": 2022, "month": 9 },
+                    "dateEnd": { "year": 2024, "month": 3 },
+                    "img": "",
+                    "fallbackFaIcon": "fa-brands fa-x-twitter",
+                    "fallbackFaIconColor": "#000000",
                     "locales": {
                         "en": {
-                            "title": "Lead UX Designer",
-                            "description": "Drove UX initiatives by overseeing a team of designers, crafting design strategies, and spearheading cross-functional collaborations with product managers, engineers, and executives. Focused on creating user-centric designs that aligned with business objectives and resulted in enhanced user satisfaction.",
-                            "province": "California",
-                            "country": "US",
-                            "institution": "Apple",
-                            "tags": ["Sketch", "Adobe XD", "InVision", "Design Strategy", "Cross-Functional Collaboration"]
+                            "title": "Vue Developer",
+                            "description": "Contributed to various frontend initiatives remotely, focusing on Vue 3, Composition API, and code modularization. Led code reviews and mentored junior devs while helping roll out new feature pipelines.",
+                            "list": null,
+                            "province": "Remote",
+                            "country": "",
+                            "institution": "X",
+                            "tags": ["vue3", "composition-api", "remote", "architecture"]
                         },
-
-                        "es": {
-                            "title": "Designer UX Principal",
-                            "description": "Impulsé iniciativas de UX supervisando un equipo de diseñadores, elaborando estrategias de diseño y liderando colaboraciones multifuncionales con gerentes de producto, ingenieros y ejecutivos. Centrado en crear diseños centrados en el usuario que se alinearan con los objetivos comerciales y que dieron como resultado una mayor satisfacción del usuario.",
-                            "province": "California",
-                            "country": "EE. UU.",
-                            "institution": "Apple",
-                            "tags": ["Sketch", "Adobe XD", "InVision", "Estrategia de Diseño", "Colaboración Multifuncional"]
+                        "it": {
+                            "title": "Sviluppatore Vue",
+                            "description": "Ho contribuito da remoto a diverse iniziative frontend, concentrandomi su Vue 3, Composition API e modularizzazione del codice. Ho gestito revisioni di codice e supportato sviluppatori junior.",
+                            "list": null,
+                            "province": "Remoto",
+                            "country": "",
+                            "institution": "X",
+                            "tags": ["vue3", "composition-api", "remoto", "architettura"]
                         },
-
-                        "fr": {
-                            "title": "Designer UX Principal",
-                            "description": "A piloté les initiatives UX en supervisant une équipe de concepteurs, en élaborant des stratégies de conception et en dirigeant des collaborations interfonctionnelles avec les responsables de produits, les ingénieurs et les cadres. Axé sur la création de designs centrés sur l'utilisateur alignés sur les objectifs commerciaux et aboutissant à une satisfaction accrue des utilisateurs.",
-                            "province": "Californie",
-                            "country": "États-Unis",
-                            "institution": "Apple",
-                            "tags": ["Sketch", "Adobe XD", "InVision", "Stratégie de Conception", "Collaboration Interfonctionnelle"]
-                        },
-
-                        "zh": {
-                            "title": "首席用户体验设计师",
-                            "description": "通过监督设计团队、制定设计战略，并与产品经理、工程师和高管共同推动跨职能合作，推动了用户体验的创新。专注于创建符合业务目标的以用户为中心的设计，从而实现了增强的用户满意度。",
-                            "province": "加利福尼亚州",
-                            "country": "美国",
-                            "institution": "Apple",
-                            "tags": ["Sketch", "Adobe XD", "InVision", "设计战略", "跨职能合作"]
+                        "de": {
+                            "title": "Vue-Entwickler",
+                            "description": "Remote-Mitarbeit an verschiedenen Frontend-Initiativen mit Fokus auf Vue 3, Composition API und Code-Modularisierung. Durchführung von Code-Reviews und Unterstützung jüngerer Entwickler.",
+                            "list": null,
+                            "province": "Remote",
+                            "country": "",
+                            "institution": "X",
+                            "tags": ["vue3", "composition-api", "remote", "architektur"]
                         }
                     }
                 },
-
                 {
                     "id": 4,
-                    "dateStart": {"year": 2022, "month": 10},
-                    "dateEnd": {"year": 2024, "month": 9},
-                    "img": "images/places/logo-coursera.png",
-                    "fallbackFaIcon": null,
-                    "fallbackFaIconColor": null,
-
+                    "dateStart": { "year": 2024, "month": 4 },
+                    "dateEnd": { "string": "now" },
+                    "img": "",
+                    "fallbackFaIcon": "fa-brands fa-paypal",
+                    "fallbackFaIconColor": "#003087",
                     "locales": {
                         "en": {
-                            "title": "UX Design Full-Time Professor",
-                            "description": "Leveraged my expertise in UX design to educate and inspire students in the art of user-centered design principles. Conducted user studies, analyzed data, and guided students in applying theoretical knowledge to practical projects, empowering the next generation of UX designers.",
-                            "province": "New York",
-                            "country": "US",
-                            "institution": "Coursera",
-                            "tags": ["Adobe XD", "Sketch", "Axure", "Educational Mentorship"]
+                            "title": "Senior Vue Developer",
+                            "description": "Working remotely on scalable Vue.js applications with a focus on performance and accessibility. Architecting reusable modules and contributing to design systems while ensuring WCAG compliance.",
+                            "list": null,
+                            "province": "Remote",
+                            "country": "",
+                            "institution": "PayPal",
+                            "tags": ["vue3", "senior", "performance", "accessibility"]
                         },
-
-                        "es": {
-                            "title": "Profesor de Tiempo Completo en UX Design",
-                            "description": "Utilicé mi experiencia en diseño UX para educar e inspirar a los estudiantes en el arte de los principios de diseño centrado en el usuario. Realicé estudios de usuarios, analicé datos y orienté a los estudiantes en la aplicación de conocimientos teóricos a proyectos prácticos, empoderando a la próxima generación de diseñadores UX.",
-                            "province": "Nueva York",
-                            "country": "EE. UU.",
-                            "institution": "Coursera",
-                            "tags": ["Adobe XD", "Sketch", "Axure", "Mentoría Educativa"]
+                        "it": {
+                            "title": "Sviluppatore Vue Senior",
+                            "description": "Lavoro da remoto su applicazioni Vue.js scalabili con un focus su prestazioni e accessibilità. Sto progettando moduli riutilizzabili e contribuendo ai design system nel rispetto delle linee guida WCAG.",
+                            "list": null,
+                            "province": "Remoto",
+                            "country": "",
+                            "institution": "PayPal",
+                            "tags": ["vue3", "senior", "prestazioni", "accessibilità"]
                         },
-
-                        "fr": {
-                            "title": "Professeur à temps plein en UX Design",
-                            "description": "J'ai mis à profit mon expertise en conception UX pour éduquer et inspirer les étudiants dans l'art des principes de conception centrés sur l'utilisateur. J'ai réalisé des études utilisateur, analysé des données et guidé les étudiants dans l'application des connaissances théoriques à des projets pratiques, donnant ainsi les moyens à la prochaine génération de concepteurs UX.",
-                            "province": "New York",
-                            "country": "États-Unis",
-                            "institution": "Coursera",
-                            "tags": ["Adobe XD", "Sketch", "Axure", "Mentorat Éducatif"]
-                        },
-
-                        "zh": {
-                            "title": "全职用户体验设计教授",
-                            "description": "利用我的用户体验设计专业知识，教育和激励学生学习以用户为中心的设计原则。进行用户研究，分析数据，并指导学生将理论知识应用于实际项目，培养下一代用户体验设计师。",
-                            "province": "纽约",
-                            "country": "美国",
-                            "institution": "Coursera",
-                            "tags": ["Adobe XD", "Sketch", "Axure", "教育指导"]
-                        }
-                    }
-                },
-
-                {
-                    "id": 5,
-                    "dateStart": {"year": 2024, "month": 10},
-                    "dateEnd": {"string": "now"},
-                    "img": null,
-                    "fallbackFaIcon": "fa-brands fa-steam",
-                    "fallbackFaIconColor": "#222222",
-
-                    "locales": {
-                        "en": {
-                            "title": "Project Manager",
-                            "description": "Led cross-functional teams to successfully execute and deliver high-impact projects within scope, time, and budget constraints. Developed and implemented agile methodologies to enhance team productivity, streamline workflows, and ensure continuous improvement. Facilitated collaboration between stakeholders, engineers, and designers to align project goals with business objectives.",
-                            "province": "San Francisco",
-                            "country": "US",
-                            "institution": "Steam Valve",
-                            "tags": ["Agile", "Scrum", "Leadership", "Risk Management"]
-                        },
-
-                        "es": {
-                            "title": "Gerente de Proyectos",
-                            "description": "Lideré equipos multifuncionales para ejecutar y entregar con éxito proyectos de alto impacto dentro de los límites de alcance, tiempo y presupuesto. Desarrollé e implementé metodologías ágiles para mejorar la productividad del equipo, optimizar los flujos de trabajo y garantizar una mejora continua. Facilité la colaboración entre las partes interesadas, ingenieros y diseñadores para alinear los objetivos del proyecto con los objetivos comerciales.",
-                            "province": "San Francisco",
-                            "country": "EE. UU.",
-                            "institution": "Steam Valve",
-                            "tags": ["Agile", "Scrum", "Liderazgo", "Gestión de Riesgos"]
-                        },
-
-                        "fr": {
-                            "title": "Chef de Projet",
-                            "description": "J'ai dirigé des équipes pluridisciplinaires pour exécuter et livrer avec succès des projets à fort impact dans les limites de portée, de temps et de budget. J'ai développé et mis en œuvre des méthodologies agiles afin d'améliorer la productivité de l'équipe, d'optimiser les flux de travail et d'assurer une amélioration continue. J'ai facilité la collaboration entre les parties prenantes, les ingénieurs et les designers pour aligner les objectifs du projet avec les objectifs commerciaux.",
-                            "province": "San Francisco",
-                            "country": "États-Unis",
-                            "institution": "Steam Valve",
-                            "tags": ["Agile", "Scrum", "Leadership", "Gestion des Risques"]
-                        },
-
-                        "zh": {
-                            "title": "项目经理",
-                            "description": "领导跨职能团队，在范围、时间和预算限制内成功执行并交付高影响力项目。制定并实施敏捷方法，以提高团队生产力，优化工作流程，并确保持续改进。促进利益相关者、工程师和设计师之间的协作，使项目目标与业务目标保持一致。管理风险评估，优化资源分配，并确保及时决策，以减少潜在瓶颈。",
-                            "province": "旧金山",
-                            "country": "美国",
-                            "institution": "Steam Valve",
-                            "tags": ["敏捷", "Scrum", "领导力", "风险管理"]
+                        "de": {
+                            "title": "Senior Vue-Entwickler",
+                            "description": "Remote-Arbeit an skalierbaren Vue.js-Anwendungen mit Fokus auf Leistung und Barrierefreiheit. Architektur wiederverwendbarer Module und Beitrag zu Designsystemen gemäß WCAG-Standards.",
+                            "list": null,
+                            "province": "Remote",
+                            "country": "",
+                            "institution": "PayPal",
+                            "tags": ["vue3", "senior", "leistung", "barrierefreiheit"]
                         }
                     }
                 }

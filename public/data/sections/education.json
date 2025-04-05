@@ -3,7 +3,6 @@
         {
             "id": 1,
             "component": "ArticleTimeline",
-            "locales": {},
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "desc"
@@ -11,188 +10,126 @@
             "items": [
                 {
                     "id": 1,
-                    "dateStart": {"year": 2014, "month": 1},
-                    "dateEnd": {"year": 2014, "month": 7},
-                    "img": "images/places/logo-udacity.png",
+                    "dateStart": {"year": 2016, "month": 3},
+                    "dateEnd": {"year": 2020, "month": 3},
+                    "img": "images/pictures/place-usf.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
-
                     "locales": {
                         "en": {
-                            "title": "Pre-University Program in Computer Science",
-                            "description": "Completed a preparatory program covering foundational computer science topics such as programming, algorithms, and data structures. Gained hands-on experience with problem-solving and logical thinking.",
-                            "province": "Toronto",
-                            "country": "Canada",
-                            "institution": "Udacity",
-                            "tags": []
+                            "title": "Bachelor’s Degree in Software Engineering",
+                            "description": "Studied software architecture, object-oriented programming, and front-end development. Participated in multiple group projects and built a solid foundation in full-stack web development with a focus on user-centric design.",
+                            "list": null,
+                            "province": "",
+                            "country": "US",
+                            "institution": "University of South Florida"
                         },
-
-                        "es": {
-                            "title": "Programa Preuniversitario en Informática",
-                            "description": "Completó un programa preparatorio que cubría temas fundamentales de informática como programación, algoritmos y estructuras de datos. Adquirió experiencia práctica en resolución de problemas y pensamiento lógico.",
-                            "province": "Toronto",
-                            "country": "Canadá",
-                            "institution": "Udacity",
-                            "tags": []
+                        "it": {
+                            "title": "Laurea in Ingegneria del Software",
+                            "description": "Ho studiato architettura del software, programmazione orientata agli oggetti e sviluppo front-end. Ho partecipato a diversi progetti di gruppo e costruito una solida base nello sviluppo web full-stack, con un’attenzione particolare al design centrato sull’utente.",
+                            "list": null,
+                            "province": "",
+                            "country": "Stati Uniti",
+                            "institution": "University of South Florida"
                         },
-
-                        "fr": {
-                            "title": "Programme Pré-Universitaire en Informatique",
-                            "description": "A achevé un programme préparatoire couvrant les bases de l'informatique, notamment la programmation, les algorithmes et les structures de données. Acquis une expérience pratique en résolution de problèmes et en pensée logique.",
-                            "province": "Toronto",
-                            "country": "Canada",
-                            "institution": "Udacity",
-                            "tags": []
-                        },
-
-                        "zh": {
-                            "title": "大学预科计算机科学课程",
-                            "description": "完成了一项涵盖计算机科学基础知识的预科课程，如编程、算法和数据结构。获得了解决问题和逻辑思维的实践经验。",
-                            "province": "多伦多",
-                            "country": "加拿大",
-                            "institution": "Udacity",
-                            "tags": []
+                        "de": {
+                            "title": "Bachelor in Softwaretechnik",
+                            "description": "Ich habe Softwarearchitektur, objektorientierte Programmierung und Frontend-Entwicklung studiert. In mehreren Gruppenprojekten mitgewirkt und eine solide Grundlage in der Full-Stack-Webentwicklung mit Fokus auf nutzerzentriertem Design aufgebaut.",
+                            "list": null,
+                            "province": "",
+                            "country": "USA",
+                            "institution": "University of South Florida"
                         }
                     }
                 },
 
                 {
                     "id": 2,
-                    "dateStart": {"year": 2014, "month": 10},
-                    "dateEnd": {"year": 2015, "month": 6},
-                    "img": "",
-                    "fallbackFaIcon": "fa-solid fa-laptop-code",
-                    "fallbackFaIconColor": "#140f29",
-
+                    "dateStart": {"year": 2020, "month": 3},
+                    "dateEnd": {"year": 2020, "month": 8},
+                    "img": "images/pictures/place-udacity.png",
+                    "fallbackFaIcon": null,
+                    "fallbackFaIconColor": null,
                     "locales": {
                         "en": {
-                            "title": "Technical Course in Programming",
-                            "description": "Completed a technical course focusing on software development fundamentals, including object-oriented programming, web development, and database management. Developed several projects applying real-world coding skills.",
-                            "province": "San Francisco",
-                            "country": "US",
-                            "institution": "Codecademy",
-                            "tags": []
+                            "title": "Front-End Web Development Nanodegree",
+                            "description": "Completed an intensive program focused on HTML, CSS, JavaScript, and modern web development practices. Built responsive web projects and gained hands-on experience with version control, accessibility, and performance optimization.",
+                            "list": null,
+                            "province": "Remote",
+                            "country": "",
+                            "institution": "Udacity"
                         },
-
-                        "es": {
-                            "title": "Curso Técnico en Programación",
-                            "description": "Completó un curso técnico centrado en los fundamentos del desarrollo de software, incluyendo programación orientada a objetos, desarrollo web y gestión de bases de datos. Desarrolló varios proyectos aplicando habilidades de codificación en el mundo real.",
-                            "province": "San Francisco",
-                            "country": "EE.UU.",
-                            "institution": "Codecademy",
-                            "tags": []
+                        "it": {
+                            "title": "Nanodegree in Sviluppo Web Front-End",
+                            "description": "Ho completato un programma intensivo incentrato su HTML, CSS, JavaScript e le pratiche moderne di sviluppo web. Ho realizzato progetti web responsive e acquisito esperienza pratica con il controllo di versione, l’accessibilità e l’ottimizzazione delle prestazioni.",
+                            "list": null,
+                            "province": "Online",
+                            "country": "",
+                            "institution": "Udacity"
                         },
-
-                        "fr": {
-                            "title": "Cours Technique en Programmation",
-                            "description": "A suivi un cours technique axé sur les fondamentaux du développement logiciel, y compris la programmation orientée objet, le développement web et la gestion de bases de données. A développé plusieurs projets appliquant des compétences de codage en situation réelle.",
-                            "province": "San Francisco",
-                            "country": "États-Unis",
-                            "institution": "Codecademy",
-                            "tags": []
-                        },
-
-                        "zh": {
-                            "title": "编程技术课程",
-                            "description": "完成了一门技术课程，重点讲解软件开发基础，包括面向对象编程、网页开发和数据库管理。开发了多个项目，应用了实际的编码技能。",
-                            "province": "旧金山",
-                            "country": "美国",
-                            "institution": "Codecademy",
-                            "tags": []
+                        "de": {
+                            "title": "Nanodegree in Front-End-Webentwicklung",
+                            "description": "Ich habe ein intensives Programm abgeschlossen, das sich auf HTML, CSS, JavaScript und moderne Webentwicklung konzentrierte. Ich habe responsive Webprojekte umgesetzt und praktische Erfahrung mit Versionskontrolle, Barrierefreiheit und Performance-Optimierung gesammelt.",
+                            "list": null,
+                            "province": "Online",
+                            "country": "",
+                            "institution": "Udacity"
                         }
                     }
                 },
 
                 {
                     "id": 3,
-                    "dateStart": {"year": 2015, "month": 8},
-                    "dateEnd": {"year": 2018, "month": 5},
-                    "img": "images/places/logo-harvard.png",
+                    "dateStart": {"year": 2021, "month": 6},
+                    "dateEnd": {"year": 2024, "month": 4},
+                    "img": "images/pictures/place-tu-berlin.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
-
                     "locales": {
                         "en": {
-                            "title": "Bachelor's in Graphic Design with UX Emphasis",
-                            "description": "Graduated with a solid foundation in graphic design while specializing in user experience design. Acquired expertise in visual storytelling, UI design, and collaborative design thinking.",
-                            "province": "Massachusetts",
-                            "country": "US",
-                            "institution": "Harvard University",
-                            "tags": []
-                        },
-
-                        "es": {
-                            "title": "Licenciatura en Diseño Gráfico con Énfasis en UX",
-                            "description": "Graduado con una sólida formación en diseño gráfico con especialización en diseño de experiencia de usuario. Adquirió experiencia en narración visual, diseño de interfaz de usuario y pensamiento de diseño colaborativo.",
-                            "province": "Massachusetts",
-                            "country": "EE. UU",
-                            "institution": "Universidad de Harvard",
-                            "tags": []
-                        },
-
-                        "fr": {
-                            "title": "Baccalauréat en Design Graphique avec Accent sur l'UX",
-                            "description": "Diplômé avec une base solide en design graphique tout en se spécialisant dans la conception de l'expérience utilisateur. Acquis une expertise en narration visuelle, en design d'interface utilisateur et en réflexion collaborative sur la conception.",
-                            "province": "Massachusetts",
-                            "country": "États-Unis",
-                            "institution": "Université Harvard",
-                            "tags": []
-                        },
-
-                        "zh": {
-                            "title": "平面设计学士学位，强调 UX",
-                            "description": "毕业于平面设计领域，专攻用户体验设计，掌握了视觉叙事、用户界面设计和协作式设计思维方面的专业知识。",
-                            "province": "马萨诸塞州",
-                            "country": "美国",
-                            "institution": "哈佛大学",
-                            "tags": []
-                        }
-                    }
-                },
-
-                {
-                    "id": 4,
-                    "dateStart": {"year": 2018, "month": 9},
-                    "dateEnd": {"year": 2020, "month": 5},
-                    "img": "images/places/logo-paris-university.png",
-                    "fallbackFaIcon": null,
-                    "fallbackFaIconColor": null,
-
-                    "locales": {
-                        "en": {
-                            "title": "Master's in Human-Computer Interaction",
-                            "description": "Completed an intensive program focusing on user-centered design principles, usability testing, and interaction design. Developed skills in wireframing, prototyping, and user research methodologies.",
+                            "title": "Master’s Degree in Computer Science",
+                            "description": "Focused on advanced topics in software engineering, human-computer interaction, and modern web technologies. Developed a strong academic foundation while actively contributing to research in the front-end development space.",
+                            "list": {
+                                "title": "Research topics:",
+                                "items": [
+                                    "Performance optimization in large-scale Vue.js applications.",
+                                    "State management patterns using Vuex and Composition API.",
+                                    "Progressive Web Apps (PWAs) with Vue and Service Workers."
+                                ]
+                            },
                             "province": "",
-                            "country": "France",
-                            "institution": "University of Paris",
-                            "tags": []
+                            "country": "Germany",
+                            "institution": "Technische Universität Berlin"
                         },
-
-                        "es": {
-                            "title": "Maestría en Interacción Humano-Computadora",
-                            "description": "Completó un programa intensivo centrado en los principios de diseño centrado en el usuario, pruebas de usabilidad y diseño de interacción. Desarrolló habilidades en la creación de wireframes, prototipado y metodologías de investigación de usuarios.",
+                        "it": {
+                            "title": "Laurea Magistrale in Informatica",
+                            "description": "Mi sono concentrata su temi avanzati di ingegneria del software, interazione uomo-computer e tecnologie web moderne. Ho costruito una solida base accademica contribuendo attivamente alla ricerca nell’ambito dello sviluppo front-end.",
+                            "list": {
+                                "title": "Temi di ricerca:",
+                                "items": [
+                                    "Ottimizzazione delle prestazioni in applicazioni Vue.js su larga scala.",
+                                    "Pattern di gestione dello stato con Vuex e Composition API.",
+                                    "Progressive Web App (PWA) con Vue e Service Workers."
+                                ]
+                            },
                             "province": "",
-                            "country": "Francia",
-                            "institution": "Universidad de París",
-                            "tags": []
+                            "country": "Germania",
+                            "institution": "Technische Universität Berlin"
                         },
-
-                        "fr": {
-                            "title": "Master en Interaction Humain-Ordinateur",
-                            "description": "A achevé un programme intensif axé sur les principes de conception centrés sur l'utilisateur, les tests de convivialité et la conception d'interaction. Développé des compétences en wireframing, en prototypage et en méthodologies de recherche utilisateur.",
+                        "de": {
+                            "title": "Master in Informatik",
+                            "description": "Fokus auf fortgeschrittene Themen der Softwaretechnik, Mensch-Computer-Interaktion und modernen Webtechnologien. Ich habe ein starkes akademisches Fundament aufgebaut und aktiv zur Forschung im Bereich Frontend-Entwicklung beigetragen.",
+                            "list": {
+                                "title": "Forschungsthemen:",
+                                "items": [
+                                    "Performance-Optimierung in groß angelegten Vue.js-Anwendungen.",
+                                    "Zustandsmanagement-Muster mit Vuex und Composition API.",
+                                    "Progressive Web Apps (PWAs) mit Vue und Service Workern."
+                                ]
+                            },
                             "province": "",
-                            "country": "France",
-                            "institution": "Université de Paris",
-                            "tags": []
-                        },
-
-                        "zh": {
-                            "title": "人机交互硕士学位",
-                            "description": "完成了一项专注于以用户为中心的设计原则、可用性测试和交互设计的密集课程。培养了线框图、原型制作和用户研究方法方面的技能。",
-                            "province": "",
-                            "country": "法国",
-                            "institution": "巴黎大学",
-                            "tags": []
+                            "country": "Deutschland",
+                            "institution": "Technische Universität Berlin"
                         }
                     }
                 }

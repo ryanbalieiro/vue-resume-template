@@ -1,0 +1,43 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleProfile",
+            "settings": {
+                "contact_list_ids": ["address", "email", "phone"],
+                "contact_circles_ids": ["github", "linkedin", "instagram", "x"]
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "locales": {
+                        "en": {
+                            "description": "I've been a Vue developer for 8 years, building dynamic and responsive web applications that feel fast, smooth, and delightful to use. My passion lies in writing clean, modular code and creating frontend experiences that not only look polished but work seamlessly across devices."
+                        },
+                        "it": {
+                            "description": "Sono una sviluppatrice Vue da 8 anni e realizzo applicazioni web dinamiche e reattive, pensate per offrire un'esperienza fluida, veloce e piacevole. Ho una grande passione per il codice pulito e modulare e amo creare interfacce frontend che non solo siano belle da vedere, ma che funzionino alla perfezione su ogni dispositivo."
+                        },
+                        "de": {
+                            "description": "Seit 8 Jahren arbeite ich als Vue-Entwicklerin und entwickle dynamische, reaktionsschnelle Webanwendungen, die schnell, flüssig und angenehm in der Nutzung sind. Meine Leidenschaft liegt darin, sauberen, modularen Code zu schreiben und Frontend-Erlebnisse zu schaffen, die nicht nur gut aussehen, sondern auch auf allen Geräten reibungslos funktionieren."
+                        }
+                    }
+                },
+
+                {
+                    "id": 2,
+                    "locales": {
+                        "en": {
+                            "description": "I believe that great development goes hand in hand with great user experience—it's about making technology feel effortless and intuitive. Let’s team up to bring your ideas to life and create something truly impactful!"
+                        },
+                        "it": {
+                            "description": "Credo che un ottimo sviluppo vada di pari passo con un'ottima esperienza utente: si tratta di rendere la tecnologia intuitiva e naturale. Uniamo le forze per dare vita alle tue idee e creare qualcosa di davvero significativo!"
+                        },
+                        "de": {
+                            "description": "Ich bin überzeugt, dass großartige Entwicklung und großartige Benutzererfahrung Hand in Hand gehen – es geht darum, Technologie mühelos und intuitiv wirken zu lassen. Lass uns gemeinsam deine Ideen zum Leben erwecken und etwas wirklich Bedeutungsvolles schaffen!"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

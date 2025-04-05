@@ -9,20 +9,15 @@
                     "contact_thank_you_description": "Your message has been received, and I'll be reaching out to you soon. I appreciate your time and look forward to connecting with you!",
                     "contact_thank_you_reply": "The reply will be sent to your email address *{email}*."
                 },
-                "es": {
-                    "contact_thank_you": "*¡Gracias* por contactar!",
-                    "contact_thank_you_description": "Tu mensaje ha sido recibido y me pondré en contacto contigo pronto. Aprecio tu tiempo y espero poder conectar contigo.",
-                    "contact_thank_you_reply": "Mi respuesta será enviada a tu correo electrónico *{email}*."
+                "de": {
+                    "contact_thank_you": "*Danke* für deine Nachricht!",
+                    "contact_thank_you_description": "Deine Nachricht ist angekommen, und ich werde mich bald bei dir melden. Ich schätze deine Zeit und freue mich darauf, mit dir in Kontakt zu treten!",
+                    "contact_thank_you_reply": "Die Antwort wird an deine E-Mail-Adresse *{email}* gesendet."
                 },
-                "fr": {
-                    "contact_thank_you": "*Merci* pour le contact !",
-                    "contact_thank_you_description": "Votre message a été reçu, et je vous contacterai bientôt. J'apprécie votre temps et j’ai hâte d’échanger avec vous !",
-                    "contact_thank_you_reply": "Notre réponse sera envoyée à votre adresse e-mail *{email}*."
-                },
-                "zh": {
-                    "contact_thank_you": "*感谢*您的联系！",
-                    "contact_thank_you_description": "您的消息已收到，我会尽快与您联系。感谢您的时间，期待与您交流！",
-                    "contact_thank_you_reply": "我们的回复将发送至您的电子邮件地址 *{email}*。"
+                "it": {
+                    "contact_thank_you": "*Grazie* per il contatto!",
+                    "contact_thank_you_description": "Ho ricevuto il tuo messaggio e ti contatterò al più presto. Apprezzo il tuo tempo e non vedo l’ora di mettermi in contatto con te!",
+                    "contact_thank_you_reply": "La risposta sarà inviata al tuo indirizzo email *{email}*."
                 }
             },
             "settings": {
@@ -43,23 +38,19 @@
                     "title": "Or...",
                     "description": "If you prefer, you can reach out to me through the following options:"
                 },
-                "es": {
-                    "title": "O...",
-                    "description": "Si prefieres, puedes ponerte en contacto conmigo a través de las siguientes opciones:"
+                "de": {
+                    "title": "Oder...",
+                    "description": "Wenn du möchtest, kannst du mich auch über die folgenden Optionen erreichen:"
                 },
-                "fr": {
-                    "title": "Ou...",
-                    "description": "Si vous préférez, vous pouvez me contacter grâce aux options suivantes:"
-                },
-                "zh": {
-                    "title": "或者...",
-                    "description": "如果您愿意，您可以通过以下方式与我取得联系:"
+                "it": {
+                    "title": "Oppure...",
+                    "description": "Se preferisci, puoi contattarmi tramite le seguenti opzioni:"
                 }
             },
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "asc",
-                "contact_ids": ["address", "phone", "email", "linkedin", "facebook", "github"]
+                "contact_ids": ["address", "phone", "email", "linkedin", "x", "github"]
             },
             "items": null
         }

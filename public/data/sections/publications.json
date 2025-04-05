@@ -1,0 +1,113 @@
+{
+    "articles": [
+        {
+           "id": 1,
+            "component": "ArticleThread",
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "dateStart": {"year": 2020, "month": 8},
+                    "fallbackFaIcon": "fa-brands fa-medium",
+                    "fallbackFaIconColor": null,
+                    "locales": {
+                        "en": {
+                            "title": "Building Scalable Frontends with Vue 3",
+                            "description": "An article reflecting on my experience building a modular web app with Vue 3 during a university group project. It covers composition API, reusable components, and performance tips for beginners. I talk about the challenges we faced as a team, how we organized our codebase to stay scalable, and the lessons I learned while using Vue 3 in a real-world collaborative environment. It’s a mix of technical insights and personal growth moments that I hope will help other students or junior developers working with Vue.",
+                            "institution": "Medium"
+                        },
+                        "de": {
+                            "title": "Skalierbare Frontends mit Vue 3 entwickeln",
+                            "description": "Ein Artikel über meine Erfahrungen beim Aufbau einer modularen Webanwendung mit Vue 3 im Rahmen eines Gruppenprojekts an der Universität. Ich gehe auf die Composition API, wiederverwendbare Komponenten und Performance-Tipps für Einsteiger ein. Außerdem beschreibe ich die Herausforderungen, die wir als Team gemeistert haben, wie wir unseren Code organisiert haben, um ihn skalierbar zu halten, und welche Lektionen ich beim Einsatz von Vue 3 in einem echten, gemeinschaftlichen Projekt gelernt habe. Es ist eine Mischung aus technischen Einblicken und persönlichen Entwicklungsschritten, die anderen Studierenden oder Junior-Entwicklern mit Vue weiterhelfen kann."
+                        },
+                        "it": {
+                            "title": "Sviluppare Frontend Scalabili con Vue 3",
+                            "description": "Un articolo in cui racconto la mia esperienza nello sviluppo di un'app web modulare con Vue 3 durante un progetto di gruppo all’università. Parlo della Composition API, di componenti riutilizzabili e do qualche consiglio utile sulle performance per chi è alle prime armi. Condivido anche le difficoltà affrontate insieme al team, come abbiamo organizzato il codice per mantenerlo scalabile e le lezioni che ho imparato usando Vue 3 in un contesto collaborativo reale. È un mix di spunti tecnici e momenti di crescita personale che spero possano essere utili ad altri studenti o sviluppatori junior che usano Vue."
+                        }
+                    },
+                    "links": [
+                        {"href": "https://medium.com", "stringKey": "view_more_info"}
+                    ]
+                },
+
+                {
+                    "id": 2,
+                    "dateStart": { "year": 2021, "month": 3 },
+                    "fallbackFaIcon": "fa-brands fa-linkedin",
+                    "fallbackFaIconColor": null,
+                    "locales": {
+                        "en": {
+                            "title": "Demystifying State Management in Vue",
+                            "description": "A deep dive into state management in Vue, where I share how I learned to use Vuex effectively in a collaborative student project. I explain the main concepts, common pitfalls, and how centralized state helped us stay organized across multiple modules. The article also includes practical examples and personal tips to help beginners understand when and why to use a store in their own projects. It's a reflection on my learning journey and how state management made our frontend logic much more maintainable.",
+                            "institution": "Linkedin"
+                        },
+                        "de": {
+                            "title": "State-Management in Vue verständlich erklärt",
+                            "description": "Ein tiefer Einblick ins State-Management mit Vue, in dem ich erkläre, wie ich Vuex effektiv in einem studentischen Gruppenprojekt eingesetzt habe. Ich erkläre zentrale Konzepte, typische Stolperfallen und wie uns zentraler State dabei geholfen hat, die Übersicht über verschiedene Module zu behalten. Der Artikel enthält auch praktische Beispiele und persönliche Tipps, um Einsteigern zu zeigen, wann und warum sich ein Store lohnt. Eine kleine Reise durch mein Lernen und wie State-Management unseren Code deutlich wartbarer gemacht hat."
+                        },
+                        "it": {
+                            "title": "Gestione dello Stato in Vue: guida per capire davvero",
+                            "description": "Un approfondimento sulla gestione dello stato in Vue, dove racconto come ho imparato a usare Vuex in modo efficace durante un progetto di gruppo all’università. Spiego i concetti chiave, gli errori più comuni e in che modo lo stato centralizzato ci ha aiutato a mantenere ordine tra più moduli. L'articolo include esempi pratici e consigli personali per aiutare i principianti a capire quando conviene usare uno store. È una riflessione sul mio percorso di apprendimento e su come la gestione dello stato ha reso il nostro frontend molto più gestibile."
+                        }
+                    },
+                    "links": [
+                        { "href": "https://linkedin.com", "stringKey": "view_more_info" }
+                    ]
+                },
+
+                {
+                    "id": 3,
+                    "dateStart": { "year": 2022, "month": 1 },
+                    "fallbackFaIcon": "fa-brands fa-medium",
+                    "fallbackFaIconColor": null,
+                    "locales": {
+                        "en": {
+                            "title": "How I Improved Performance in a Vue 3 App",
+                            "description": "An in-depth article where I document how I analyzed and improved the performance of a Vue 3 app developed for a university project. I walk through real bottlenecks we discovered, such as excessive re-renders and lazy loading strategies, and explain how we used tools like Vue Devtools and Lighthouse. I also reflect on how optimizing performance not only improved the UX but also taught me to think more like a software engineer. It's packed with examples and lessons for anyone looking to make their apps faster and cleaner.",
+                            "institution": "Medium"
+                        },
+                        "de": {
+                            "title": "So habe ich die Performance einer Vue 3 App verbessert",
+                            "description": "Ein ausführlicher Artikel, in dem ich beschreibe, wie ich die Performance einer mit Vue 3 entwickelten Uni-App analysiert und verbessert habe. Ich zeige reale Schwachstellen wie unnötige Re-Renders und erkläre Strategien wie Lazy Loading. Tools wie Vue Devtools und Lighthouse haben uns dabei geholfen. Außerdem schildere ich, wie mich diese Arbeit gelehrt hat, stärker wie ein Softwareingenieur zu denken. Der Artikel ist voll mit praktischen Beispielen und Learnings für alle, die ihre Apps performanter machen wollen."
+                        },
+                        "it": {
+                            "title": "Come ho migliorato la performance di un'app Vue 3",
+                            "description": "Un articolo approfondito in cui spiego come ho analizzato e migliorato le prestazioni di un’app Vue 3 realizzata durante un progetto universitario. Parlo dei colli di bottiglia reali che abbiamo individuato, come i re-render inutili e le strategie di lazy loading, e di come abbiamo usato strumenti come Vue Devtools e Lighthouse. Condivido anche come questa esperienza mi abbia fatto crescere come sviluppatore. Un articolo pieno di esempi concreti e consigli per chi vuole rendere la propria app più veloce e pulita."
+                        }
+                    },
+                    "links": [
+                        { "href": "https://medium.com", "stringKey": "view_more_info" }
+                    ]
+                },
+
+                {
+                    "id": 4,
+                    "dateStart": { "year": 2022, "month": 10 },
+                    "fallbackFaIcon": "fa-brands fa-linkedin",
+                    "fallbackFaIconColor": null,
+                    "locales": {
+                        "en": {
+                            "title": "Refactoring a Legacy Vue App: Lessons Learned",
+                            "description": "This article tells the story of how I helped refactor a legacy Vue 2 app to modern standards during a volunteer open-source project. I share how we transitioned to Vue 3, cleaned up outdated code, and improved maintainability by introducing better component structure and clearer state handling. Beyond the technical side, I talk about collaboration challenges, reviewing code from others, and balancing refactoring with ongoing feature development. It’s a mix of engineering practices and teamwork reflections.",
+                            "institution": "Linkedin"
+                        },
+                        "de": {
+                            "title": "Refactoring einer Legacy-Vue-App – Was ich gelernt habe",
+                            "description": "In diesem Artikel erzähle ich, wie ich im Rahmen eines Open-Source-Projekts geholfen habe, eine alte Vue 2 App zu modernisieren. Ich berichte über unseren Umstieg auf Vue 3, wie wir veralteten Code aufgeräumt und die Wartbarkeit durch bessere Komponentenstruktur und klareres State-Handling erhöht haben. Neben den technischen Aspekten spreche ich auch über die Zusammenarbeit im Team, das Reviewen von fremdem Code und den Balanceakt zwischen Refactoring und neuer Feature-Entwicklung. Ein Artikel über Engineering-Praktiken und Teamarbeit."
+                        },
+                        "it": {
+                            "title": "Refactoring di un'app Vue legacy: cosa ho imparato",
+                            "description": "In questo articolo racconto come ho partecipato al refactoring di un'app Vue 2 durante un progetto open-source. Spiego come abbiamo effettuato la migrazione a Vue 3, ripulito codice obsoleto e migliorato la manutenzione introducendo una struttura più chiara per i componenti e una gestione dello stato più pulita. Parlo anche delle sfide collaborative, delle revisioni del codice altrui e di come abbiamo bilanciato il refactoring con lo sviluppo di nuove funzionalità. Una combinazione di pratiche tecniche e riflessioni sul lavoro di squadra."
+                        }
+                    },
+                    "links": [
+                        { "href": "https://linkedin.com", "stringKey": "view_more_info" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

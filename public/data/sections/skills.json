@@ -3,198 +3,83 @@
         {
             "id": 1,
             "component": "ArticleSkills",
-            "locales": {},
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "asc",
                 "max_items_per_line": 2,
                 "transparent_item_icon_background": false,
-                "small_icons": false,
-                "chart": null
+                "small_icons": false
             },
             "items": [
                 {
                     "id": 1,
-                    "dateStart": null,
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-paint-roller",
-                    "fallbackFaIconColor": null,
-                    "percentage": null,
+                    "fallbackFaIcon": "fa-solid fa-mobile-screen-button",
                     "locales": {
                         "en": {
-                            "title": "Design Principles",
-                            "description": "Masterful at creating captivating designs, blending color theory, typography, layout, and balance for effective messaging.",
-                            "level": null
+                            "title": "Responsive Apps",
+                            "description": "Crafting layouts that adapt beautifully across devices, ensuring smooth user experiences from mobile to desktop using Vue, CSS Grid, and Flexbox."
                         },
-                        "es": {
-                            "title": "Principios de Diseño",
-                            "description": "Experto en diseño: fusiono teoría del color, tipografía, layout y equilibrio para cautivar y transmitir mensajes.",
-                            "level": null
+                        "it": {
+                            "title": "App Responsive",
+                            "description": "Creo layout che si adattano perfettamente a qualsiasi dispositivo, offrendo un'esperienza fluida e piacevole su mobile e desktop con Vue, CSS Grid e Flexbox."
                         },
-                        "fr": {
-                            "title": "Principes de Conception",
-                            "description": "Habile en design: utilise principes couleur, typo, composition et équilibre pour captiver et transmettre efficacement.",
-                            "level": null
-                        },
-                        "zh": {
-                            "title": "设计原则",
-                            "description": "运用色彩理论、排版、版面构图和平衡等基本原则，巧妙打造视觉吸引的设计，以吸引观众并有效传达信息。",
-                            "level": null
+                        "de": {
+                            "title": "Responsives Design",
+                            "description": "Ich entwickle Layouts, die sich nahtlos an verschiedene Geräte anpassen – für reibungslose Nutzererlebnisse auf Mobilgeräten und Desktops mit Vue, CSS Grid und Flexbox."
                         }
                     }
                 },
-
                 {
                     "id": 2,
-                    "dateStart": null,
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-mobile-alt",
-                    "fallbackFaIconColor": null,
-                    "percentage": null,
+                    "fallbackFaIcon": "fa-solid fa-cubes",
                     "locales": {
                         "en": {
-                            "title": "Responsive Layouts",
-                            "description": "Proficient in crafting adaptable layouts for diverse devices, ensuring optimal user experience.",
-                            "level": null
+                            "title": "Component-Based Architecture",
+                            "description": "Building scalable apps with reusable, modular Vue components — making development faster, cleaner, and easier to maintain."
                         },
-                        "es": {
-                            "title": "Diseños Responsivos",
-                            "description": "Destacada habilidad en crear diseños adaptables para diversos dispositivos, garantizando una experiencia de usuario óptima.",
-                            "level": null
+                        "it": {
+                            "title": "Architettura a Componenti",
+                            "description": "Sviluppo app scalabili con componenti Vue modulari e riutilizzabili — per un codice più pulito, chiaro e facile da gestire."
                         },
-                        "fr": {
-                            "title": "Mises en Page Réactives",
-                            "description": "Compétent pour créer des mises en page adaptables pour divers appareils, assurant une expérience utilisateur optimale.",
-                            "level": null
-                        },
-                        "zh": {
-                            "title": "响应式布局",
-                            "description": "擅长为不同设备创建适应性布局，通过无缝调整设计元素和内容以适配不同屏幕尺寸，确保最佳用户体验。",
-                            "level": null
+                        "de": {
+                            "title": "Komponentenbasierte Architektur",
+                            "description": "Ich baue skalierbare Apps mit modularen, wiederverwendbaren Vue-Komponenten – für sauberen, wartungsfreundlichen Code."
                         }
                     }
                 },
-
                 {
                     "id": 3,
-                    "dateStart": null,
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-vector-square",
-                    "fallbackFaIconColor": null,
-                    "percentage": null,
+                    "fallbackFaIcon": "fa-solid fa-diagram-project",
                     "locales": {
                         "en": {
-                            "title": "Wireframing",
-                            "description": "Skilled in creating detailed wireframes to visualize and plan user interfaces, effectively laying the foundation for intuitive design.",
-                            "level": null
+                            "title": "Vuex & Pinia",
+                            "description": "Handling complex app state efficiently using Vuex and Pinia, with clear separation of concerns and predictable data flow."
                         },
-                        "es": {
-                            "title": "Creación de Wireframes",
-                            "description": "Habilidad para crear wireframes detallados para visualizar y planificar interfaces de usuario.",
-                            "level": null
+                        "it": {
+                            "title": "Vuex & Pinia",
+                            "description": "Gestisco lo stato dell'app in modo efficiente con Vuex e Pinia, garantendo un flusso dati chiaro e ben strutturato."
                         },
-                        "fr": {
-                            "title": "Création de Wireframes",
-                            "description": "Compétent dans la création de wireframes détaillés pour visualiser et planifier les interfaces utilisateur.",
-                            "level": null
-                        },
-                        "zh": {
-                            "title": "线框图设计",
-                            "description": "熟练制作详细的线框图，以便可视化和规划用户界面。",
-                            "level": null
+                        "de": {
+                            "title": "Vuex & Pinia",
+                            "description": "Ich verwalte komplexe Zustände effizient mit Vuex und Pinia – für klare Strukturen und nachvollziehbare Datenflüsse."
                         }
                     }
                 },
-
                 {
                     "id": 4,
-                    "dateStart": null,
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-check-double",
-                    "fallbackFaIconColor": null,
-                    "percentage": null,
+                    "fallbackFaIcon": "fa-solid fa-plug",
                     "locales": {
                         "en": {
-                            "title": "Usability Testing",
-                            "description": "Enhancing user experiences through comprehensive usability testing.",
-                            "level": null
+                            "title": "API Integration & Data Handling",
+                            "description": "Connecting Vue apps with RESTful APIs and handling asynchronous data with Axios or Fetch — always keeping UX smooth and error-tolerant."
                         },
-                        "es": {
-                            "title": "Pruebas de Usabilidad",
-                            "description": "Experiencia en mejorar experiencias de usuario mediante pruebas exhaustivas de usabilidad.",
-                            "level": null
+                        "it": {
+                            "title": "Integrazione API & Gestione Dati",
+                            "description": "Collego app Vue con API REST e gestisco i dati asincroni con Axios o Fetch — mantenendo sempre un'esperienza utente fluida e affidabile."
                         },
-                        "fr": {
-                            "title": "Tests d'Utilisabilité",
-                            "description": "Expérimenté dans l'amélioration des expériences utilisateur grâce à des tests d'utilisabilité.",
-                            "level": null
-                        },
-                        "zh": {
-                            "title": "可用性测试",
-                            "description": "通过全面的可用性测试提升用户体验。",
-                            "level": null
-                        }
-                    }
-                },
-
-                {
-                    "id": 5,
-                    "dateStart": null,
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-expand-arrows-alt",
-                    "fallbackFaIconColor": null,
-                    "percentage": null,
-                    "locales": {
-                        "en": {
-                            "title": "Interaction Design",
-                            "description": "Proficient in creating intuitive and seamless interactions for user-friendly experiences, harmonizing aesthetics and usability.",
-                            "level": null
-                        },
-                        "es": {
-                            "title": "Diseño de Interacción",
-                            "description": "Competente en la creación de interacciones intuitivas y fluidas para experiencias amigables para el usuario.",
-                            "level": null
-                        },
-                        "fr": {
-                            "title": "Design d'Interaction",
-                            "description": "Compétent dans la création d'interactions intuitives et fluides pour des expériences conviviales.",
-                            "level": null
-                        },
-                        "zh": {
-                            "title": "交互设计",
-                            "description": "熟练创建直观流畅的交互，以实现用户友好的体验。",
-                            "level": null
-                        }
-                    }
-                },
-
-                {
-                    "id": 6,
-                    "dateStart": null,
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-laptop-code",
-                    "fallbackFaIconColor": null,
-                    "percentage": null,
-                    "locales": {
-                        "en": {
-                            "title": "Prototyping",
-                            "description": "Skilled in translating concepts into interactive prototypes for testing and refinement.",
-                            "level": null
-                        },
-                        "es": {
-                            "title": "Prototipado",
-                            "description": "Habilidad para traducir conceptos en prototipos interactivos para pruebas y perfeccionamiento.",
-                            "level": null
-                        },
-                        "fr": {
-                            "title": "Prototypage",
-                            "description": "Compétent dans la traduction de concepts en prototypes interactifs pour des tests et affinages.",
-                            "level": null
-                        },
-                        "zh": {
-                            "title": "原型设计",
-                            "description": "熟练将概念转化为交互式原型，以进行测试和完善。",
-                            "level": null
+                        "de": {
+                            "title": "API-Integration & Datenhandling",
+                            "description": "Ich verbinde Vue-Apps mit REST-APIs und verarbeite asynchrone Daten mit Axios oder Fetch – für eine reibungslose und stabile Nutzererfahrung."
                         }
                     }
                 }
@@ -205,10 +90,159 @@
             "id": 2,
             "component": "ArticleSkills",
             "locales": {
-                "en": {"title": "Frontend Stack"},
-                "es": {"title": "Stack de Frontend"},
-                "fr": {"title": "Stack Frontend"},
-                "zh": {"title": "前端技术栈"}
+                "en": { "title": "Vue Stack" },
+                "de": { "title": "Vue-Stack" },
+                "it": { "title": "Stack Vue" }
+            },
+            "settings": {
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "max_items_per_line": 2,
+                "transparent_item_icon_background": true,
+                "small_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "dateStart": { "year": 2017, "month": 3 },
+                    "fallbackFaIcon": "fa-brands fa-vuejs",
+                    "percentage": 100,
+                    "locales": {
+                        "en": {
+                            "title": "Vue 3",
+                            "description": "Building modern, performant apps using the Composition API and reactive data binding."
+                        },
+                        "de": {
+                            "description": "Entwicklung moderner, leistungsstarker Apps mit der Composition API und reaktiver Datenbindung."
+                        },
+                        "it": {
+                            "description": "Sviluppo di app moderne e performanti usando la Composition API e il data binding reattivo."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "dateStart": { "year": 2019, "month": 7 },
+                    "fallbackFaIcon": "fa-solid fa-diagram-project",
+                    "percentage": 95,
+                    "locales": {
+                        "en": {
+                            "title": "Vuex & Pinia",
+                            "description": "Managing complex state in large apps with centralized stores and modular patterns."
+                        },
+                        "de": {
+                            "description": "Verwalten komplexer Zustände in großen Apps mit zentralisierten Stores und modularen Mustern."
+                        },
+                        "it": {
+                            "description": "Gestione dello stato complesso in grandi applicazioni con store centralizzati e pattern modulari."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "dateStart": { "year": 2018, "month": 2 },
+                    "fallbackFaIcon": "fa-solid fa-screwdriver-wrench",
+                    "percentage": 90,
+                    "locales": {
+                        "en": {
+                            "title": "Vue CLI & Vite",
+                            "description": "Efficient app scaffolding, local development, and builds using CLI and Vite."
+                        },
+                        "de": {
+                            "description": "Effizientes Projekt-Setup, lokale Entwicklung und Builds mit CLI und Vite."
+                        },
+                        "it": {
+                            "description": "Configurazione efficiente delle app, sviluppo locale e build con CLI e Vite."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "dateStart": { "year": 2020, "month": 5 },
+                    "fallbackFaIcon": "fa-solid fa-globe",
+                    "percentage": 85,
+                    "locales": {
+                        "en": {
+                            "title": "Nuxt",
+                            "description": "Building performant, SEO-friendly Vue apps with SSR and static generation."
+                        },
+                        "de": {
+                            "description": "Erstellung leistungsstarker, SEO-freundlicher Vue-Apps mit SSR und statischer Generierung."
+                        },
+                        "it": {
+                            "description": "Creazione di app Vue performanti e SEO-friendly con SSR e generazione statica."
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "dateStart": { "year": 2020, "month": 6 },
+                    "fallbackFaIcon": "fa-solid fa-plug",
+                    "percentage": 80,
+                    "locales": {
+                        "en": {
+                            "title": "API Integration",
+                            "description": "Fetching and managing remote data using Axios and Fetch, with error handling and loading states."
+                        },
+                        "de": {
+                            "description": "Abrufen und Verwalten externer Daten mit Axios und Fetch, inklusive Fehlerbehandlung und Ladeanzeige."
+                        },
+                        "it": {
+                            "description": "Recupero e gestione dei dati remoti con Axios e Fetch, inclusa gestione errori e loading."
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "dateStart": { "year": 2019, "month": 10 },
+                    "fallbackFaIcon": "fa-solid fa-route",
+                    "percentage": 80,
+                    "locales": {
+                        "en": {
+                            "title": "Vue Router",
+                            "description": "Implementing client-side routing, nested routes, and dynamic route guards with Vue Router."
+                        }
+                    }
+                },
+                {
+                    "id": 7,
+                    "dateStart": { "year": 2021, "month": 4 },
+                    "fallbackFaIcon": "fa-brands fa-sass",
+                    "percentage": 75,
+                    "locales": {
+                        "en": {
+                            "title": "SCSS & Preprocessing",
+                            "description": "Using SCSS to write clean, modular, and maintainable stylesheets."
+                        }
+                    }
+                },
+                {
+                    "id": 8,
+                    "dateStart": { "year": 2022, "month": 1 },
+                    "fallbackFaIcon": "fa-solid fa-palette",
+                    "percentage": 70,
+                    "locales": {
+                        "en": {
+                            "title": "Vuetify & UI Libraries"
+                        },
+                        "de": {
+                            "title": "Vuetify & UI-Bibliotheken"
+                        },
+                        "it": {
+                            "title": "Vuetify & Librerie UI"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 3,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": { "title": "Other Frameworks" },
+                "de": { "title": "Weitere Frameworks" },
+                "it": { "title": "Altri Framework" }
             },
             "settings": {
                 "order_items_by": "percentage",
@@ -221,290 +255,73 @@
             "items": [
                 {
                     "id": 1,
-                    "dateStart": {"year": 2019, "month": 4},
-                    "img": null,
-                    "fallbackFaIcon": "fa-brands fa-html5",
-                    "fallbackFaIconColor": null,
-                    "percentage": 95,
-                    "locales": {
-                        "en": {
-                            "title": "HTML 5",
-                            "description": "Experienced with HTML5 elements and features."
-                        },
-                        "es": {
-                            "title": "HTML 5",
-                            "description": "Experto en elementos y características de HTML5."
-                        },
-                        "fr": {
-                            "title": "HTML 5",
-                            "description": "Expérimenté avec les éléments et fonctionnalités HTML5."
-                        },
-                        "zh": {
-                            "title": "HTML 5",
-                            "description": "精通HTML5元素和功能。"
-                        }
-                    }
-                },
-
-                {
-                    "id": 2,
-                    "dateStart": {"year": 2021, "month": 4},
-                    "img": null,
-                    "fallbackFaIcon": "fa-brands fa-css3-alt",
-                    "fallbackFaIconColor": null,
-                    "percentage": 90,
-                    "locales": {
-                        "en": {
-                            "title": "CSS 3",
-                            "description": "Skilled in advanced CSS3 techniques like flexbox and animations."
-                        },
-                        "es": {
-                            "title": "CSS 3",
-                            "description": "Experto en técnicas avanzadas de CSS3 como flexbox y animaciones."
-                        },
-                        "fr": {
-                            "title": "CSS 3",
-                            "description": "Compétent dans les techniques avancées CSS3 comme flexbox et animations."
-                        },
-                        "zh": {
-                            "title": "CSS 3",
-                            "description": "擅长使用CSS3高级技术，如flexbox和动画。"
-                        }
-                    }
-                },
-
-                {
-                    "id": 3,
-                    "dateStart": {"year": 2017, "month": 8},
-                    "img": null,
-                    "fallbackFaIcon": "fa-brands fa-js-square",
-                    "fallbackFaIconColor": null,
-                    "percentage": 85,
-                    "locales": {
-                        "en": {
-                            "title": "Javascript",
-                            "description": "Skilled in JavaScript for dynamic, interactive web applications."
-                        },
-                        "es": {
-                            "title": "Javascript",
-                            "description": "Experto en JavaScript para aplicaciones web dinámicas e interactivas."
-                        },
-                        "fr": {
-                            "title": "Javascript",
-                            "description": "Compétent en JavaScript pour des applications web dynamiques et interactives."
-                        },
-                        "zh": {
-                            "title": "Javascript",
-                            "description": "擅长JavaScript用于动态和交互式的网页应用。"
-                        }
-                    }
-                },
-
-                {
-                    "id": 4,
-                    "dateStart": {"year": 2017, "month": 3},
-                    "img": null,
-                    "fallbackFaIcon": "fa-brands fa-vuejs",
-                    "fallbackFaIconColor": null,
-                    "percentage": 100,
-                    "locales": {
-                        "en": {
-                            "title": "Vue 3",
-                            "description": "Capable of building and deploying complex Vue applications."
-                        },
-                        "es": {
-                            "title": "Vue 3",
-                            "description": "Capaz de construir y desplegar aplicaciones complejas con Vue."
-                        },
-                        "fr": {
-                            "title": "Vue 3",
-                            "description": "Capable de créer et déployer des applications complexes avec Vue."
-                        },
-                        "zh": {
-                            "title": "Vue 3",
-                            "description": "能够构建和部署复杂的Vue应用程序。"
-                        }
-                    }
-                },
-
-                {
-                    "id": 5,
-                    "dateStart": {"year": 2024, "month": 1},
-                    "img": null,
+                    "dateStart": { "year": 2023, "month": 4 },
                     "fallbackFaIcon": "fa-brands fa-react",
-                    "fallbackFaIconColor": null,
-                    "percentage": 75,
+                    "percentage": 70,
                     "locales": {
                         "en": {
-                            "title": "React",
-                            "description": "Experienced in building interactive UIs with React, using hooks and component-based architecture."
+                            "title": "ReactJS",
+                            "description": "Familiar with component-based architecture and hooks in React."
                         },
-                        "es": {
-                            "title": "React",
-                            "description": "Experto en construir interfaces interactivas con React, utilizando hooks y arquitectura basada en componentes."
+                        "de": {
+                            "description": "Vertraut mit komponentenbasierter Architektur und Hooks in React."
                         },
-                        "fr": {
-                            "title": "React",
-                            "description": "Expérimenté dans la création d'interfaces interactives avec React, en utilisant des hooks et une architecture basée sur des composants."
-                        },
-                        "zh": {
-                            "title": "React",
-                            "description": "擅长使用React构建交互式用户界面，利用hooks和基于组件的架构。"
+                        "it": {
+                            "description": "Familiarità con l’architettura a componenti e gli hook in React."
                         }
                     }
                 },
-
-                {
-                    "id": 6,
-                    "dateStart": {"year": 2022, "month": 11},
-                    "img": null,
-                    "fallbackFaIcon": "fa-brands fa-angular",
-                    "fallbackFaIconColor": null,
-                    "percentage": 75,
-                    "locales": {
-                        "en": {
-                            "title": "Angular",
-                            "description": ""
-                        },
-                        "es": {
-                            "title": "Angular",
-                            "description": ""
-                        },
-                        "fr": {
-                            "title": "Angular",
-                            "description": ""
-                        },
-                        "zh": {
-                            "title": "Angular",
-                            "description": ""
-                        }
-                    }
-                }
-            ]
-        },
-
-        {
-            "id": 3,
-            "component": "ArticleSkills",
-            "locales": {
-                "en": {"title": "Backend Stack"},
-                "es": {"title": "Stack de Backend"},
-                "fr": {"title": "Stack Backend"},
-                "zh": {"title": "后端技术栈"}
-            },
-            "settings": {
-                "order_items_by": "id",
-                "order_items_sort": "asc",
-                "max_items_per_line": 2,
-                "transparent_item_icon_background": true,
-                "small_icons": false,
-                "chart": null
-            },
-            "items": [
-                {
-                    "id": 1,
-                    "dateStart": {"year": 2020, "month": 1},
-                    "img": null,
-                    "fallbackFaIcon": "fa-solid fa-database",
-                    "fallbackFaIconColor": null,
-                    "percentage": 85,
-                    "locales": {
-                        "en": {
-                            "title": "MySQL",
-                            "description": "Skilled in managing MySQL databases, including schema design and query optimization."
-                        },
-                        "es": {
-                            "title": "MySQL",
-                            "description": "Hábil en gestionar bases de datos MySQL, incluyendo diseño de esquemas y optimización de consultas."
-                        },
-                        "fr": {
-                            "title": "MySQL",
-                            "description": "Compétent dans la gestion de bases de données MySQL, y compris la conception de schémas et l'optimisation des requêtes."
-                        },
-                        "zh": {
-                            "title": "MySQL",
-                            "description": "擅长管理MySQL数据库，包括模式设计和查询优化。"
-                        }
-                    }
-                },
-
                 {
                     "id": 2,
-                    "dateStart": {"year": 2021, "month": 1},
-                    "img": null,
-                    "fallbackFaIcon": "fa-brands fa-php",
-                    "fallbackFaIconColor": null,
-                    "percentage": 80,
+                    "dateStart": { "year": 2022, "month": 11 },
+                    "fallbackFaIcon": "fa-brands fa-angular",
+                    "percentage": 60,
                     "locales": {
                         "en": {
-                            "title": "PHP",
-                            "description": "Experienced in building dynamic web apps with PHP, including server-side logic and database integration."
+                            "title": "AngularJS",
+                            "description": "Basic experience with AngularJS and its MVC approach."
                         },
-                        "es": {
-                            "title": "PHP",
-                            "description": "Experto en construir aplicaciones web dinámicas con PHP, incluyendo lógica del servidor e integración de bases de datos."
+                        "de": {
+                            "description": "Grundkenntnisse in AngularJS und seinem MVC-Ansatz."
                         },
-                        "fr": {
-                            "title": "PHP",
-                            "description": "Expérimenté dans la création d'applications web dynamiques avec PHP, y compris la logique serveur et l'intégration de bases de données."
-                        },
-                        "zh": {
-                            "title": "PHP",
-                            "description": "擅长使用PHP构建动态网页应用，包括服务器端逻辑和数据库集成。"
+                        "it": {
+                            "description": "Esperienza di base con AngularJS e il suo approccio MVC."
                         }
                     }
                 },
-
                 {
                     "id": 3,
-                    "dateStart": {"year": 2022, "month": 1},
-                    "img": null,
-                    "fallbackFaIcon": "fa-brands fa-laravel",
-                    "fallbackFaIconColor": null,
+                    "dateStart": { "year": 2024, "month": 2 },
+                    "fallbackFaIcon": "fa-solid fa-fire",
                     "percentage": 55,
                     "locales": {
                         "en": {
-                            "title": "Laravel",
-                            "description": ""
+                            "title": "Svelte",
+                            "description": "Exploring reactive, compiler-first approach in modern UI development."
                         },
-                        "es": {
-                            "title": "Laravel",
-                            "description": ""
+                        "de": {
+                            "description": "Erkundung eines reaktiven, compilerbasierten Ansatzes in der modernen UI-Entwicklung."
                         },
-                        "fr": {
-                            "title": "Laravel",
-                            "description": ""
-                        },
-                        "zh": {
-                            "title": "Laravel",
-                            "description": ""
+                        "it": {
+                            "description": "Esplorazione di un approccio reattivo e compiler-first nello sviluppo UI moderno."
                         }
                     }
                 },
-
                 {
                     "id": 4,
-                    "dateStart": {"year": 2023, "month": 1},
-                    "img": null,
-                    "fallbackFaIcon": "fa-brands fa-node",
-                    "fallbackFaIconColor": null,
-                    "percentage": 40,
+                    "dateStart": { "year": 2016, "month": 9 },
+                    "fallbackFaIcon": "fa-brands fa-js",
+                    "percentage": 50,
                     "locales": {
                         "en": {
-                            "title": "NodeJS",
-                            "description": ""
+                            "title": "jQuery",
+                            "description": "Previously used jQuery for DOM manipulation and Ajax calls."
                         },
-                        "es": {
-                            "title": "NodeJS",
-                            "description": ""
+                        "de": {
+                            "description": "Früher jQuery für DOM-Manipulation und Ajax-Anfragen verwendet."
                         },
-                        "fr": {
-                            "title": "NodeJS",
-                            "description": ""
-                        },
-                        "zh": {
-                            "title": "NodeJS",
-                            "description": ""
+                        "it": {
+                            "description": "Esperienza passata con jQuery per manipolazione DOM e richieste Ajax."
                         }
                     }
                 }
@@ -515,18 +332,16 @@
             "id": 4,
             "component": "ArticleSkills",
             "locales": {
-                "en": {"title": "Languages"},
-                "es": {"title": "Idiomas"},
-                "fr": {"title": "Langues"},
-                "zh": {"title": "语言"}
+                "en": { "title": "Languages" },
+                "de": { "title": "Sprachen" },
+                "it": { "title": "Lingue" }
             },
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "asc",
                 "max_items_per_line": 1,
                 "small_icons": true,
-                "transparent_item_icon_background": true,
-                "chart": null
+                "transparent_item_icon_background": true
             },
             "items": [
                 {
@@ -542,113 +357,90 @@
                             "description": "Native speaker with excellent communication and writing skills.",
                             "level": "Native"
                         },
-                        "es": {
-                            "title": "Inglés",
-                            "description": "Hablante nativo con excelentes habilidades de comunicación y escritura.",
-                            "level": "Nativo"
+                        "de": {
+                            "title": "Englisch",
+                            "description": "Muttersprachler mit ausgezeichneten Kommunikations- und Schreibfähigkeiten.",
+                            "level": "Muttersprache"
                         },
-                        "fr": {
-                            "title": "Anglais",
-                            "description": "Locuteur natif avec d'excellentes compétences en communication et en écriture.",
-                            "level": "Langue maternelle"
-                        },
-                        "zh": {
-                            "title": "英语",
-                            "description": "母语人士，具有出色的沟通和写作能力。",
-                            "level": "母语"
+                        "it": {
+                            "title": "Inglese",
+                            "description": "Madrelingua con eccellenti capacità comunicative e di scrittura.",
+                            "level": "Madrelingua"
                         }
                     }
                 },
-
                 {
                     "id": 2,
                     "dateStart": null,
-                    "img": "images/flags/es.png",
+                    "img": "images/flags/de.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
                     "percentage": null,
                     "locales": {
                         "en": {
-                            "title": "Spanish",
-                            "description": "Fluent in both spoken and written Spanish; confident in professional communication.",
-                            "level": "Fluent"
+                            "title": "German",
+                            "description": "Advanced proficiency; comfortable in both formal and informal contexts.",
+                            "level": "Advanced"
                         },
-                        "es": {
-                            "title": "Español",
-                            "description": "Fluido en español hablado y escrito; seguro en la comunicación profesional.",
-                            "level": "Fluido"
+                        "de": {
+                            "title": "Deutsch",
+                            "description": "Fortgeschrittenes Niveau; sicher in formellen und informellen Kontexten.",
+                            "level": "Fortgeschritten"
                         },
-                        "fr": {
-                            "title": "Espagnol",
-                            "description": "Courant à la fois à l'oral et à l'écrit en espagnol ; confiant dans la communication professionnelle.",
-                            "level": "Courant"
-                        },
-                        "zh": {
-                            "title": "西班牙语",
-                            "description": "流利的西班牙语口语和书写能力；自信地进行专业沟通。",
-                            "level": "流利"
+                        "it": {
+                            "title": "Tedesco",
+                            "description": "Livello avanzato; sicuro in contesti formali e informali.",
+                            "level": "Avanzato"
                         }
                     }
                 },
-
                 {
                     "id": 3,
                     "dateStart": null,
-                    "img": "images/flags/vi.png",
+                    "img": "images/flags/it.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
                     "percentage": null,
                     "locales": {
                         "en": {
-                            "title": "Vietnamese",
-                            "description": "Intermediate proficiency in Vietnamese language; can hold conversations and understand written text.",
+                            "title": "Italian",
+                            "description": "Intermediate level; can handle conversations and understand texts.",
                             "level": "Intermediate"
                         },
-                        "es": {
-                            "title": "Vietnamita",
-                            "description": "Competencia intermedia en el idioma vietnamita; puede mantener conversaciones y comprender texto escrito.",
+                        "de": {
+                            "title": "Italienisch",
+                            "description": "Mittleres Niveau; kann Gespräche führen und Texte verstehen.",
+                            "level": "Mittelstufe"
+                        },
+                        "it": {
+                            "title": "Italiano",
+                            "description": "Livello intermedio; capace di sostenere conversazioni e comprendere testi.",
                             "level": "Intermedio"
-                        },
-                        "fr": {
-                            "title": "Vietnamien",
-                            "description": "Compétence intermédiaire en vietnamien ; peut tenir des conversations et comprendre un texte écrit.",
-                            "level": "Intermédiaire"
-                        },
-                        "zh": {
-                            "title": "越南语",
-                            "description": "具有中等水平的越南语能力；能进行对话并理解书面文字。",
-                            "level": "中级"
                         }
                     }
                 },
-
                 {
                     "id": 4,
                     "dateStart": null,
-                    "img": "images/flags/pt-br.png",
+                    "img": "images/flags/tr.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
                     "percentage": null,
                     "locales": {
                         "en": {
-                            "title": "Brazilian Portuguese",
-                            "description": "Basic understanding of Brazilian Portuguese; learning and improving.",
+                            "title": "Turkish",
+                            "description": "Beginner level; currently learning and improving basics.",
                             "level": "Beginner"
                         },
-                        "es": {
-                            "title": "Portugués Brasileño",
-                            "description": "Comprensión básica del portugués brasileño; aprendiendo y mejorando.",
+                        "de": {
+                            "title": "Türkisch",
+                            "description": "Anfängerniveau; lernt derzeit die Grundlagen.",
+                            "level": "Anfänger"
+                        },
+                        "it": {
+                            "title": "Turco",
+                            "description": "Livello principiante; attualmente in fase di apprendimento delle basi.",
                             "level": "Principiante"
-                        },
-                        "fr": {
-                            "title": "Portugais Brésilien",
-                            "description": "Compréhension de base du portugais brésilien ; en cours d'apprentissage et d'amélioration.",
-                            "level": "Débutant"
-                        },
-                        "zh": {
-                            "title": "巴西葡萄牙语",
-                            "description": "对巴西葡萄牙语有基本的理解；正在学习和改进。",
-                            "level": "初学者"
                         }
                     }
                 }

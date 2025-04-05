@@ -97,7 +97,7 @@ const _loadSectionJsonFiles = async () => {
         const json = await _loadJson(path)
         const articles =  json['articles']
         if(!articles) {
-            throw new Error("Each section JSON must contain an articles array.")
+            throw new Error(`${path} doesn't have an articles array.`)
         }
 
         section.articles = articles
@@ -105,8 +105,13 @@ const _loadSectionJsonFiles = async () => {
 }
 
 const _loadJson = async (path) => {
-    const response = await fetch(basePath + "/data/" + path)
-    return await response.json()
+    try {
+        const response = await fetch(basePath + "/data/" + path)
+        return await response.json()
+    }
+    catch (e) {
+        throw new Error(`Couldn't load ${path}. Make sure the file exists and is a valid JSON object.`)
+    }
 }
 
 provide("categories", categories)

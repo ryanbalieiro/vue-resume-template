@@ -48,7 +48,12 @@ npm install
 npm run dev
 ```
 
-4. If you want to temporarily deactivate the preload animation during theme adjustments, go to `public/data/settings.json` and set the `preloaderEnabled` flag to false.
+4. (Optional) If you'd like to reset the portfolio and begin with a blank page with no sections, run the command below:
+```
+npm run resume:reset
+```
+
+5. (Optional) If you want to temporarily deactivate the preload animation during theme adjustments, go to `public/data/settings.json` and set the `preloaderEnabled` flag to false.
 
 ## Template Customization
 
@@ -159,7 +164,7 @@ You can customize a section's content by editing its corresponding JSON file. Ea
             "locales": {},
             "settings": {
                 "order_items_by": "id",
-                "order_items_sort": "asc",
+                "order_items_sort": "asc"
             },
 
             "items": []
@@ -171,7 +176,7 @@ You can customize a section's content by editing its corresponding JSON file. Ea
             "locales": {},
             "settings": {
                 "order_items_by": "id",
-                "order_items_sort": "asc",
+                "order_items_sort": "asc"
             },
 
             "items": []

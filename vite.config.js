@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/vue-resume-template/',
+  base: '/alana-richard-vue-resume/',
   plugins: [vue()],
   css: {
     preprocessorOptions: {

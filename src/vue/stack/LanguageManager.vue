@@ -51,7 +51,7 @@ const localize = (locales, key, returnNullIfNotFound) => {
         return ''
 
     const translation = locales.getTranslation(key, selectedLanguage.value, defaultLanguage.value)
-    if(!translation.includes('locales.'))
+    if(typeof translation !== 'string' || !translation.includes('locales.'))
         return translation
 
     return returnNullIfNotFound ?

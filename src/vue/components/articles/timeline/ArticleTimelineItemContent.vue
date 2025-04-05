@@ -19,6 +19,16 @@
             <p class="text-4 text-default description m-0"
                v-html="description"/>
 
+            <p v-if="list && list.title"
+               class="text-4 text-default list-title m-0 mt-2"
+               v-html="list.title"/>
+
+            <ul v-if="list && list.items && list.items.length"
+                class="text-4 list-items m-0 mt-2">
+                <li v-for="item in list.items"
+                    v-html="item"/>
+            </ul>
+
             <div class="tags-wrapper mt-2 pt-1 mt-md-3">
                 <Tags v-if="parsedTags && parsedTags.length"
                       :tags="parsedTags"/>
@@ -41,6 +51,7 @@ const props = defineProps({
     country: String,
     institution: String,
     description: String,
+    list: Object|null,
     tags: Object|String
 })
 
@@ -162,6 +173,12 @@ div.timeline-item-content-body {
     }
     @include media-breakpoint-down(md) {
         margin-top: 5px;
+    }
+}
+
+ul.list-items {
+    @include media-breakpoint-down(md) {
+        padding-left: 28px;
     }
 }
 </style>

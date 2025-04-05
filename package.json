@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "resume:reset": "node npm/npm-resume-reset.js"
+    "resume:clear": "node npm/npm-resume-clear.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

@@ -48,9 +48,9 @@ npm install
 npm run dev
 ```
 
-4. (Optional) If you'd like to reset the portfolio and begin with a blank page with no sections, run the command below:
+4. (Optional) If you'd like to clear all the portfolio data and begin with a blank page with no sections, run the command below:
 ```
-npm run resume:reset
+npm run resume:clear
 ```
 
 5. (Optional) If you want to temporarily deactivate the preload animation during theme adjustments, go to `public/data/settings.json` and set the `preloaderEnabled` flag to false.

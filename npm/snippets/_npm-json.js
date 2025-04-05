@@ -1,49 +1,81 @@
+import {useNpmLogger} from "./_npm-log.js"
 import path from "path"
 import fs from "fs"
-import {log, LogTypes} from "./_npm-log.js"
 
-const baseDir = process.cwd();
+const logger = useNpmLogger()
+const baseDir = process.cwd()
 
-export function openJson(relativePath) {
-    const resolvedPath = path.resolve(baseDir, relativePath);
-    const fileExists = fs.existsSync(resolvedPath);
-    if(!fileExists) {
-        log(LogTypes.WARNING, `Couldn't find JSON file with path: ${relativePath}`);
-        return null;
+export const useNpmJsonUtils = () => {
+    /**
+     * @param {String} jsonPath
+     * @return {*}
+     */
+    const open = (jsonPath) => {
+        let jsonData = {}
+        const evaluation = evaluatePath(jsonPath)
+
+        if(!evaluation.fileExists) {
+            logger.log(logger.LogTypes.WARNING, `Couldn't find JSON file: ${jsonPath}. Returning empty object instead.`)
+            return jsonData
+        }
+
+        try {
+            jsonData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'))
+        } catch (e) {
+            logger.log(logger.LogTypes.WARNING, `Couldn't parse JSON data: ${jsonPath}.`)
+        }
+
+        return jsonData
     }
 
-    try {
-        return JSON.parse(fs.readFileSync(relativePath, 'utf-8'));
-    }
-    catch (err) {
-        log(LogTypes.WARNING, `Couldn't parse JSON file with path: ${relativePath}`);
-        return null;
-    }
-}
+    /**
+     * @param {String} jsonPath
+     * @param {Object} jsonData
+     */
+    const save = (jsonPath, jsonData) => {
+        const evaluation = evaluatePath(jsonPath)
+        if(!evaluation.fileExists) {
+            logger.log(logger.LogTypes.WARNING, `Couldn't find JSON file: ${jsonPath}.`)
+            return
+        }
 
-export function saveJson(relativePath, content) {
-    const resolvedPath = path.resolve(baseDir, relativePath);
-    const fileExists = fs.existsSync(resolvedPath);
-    if(!fileExists) {
-        log(LogTypes.WARNING, `Couldn't find JSON file with path: ${relativePath}`);
-        return;
+        try {
+            fs.writeFileSync(jsonPath, JSON.stringify(jsonData, null, 4))
+            logger.log(logger.LogTypes.SUCCESS, `Updated JSON file: ${jsonPath}`)
+        }
+        catch (err) {
+            logger.log(logger.LogTypes.WARNING, `Error saving JSON: ${jsonPath}`)
+        }
     }
 
-    try {
-        fs.writeFileSync(relativePath, JSON.stringify(content, null, 4));
-        log(LogTypes.SUCCESS, `Updated JSON file: ${relativePath}`);
-    }
-    catch (err) {
-        log(LogTypes.WARNING, `Couldn't save JSON file with path: ${relativePath}`);
-    }
-}
+    /**
+     * @param {String} jsonPath
+     * @param {Object} newValues
+     */
+    const update = (jsonPath, newValues) => {
+        const jLoaded = open(jsonPath)
+        if(!jLoaded)
+            return
 
-export function editJson(relativePath, changes) {
-    const jLoaded = openJson(relativePath);
-    if(!jLoaded)
-        return;
+        for(let field in newValues)
+            jLoaded[field] = newValues[field]
+        save(jsonPath, jLoaded)
+    }
 
-    for(let field in changes)
-        jLoaded[field] = changes[field];
-    saveJson(relativePath, jLoaded);
+    /**
+     * @param {String} jsonPath
+     * @return {{resolvedPath: String, jsonPath: String, fileExists: Boolean}}
+     */
+    const evaluatePath = (jsonPath) => {
+        const resolvedPath = path.resolve(baseDir, jsonPath)
+        const fileExists = fs.existsSync(resolvedPath)
+        return {jsonPath, resolvedPath, fileExists}
+    }
+
+    return {
+        open,
+        save,
+        update,
+        evaluatePath,
+    }
 }

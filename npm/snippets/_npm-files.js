@@ -1,29 +1,45 @@
-import {log, LogTypes} from "./_npm-log.js"
+import {useNpmLogger} from "./_npm-log.js"
 import path from "path"
 import fs from "fs"
 
-const baseDir = process.cwd();
+const logger = useNpmLogger()
+const baseDir = process.cwd()
 
-export function deleteFolder(relativePath) {
-    const fullPath = path.resolve(baseDir, relativePath);
-    if (fs.existsSync(fullPath)) {
-        fs.rmSync(fullPath, { recursive: true, force: true });
-        log(LogTypes.SUCCESS, `Deleted folder: ${relativePath}`);
-    } else {
-        log(LogTypes.SKIP, `Skipped folder: ${relativePath}`);
+export const useNpmFileUtils = () => {
+    /**
+     * @param {string} folderPath
+     */
+    const deleteFolder = (folderPath) => {
+        const fullPath = path.resolve(baseDir, folderPath)
+        if(!fs.existsSync(fullPath)) {
+            logger.log(logger.LogTypes.SKIP, `Skipped folder: ${folderPath}`)
+            return
+        }
+
+        fs.rmSync(fullPath, { recursive: true, force: true })
+        logger.log(logger.LogTypes.SUCCESS, `Deleted folder: ${folderPath}`)
     }
-}
 
-export function emptyFolder(relativePath) {
-    const fullPath = path.resolve(baseDir, relativePath);
-    if (fs.existsSync(fullPath)) {
-        const contents = fs.readdirSync(fullPath);
+    /**
+     * @param {string} folderPath
+     */
+    const emptyFolder = (folderPath) => {
+        const fullPath = path.resolve(baseDir, folderPath)
+        if(!fs.existsSync(fullPath)) {
+            logger.log(logger.LogTypes.SKIP, `Skipped folder: ${folderPath}`)
+            return
+        }
+
+        const contents = fs.readdirSync(fullPath)
         contents.forEach(item => {
-            const itemPath = path.join(fullPath, item);
-            fs.rmSync(itemPath, { recursive: true, force: true });
-        });
-        log(LogTypes.SUCCESS, `Emptied folder: ${relativePath}`);
-    } else {
-        log(LogTypes.SKIP, `Skipped folder: ${relativePath}`);
+            const itemPath = path.join(fullPath, item)
+            fs.rmSync(itemPath, { recursive: true, force: true })
+        })
+        logger.log(logger.LogTypes.SUCCESS, `Emptied folder: ${folderPath}`)
+    }
+
+    return {
+        deleteFolder,
+        emptyFolder
     }
 }

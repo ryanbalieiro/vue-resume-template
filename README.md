@@ -16,10 +16,10 @@ Key features:
 
 Here's a list of live versions of the app:
 
-| Version                   | Description                                        | URL                                                               |
-|---------------------------|----------------------------------------------------|-------------------------------------------------------------------|
-| 🟣 Roy Sheppard (default) | Latest deployment of the app here on GitHub pages. | [Preview](https://ryanbalieiro.github.io/vue-resume-template/)    | 
-| 🟢 Alana Richard          | An example of how the app can be customized.       | [Preview](https://rbtutorials.github.io/alana-richard-vue-resume) |         
+| #     | Version                | Description                                        | URL                                                               |
+|-------|------------------------|----------------------------------------------------|-------------------------------------------------------------------|
+| 🟣    | Roy Sheppard (default) | Latest deployment of the app here on GitHub pages. | [Preview](https://ryanbalieiro.github.io/vue-resume-template/)    | 
+| 🟢    | Alana Richard          | An example of how the app can be customized.       | [Preview](https://rbtutorials.github.io/alana-richard-vue-resume) |         
 
 ## Layout and concept
 
@@ -66,20 +66,20 @@ npm run resume:clear
 
 Watch this step-by-step video tutorial to see exactly how to configure your app:
 
-| #   | Title                         | Watch                                                                    |
-|-----|-------------------------------|--------------------------------------------------------------------------|
-| 1   | Setting up the project        | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=0m00s)  |
-| 2   | Title and colors              | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=1m31s)  |
-| 3   | Settings, strings and profile | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=4m20s)  |
-| 4   | Categories and sections       | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=7m37s)  |
-| 5   | ArticleProfile                | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=10m33s) |
-| 6   | ArticleTimeline               | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=14m12s) |
-| 7   | ArticleSkills                 | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=18m00s) |
-| 8   | ArticlePortfolio              | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=22m38s) |
-| 9   | Threads and contact options   | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=25m36s) |
-| 10  | ArticleContactForm            | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=29m44s) |
-| 11  | Deploying on GitHub Pages     | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=34m05s) |
-| 12  | Extra configurations          | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=36m20s) |   
+| #   | Title                                    | Watch                                                                    |
+|-----|------------------------------------------|--------------------------------------------------------------------------|
+| 1   | Setting up the project                   | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=0m00s)  |
+| 2   | Title and colors                         | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=1m31s)  |
+| 3   | Settings, strings and profile            | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=4m20s)  |
+| 4   | Categories and sections                  | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=7m37s)  |
+| 5   | ArticleProfile                           | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=10m33s) |
+| 6   | ArticleTimeline                          | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=14m12s) |
+| 7   | ArticleSkills                            | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=18m00s) |
+| 8   | ArticlePortfolio                         | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=22m38s) |
+| 9   | ArticleThreads and ArticleContactOptions | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=25m36s) |
+| 10  | ArticleContactForm                       | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=29m44s) |
+| 11  | Deploying on GitHub Pages                | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=34m05s) |
+| 12  | Extra deployment instructions            | [Watch on YouTube](https://www.youtube.com/watch?v=QvQQK81xljw&t=36m20s) |   
 
 For step-by-step setup and deployment instructions, you can also check out the following docs:
 - [CONFIGURATION.md](./docs/CONFIGURATION.md) – learn how to configure and customize the project.
@@ -94,7 +94,7 @@ It is based on the [Bootstrap](https://getbootstrap.com/) framework created by M
 Additional frameworks and plugins used include:
 - **Font Awesome**: A library of free vector icons.
 - **EmailJS**: A free service that allows you to send emails using JavaScript.
-- 
+
 ## Copyright and License
 
 Code released under the [MIT](https://opensource.org/license/mit) license, providing complete freedom for utilization. Feel free to enhance and adapt it to suit your needs.

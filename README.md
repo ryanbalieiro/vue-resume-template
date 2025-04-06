@@ -1,8 +1,8 @@
-# <img src="readme-assets/logo.png"><img src="readme-assets/spacer.png"> [Vue Resume Template](https://ryanbalieiro.github.io/vue-resume-template/) by Ryan Balieiro
+# <img src="docs/assets/logo.png"><img src="docs/assets/spacer.png"> [Vue Resume Template](https://ryanbalieiro.github.io/vue-resume-template/) by Ryan Balieiro
 
 A clean and minimal template for building a resume landing page, powered by **Vue 3** (Composition API) and **Bootstrap 5**.
 
-![alt tag1](readme-assets/promo-1.png)
+![alt tag1](docs/assets/promo-1.png)
 
 Key features:
 - Uses Vue3 **Composition API**.
@@ -26,17 +26,17 @@ Here's a list of live versions of the app:
 ### 1. Base layout
 The theme has a clean, minimalist design with a nice mix of purple shades that gives it a fresh, stylish vibe.
 
-![alt tag1](readme-assets/promo-4.png)
+![alt tag1](docs/assets/promo-4.png)
 
 ### 2. Desktop Screenshots
 On desktop, it has a simple one-page layout with a fixed sidebar, so users can easily scroll through the sections.
 
-![alt tag1](readme-assets/promo-2.png)
+![alt tag1](docs/assets/promo-2.png)
 
 ### 3. Mobile Screenshots
 On mobile, the layout groups the sections into categories and transforms into a tabbed interface with a bottom navigation.
 
-![alt tag1](readme-assets/promo-3.png)
+![alt tag1](docs/assets/promo-3.png)
 
 ## Getting Started
 

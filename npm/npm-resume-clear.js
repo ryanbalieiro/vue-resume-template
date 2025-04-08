@@ -1,3 +1,10 @@
+/**
+ * @author Ryan Balieiro
+ * @description Use this script to wipe all existing resume data and start fresh with a blank resume.
+ *
+ * @usage
+ * npm run resume:clear
+ */
 import {useNpmLogger} from "./snippets/_npm-log.js"
 import {useNpmFileUtils} from "./snippets/_npm-files.js"
 import {useNpmJsonUtils} from "./snippets/_npm-json.js"

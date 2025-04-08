@@ -1,3 +1,7 @@
+/**
+ * @author Ryan Balieiro
+ * @description Handy utilities to help manage JSON files within your npm scripts.
+ */
 import {useNpmLogger} from "./_npm-log.js"
 import path from "path"
 import fs from "fs"

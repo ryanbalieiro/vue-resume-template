@@ -14,12 +14,12 @@ Key features:
 
 ## Live Preview
 
-Here's a list of live versions of the app:
+Here's a list of live versions of the template:
 
-| #     | Version                | Description                                        | URL                                                               |
-|-------|------------------------|----------------------------------------------------|-------------------------------------------------------------------|
-| 🟣    | Roy Sheppard (default) | Latest deployment of the app here on GitHub pages. | [Preview](https://ryanbalieiro.github.io/vue-resume-template/)    | 
-| 🟢    | Alana Richard          | An example of how the app can be customized.       | [Preview](https://rbtutorials.github.io/alana-richard-vue-resume) |         
+| #     | Version                | Description                                               | URL                                                               |
+|-------|------------------------|-----------------------------------------------------------|-------------------------------------------------------------------|
+| 🟣    | Roy Sheppard (default) | Latest deployment of the template here on GitHub pages.   | [Preview](https://ryanbalieiro.github.io/vue-resume-template/)    | 
+| 🟢    | Alana Richard          | An example of how the template can be customized.         | [Preview](https://rbtutorials.github.io/alana-richard-vue-resume) |         
 
 ## Layout and concept
 
@@ -64,7 +64,7 @@ npm run resume:clear
 
 ## Configuration Tutorial
 
-Watch this step-by-step video tutorial to see exactly how to configure your app:
+Watch this step-by-step video tutorial to see exactly how to configure your resume:
 
 | #   | Title                                    | Watch                                                                    |
 |-----|------------------------------------------|--------------------------------------------------------------------------|

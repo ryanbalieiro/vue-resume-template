@@ -80,7 +80,7 @@ const setSpinnerEnabled = inject("setSpinnerEnabled")
 const isMobileLayout = inject("isMobileLayout")
 
 const supportsMultipleLanguages = computed(() => {
-    return settings.value.supportedLanguages.length > 2
+    return settings.value.supportedLanguages.length >= 2
 })
 
 const availableLanguages = computed(() => {

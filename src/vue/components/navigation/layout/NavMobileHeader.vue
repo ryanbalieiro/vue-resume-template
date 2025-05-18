@@ -2,7 +2,7 @@
     <nav class="nav-mobile-header"
          id="nav-mobile-header">
         <NavProfileCard :avatar="profile.profilePictureUrl"
-                        :name="profile.name"
+                        :name="localize(profile.locales, 'name', true) || profile.name"
                         :role="localize(profile.locales, 'role')"
                         :shrink="false"
                         :include-toggle-button="false"

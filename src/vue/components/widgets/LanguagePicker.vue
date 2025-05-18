@@ -47,7 +47,7 @@
 
 <script setup>
 import {computed, inject} from "vue"
-import Dropdown from '/node_modules/bootstrap/js/src/dropdown'
+import Dropdown from 'bootstrap/js/src/dropdown'
 import {useUtils} from "/src/composables/utils.js"
 import {useConstants} from "/src/composables/constants.js"
 

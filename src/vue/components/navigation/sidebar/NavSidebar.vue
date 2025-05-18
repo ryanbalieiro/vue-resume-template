@@ -3,7 +3,7 @@
         <!-- Main Content -->
         <div class="nav-sidebar-content">
             <NavProfileCard :avatar="profile.profilePictureUrl"
-                            :name="profile.name"
+                            :name="localize(profile.locales, 'name', true) || profile.name"
                             :role="localize(profile.locales, 'role')"
                             :shrink="toggled"
                             :include-toggle-button="settings.navToggleEnabled"

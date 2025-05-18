@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-import Modal from '/node_modules/bootstrap/js/src/modal'
+import Modal from 'bootstrap/js/src/modal'
 import {onMounted, onUnmounted, ref, watch} from "vue"
 import FaButton from "/src/vue/components/widgets/FaButton.vue"
 

@@ -54,6 +54,7 @@ jsonUtils.update(jProfilePath, {
     profilePictureUrl: "",
     locales: {
         en: {
+            name: "John Doe",
             credits: "Designed by <strong><a href='https://github.com/ryanbalieiro'>Ryan Balieiro</a></strong>",
             role: "Role"
         }

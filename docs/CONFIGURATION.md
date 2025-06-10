@@ -196,12 +196,62 @@ To configure your contact form, follow these steps:
 - In your EmailJS account panel, create an email service, which configures the provider that will send the emails (e.g., your Gmail or iCloud account).
 - Next, on your dashboard, create a new email template like this one:
 
-```
-You got a new message from {{from_name}} ({{from_email}}):
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Contact Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .heading {
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: #444;
+        }
+        .info {
+            margin-bottom: 10px;
+        }
+        .label {
+            font-weight: bold;
+        }
+        .message {
+            white-space: pre-line;
+            margin-top: 10px;
+            padding: 0 15px 15px;
+            background-color: #f1f1f1;
+            border-left: 4px solid #269366;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="heading">New portfolio message! 📩 </div>
+    <div class="info"><span class="label">Name:</span> {{name}}</div>
+    <div class="info"><span class="label">Email:</span> {{email}}</div>
+    <div class="info"><span class="label">Subject:</span> {{custom_subject}}</div>
 
-Subject: {{custom_subject}}
-
-{{message}}
+    <div class="info"><span class="label">Message:</span></div>
+    <div class="message">
+        {{message}}
+    </div>
+</div>
+</body>
+</html>
 ```
 
 - Now, open `public/data/sections/contact.json` in your project and fill in the `settings` dictionary with your account info:

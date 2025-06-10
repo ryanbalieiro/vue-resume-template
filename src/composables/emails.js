@@ -3,12 +3,15 @@
  * API integration with EmailJS for sending e-mails.
  */
 import emailjs from "@emailjs/browser"
+import {useUtils} from "/src/composables/utils.js"
 
 const _params = {
     publicKey: null,
     serviceId: null,
     templateId : null
 }
+
+const utils = useUtils()
 
 export const useEmails = () => {
     /**
@@ -40,9 +43,13 @@ export const useEmails = () => {
             throw new Error("EmailJS hasn't been initialized!")
         
         const requestParams = {
+            name: fromName,
             from_name: fromName,
+            email: fromEmail,
             from_email: fromEmail,
             custom_subject: customSubject,
+            custom_source: utils.getAbsoluteLocation(),
+            custom_source_name: "Vue Resume",
             message: message
         }
 

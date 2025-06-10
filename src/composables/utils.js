@@ -137,6 +137,14 @@ export function useUtils() {
         return baseUrl + path
     }
 
+    /**
+     * @return {string}
+     */
+    const getAbsoluteLocation = () => {
+        const { protocol, host, pathname, search, hash } = window.location
+        return `${protocol}//${host}${pathname}${search}${hash}`
+    }
+
     return {
         clamp,
         isAndroid,
@@ -150,6 +158,7 @@ export function useUtils() {
         getRootSCSSVariable,
         getYearsPassedSince,
         generateUniqueRandomString,
-        resolvePath
+        resolvePath,
+        getAbsoluteLocation
     }
 }

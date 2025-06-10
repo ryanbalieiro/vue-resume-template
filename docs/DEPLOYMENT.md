@@ -25,8 +25,29 @@ This command triggers a series of processes that package your code, assets, and 
 
 ### 3. Deploying to GitHub pages
 
-The project comes with a preconfigured GitHub Actions workflow that automatically builds the project and deploys it to GitHub Pages. You can find and customize this workflow in the `.github` folder if needed.
+This project comes with a preconfigured GitHub Actions workflow that automatically builds and deploys the portfolio to GitHub Pages. If needed, you can find and customize this workflow in the `.github/workflows` folder.
 
-Once you push the project to GitHub, the workflow will handle the build process and publish your site to a branch named `gh-pages`. Make sure you've correctly set up the required repository permissions and GitHub Pages settings. If you encounter a build error, it's likely related to missing or misconfigured permissions.
+Follow these steps to deploy your portfolio to GitHub Pages:
 
-
+- **Make sure the base directory in `vite.config.js` matches your repo name.**
+- **Make sure your repository is public.**
+- **Enable GitHub Actions** in your repository settings:
+    - Go to `Your Repo > Settings > Actions > General`.
+    - Under **Actions permissions**, select **"Allow all actions and reusable workflows"**.
+    - Scroll down to **Workflow permissions** and enable **"Read and write permissions"**.  
+      ⚠️ *If this step is skipped, the deployment script will fail after the build stage.*
+- Once everything is configured, **push a commit** to your repository to trigger the deployment script automatically.
+- If the deployment doesn't start automatically:
+    - Go to the **Actions** tab in your GitHub repo.
+    - If a confirmation message appears, click **"I understand my workflows, go ahead and enable them"**.
+    - Select the **"Deploy portfolio to GitHub Pages"** workflow on the left sidebar.
+    - Run it manually by clicking **"Run workflow"**.
+    - If it already ran and failed, you can click the **"Re-run jobs"** button to run it again.
+- After a successful run, the script will:
+    - Build the project
+    - Create a new branch called `gh-pages` in your repository with your production-ready files.
+- Now go to `Your Repo > Settings > Pages`, and:
+    - Set the **source branch** to `gh-pages`
+    - Save the changes
+- Wait a few seconds for GitHub to process the deployment.  
+  You should then see the deployment status and a link to your live portfolio in the **"Deployments"** section on the right side of your repository homepage.

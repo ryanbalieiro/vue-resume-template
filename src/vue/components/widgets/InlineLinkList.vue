@@ -3,16 +3,21 @@
         <li v-for="item in items" class="inline-list-item">
             <a :class="item.href ? `link-darkened` : `link-disabled`" :href="item.href">
                 <i v-if="item.faIcon" :class="item.faIcon"/>
-                <span v-html="item.getValue(true)"/>
+                <span v-html="item.getValue(localize, true)"/>
             </a>
         </li>
     </ul>
 </template>
 
 <script setup>
+import {inject} from "vue"
+
 const props = defineProps({
     items: Array,
 })
+
+/** @type {Function} */
+const localize = inject("localize")
 </script>
 
 <style lang="scss" scoped>

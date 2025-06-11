@@ -22,6 +22,9 @@ const props = defineProps({
 const profile = inject("profile")
 
 /** @type {Function} */
+const localize = inject("localize")
+
+/** @type {Function} */
 const localizeFromStrings = inject("localizeFromStrings")
 
 const contactLinks = computed(() => {
@@ -33,7 +36,7 @@ const contactLinks = computed(() => {
             faIcon: item.faIcon.replace('regular', 'solid'),
             label: localizeFromStrings(item.id).replace("locales.", ""),
             href: item.href,
-            value: item.getValue(false)
+            value: item.getValue(localize, false)
         }
     })
 })

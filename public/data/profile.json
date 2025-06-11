@@ -28,10 +28,23 @@
     "contactOptions": [
         {
             "id": "address",
-            "value": "123 Main Street, Cupertino, CA 01234",
-            "valueShort": "Cupertino – CA",
             "faIcon": "fa-regular fa-map",
-            "href": null
+            "href": null,
+            "locales": {
+                "en": {
+                    "value": "123 Main Street, Cupertino, CA 01234",
+                    "valueShort": "Cupertino – CA"
+                },
+                "es": {
+                    "valueShort": "California – EE.UU."
+                },
+                "fr": {
+                    "valueShort": "Californie – États-Unis"
+                },
+                "zh": {
+                    "valueShort": "美国加州"
+                }
+            }
         },
 
         {

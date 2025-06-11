@@ -1,3 +1,5 @@
+import Locales from "/src/models/Locales.js"
+
 export default class ContactOption {
     /** @constructs */
     constructor(jsonData) {
@@ -6,6 +8,7 @@ export default class ContactOption {
         this._valueShort = jsonData["valueShort"]
         this._faIcon = jsonData["faIcon"]
         this._href = jsonData["href"] || null
+        this._locales = new Locales(jsonData["locales"] || {})
     }
 
     /** @return {String} */
@@ -13,8 +16,21 @@ export default class ContactOption {
         return this._id
     }
 
+    /**
+     * @param {Function} localizationClosure
+     * @param {Boolean} shorten
+     * @return {String}
+     */
+    getValue(localizationClosure, shorten) {
+        const key = shorten ? "valueShort" : "value"
+        const localizedKey = localizationClosure(this._locales, key, true)
+
+        if(localizedKey) return localizedKey
+        return this.getStaticValue(shorten)
+    }
+
     /** @return {String} */
-    getValue(shorten) {
+    getStaticValue(shorten) {
         return shorten ? this._valueShort : this._value
     }
 

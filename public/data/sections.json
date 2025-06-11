@@ -42,7 +42,7 @@
             "type": "column",
             "locales": {
                 "en": {
-                    "title": "*Educational* Background",
+                    "title": "*Education* Background",
                     "title_short": null,
                     "description": "A glimpse into my academic trajectory and accomplishments.",
                     "nav_label": "Education"

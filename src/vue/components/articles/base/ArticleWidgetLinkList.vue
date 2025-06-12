@@ -4,7 +4,7 @@
         <a v-for="link in links"
            :href="link.href"
            target="_blank"
-           class="link-darkened d-block">
+           class="link-darkened link-item">
             <i v-if="link.faIcon" :class="link.faIcon" class="me-1"/>
             <span v-html="_getLabel(link)"/>
             <i class="fa-solid fa-arrow-up-right-dots ms-1"/>
@@ -31,4 +31,14 @@ const _getLabel = (link) => {
 
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
+
+div.links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+a.link-item {
+    display: block;
+}
 </style>

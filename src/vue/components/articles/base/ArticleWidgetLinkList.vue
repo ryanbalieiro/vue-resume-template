@@ -6,7 +6,7 @@
            target="_blank"
            class="link-darkened d-block">
             <i v-if="link.faIcon" :class="link.faIcon" class="me-1"/>
-            <span v-html="localizeFromStrings(link['stringKey'])"/>
+            <span v-html="_getLabel(link)"/>
             <i class="fa-solid fa-arrow-up-right-dots ms-1"/>
         </a>
     </div>
@@ -21,6 +21,12 @@ const props = defineProps({
 
 /** @type {Function} */
 const localizeFromStrings = inject("localizeFromStrings")
+
+const _getLabel = (link) => {
+    if(link['staticLabel'])
+        return link['staticLabel']
+    return localizeFromStrings(link['stringKey'])
+}
 </script>
 
 <style lang="scss" scoped>

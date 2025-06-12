@@ -16,10 +16,11 @@ Key features:
 
 Here's a list of live versions of the template:
 
-| #     | Version                | Description                                               | URL                                                                |
-|-------|------------------------|-----------------------------------------------------------|--------------------------------------------------------------------|
-| 🟣    | Roy Sheppard (default) | Latest deployment of the template here on GitHub pages.   | [Preview](https://ryanbalieiro.github.io/vue-resume-template/)     | 
-| 🟢    | Alana Richard          | An example of how the template can be customized.         | [Preview](https://ryansandbox.github.io/alana-richard-vue-resume/) |         
+| #     | Version                | Description                                              | URL                                                                  |
+|-------|------------------------|----------------------------------------------------------|----------------------------------------------------------------------|
+| 🟣    | Roy Sheppard (default) | Latest deployment of the template here on GitHub pages.  | [Preview](https://ryanbalieiro.github.io/vue-resume-template/)       | 
+| 🟢    | Alana Richard          | An example of how the template can be customized.        | [Preview](https://ryansandbox.github.io/alana-richard-vue-resume/)   |  
+| 🔵    | Gabriel Becker         | Another example of how the template can be customized.   | [Preview](https://ryansandbox.github.io/gabriel-becker-vue-resume/)  |
 
 ## Layout and concept
 

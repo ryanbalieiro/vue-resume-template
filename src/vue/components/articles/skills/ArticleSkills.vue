@@ -53,7 +53,7 @@ const maxItemsPerLine = computed(() => {
 const gutterClass = computed(() => {
     if(!chartType.value)
         return 'gx-5 gy-3 gy-md-4'
-    return 'gx-5 gx-xl-3 gx-xxl-4 gy-4 gy-xl-3 gy-xxl-4'
+    return 'gx-5 gx-xl-3 gx-xxl-4 gy-3 gy-md-4 gy-xl-3 gy-xxl-4'
 })
 
 const colClass = computed(() => {

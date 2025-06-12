@@ -71,6 +71,8 @@ div.timeline-item-icon {
     z-index: 1;
     border-radius: 100%;
     overflow: hidden;
+    user-select: none;
+    pointer-events: none;
     background-color: $article-timeline-line-color;
 
     @include media-breakpoint-down(md) {

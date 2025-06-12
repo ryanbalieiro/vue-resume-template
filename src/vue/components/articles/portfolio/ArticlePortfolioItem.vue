@@ -179,6 +179,8 @@ div.portfolio-item-content-wrapper {
         margin: 0 auto;
         cursor: pointer;
         overflow: hidden;
+        user-select: none;
+        pointer-events: none;
         border-radius: 25%;
         aspect-ratio: 1/1;
         width: calc(var(--base-icon-size) * var(--proportion));

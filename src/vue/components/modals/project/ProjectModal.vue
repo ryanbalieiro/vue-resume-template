@@ -62,6 +62,8 @@ div.project-modal-content-wrapper {
 div.project-modal-icon-view {
     border-radius: 25%;
     overflow: hidden;
+    user-select: none;
+    pointer-events: none;
 
     --dimension: 330px;
     --margin: 0 3rem 0 0;

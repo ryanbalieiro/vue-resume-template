@@ -144,6 +144,8 @@ div.skills-item-icon {
 
     border-radius: 100%;
     overflow: hidden;
+    user-select: none;
+    pointer-events: none;
 
     &-transparent {
         @include generate-dynamic-styles-with-hash((
@@ -193,6 +195,12 @@ div.skills-item-header {
     display: flex;
     justify-content: space-between;
     align-items: end;
+}
+
+span.skills-item-header-title {
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
 }
 
 div.skills-item-progress-display {

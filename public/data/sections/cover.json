@@ -15,19 +15,19 @@
                     "id": 1,
                     "locales": {
                         "en": {
-                            "description": "I've been a UX designer for 8 years, crafting user-friendly interfaces that feel natural, intuitive, and seamless across different devices. My passion lies in designing digital experiences that not only look great but also function effortlessly, making interactions smoother and more enjoyable."
+                            "description": "I've been a UX designer for <strong>8 years</strong>, crafting user-friendly interfaces that feel natural, intuitive, and seamless across different devices. My passion lies in designing digital experiences that not only look great but also function effortlessly, making interactions smoother and more enjoyable."
                         },
 
                         "es": {
-                            "description": "Llevo 8 años trabajando como diseñador UX, creando interfaces intuitivas, fluidas y fáciles de usar en distintos dispositivos. Me apasiona diseñar experiencias digitales que no solo sean atractivas, sino que también funcionen sin esfuerzo, haciendo que la interacción sea más fluida y agradable."
+                            "description": "Soy diseñador UX desde hace <strong>8 años</strong>, creando interfaces amigables que se sienten naturales, intuitivas y fluidas en diferentes dispositivos. Me apasiona diseñar experiencias digitales que no solo se vean bien, sino que también funcionen sin esfuerzo, haciendo que las interacciones sean más suaves y agradables."
                         },
 
                         "fr": {
-                            "description": "Depuis 8 ans, je conçois des interfaces UX intuitives, naturelles et fluides sur différents appareils. Ce qui me passionne, c'est de créer des expériences numériques qui sont non seulement esthétiques, mais aussi parfaitement fonctionnelles, rendant chaque interaction plus fluide et agréable."
+                            "description": "Je suis designer UX depuis <strong>8 ans</strong>, créant des interfaces conviviales qui se sentent naturelles, intuitives et fluides sur différents appareils. Ma passion est de concevoir des expériences numériques qui non seulement sont esthétiques, mais fonctionnent également sans effort, rendant les interactions plus fluides et agréables."
                         },
 
                         "zh": {
-                            "description": "我做 UX 设计已经 8 年了，专注于打造直观、自然且在不同设备上都流畅的用户界面。我热衷于设计既美观又高效的数字体验，让交互变得更加顺畅和愉悦。"
+                            "description": "我是一名拥有<strong>8年</strong>经验的UX设计师，专注于打造自然、直观且跨设备无缝的用户界面。我的热情在于设计数字体验，不仅外观出色，而且功能流畅，使交互更加顺畅和愉悦。"
                         }
                     }
                 },
@@ -40,15 +40,15 @@
                         },
 
                         "es": {
-                            "description": "Creo que un buen diseño debe mejorar la vida de las personas, ayudándolas a interactuar con la tecnología de manera fácil y segura. ¡Trabajemos juntos para dar vida a nuevas ideas y crear algo increíble!"
+                            "description": "Creo que un buen diseño debe mejorar la vida de las personas, ayudándolas a navegar por la tecnología con facilidad y confianza. ¡Trabajemos juntos para dar vida a las ideas y construir algo verdaderamente asombroso!"
                         },
 
                         "fr": {
-                            "description": "Je suis convaincu qu’un bon design doit améliorer la vie des gens en leur permettant d’utiliser la technologie avec facilité et confiance. Travaillons ensemble pour donner vie à de nouvelles idées et créer quelque chose d’exceptionnel !"
+                            "description": "Je crois qu'un bon design doit améliorer la vie des gens, les aidant à naviguer dans la technologie avec aisance et confiance. Travaillons ensemble pour donner vie aux idées et construire quelque chose de vraiment incroyable !"
                         },
 
                         "zh": {
-                            "description": "我坚信优秀的设计应该提升人们的生活，让他们能够轻松、自信地使用科技。无论是网站、应用还是复杂系统，我都致力于打造能真正与用户产生深层连接的产品。让我们携手合作，将想法变为现实，创造非凡的作品！"
+                            "description": "我相信好的设计应该提升人们的生活，帮助他们轻松自信地使用技术。让我们一起工作，将创意变为现实，打造真正令人惊叹的作品！"
                         }
                     }
                 }

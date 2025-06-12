@@ -20,7 +20,16 @@
                     "locales": {
                         "en": {
                             "title": "UX Designer",
-                            "description": "Contributed to designing intuitive and user-friendly web application interfaces, creating engaging and seamless user experiences. Collaborated closely with cross-functional teams and stakeholders to ensure designs aligned with business goals and user needs.",
+                            "description": "Contributed to designing <strong>intuitive</strong> and <strong>user-friendly</strong> web application interfaces, creating engaging and seamless user experiences. Collaborated closely with cross-functional teams and stakeholders to ensure designs aligned with business goals and user needs.",
+                            "list": {
+                                "title": "Key Responsibilities",
+                                "items": [
+                                    "Conducted <strong>user research</strong> to gather insights and inform design decisions.",
+                                    "Created wireframes, prototypes, and high-fidelity designs using <strong>Figma.</strong>",
+                                    "Collaborated with developers to ensure <strong>design feasibility</strong> and implementation.",
+                                    "Conducted <strong>usability testing</strong> to validate designs and gather feedback."
+                                ]
+                            },
                             "province": "Hannover",
                             "country": "Germany",
                             "institution": "UX Masters Studio",
@@ -29,7 +38,16 @@
 
                         "es": {
                             "title": "Diseñador de UX",
-                            "description": "Contribuí al diseño de interfaces de aplicaciones web intuitivas y amigables para el usuario, creando experiencias de usuario atractivas y fluidas. Colaboré estrechamente con equipos multifuncionales e interesados para asegurarme de que los diseños se alinearan con los objetivos comerciales y las necesidades de los usuarios.",
+                            "description": "Contribuí al diseño de interfaces de aplicaciones web <strong>intuitivas</strong> y <strong>fáciles de usar</strong>, creando experiencias de usuario atractivas y fluidas. Colaboré estrechamente con equipos multifuncionales y partes interesadas para garantizar que los diseños estuvieran alineados con los objetivos comerciales y las necesidades de los usuarios.",
+                            "list": {
+                                "title": "Responsabilidades Clave",
+                                "items": [
+                                    "Realicé <strong>investigación de usuarios</strong> para recopilar información y tomar decisiones de diseño.",
+                                    "Creé wireframes, prototipos y diseños de alta fidelidad utilizando <strong>Figma.</strong>",
+                                    "Colaboré con desarrolladores para garantizar la <strong>viabilidad del diseño</strong> y su implementación.",
+                                    "Realicé <strong>pruebas de usabilidad</strong> para validar los diseños y recopilar comentarios."
+                                ]
+                            },
                             "province": "Hannover",
                             "country": "Alemania",
                             "institution": "UX Masters Studio",
@@ -38,7 +56,16 @@
 
                         "fr": {
                             "title": "Designer UX",
-                            "description": "Contribué à la conception d'interfaces d'applications web intuitives et conviviales, créant ainsi des expériences utilisateur engageantes et fluides. Collaboré étroitement avec des équipes pluridisciplinaires et des parties prenantes pour garantir que les designs soient alignés sur les objectifs commerciaux et les besoins des utilisateurs.",
+                            "description": "A contribué à la conception d'interfaces d'applications web <strong>intuitives</strong> et <strong>conviviales</strong>, créant des expériences utilisateur engageantes et fluides. A collaboré étroitement avec des équipes interfonctionnelles et des parties prenantes pour garantir que les conceptions soient alignées sur les objectifs commerciaux et les besoins des utilisateurs.",
+                            "list": {
+                                "title": "Responsabilités Clés",
+                                "items": [
+                                    "A mené des <strong>recherches utilisateur</strong> pour recueillir des informations et éclairer les décisions de conception.",
+                                    "A créé des maquettes, des prototypes et des designs haute-fidélité en utilisant <strong>Figma.</strong>",
+                                    "A collaboré avec les développeurs pour garantir la <strong>faisabilité du design</strong> et sa mise en œuvre.",
+                                    "A réalisé des <strong>tests d'utilisabilité</strong> pour valider les conceptions et recueillir des retours."
+                                ]
+                            },
                             "province": "Hanovre",
                             "country": "Allemagne",
                             "institution": "UX Masters Studio",
@@ -47,7 +74,16 @@
 
                         "zh": {
                             "title": "用户体验设计师",
-                            "description": "为设计直观、用户友好的网络应用界面作出了贡献，创建了引人入胜且无缝的用户体验。与跨职能团队和利益相关者密切合作，确保设计与业务目标和用户需求相一致。",
+                            "description": "参与设计直观且用户友好的网络应用界面，创造引人入胜且无缝的用户体验。与跨职能团队和利益相关者紧密合作，确保设计与业务目标和用户需求保持一致。",
+                            "list": {
+                                "title": "主要职责",
+                                "items": [
+                                    "进行用户研究以收集见解并指导设计决策。",
+                                    "使用Figma创建线框图、原型和高保真设计。",
+                                    "与开发人员合作，确保设计的可行性和实施。",
+                                    "进行可用性测试以验证设计并收集反馈。"
+                                ]
+                            },
                             "province": "汉诺威",
                             "country": "德国",
                             "institution": "UX Masters Studio",
@@ -67,7 +103,16 @@
                     "locales": {
                         "en": {
                             "title": "Senior UI/UX Designer",
-                            "description": "Led design projects, conducted comprehensive user research, and utilized data-driven insights to enhance user experiences. Managed design teams, fostering creativity and innovation while implementing design best practices to deliver successful outcomes for various digital products.",
+                            "description": "Led the design of innovative user interfaces and experiences for <strong>Adobe's flagship products</strong>, focusing on data-driven design principles. Collaborated with product managers and engineers to create intuitive and visually appealing designs that enhance user engagement and satisfaction.",
+                            "list": {
+                                "title": "Key Responsibilities:",
+                                "items": [
+                                    "Developed high-fidelity prototypes and wireframes using <strong>Figma</strong> and <strong>Adobe XD</strong>.",
+                                    "Conducted <strong>user testing</strong> and research to inform design decisions.",
+                                    "Collaborated with <strong>cross-functional teams</strong> to ensure design consistency and quality.",
+                                    "<strong>Mentored junior designers</strong> in best practices and design methodologies."
+                                ]
+                            },
                             "province": "California",
                             "country": "US",
                             "institution": "Adobe",
@@ -76,7 +121,16 @@
 
                         "es": {
                             "title": "Designer Senior UI/UX",
-                            "description": "Lideré proyectos de diseño, realicé investigaciones exhaustivas sobre usuarios y utilicé información basada en datos para mejorar las experiencias de usuario. Gestioné equipos de diseño, fomentando la creatividad y la innovación al tiempo que implementaba las mejores prácticas de diseño para obtener resultados exitosos en diversos productos digitales.",
+                            "description": "Lideré el diseño de interfaces de usuario innovadoras y experiencias para los <strong>productos insignia de Adobe</strong>, enfocándome en principios de diseño basados en datos. Colaboré con gerentes de producto e ingenieros para crear diseños intuitivos y visualmente atractivos que mejoren el compromiso y la satisfacción del usuario.",
+                            "list": {
+                                "title": "Responsabilidades Clave:",
+                                "items": [
+                                    "Desarrollé prototipos y wireframes de alta fidelidad utilizando <strong>Figma</strong> y <strong>Adobe XD</strong>.",
+                                    "Realicé <strong>pruebas de usuario</strong> e investigación para informar las decisiones de diseño.",
+                                    "Colaboré con equipos <strong>multifuncionales</strong> para garantizar la consistencia y calidad del diseño.",
+                                    "<strong>Mentoricé a diseñadores junior</strong> en mejores prácticas y metodologías de diseño."
+                                ]
+                            },
                             "province": "California",
                             "country": "EE. UU.",
                             "institution": "Adobe",
@@ -85,7 +139,16 @@
 
                         "fr": {
                             "title": "Designer UI/UX Senior",
-                            "description": "A piloté les initiatives UX en supervisant une équipe de concepteurs, en élaborant des stratégies de conception et en dirigeant des collaborations interfonctionnelles avec les responsables de produits, les ingénieurs et les cadres. Axé sur la création de designs centrés sur l'utilisateur alignés sur les objectifs commerciaux et aboutissant à une satisfaction accrue des utilisateurs.",
+                            "description": "A dirigé la conception d'interfaces utilisateur innovantes et d'expériences pour les <strong>produits phares d'Adobe</strong>, en mettant l'accent sur les principes de conception basés sur les données. A collaboré avec des chefs de produit et des ingénieurs pour créer des designs intuitifs et visuellement attrayants qui améliorent l'engagement et la satisfaction des utilisateurs.",
+                            "list": {
+                                "title": "Responsabilités Clés:",
+                                "items": [
+                                    "A développé des prototypes et des maquettes haute-fidélité en utilisant <strong>Figma</strong> et <strong>Adobe XD</strong>.",
+                                    "A mené des <strong>tests utilisateurs</strong> et des recherches pour éclairer les décisions de conception.",
+                                    "A collaboré avec des équipes <strong>interfonctionnelles</strong> pour garantir la cohérence et la qualité du design.",
+                                    "<strong>A encadré des designers juniors</strong> sur les meilleures pratiques et méthodologies de conception."
+                                ]
+                            },
                             "province": "Californie",
                             "country": "États-Unis",
                             "institution": "Adobe",
@@ -94,7 +157,16 @@
 
                         "zh": {
                             "title": "高级UI/UX设计师",
-                            "description": "领导设计项目，进行全面的用户研究，利用数据驱动的见解提升用户体验。管理设计团队，培养创意和创新，同时实施设计最佳实践，为各种数字产品交付成功的结果。",
+                            "description": "领导设计创新的用户界面和体验，专注于数据驱动的设计原则，服务于Adobe的旗舰产品。与产品经理和工程师合作，创建直观且视觉吸引力强的设计，以增强用户参与度和满意度。",
+                            "list": {
+                                "title": "主要职责:",
+                                "items": [
+                                    "使用Figma和Adobe XD开发高保真原型和线框图。",
+                                    "进行用户测试和研究以指导设计决策。",
+                                    "与跨职能团队合作，确保设计的一致性和质量。",
+                                    "指导初级设计师最佳实践和设计方法论。"
+                                ]
+                            },
                             "province": "加利福尼亚州",
                             "country": "美国",
                             "institution": "Adobe",
@@ -114,7 +186,16 @@
                     "locales": {
                         "en": {
                             "title": "Lead UX Designer",
-                            "description": "Drove UX initiatives by overseeing a team of designers, crafting design strategies, and spearheading cross-functional collaborations with product managers, engineers, and executives. Focused on creating user-centric designs that aligned with business objectives and resulted in enhanced user satisfaction.",
+                            "description": "Led the design team in creating <strong>innovative user experiences</strong> for Apple's software products, focusing on enhancing usability and accessibility. Worked closely with product managers and engineers to develop design solutions that meet user needs and business objectives.",
+                            "list": {
+                                "title": "Key Responsibilities:",
+                                "items": [
+                                    "Designed user interfaces and experiences for <strong>Apple's software products</strong>.",
+                                    "Conducted <strong>user research</strong> and usability testing to inform design decisions.",
+                                    "Collaborated with <strong>cross-functional teams</strong> to ensure design feasibility and implementation.",
+                                    "<strong>Mentored junior designers</strong> in UX design best practices."
+                                ]
+                            },
                             "province": "California",
                             "country": "US",
                             "institution": "Apple",
@@ -123,7 +204,16 @@
 
                         "es": {
                             "title": "Designer UX Principal",
-                            "description": "Impulsé iniciativas de UX supervisando un equipo de diseñadores, elaborando estrategias de diseño y liderando colaboraciones multifuncionales con gerentes de producto, ingenieros y ejecutivos. Centrado en crear diseños centrados en el usuario que se alinearan con los objetivos comerciales y que dieron como resultado una mayor satisfacción del usuario.",
+                            "description": "Lideré el equipo de diseño en la creación de <strong>experiencias de usuario innovadoras</strong> para los productos de software de Apple, enfocándome en mejorar la usabilidad y accesibilidad. Trabajé estrechamente con gerentes de producto e ingenieros para desarrollar soluciones de diseño que satisfagan las necesidades del usuario y los objetivos comerciales.",
+                            "list": {
+                                "title": "Responsabilidades Clave:",
+                                "items": [
+                                    "Diseñé interfaces de usuario y experiencias para los <strong>productos de software de Apple</strong>.",
+                                    "Realicé <strong>investigación de usuarios</strong> y pruebas de usabilidad para informar las decisiones de diseño.",
+                                    "Colaboré con equipos <strong>multifuncionales</strong> para garantizar la viabilidad del diseño y su implementación.",
+                                    "<strong>Mentoricé a diseñadores junior</strong> en mejores prácticas de diseño UX."
+                                ]
+                            },
                             "province": "California",
                             "country": "EE. UU.",
                             "institution": "Apple",
@@ -132,7 +222,16 @@
 
                         "fr": {
                             "title": "Designer UX Principal",
-                            "description": "A piloté les initiatives UX en supervisant une équipe de concepteurs, en élaborant des stratégies de conception et en dirigeant des collaborations interfonctionnelles avec les responsables de produits, les ingénieurs et les cadres. Axé sur la création de designs centrés sur l'utilisateur alignés sur les objectifs commerciaux et aboutissant à une satisfaction accrue des utilisateurs.",
+                            "description": "A dirigé l'équipe de conception dans la création d'<strong>expériences utilisateur innovantes</strong> pour les produits logiciels d'Apple, en mettant l'accent sur l'amélioration de l'utilisabilité et de l'accessibilité. A travaillé en étroite collaboration avec des chefs de produit et des ingénieurs pour développer des solutions de conception répondant aux besoins des utilisateurs et aux objectifs commerciaux.",
+                            "list": {
+                                "title": "Responsabilités Clés:",
+                                "items": [
+                                    "A conçu des interfaces utilisateur et des expériences pour les <strong>produits logiciels d'Apple</strong>.",
+                                    "A mené des <strong>recherches utilisateur</strong> et des tests d'utilisabilité pour éclairer les décisions de conception.",
+                                    "A collaboré avec des équipes <strong>interfonctionnelles</strong> pour garantir la faisabilité du design et sa mise en œuvre.",
+                                    "<strong>A encadré des designers juniors</strong> sur les meilleures pratiques de conception UX."
+                                ]
+                            },
                             "province": "Californie",
                             "country": "États-Unis",
                             "institution": "Apple",
@@ -141,7 +240,16 @@
 
                         "zh": {
                             "title": "首席用户体验设计师",
-                            "description": "通过监督设计团队、制定设计战略，并与产品经理、工程师和高管共同推动跨职能合作，推动了用户体验的创新。专注于创建符合业务目标的以用户为中心的设计，从而实现了增强的用户满意度。",
+                            "description": "领导设计团队为Apple的软件产品创造创新的用户体验，专注于提高可用性和无障碍性。与产品经理和工程师紧密合作，开发满足用户需求和业务目标的设计解决方案。",
+                            "list": {
+                                "title": "主要职责:",
+                                "items": [
+                                    "为Apple的软件产品设计用户界面和体验。",
+                                    "进行用户研究和可用性测试以指导设计决策。",
+                                    "与跨职能团队合作，确保设计的可行性和实施。",
+                                    "指导初级设计师用户体验设计最佳实践。"
+                                ]
+                            },
                             "province": "加利福尼亚州",
                             "country": "美国",
                             "institution": "Apple",
@@ -161,7 +269,16 @@
                     "locales": {
                         "en": {
                             "title": "UX Design Full-Time Professor",
-                            "description": "Leveraged my expertise in UX design to educate and inspire students in the art of user-centered design principles. Conducted user studies, analyzed data, and guided students in applying theoretical knowledge to practical projects, empowering the next generation of UX designers.",
+                            "description": "Taught advanced <strong>UX design principles</strong> and <strong>practices</strong> to undergraduate and graduate students, focusing on real-world applications and industry standards. Developed course materials and assignments that challenged students to think critically and creatively about user experience design.",
+                            "list": {
+                                "title": "Key Responsibilities:",
+                                "items": [
+                                    "Designed and delivered lectures on <strong>UX design methodologies</strong>.",
+                                    "<strong>Supervised student projects</strong> and provided constructive feedback.",
+                                    "Collaborated with industry professionals to <strong>keep course content relevant.</strong>",
+                                    "<strong>Mentored students</strong> in their career development and design portfolios."
+                                ]
+                            },
                             "province": "New York",
                             "country": "US",
                             "institution": "Coursera",
@@ -170,7 +287,16 @@
 
                         "es": {
                             "title": "Profesor de Tiempo Completo en UX Design",
-                            "description": "Utilicé mi experiencia en diseño UX para educar e inspirar a los estudiantes en el arte de los principios de diseño centrado en el usuario. Realicé estudios de usuarios, analicé datos y orienté a los estudiantes en la aplicación de conocimientos teóricos a proyectos prácticos, empoderando a la próxima generación de diseñadores UX.",
+                            "description": "Enseñé principios y prácticas avanzadas de <strong>diseño UX</strong> a estudiantes de pregrado y posgrado, enfocándome en aplicaciones del mundo real y estándares de la industria. Desarrollé materiales del curso y tareas que desafiaron a los estudiantes a pensar críticamente y de manera creativa sobre el diseño de la experiencia del usuario.",
+                            "list": {
+                                "title": "Responsabilidades Clave:",
+                                "items": [
+                                    "Diseñé y entregué conferencias sobre <strong>metodologías de diseño UX</strong>.",
+                                    "<strong>Supervisé proyectos estudiantiles</strong> y proporcioné retroalimentación constructiva.",
+                                    "Colaboré con profesionales de la industria para <strong>mantener el contenido del curso relevante.</strong>",
+                                    "<strong>Mentoricé a estudiantes</strong> en su desarrollo profesional y portafolios de diseño."
+                                ]
+                            },
                             "province": "Nueva York",
                             "country": "EE. UU.",
                             "institution": "Coursera",
@@ -179,7 +305,16 @@
 
                         "fr": {
                             "title": "Professeur à temps plein en UX Design",
-                            "description": "J'ai mis à profit mon expertise en conception UX pour éduquer et inspirer les étudiants dans l'art des principes de conception centrés sur l'utilisateur. J'ai réalisé des études utilisateur, analysé des données et guidé les étudiants dans l'application des connaissances théoriques à des projets pratiques, donnant ainsi les moyens à la prochaine génération de concepteurs UX.",
+                            "description": "A enseigné les principes et pratiques avancés du <strong>design UX</strong> aux étudiants de premier et deuxième cycle, en mettant l'accent sur les applications réelles et les normes de l'industrie. A développé des supports de cours et des devoirs qui ont poussé les étudiants à réfléchir de manière critique et créative au design de l'expérience utilisateur.",
+                            "list": {
+                                "title": "Responsabilités Clés:",
+                                "items": [
+                                    "A conçu et dispensé des cours sur les <strong>méthodologies de design UX</strong>.",
+                                    "<strong>A supervisé les projets étudiants</strong> et fourni des retours constructifs.",
+                                    "A collaboré avec des professionnels de l'industrie pour <strong>maintenir la pertinence du contenu du cours.</strong>",
+                                    "<strong>A encadré les étudiants</strong> dans leur développement professionnel et leurs portfolios de design."
+                                ]
+                            },
                             "province": "New York",
                             "country": "États-Unis",
                             "institution": "Coursera",
@@ -188,7 +323,16 @@
 
                         "zh": {
                             "title": "全职用户体验设计教授",
-                            "description": "利用我的用户体验设计专业知识，教育和激励学生学习以用户为中心的设计原则。进行用户研究，分析数据，并指导学生将理论知识应用于实际项目，培养下一代用户体验设计师。",
+                            "description": "教授本科生和研究生高级用户体验设计原则和实践，专注于实际应用和行业标准。开发课程材料和作业，挑战学生批判性和创造性地思考用户体验设计。",
+                            "list": {
+                                "title": "主要职责:",
+                                "items": [
+                                    "设计并讲授用户体验设计方法论的课程。",
+                                    "监督学生项目并提供建设性反馈。",
+                                    "与行业专业人士合作，保持课程内容的相关性。",
+                                    "指导学生职业发展和设计作品集。"
+                                ]
+                            },
                             "province": "纽约",
                             "country": "美国",
                             "institution": "Coursera",
@@ -208,7 +352,16 @@
                     "locales": {
                         "en": {
                             "title": "Project Manager",
-                            "description": "Led cross-functional teams to successfully execute and deliver high-impact projects within scope, time, and budget constraints. Developed and implemented agile methodologies to enhance team productivity, streamline workflows, and ensure continuous improvement. Facilitated collaboration between stakeholders, engineers, and designers to align project goals with business objectives.",
+                            "description": "Overseeing the development and implementation of <strong>Agile methodologies</strong> within the organization, ensuring projects are delivered on time and within scope. Collaborating with cross-functional teams to manage risks, resources, and stakeholder expectations effectively.",
+                            "list": {
+                                "title": "Key Responsibilities:",
+                                "items": [
+                                    "Facilitated <strong>Agile ceremonies</strong> such as sprint planning, daily stand-ups, and retrospectives.",
+                                    "Managed project timelines, budgets, and resources to ensure successful delivery.",
+                                    "Collaborated with product owners to prioritize and <strong>refine the product backlog</strong>.",
+                                    "<strong>Identified and mitigated</strong> project risks to ensure smooth execution."
+                                ]
+                            },
                             "province": "San Francisco",
                             "country": "US",
                             "institution": "Steam Valve",
@@ -217,7 +370,16 @@
 
                         "es": {
                             "title": "Gerente de Proyectos",
-                            "description": "Lideré equipos multifuncionales para ejecutar y entregar con éxito proyectos de alto impacto dentro de los límites de alcance, tiempo y presupuesto. Desarrollé e implementé metodologías ágiles para mejorar la productividad del equipo, optimizar los flujos de trabajo y garantizar una mejora continua. Facilité la colaboración entre las partes interesadas, ingenieros y diseñadores para alinear los objetivos del proyecto con los objetivos comerciales.",
+                            "description": "Supervisando el desarrollo e implementación de <strong>metodologías ágiles</strong> dentro de la organización, asegurando que los proyectos se entreguen a tiempo y dentro del alcance. Colaborando con equipos multifuncionales para gestionar riesgos, recursos y expectativas de las partes interesadas de manera efectiva.",
+                            "list": {
+                                "title": "Responsabilidades Clave:",
+                                "items": [
+                                    "Facilité ceremonias <strong>ágiles</strong> como planificación de sprints, reuniones diarias y retrospectivas.",
+                                    "Gestioné cronogramas de proyectos, presupuestos y recursos para garantizar una entrega exitosa.",
+                                    "Colaboré con propietarios de productos para priorizar y <strong>refinar el backlog del producto</strong>.",
+                                    "<strong>Identifiqué y mitigé</strong> los riesgos del proyecto para asegurar una ejecución fluida."
+                                ]
+                            },
                             "province": "San Francisco",
                             "country": "EE. UU.",
                             "institution": "Steam Valve",
@@ -226,7 +388,16 @@
 
                         "fr": {
                             "title": "Chef de Projet",
-                            "description": "J'ai dirigé des équipes pluridisciplinaires pour exécuter et livrer avec succès des projets à fort impact dans les limites de portée, de temps et de budget. J'ai développé et mis en œuvre des méthodologies agiles afin d'améliorer la productivité de l'équipe, d'optimiser les flux de travail et d'assurer une amélioration continue. J'ai facilité la collaboration entre les parties prenantes, les ingénieurs et les designers pour aligner les objectifs du projet avec les objectifs commerciaux.",
+                            "description": "Supervision du développement et de la mise en œuvre des <strong>méthodologies Agile</strong> au sein de l'organisation, garantissant que les projets sont livrés à temps et dans le respect du périmètre. Collaboration avec des équipes interfonctionnelles pour gérer efficacement les risques, les ressources et les attentes des parties prenantes.",
+                            "list": {
+                                "title": "Responsabilités Clés:",
+                                "items": [
+                                    "Animation des cérémonies <strong>Agile</strong> telles que la planification des sprints, les réunions quotidiennes et les rétrospectives.",
+                                    "Gestion des délais, budgets et ressources des projets pour garantir une livraison réussie.",
+                                    "Collaboration avec les propriétaires de produits pour prioriser et <strong>affiner le backlog produit</strong>.",
+                                    "<strong>Identification et atténuation</strong> des risques de projet pour assurer une exécution fluide."
+                                ]
+                            },
                             "province": "San Francisco",
                             "country": "États-Unis",
                             "institution": "Steam Valve",
@@ -235,7 +406,16 @@
 
                         "zh": {
                             "title": "项目经理",
-                            "description": "领导跨职能团队，在范围、时间和预算限制内成功执行并交付高影响力项目。制定并实施敏捷方法，以提高团队生产力，优化工作流程，并确保持续改进。促进利益相关者、工程师和设计师之间的协作，使项目目标与业务目标保持一致。管理风险评估，优化资源分配，并确保及时决策，以减少潜在瓶颈。",
+                            "description": "监督组织内敏捷方法论的开发和实施，确保项目按时并在范围内交付。与跨职能团队合作，有效管理风险、资源和利益相关者期望。",
+                            "list": {
+                                "title": "主要职责:",
+                                "items": [
+                                    "主持敏捷仪式，如冲刺计划、每日站会和回顾会议。",
+                                    "管理项目时间表、预算和资源，确保成功交付。",
+                                    "与产品负责人合作，优先考虑并完善产品待办事项列表。",
+                                    "识别并缓解项目风险，以确保顺利执行。"
+                                ]
+                            },
                             "province": "旧金山",
                             "country": "美国",
                             "institution": "Steam Valve",

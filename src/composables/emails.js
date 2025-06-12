@@ -8,7 +8,7 @@ import {useUtils} from "/src/composables/utils.js"
 const _params = {
     publicKey: null,
     serviceId: null,
-    templateId : null
+    templateId: null
 }
 
 const utils = useUtils()

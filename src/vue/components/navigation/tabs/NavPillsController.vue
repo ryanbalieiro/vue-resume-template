@@ -6,7 +6,8 @@
                 class="nav-picker-pill"
                 :class="option.active ? 'nav-picker-pill-selected' : ''"
                 @click="_onOptionSelected(option)">
-            <i :class="option.model.faIcon"/>
+            <i :class="option.model.faIcon"
+               class="me-sm-2"/>
             <span v-html="localize(option.model.locales, 'nav_label')"/>
         </button>
     </nav>

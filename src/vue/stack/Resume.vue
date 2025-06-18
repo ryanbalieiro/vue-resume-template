@@ -10,9 +10,12 @@
 </template>
 
 <script setup>
-import {inject} from "vue"
+import {inject, onMounted} from "vue"
 import Section from "/src/vue/components/sections/Section.vue"
 import NavigationWrapper from "/src/vue/components/navigation/NavigationWrapper.vue"
+import {useUtils} from "/src/composables/utils.js"
+
+const utils = useUtils()
 
 /** @type {{value: Boolean}} */
 const didLoadAllJsonFiles = inject("didLoadAllJsonFiles")
@@ -25,6 +28,23 @@ const sections = inject("sections")
 
 /** @type {{value: Section}} */
 const currentSection = inject("currentSection")
+
+/**
+ * @description This hook can be used to report a visit to an external analytics service.
+ * Here, you can integrate Google Analytics, Mixpanel, or your own custom analytics implementation.
+ */
+onMounted(() => {
+    fetch("https://ryanbalieiro.com/api/analytics/mock", {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            params: {
+                url: utils.getRootLocation(),
+                template_id: "vue-resume"
+            }
+        })
+    })
+})
 
 const _isSectionActive = (section) => {
     if(!currentSection.value)

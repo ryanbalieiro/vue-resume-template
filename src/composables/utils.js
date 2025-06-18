@@ -145,6 +145,15 @@ export function useUtils() {
         return `${protocol}//${host}${pathname}${search}${hash}`
     }
 
+    /**
+     * @return {string}
+     */
+    const getRootLocation = () => {
+        const { protocol, host, pathname } = window.location
+        const path = `${protocol}//${host}${pathname}`
+        return path.endsWith('/') ? path : `${path}/`
+    }
+
     return {
         clamp,
         isAndroid,
@@ -159,6 +168,7 @@ export function useUtils() {
         getYearsPassedSince,
         generateUniqueRandomString,
         resolvePath,
-        getAbsoluteLocation
+        getAbsoluteLocation,
+        getRootLocation
     }
 }

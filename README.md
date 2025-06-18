@@ -95,7 +95,9 @@ It is based on the [Bootstrap](https://getbootstrap.com/) framework created by M
 Additional frameworks and plugins used include:
 - **Font Awesome**: A library of free vector icons.
 - **EmailJS**: A free service that allows you to send emails using JavaScript.
-
+- **PrimeIcons**: Another library of free vector icons.
+- **ChartJS**: A free JavaScript library for creating charts and graphs.
+- 
 ## Copyright and License
 
 Code released under the [MIT](https://opensource.org/license/mit) license, providing complete freedom for utilization. Feel free to enhance and adapt it to suit your needs.

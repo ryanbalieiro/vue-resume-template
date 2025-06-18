@@ -90,22 +90,22 @@
                     "locales": {
                         "en": {
                             "title": "Relaxing",
-                            "description": "Indulging in tranquility, unwinding the stresses of life.",
+                            "description": "Being lazy and proud of it :)",
                             "level": null
                         },
                         "es": {
                             "title": "Relajación",
-                            "description": "Disfrutando de la tranquilidad, deshaciendo el estrés de la vida.",
+                            "description": "Vagueando y orgulloso de ello :)",
                             "level": null
                         },
                         "fr": {
                             "title": "Détente",
-                            "description": "S'adonner à la tranquillité, dénouer les tensions de la vie.",
+                            "description": "Flemmard et fier de l’être :)",
                             "level": null
                         },
                         "zh": {
                             "title": "放松",
-                            "description": "沉浸在宁静中，舒缓生活的压力。",
+                            "description": "摆烂并为此自豪 :)",
                             "level": null
                         }
                     }

@@ -149,8 +149,9 @@ export function useUtils() {
      * @return {string}
      */
     const getRootLocation = () => {
-        const { protocol, host, pathname } = window.location
-        const path = `${protocol}//${host}${pathname}`
+        const { protocol, host } = window.location
+        const basePath = import.meta.env.BASE_URL
+        const path = `${protocol}//${host}${basePath}`
         return path.endsWith('/') ? path : `${path}/`
     }
 

@@ -1,5 +1,8 @@
 <template>
     <slot/>
+
+    <!-- Helper textarea for copying text to clipboard -->
+    <textarea id="clipboard-copy-textarea"/>
 </template>
 
 <script setup>
@@ -17,6 +20,7 @@ const windowWidth = ref(0)
 const lastKeyPressed = ref({id: null, count: -1})
 const windowHash = ref(null)
 const canScroll = ref(true)
+const clipboardText = ref("")
 
 onMounted(() => {
     window.addEventListener('resize', _onResize)
@@ -75,6 +79,23 @@ const shouldAddChromeBottomOffset = computed(() => {
     return osTest && (isPortrait || (chromeTest && windowTest))
 })
 
+const copyToClipboard = (text) => {
+    if(clipboardText.value === text) return
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+            clipboardText.value = text
+        })
+    }
+    else {
+        const textArea = document.getElementById("clipboard-copy-textarea")
+        textArea.value = text
+        textArea.select()
+        document.execCommand("copy")
+        clipboardText.value = text
+    }
+}
+
 const _onResize = () => {
     windowHeight.value = window.innerHeight
     windowWidth.value = window.innerWidth
@@ -109,8 +130,16 @@ provide("isScreenXlOrLarger", isScreenXlOrLarger)
 provide("isPortrait", isPortrait)
 provide("canScroll", canScroll)
 provide("shouldAddChromeBottomOffset", shouldAddChromeBottomOffset)
+provide("clipboardText", clipboardText)
+provide("copyToClipboard", copyToClipboard)
 </script>
 
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
+
+#clipboard-copy-textarea {
+    opacity: 0;
+    position: absolute;
+    left: -1000px;
+}
 </style>

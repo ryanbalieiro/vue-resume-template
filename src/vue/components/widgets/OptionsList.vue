@@ -19,6 +19,10 @@
                     <a v-else
                        class="m-0 text-3 text-light-7"
                        v-html="item.value"/>
+
+                    <CopyButton v-if="item.copy"
+                                class="ms-1"
+                                :text="item.value"/>
                 </div>
             </div>
         </div>
@@ -26,8 +30,9 @@
 </template>
 
 <script setup>
-import IconView from "/src/vue/components/widgets/IconView.vue"
 import {useUtils} from "/src/composables/utils.js"
+import IconView from "/src/vue/components/widgets/IconView.vue"
+import CopyButton from "/src/vue/components/widgets/CopyButton.vue"
 
 const utils = useUtils()
 

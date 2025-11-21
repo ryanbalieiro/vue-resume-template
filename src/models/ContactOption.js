@@ -9,6 +9,7 @@ export default class ContactOption {
         this._faIcon = jsonData["faIcon"]
         this._href = jsonData["href"] || null
         this._locales = new Locales(jsonData["locales"] || {})
+        this._copy = jsonData["copy"]
     }
 
     /** @return {String} */
@@ -42,5 +43,10 @@ export default class ContactOption {
     /** @return {String|null} */
     get href() {
         return this._href
+    }
+
+    /** @return {Boolean} */
+    get copy() {
+        return this._copy || false
     }
 }

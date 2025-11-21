@@ -33,7 +33,6 @@
                 }
             }
         },
-
         {
             "id": "education",
             "categoryId": "background",
@@ -67,7 +66,6 @@
                 }
             }
         },
-
         {
             "id": "skills",
             "categoryId": "showcase",
@@ -101,7 +99,6 @@
                 }
             }
         },
-
         {
             "id": "experience",
             "categoryId": "background",
@@ -135,7 +132,6 @@
                 }
             }
         },
-
         {
             "id": "portfolio",
             "categoryId": "showcase",
@@ -169,7 +165,6 @@
                 }
             }
         },
-
         {
             "id": "achievements",
             "categoryId": "showcase",
@@ -203,7 +198,6 @@
                 }
             }
         },
-
         {
             "id": "hobbies",
             "categoryId": "more",
@@ -237,7 +231,6 @@
                 }
             }
         },
-
         {
             "id": "contact",
             "categoryId": "more",

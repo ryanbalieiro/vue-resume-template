@@ -16,7 +16,6 @@
                     "img": "images/places/logo-ux-studio.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
-
                     "locales": {
                         "en": {
                             "title": "UX Designer",
@@ -35,7 +34,6 @@
                             "institution": "UX Masters Studio",
                             "tags": ["Figma", "Wireframing", "Prototyping", "Responsive Design", "User Research"]
                         },
-
                         "es": {
                             "title": "Diseñador de UX",
                             "description": "Contribuí al diseño de interfaces de aplicaciones web <strong>intuitivas</strong> y <strong>fáciles de usar</strong>, creando experiencias de usuario atractivas y fluidas. Colaboré estrechamente con equipos multifuncionales y partes interesadas para garantizar que los diseños estuvieran alineados con los objetivos comerciales y las necesidades de los usuarios.",
@@ -53,7 +51,6 @@
                             "institution": "UX Masters Studio",
                             "tags": ["Figma", "Prototipado", "Diseño Responsivo", "Investigación de Usuarios", "Wireframing"]
                         },
-
                         "fr": {
                             "title": "Designer UX",
                             "description": "A contribué à la conception d'interfaces d'applications web <strong>intuitives</strong> et <strong>conviviales</strong>, créant des expériences utilisateur engageantes et fluides. A collaboré étroitement avec des équipes interfonctionnelles et des parties prenantes pour garantir que les conceptions soient alignées sur les objectifs commerciaux et les besoins des utilisateurs.",
@@ -71,7 +68,6 @@
                             "institution": "UX Masters Studio",
                             "tags": ["Figma", "Maquettes", "Prototypage", "Design Responsive", "Recherche Utilisateur"]
                         },
-
                         "zh": {
                             "title": "用户体验设计师",
                             "description": "参与设计直观且用户友好的网络应用界面，创造引人入胜且无缝的用户体验。与跨职能团队和利益相关者紧密合作，确保设计与业务目标和用户需求保持一致。",
@@ -91,7 +87,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 2,
                     "dateStart": {"year": 2018, "month": 1},
@@ -99,7 +94,6 @@
                     "img": "images/places/logo-adobe.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
-
                     "locales": {
                         "en": {
                             "title": "Senior UI/UX Designer",
@@ -118,7 +112,6 @@
                             "institution": "Adobe",
                             "tags": ["Figma", "Adobe XD", "Sketch", "Data-Driven Design"]
                         },
-
                         "es": {
                             "title": "Designer Senior UI/UX",
                             "description": "Lideré el diseño de interfaces de usuario innovadoras y experiencias para los <strong>productos insignia de Adobe</strong>, enfocándome en principios de diseño basados en datos. Colaboré con gerentes de producto e ingenieros para crear diseños intuitivos y visualmente atractivos que mejoren el compromiso y la satisfacción del usuario.",
@@ -136,7 +129,6 @@
                             "institution": "Adobe",
                             "tags": ["Figma", "Adobe XD", "Sketch", "Diseño Basado en Datos"]
                         },
-
                         "fr": {
                             "title": "Designer UI/UX Senior",
                             "description": "A dirigé la conception d'interfaces utilisateur innovantes et d'expériences pour les <strong>produits phares d'Adobe</strong>, en mettant l'accent sur les principes de conception basés sur les données. A collaboré avec des chefs de produit et des ingénieurs pour créer des designs intuitifs et visuellement attrayants qui améliorent l'engagement et la satisfaction des utilisateurs.",
@@ -154,7 +146,6 @@
                             "institution": "Adobe",
                             "tags": ["Figma", "Adobe XD", "Sketch", "Conception Basée sur les Données"]
                         },
-
                         "zh": {
                             "title": "高级UI/UX设计师",
                             "description": "领导设计创新的用户界面和体验，专注于数据驱动的设计原则，服务于Adobe的旗舰产品。与产品经理和工程师合作，创建直观且视觉吸引力强的设计，以增强用户参与度和满意度。",
@@ -174,7 +165,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 3,
                     "dateStart": {"year": 2020, "month": 9},
@@ -182,7 +172,6 @@
                     "img": "images/places/logo-apple.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
-
                     "locales": {
                         "en": {
                             "title": "Lead UX Designer",
@@ -201,7 +190,6 @@
                             "institution": "Apple",
                             "tags": ["Sketch", "Adobe XD", "InVision", "Design Strategy", "Cross-Functional Collaboration"]
                         },
-
                         "es": {
                             "title": "Designer UX Principal",
                             "description": "Lideré el equipo de diseño en la creación de <strong>experiencias de usuario innovadoras</strong> para los productos de software de Apple, enfocándome en mejorar la usabilidad y accesibilidad. Trabajé estrechamente con gerentes de producto e ingenieros para desarrollar soluciones de diseño que satisfagan las necesidades del usuario y los objetivos comerciales.",
@@ -219,7 +207,6 @@
                             "institution": "Apple",
                             "tags": ["Sketch", "Adobe XD", "InVision", "Estrategia de Diseño", "Colaboración Multifuncional"]
                         },
-
                         "fr": {
                             "title": "Designer UX Principal",
                             "description": "A dirigé l'équipe de conception dans la création d'<strong>expériences utilisateur innovantes</strong> pour les produits logiciels d'Apple, en mettant l'accent sur l'amélioration de l'utilisabilité et de l'accessibilité. A travaillé en étroite collaboration avec des chefs de produit et des ingénieurs pour développer des solutions de conception répondant aux besoins des utilisateurs et aux objectifs commerciaux.",
@@ -237,7 +224,6 @@
                             "institution": "Apple",
                             "tags": ["Sketch", "Adobe XD", "InVision", "Stratégie de Conception", "Collaboration Interfonctionnelle"]
                         },
-
                         "zh": {
                             "title": "首席用户体验设计师",
                             "description": "领导设计团队为Apple的软件产品创造创新的用户体验，专注于提高可用性和无障碍性。与产品经理和工程师紧密合作，开发满足用户需求和业务目标的设计解决方案。",
@@ -257,7 +243,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 4,
                     "dateStart": {"year": 2022, "month": 10},
@@ -265,7 +250,6 @@
                     "img": "images/places/logo-coursera.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
-
                     "locales": {
                         "en": {
                             "title": "UX Design Full-Time Professor",
@@ -284,7 +268,6 @@
                             "institution": "Coursera",
                             "tags": ["Adobe XD", "Sketch", "Axure", "Educational Mentorship"]
                         },
-
                         "es": {
                             "title": "Profesor de Tiempo Completo en UX Design",
                             "description": "Enseñé principios y prácticas avanzadas de <strong>diseño UX</strong> a estudiantes de pregrado y posgrado, enfocándome en aplicaciones del mundo real y estándares de la industria. Desarrollé materiales del curso y tareas que desafiaron a los estudiantes a pensar críticamente y de manera creativa sobre el diseño de la experiencia del usuario.",
@@ -302,7 +285,6 @@
                             "institution": "Coursera",
                             "tags": ["Adobe XD", "Sketch", "Axure", "Mentoría Educativa"]
                         },
-
                         "fr": {
                             "title": "Professeur à temps plein en UX Design",
                             "description": "A enseigné les principes et pratiques avancés du <strong>design UX</strong> aux étudiants de premier et deuxième cycle, en mettant l'accent sur les applications réelles et les normes de l'industrie. A développé des supports de cours et des devoirs qui ont poussé les étudiants à réfléchir de manière critique et créative au design de l'expérience utilisateur.",
@@ -320,7 +302,6 @@
                             "institution": "Coursera",
                             "tags": ["Adobe XD", "Sketch", "Axure", "Mentorat Éducatif"]
                         },
-
                         "zh": {
                             "title": "全职用户体验设计教授",
                             "description": "教授本科生和研究生高级用户体验设计原则和实践，专注于实际应用和行业标准。开发课程材料和作业，挑战学生批判性和创造性地思考用户体验设计。",
@@ -340,7 +321,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 5,
                     "dateStart": {"year": 2024, "month": 10},
@@ -348,7 +328,6 @@
                     "img": null,
                     "fallbackFaIcon": "fa-brands fa-steam",
                     "fallbackFaIconColor": "#222222",
-
                     "locales": {
                         "en": {
                             "title": "Project Manager",
@@ -367,7 +346,6 @@
                             "institution": "Steam Valve",
                             "tags": ["Agile", "Scrum", "Leadership", "Risk Management"]
                         },
-
                         "es": {
                             "title": "Gerente de Proyectos",
                             "description": "Supervisando el desarrollo e implementación de <strong>metodologías ágiles</strong> dentro de la organización, asegurando que los proyectos se entreguen a tiempo y dentro del alcance. Colaborando con equipos multifuncionales para gestionar riesgos, recursos y expectativas de las partes interesadas de manera efectiva.",
@@ -385,7 +363,6 @@
                             "institution": "Steam Valve",
                             "tags": ["Agile", "Scrum", "Liderazgo", "Gestión de Riesgos"]
                         },
-
                         "fr": {
                             "title": "Chef de Projet",
                             "description": "Supervision du développement et de la mise en œuvre des <strong>méthodologies Agile</strong> au sein de l'organisation, garantissant que les projets sont livrés à temps et dans le respect du périmètre. Collaboration avec des équipes interfonctionnelles pour gérer efficacement les risques, les ressources et les attentes des parties prenantes.",
@@ -403,7 +380,6 @@
                             "institution": "Steam Valve",
                             "tags": ["Agile", "Scrum", "Leadership", "Gestion des Risques"]
                         },
-
                         "zh": {
                             "title": "项目经理",
                             "description": "监督组织内敏捷方法论的开发和实施，确保项目按时并在范围内交付。与跨职能团队合作，有效管理风险、资源和利益相关者期望。",

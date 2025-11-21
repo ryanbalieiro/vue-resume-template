@@ -16,7 +16,6 @@
                     "img": "images/places/logo-udacity.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
-
                     "locales": {
                         "en": {
                             "title": "Pre-University Program in Computer Science",
@@ -26,7 +25,6 @@
                             "institution": "Udacity",
                             "tags": []
                         },
-
                         "es": {
                             "title": "Programa Preuniversitario en Informática",
                             "description": "Completó un programa preparatorio que cubría temas fundamentales de informática como programación, algoritmos y estructuras de datos. Adquirió experiencia práctica en resolución de problemas y pensamiento lógico.",
@@ -35,7 +33,6 @@
                             "institution": "Udacity",
                             "tags": []
                         },
-
                         "fr": {
                             "title": "Programme Pré-Universitaire en Informatique",
                             "description": "A achevé un programme préparatoire couvrant les bases de l'informatique, notamment la programmation, les algorithmes et les structures de données. Acquis une expérience pratique en résolution de problèmes et en pensée logique.",
@@ -44,7 +41,6 @@
                             "institution": "Udacity",
                             "tags": []
                         },
-
                         "zh": {
                             "title": "大学预科计算机科学课程",
                             "description": "完成了一项涵盖计算机科学基础知识的预科课程，如编程、算法和数据结构。获得了解决问题和逻辑思维的实践经验。",
@@ -55,7 +51,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 2,
                     "dateStart": {"year": 2014, "month": 10},
@@ -63,7 +58,6 @@
                     "img": "",
                     "fallbackFaIcon": "fa-solid fa-laptop-code",
                     "fallbackFaIconColor": "#140f29",
-
                     "locales": {
                         "en": {
                             "title": "Technical Course in Programming",
@@ -73,7 +67,6 @@
                             "institution": "Codecademy",
                             "tags": []
                         },
-
                         "es": {
                             "title": "Curso Técnico en Programación",
                             "description": "Completó un curso técnico centrado en los fundamentos del desarrollo de software, incluyendo programación orientada a objetos, desarrollo web y gestión de bases de datos. Desarrolló varios proyectos aplicando habilidades de codificación en el mundo real.",
@@ -82,7 +75,6 @@
                             "institution": "Codecademy",
                             "tags": []
                         },
-
                         "fr": {
                             "title": "Cours Technique en Programmation",
                             "description": "A suivi un cours technique axé sur les fondamentaux du développement logiciel, y compris la programmation orientée objet, le développement web et la gestion de bases de données. A développé plusieurs projets appliquant des compétences de codage en situation réelle.",
@@ -91,7 +83,6 @@
                             "institution": "Codecademy",
                             "tags": []
                         },
-
                         "zh": {
                             "title": "编程技术课程",
                             "description": "完成了一门技术课程，重点讲解软件开发基础，包括面向对象编程、网页开发和数据库管理。开发了多个项目，应用了实际的编码技能。",
@@ -102,7 +93,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 3,
                     "dateStart": {"year": 2015, "month": 8},
@@ -110,7 +100,6 @@
                     "img": "images/places/logo-harvard.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
-
                     "locales": {
                         "en": {
                             "title": "Bachelor's in Graphic Design with UX Emphasis",
@@ -120,7 +109,6 @@
                             "institution": "Harvard University",
                             "tags": []
                         },
-
                         "es": {
                             "title": "Licenciatura en Diseño Gráfico con Énfasis en UX",
                             "description": "Graduado con una sólida formación en diseño gráfico con especialización en diseño de experiencia de usuario. Adquirió experiencia en narración visual, diseño de interfaz de usuario y pensamiento de diseño colaborativo.",
@@ -129,7 +117,6 @@
                             "institution": "Universidad de Harvard",
                             "tags": []
                         },
-
                         "fr": {
                             "title": "Baccalauréat en Design Graphique avec Accent sur l'UX",
                             "description": "Diplômé avec une base solide en design graphique tout en se spécialisant dans la conception de l'expérience utilisateur. Acquis une expertise en narration visuelle, en design d'interface utilisateur et en réflexion collaborative sur la conception.",
@@ -138,7 +125,6 @@
                             "institution": "Université Harvard",
                             "tags": []
                         },
-
                         "zh": {
                             "title": "平面设计学士学位，强调 UX",
                             "description": "毕业于平面设计领域，专攻用户体验设计，掌握了视觉叙事、用户界面设计和协作式设计思维方面的专业知识。",
@@ -149,7 +135,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 4,
                     "dateStart": {"year": 2018, "month": 9},
@@ -157,7 +142,6 @@
                     "img": "images/places/logo-paris-university.png",
                     "fallbackFaIcon": null,
                     "fallbackFaIconColor": null,
-
                     "locales": {
                         "en": {
                             "title": "Master's in Human-Computer Interaction",
@@ -167,7 +151,6 @@
                             "institution": "University of Paris",
                             "tags": []
                         },
-
                         "es": {
                             "title": "Maestría en Interacción Humano-Computadora",
                             "description": "Completó un programa intensivo centrado en los principios de diseño centrado en el usuario, pruebas de usabilidad y diseño de interacción. Desarrolló habilidades en la creación de wireframes, prototipado y metodologías de investigación de usuarios.",
@@ -176,7 +159,6 @@
                             "institution": "Universidad de París",
                             "tags": []
                         },
-
                         "fr": {
                             "title": "Master en Interaction Humain-Ordinateur",
                             "description": "A achevé un programme intensif axé sur les principes de conception centrés sur l'utilisateur, les tests de convivialité et la conception d'interaction. Développé des compétences en wireframing, en prototypage et en méthodologies de recherche utilisateur.",
@@ -185,7 +167,6 @@
                             "institution": "Université de Paris",
                             "tags": []
                         },
-
                         "zh": {
                             "title": "人机交互硕士学位",
                             "description": "完成了一项专注于以用户为中心的设计原则、可用性测试和交互设计的密集课程。培养了线框图、原型制作和用户研究方法方面的技能。",

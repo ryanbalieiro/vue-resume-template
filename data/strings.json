@@ -5,6 +5,7 @@
             "address": "Address",
             "adjusting_viewport": "Adjusting Viewport...",
             "changing_language": "Changing Language...",
+            "copied": "Copied",
             "email": "E-mail",
             "error_fill_all_fields": "Please fill all the fields.",
             "error_invalid_email": "Please enter a valid e-mail address.",
@@ -29,12 +30,12 @@
             "view_on_google_play": "Google Play",
             "view_on_windows_store": "Windows Store"
         },
-
         "es": {
             "about": "Acerca de",
             "address": "Dirección",
             "adjusting_viewport": "Ajustando la pantalla...",
             "changing_language": "Cambiando de idioma...",
+            "copied": "Copiado",
             "experience_year_count_less_than_one": "<b>≈ 1</b> año de experiencia",
             "experience_year_count_plural": "<b>{x}</b> años de experiencia",
             "experience_year_count_singular": "<b>{x}</b> año de experiencia",
@@ -59,12 +60,12 @@
             "view_on_google_play": "Google Play",
             "view_on_windows_store": "Windows Store"
         },
-
         "fr": {
             "about": "À propos",
             "address": "Adresse",
             "adjusting_viewport": "Ajustement de l'affichage...",
             "changing_language": "Modification de la langue...",
+            "copied": "Copié",
             "experience_year_count_less_than_one": "<b>≈ 1</b> an d'expérience",
             "experience_year_count_plural": "<b>{x}</b> ans d'expérience",
             "experience_year_count_singular": "<b>{x}</b> an d'expérience",
@@ -89,12 +90,12 @@
             "view_on_google_play": "Google Play",
             "view_on_windows_store": "Windows Store"
         },
-
         "zh": {
             "about": "关于",
             "address": "地址",
             "adjusting_viewport": "调整屏幕显示...",
             "changing_language": "切换语言...",
+            "copied": "已复制",
             "email": "电子邮件",
             "error_fill_all_fields": "请填写所有字段。",
             "error_invalid_email": "请输入有效的电子邮件地址。",

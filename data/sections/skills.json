@@ -43,7 +43,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 2,
                     "dateStart": null,
@@ -74,7 +73,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 3,
                     "dateStart": null,
@@ -105,7 +103,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 4,
                     "dateStart": null,
@@ -136,7 +133,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 5,
                     "dateStart": null,
@@ -167,7 +163,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 6,
                     "dateStart": null,
@@ -200,7 +195,6 @@
                 }
             ]
         },
-
         {
             "id": 2,
             "component": "ArticleSkills",
@@ -245,7 +239,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 2,
                     "dateStart": {"year": 2021, "month": 4},
@@ -272,7 +265,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 3,
                     "dateStart": {"year": 2017, "month": 8},
@@ -299,7 +291,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 4,
                     "dateStart": {"year": 2017, "month": 3},
@@ -326,7 +317,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 5,
                     "dateStart": {"year": 2024, "month": 1},
@@ -353,7 +343,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 6,
                     "dateStart": {"year": 2022, "month": 11},
@@ -382,7 +371,6 @@
                 }
             ]
         },
-
         {
             "id": 3,
             "component": "ArticleSkills",
@@ -427,7 +415,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 2,
                     "dateStart": {"year": 2021, "month": 1},
@@ -454,7 +441,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 3,
                     "dateStart": {"year": 2022, "month": 1},
@@ -481,7 +467,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 4,
                     "dateStart": {"year": 2023, "month": 1},
@@ -510,7 +495,6 @@
                 }
             ]
         },
-
         {
             "id": 4,
             "component": "ArticleSkills",
@@ -559,7 +543,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 2,
                     "dateStart": null,
@@ -590,7 +573,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 3,
                     "dateStart": null,
@@ -621,7 +603,6 @@
                         }
                     }
                 },
-
                 {
                     "id": 4,
                     "dateStart": null,

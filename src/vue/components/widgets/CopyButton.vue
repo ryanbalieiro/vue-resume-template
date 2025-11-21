@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import {computed, inject, ref} from "vue"
+import {computed, inject, ref, watch} from "vue"
 import InfoBadge from "/src/vue/components/widgets/InfoBadge.vue"
 
 const props = defineProps({
@@ -42,6 +42,13 @@ const icon = computed(() => {
 })
 
 const disabled = computed(() => !props.text || clipboardText?.value === props.text)
+
+watch(() => disabled.value, value => {
+    if(!disabled.value) {
+        infoBadgeVisible.value = false
+        clearTimeout(infoBadgeTimeout.value)
+    }
+})
 
 const _onClick = () => {
     copyToClipboard(props.text)

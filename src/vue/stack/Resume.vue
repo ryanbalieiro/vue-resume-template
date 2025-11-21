@@ -34,7 +34,7 @@ const currentSection = inject("currentSection")
  * Here, you can integrate Google Analytics, Mixpanel, or your own custom analytics implementation.
  */
 onMounted(() => {
-    fetch("https://ryanbalieiro.com/api/analytics/mock", {
+    fetch("https://admin.ryanbalieiro.com/api/analytics/mock", {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({

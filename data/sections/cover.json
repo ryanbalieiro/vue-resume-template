@@ -8,7 +8,7 @@
                 "order_items_by": "id",
                 "order_items_sort": "asc",
                 "contact_list_ids": ["address", "email", "phone"],
-                "contact_circles_ids": ["instagram", "facebook", "linkedin", "github"]
+                "contact_circles_ids": ["instagram", "linkedin", "github", "download_resume"]
             },
             "items": [
                 {

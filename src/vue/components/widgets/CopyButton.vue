@@ -1,8 +1,8 @@
 <template>
     <div class="copy-button-wrapper">
         <button class="copy-button text-4"
-                :class="disabled ? 'copy-button-disabled' : ''"
-                :disabled="disabled"
+                :class="infoBadgeVisible ? 'copy-button-disabled' : ''"
+                :disabled="infoBadgeVisible"
                 @click="_onClick">
             <i :class="icon"/>
         </button>
@@ -35,16 +35,17 @@ const copyToClipboard = inject("copyToClipboard")
 /** @type {Function} */
 const localizeFromStrings = inject("localizeFromStrings")
 
+const isCopied = computed(() =>
+    !props.text || clipboardText?.value === props.text
+)
+
 const icon = computed(() => {
-    const clipboardTextValue = clipboardText?.value
-    if(clipboardTextValue === props.text) return "fa-solid fa-check"
+    if(infoBadgeVisible.value) return "fa-solid fa-check"
     return "fa-solid fa-copy"
 })
 
-const disabled = computed(() => !props.text || clipboardText?.value === props.text)
-
-watch(() => disabled.value, value => {
-    if(!disabled.value) {
+watch(() => isCopied.value, value => {
+    if(!isCopied.value) {
         infoBadgeVisible.value = false
         clearTimeout(infoBadgeTimeout.value)
     }

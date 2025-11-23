@@ -88,6 +88,14 @@
             "faIcon": "fa-brands fa-whatsapp",
             "href": "tel:1234567890",
             "copy": true
+        },
+        {
+            "id": "download_resume",
+            "value": "",
+            "valueShort": "",
+            "faIcon": "fa-solid fa-file-pdf",
+            "href": "/pdf/resume.pdf",
+            "copy": false
         }
     ]
 }

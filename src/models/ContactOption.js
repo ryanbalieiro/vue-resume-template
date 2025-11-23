@@ -1,4 +1,7 @@
 import Locales from "/src/models/Locales.js"
+import {useUtils} from "/src/composables/utils.js"
+
+const utils = useUtils()
 
 export default class ContactOption {
     /** @constructs */
@@ -7,9 +10,12 @@ export default class ContactOption {
         this._value = jsonData["value"]
         this._valueShort = jsonData["valueShort"]
         this._faIcon = jsonData["faIcon"]
-        this._href = jsonData["href"] || null
         this._locales = new Locales(jsonData["locales"] || {})
         this._copy = jsonData["copy"]
+
+        this._href = jsonData["href"] || null
+        if(this._href?.startsWith("/"))
+            this._href = utils.resolvePath(this._href)
     }
 
     /** @return {String} */

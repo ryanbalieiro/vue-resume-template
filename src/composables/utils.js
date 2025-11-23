@@ -134,7 +134,8 @@ export function useUtils() {
      */
     const resolvePath = (path) => {
         const baseUrl = constants.BASE_URL || ''
-        return baseUrl + path
+        const resolved = baseUrl + path
+        return resolved.replaceAll("//", "/")
     }
 
     /**

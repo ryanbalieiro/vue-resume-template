@@ -72,6 +72,7 @@ button.copy-button {
     border: none;
     outline: none;
     color: $light-6;
+    padding: 0 8px;
 
     &:hover {
         color: $primary;
@@ -89,7 +90,7 @@ div.info-badge {
     position: absolute;
     transition: opacity 0.2s ease-in-out;
     width: 110px;
-    left: -40px;
+    left: -42px;
     top: -32px;
 
     @include media-breakpoint-down(xl) {

@@ -19,7 +19,7 @@ const windowWidth = inject("windowWidth")
 
 const classList = computed(() => {
     const isIOS = utils.isIOS()
-    const isLandscape = windowWidth.value >= constants.BOOTSTRAP_BREAKPOINTS.md
+    const isLandscape = windowWidth.value >= constants.BOOTSTRAP_BREAKPOINTS.lg
     const shouldHide = windowScrollY.value >= 30
 
     let classList = ""

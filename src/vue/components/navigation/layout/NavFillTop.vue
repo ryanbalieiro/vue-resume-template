@@ -20,7 +20,10 @@ const windowWidth = inject("windowWidth")
 const classList = computed(() => {
     const isIOS = utils.isIOS()
     const isLandscape = windowWidth.value >= constants.BOOTSTRAP_BREAKPOINTS.lg
-    const shouldHide = windowScrollY.value >= 30
+
+    const navProfileCard = document.querySelector(".nav-mobile-header")
+    const navProfileCardHeight = navProfileCard ? navProfileCard.offsetHeight - 5 : 30
+    const shouldHide = windowScrollY.value >= navProfileCardHeight
 
     let classList = ""
     if(shouldHide) classList += " nav-fill-top-hidden"
@@ -39,7 +42,6 @@ div.nav-fill-top {
     width: 100%;
     height: 100px;
     background-color: $nav-background;
-    opacity: 0.1;
 
     &-hidden {
         visibility: hidden;

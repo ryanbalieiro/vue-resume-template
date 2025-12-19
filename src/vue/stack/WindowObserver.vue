@@ -40,23 +40,7 @@ onUnmounted(() => {
 })
 
 watch(() => canScroll.value, () => {
-    const body = document.body
-    if(!canScroll.value) {
-        body.style.position = 'fixed'
-        body.style.top = `0px`
-        body.style.left = '0'
-        body.style.right = '0'
-        body.style.width = '100%'
-        body.style.overflow = 'hidden'
-    }
-    else {
-        body.style.position = ''
-        body.style.top = ''
-        body.style.left = ''
-        body.style.right = ''
-        body.style.width = ''
-        body.style.overflow = ''
-    }
+    utils.setBodyScrollEnabled(canScroll.value)
 })
 
 const isDesktopLayout = computed(() => {
@@ -99,6 +83,7 @@ const copyToClipboard = (text) => {
         textArea.select()
         document.execCommand("copy")
         clipboardText.value = text
+        textArea.blur()
     }
 }
 

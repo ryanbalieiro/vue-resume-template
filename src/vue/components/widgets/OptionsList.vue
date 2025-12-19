@@ -21,7 +21,6 @@
                        v-html="item.value"/>
 
                     <CopyButton v-if="item.copy"
-                                class="ms-1"
                                 :text="item.value"/>
                 </div>
             </div>

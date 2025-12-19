@@ -156,6 +156,60 @@ export function useUtils() {
         return path.endsWith('/') ? path : `${path}/`
     }
 
+    /**
+     * @param {boolean} enabled
+     */
+    const setBodyScrollEnabled = (enabled) => {
+        if(window.__scrollEnabled === undefined) window.__scrollEnabled = true
+        if(enabled) _enableScroll()
+        else _disableScroll()
+    }
+
+    /**
+     * @private
+     */
+    const _enableScroll = () => {
+        if(window.__scrollEnabled) return
+
+        const bodyStyle = document.body.style
+        bodyStyle.position = window.__savedBodyStyle.position
+        bodyStyle.top = window.__savedBodyStyle.top
+        bodyStyle.left = window.__savedBodyStyle.left
+        bodyStyle.right = window.__savedBodyStyle.right
+        bodyStyle.width = window.__savedBodyStyle.width
+        bodyStyle.overflow = window.__savedBodyStyle.overflow
+        delete window.__savedBodyStyle
+
+        window.__scrollEnabled = true
+    }
+
+    /**
+     * @private
+     */
+    const _disableScroll = () => {
+        if(!window.__scrollEnabled) return
+
+        const bodyStyle = document.body.style
+
+        const defaultBodyStyle = {}
+        defaultBodyStyle.position = bodyStyle.position
+        defaultBodyStyle.top = bodyStyle.top
+        defaultBodyStyle.left = bodyStyle.left
+        defaultBodyStyle.right = bodyStyle.right
+        defaultBodyStyle.width = bodyStyle.width
+        defaultBodyStyle.overflow = bodyStyle.overflow
+        window.__savedBodyStyle = defaultBodyStyle
+
+        bodyStyle.position = 'fixed'
+        bodyStyle.top = `0px`
+        bodyStyle.left = '0'
+        bodyStyle.right = '0'
+        bodyStyle.width = '100%'
+        bodyStyle.overflow = 'hidden'
+
+        window.__scrollEnabled = false
+    }
+
     return {
         clamp,
         isAndroid,
@@ -171,6 +225,7 @@ export function useUtils() {
         generateUniqueRandomString,
         resolvePath,
         getAbsoluteLocation,
-        getRootLocation
+        getRootLocation,
+        setBodyScrollEnabled
     }
 }

@@ -23,7 +23,7 @@ const classList = computed(() => {
     const shouldHide = windowScrollY.value >= 30
 
     let classList = ""
-    if(!isLandscape && shouldHide) classList += " nav-fill-top-hidden"
+    if(shouldHide) classList += " nav-fill-top-hidden"
     if(isLandscape && !isIOS) classList += " d-none"
     return classList
 })

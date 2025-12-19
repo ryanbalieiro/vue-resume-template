@@ -42,14 +42,20 @@ onUnmounted(() => {
 watch(() => canScroll.value, () => {
     const body = document.body
     if(!canScroll.value) {
-        body.classList.add(`body-no-scroll`)
-        if(utils.isIOS()) {
-            body.classList.add(`position-fixed`)
-        }
+        body.style.position = 'fixed'
+        body.style.top = `0px`
+        body.style.left = '0'
+        body.style.right = '0'
+        body.style.width = '100%'
+        body.style.overflow = 'hidden'
     }
     else {
-        body.classList.remove(`body-no-scroll`)
-        body.classList.remove(`position-fixed`)
+        body.style.position = ''
+        body.style.top = ''
+        body.style.left = ''
+        body.style.right = ''
+        body.style.width = ''
+        body.style.overflow = ''
     }
 })
 

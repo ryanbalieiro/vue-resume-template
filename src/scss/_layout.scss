@@ -15,13 +15,6 @@ body.body-nav-contrast {
     background-color: darken($nav-background, 3%)!important;
 }
 
-body.body-no-scroll {
-    overflow-y: hidden!important;
-    @include media-breakpoint-down(lg) {
-        position: fixed!important;
-    }
-}
-
 /** ----------- SELECTION ------------- **/
 ::-moz-selection {
     color: $dark;

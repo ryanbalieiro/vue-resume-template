@@ -1,8 +1,11 @@
 <template>
     <div class="navigation-wrapper">
         <!-- Controls -->
-        <NavControlOneAtOnce v-if="presentationMode === constants.PresentationModes.ONE_AT_ONCE" ref="navControlOneAtOnce"/>
-        <NavControlAllAtOnce v-else ref="navControlAllAtOnce"/>
+        <NavControlOneAtOnce v-if="presentationMode === constants.PresentationModes.ONE_AT_ONCE"
+                             ref="navControlOneAtOnce"/>
+
+        <NavControlAllAtOnce v-else
+                             ref="navControlAllAtOnce"/>
 
         <!-- Sidebar Column -->
         <div v-if="controls"
@@ -33,6 +36,8 @@
                                      :min-items-to-display="2"
                                      @select="_onPillControllerLinkClicked"/>
 
+            <NavFillTop/>
+
             <div class="slot-wrapper">
                 <slot/>
             </div>
@@ -54,6 +59,7 @@ import NavSidebar from "/src/vue/components/navigation/sidebar/NavSidebar.vue"
 import NavTabController from "/src/vue/components/navigation/tabs/NavTabController.vue"
 import NavPillsController from "/src/vue/components/navigation/tabs/NavPillsController.vue"
 import NavPillsControllerFixed from "/src/vue/components/navigation/tabs/NavPillsControllerFixed.vue"
+import NavFillTop from "/src/vue/components/navigation/layout/NavFillTop.vue"
 
 const constants = useConstants()
 

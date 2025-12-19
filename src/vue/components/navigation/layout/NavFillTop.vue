@@ -20,7 +20,7 @@ const windowWidth = inject("windowWidth")
 const classList = computed(() => {
     const isIOS = utils.isIOS()
     const isLandscape = windowWidth.value >= constants.BOOTSTRAP_BREAKPOINTS.md
-    const shouldHide = windowScrollY.value >= 150
+    const shouldHide = windowScrollY.value >= 30
 
     let classList = ""
     if(!isLandscape && shouldHide) classList += " nav-fill-top-hidden"
